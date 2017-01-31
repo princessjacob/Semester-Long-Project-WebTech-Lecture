@@ -1,0 +1,29 @@
+Dispo, Cyrene Jane
+RFC 7236
+RFC 7235
+RFC 7234
+RFC 7233
+
+Fernandez, Anthony
+CSS
+Internet
+World Wide Web
+Client Side Scripting
+
+Halos, Neri Mae
+RFC 7230
+RFC 2616
+RFC 7237
+URL
+
+Jacob, Princess
+Web Server
+Web Client
+Web Application
+RFC 7231
+
+San Pedro, Marla Zita
+HTTP
+HTML
+Server side scripting
+RFC 7232
