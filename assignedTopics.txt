@@ -1,8 +1,14 @@
+Dacanay, Sam
+IoT
+Protocols
+ISP
+Interconnections from country to country
+
 Dispo, Cyrene Jane
-RFC 7236
-RFC 7235
-RFC 7234
-RFC 7233
+TCP/IP
+Device Drivers
+Interconnection Technology
+Network
 
 Fernandez, Anthony
 CSS
@@ -11,19 +17,19 @@ World Wide Web
 Client Side Scripting
 
 Halos, Neri Mae
-RFC 7230
-RFC 2616
-RFC 7237
+Semantic Web
+Gopher
+WAIS
 URL
 
 Jacob, Princess
 Web Server
 Web Client
 Web Application
-RFC 7231
+UseNet
 
 San Pedro, Marla Zita
 HTTP
 HTML
 Server side scripting
-RFC 7232
+
