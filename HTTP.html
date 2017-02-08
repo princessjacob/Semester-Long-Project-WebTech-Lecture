@@ -12,21 +12,68 @@
 <nav>
   <ul>
 	<li><a href="Home.html">Home</a></li>
-    <li><a href="HTML.html">HTML</a></li>
-    <li><a href="SSS.html">Server Side Scripting</a></li>
+  <li><a href="HTML.html">HTML</a></li>
+  <li><a href="SSS.html">Server Side Scripting</a></li>
   </ul>
 </nav>
 
 <article>
   <h1>HTTP</h1>
 	<p> - Application layer used primarily to retrieve hypertext (on hypermedia) documents and resources on the World Wide Web</p>
-    <p> - Jointly developed by the W3C (World Wide Web Consortium) and the IETF (Internet Engineering Task Force).</p>
+    <p> - Jointly developed by the <b>W3C (World Wide Web Consortium)</b> and the <b>IETF (Internet Engineering Task Force)</b> .</p>
   <h1>HTTP Version History</h1>
     <p>1.<a href="https://www.w3.org/Protocols/HTTP/AsImplemented.html">HTTP 0.9</a></p>
     <p>2.<a href="https://www.w3.org/Protocols/HTTP/1.0/spec.html">HTTP 1.0</a></p>
     <p>3.<a href="https://www.w3.org/Protocols/rfc2616/rfc2616.html">HTTP 1.1</a></p>
     <p>4.<a href="https://tools.ietf.org/html/rfc7540">HTTP 2</a></p>
   <h1>HTTP Fundamentals</h1>
+  <ul>
+    <li>HTTP typically runs on top of TCP/IP using TCP port 80 by default (TCP port 443 for HTTPS)
+    <li>HTTP resources are identified using URIs (specifically, HTTP URLs)
+      <ul>
+        <li>Scheme (http or https)
+        <li>authentication information
+        <li>host and port number
+        <li>path to the resource
+        <li>scheme-specific parameters
+        <li>URL-encoded query
+        <li>bookmark or fragment identifier
+      </ul>
+    <p>https=://username:passwd@myserver.com:80/products/price.jsp;sessionid=123456?cal=school&man=xyz#summary</p>
+    <li>HTTP is based on client-server architecture
+      <ul>
+        <li>Clients
+          <ul>
+            <li>Web browsers, web crawlers, email clients, other end user tools and applications
+          </ul>
+        <li>Servers
+          <ul>
+            <li>Origin servers, proxy servers, gateways, tunnels
+          </ul>
+      </ul>
+    <li>HTTP uses a request-reponse standard protocol
+      <ul>
+        <li>The client sends an HTTP request message to the server
+        <li>The server processes the request and replies with an HTTP repsonse message
+      </ul>
+    <li>HTTP is a <i>stateless</i> communications protocol
+      <ul>
+        <li>Servers do not keep information about clients in between requests
+        <li>Web applications effect session tracking using mechanism such as <i>cookies</i> on URL-encoded session information to keep track of related client requests
+      </ul>
+    <li>HTTP provides support for other functionalities such as:
+      <ul>
+        <li><i>cache</i> control
+        <li>content media type (MIME) specification
+        <li>language and character set specification
+        <li>content/transfer coding
+        <li>client-server protocol negotiations
+        <li>persistent connections
+        <li>request pipelining
+        <li>authentication or authorization
+        <li>etc.
+      </ul>
+    <li>
   <h1>HTTP Request Methods</h1>   
   <h1>HTTP Response Message</h1>
   <h1>HTTP Status Codes</h1>
@@ -34,7 +81,7 @@
     <a href="#top">Go to top</a>
 </article>
 
-<footer> WebTek @ 2017 </footer>
+<footer> WebTek @ 2017 &copy;</footer>
 
 </body>
 </html>
