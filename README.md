@@ -1,6 +1,12 @@
 # Semester-Long-Project-WebTech-Lecture
 This repository is mainly for the group's commits concerning the Semester Long Project for WebTech Lec.
 
+
+# A GUIDE TO FOLDERS (NEW!)
+1. First week topics: Place all FIXED first week topics under this folder.
+2. Second week topics and recent: Place all FIXED content here.
+3. HTML & CSS Files : Place HTML Files here BUT the content should come from the First Week Topics folder. If not, please don't make an HTML file for it. As for CSS, we will use a dummy html at the moment while the CSS is designed.
+
 # A guide to branches
 // To change branch, click the branch button and from there click the branch where you'd like to upload your file.
 
