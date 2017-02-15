@@ -2,7 +2,7 @@ HTTP REQUEST METHODS
 
 STANDARD METHODS
 References: http://www.w3schools.com/Tags/ref_httpmethods.asp
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods, notes
 
 1. GET - requests data from a specified resource.
 
@@ -20,9 +20,26 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
 
 8. PATCH - this is used to apply partial modifications to a resource.
 
+9. TRACE - request a loopback of the request message, request the server to echo back to the client the received request message.
+- typically used for testing/diagnostics of the request/response chain
+
+* Chunk Encoding - message is sent by chunks and measured by its length.
+* content-length - identifies how large the file is; deals with what type the fata's file is
+
 SPECIFICATIONS
 A. RFC 7231
 B. RFC 5789 : PATCH Method
+
+EXTEND METHODS
+
+1. SAFE METHODS - these methods doesn't affect the resource. The only change to do is the log of the resource.
+i.e. GET, HEAD, TRACE and OPTIONS
+
+2. IDEMPOTENT METHODS - repeated execution should result to the same effect.
+i.e. GET, HEAD, OPTIONS, TRACE, PUT, DELETE
+
+3. CACHEABLE METHODS - response to requests going to a cacheable
+- cache: where you can store something or local storage.
 
 
 
