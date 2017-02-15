@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Personal Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/slider.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+        <header>
+          <div class="nav">
+            <ul>
+                <li><a href = "#home">Home</a></li>
+                <li><a href = "#prelims">Prelims</a></li>
+                <li><a href = "#midterms">Midterms</a></li>
+                <li><a href = "#finals">Finals</a></li>
+                <li><a href = "#glossary">Glossary</a></li>
+                <li><a href = "#about">About Us</a></li>
+            </ul>
+          </div>
+        </header>
+<div class="slider">
+  <ul>
+    <li id="home" class="slide">
+        <div class = "container">
+          <h1>What is this page about?</h1>
+          <p>Some Content</p>
+        </div>
+      <a class="next" href="#prelims">next</a>
+    </li>
+    <li id="prelims" class="slide">
+      <div class = "container">
+          <h1>Prelims</h1>
+          <p>Some Content</p>
+        </div>
+      <a class="prev" href="#home">prev</a>
+      <a class="next" href="#midterms">next</a>           
+    </li>
+    <li id="midterms" class="slide">
+      <div class = "container">
+          <h1>Midterms</h1>
+          <p>Some Content</p>
+        </div>
+      <a class="prev" href="#prelims">prev</a>
+      <a class="next" href="#finals">next</a>           
+    </li>
+    <li id="finals" class="slide">
+      <div class = "container">
+          <h1>Finals</h1>
+          <p>Some Content</p>
+        </div>
+      <a class="prev" href="#midterms">prev</a>
+      <a class="next" href="#glossary">next</a>          
+    </li>
+    <li id="glossary" class="slide">
+      <div class = "container">
+          <h1>Glossary</h1>
+          <p>Some Content</p>
+        </div>
+      <a class="prev" href="#finals">prev</a> 
+      <a class="next" href="#about">next</a>
+    </li>
+    <li id="about" class="slide">
+      <div class = "container">
+          <h1>About Us</h1>
+          <p>Some Content</p>
+        </div>
+      <a class="prev" href="#glossary">prev</a> 
+    </li>
+  </ul>
+</div>
+        
+    </body>
+</html>

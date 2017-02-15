@@ -1,0 +1,129 @@
+* {
+margin: 0;
+padding: 0;
+list-style-type:none;
+}
+header {
+	height:40px;
+	width:100%;
+	position:fixed;
+	background:rgba(0,0,0,0.9);
+	z-index:120;
+}
+header li {
+	float: left;
+	list-style-type:none;
+	border-right: 1px solid #252525;
+}
+header li a {
+	float: left;
+	width: 98px;
+	height: 12px;
+	padding: 14px 7px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font: normal 62.5% "proxima-nova-alt", Helvetica, Arial, sans-serif;
+}
+header .logo {
+	float: left;
+	width: 201px;
+	height: 40px;
+	background:#fde624 url('https://lh4.googleusercontent.com/-JN1IZLtuToI/UUoZnMG3C_I/AAAAAAAAAE8/SEbJ9nqXGnY/s226/sprite.png') no-repeat 16px 1px;
+}
+
+@-webkit-keyframes TMNT {
+	0%  { left: 0px; }
+	100% { left: -1200px; }
+}
+a.prev,a.next {
+	height:91px;
+	position:absolute;
+	width:43px;
+	top:50%;
+	margin-top:-30px;
+	opacity:0.6;
+	text-indent:-99999px;
+	cursor:pointer;
+	-webkit-transition:opacity 200ms ease-out;
+}
+a.prev:hover,a.next:hover {
+	opacity:1;
+}
+.prev {
+	left:0;
+	background: #000 url('https://lh4.googleusercontent.com/-JN1IZLtuToI/UUoZnMG3C_I/AAAAAAAAAE8/SEbJ9nqXGnY/s226/sprite.png') no-repeat -200px 25px;
+}
+.next {
+	right:0;
+	background: #000 url('https://lh4.googleusercontent.com/-JN1IZLtuToI/UUoZnMG3C_I/AAAAAAAAAE8/SEbJ9nqXGnY/s226/sprite.png') no-repeat -167px 25px;
+}
+.slider {
+	height:100vh;
+	position: relative;
+}
+.slide {
+	position:absolute;
+	height:100%;
+	width:100%;
+}
+.slider .slide:target {
+	z-index: 100;
+}
+
+.container {
+  padding-top: 80px;
+  padding-left: auto;
+  padding-right: auto;
+    
+}
+
+#home {
+    background: white;
+    max-width:100%;
+	width:100%;
+	position:fixed;
+}
+
+#prelims {
+    background: white;
+    max-width:100%;
+	width:100%;
+	position:fixed;
+	left:0;
+}
+
+#midterms {
+    background: white;
+    max-width:100%;
+	width:100%;
+	position:fixed;
+	left:0;
+}
+
+#finals {
+    background: white;
+    max-width:100%;
+	width:100%;
+	position:fixed;
+	left:0;
+}
+
+#glossary {
+    background: white;
+    max-width:100%;
+	width:100%;
+	position:fixed;
+	left:0;
+}
+
+#about {
+    background: white;
+    max-width:100%;
+	width:100%;
+	position:fixed;
+	left:0;
+}
