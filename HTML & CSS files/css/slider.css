@@ -3,6 +3,10 @@ margin: 0;
 padding: 0;
 list-style-type:none;
 }
+
+body {
+    overflow: hidden;
+}
 header {
 	height:40px;
 	width:100%;
@@ -77,8 +81,7 @@ a.prev:hover,a.next:hover {
 .container {
   padding-top: 80px;
   padding-left: auto;
-  padding-right: auto;
-    
+  padding-right: auto;   
 }
 
 #home {
@@ -126,4 +129,77 @@ a.prev:hover,a.next:hover {
 	width:100%;
 	position:fixed;
 	left:0;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background: white;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 90px;
+    display:block;
+    float:left;
+    border: 1px solid black;
+    font-size: 2em;
+}
+
+.circle a {
+    padding: 8px;
+    text-decoration: none;
+}
+
+.circle:hover {
+    background-color: black;
+}
+
+.contentNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+nav.contentNav li a {
+    display: block;
+    color: #000;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px; 
+    margin-bottom: 8px;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+nav.contentNav li a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px; 
+}
+
+nav.contentNav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px; 
+    width: auto;
+    height: auto;    
+}
+
+.container2 {
+    margin-left:25%;
+    padding:5px 16px;
+    height:1000px;
 }
