@@ -1,0 +1,22 @@
+Computer network or network is well-defined as a group or collection of computer systems that are linked together. It is also called the data network.  It is the series of nodes, physical device, that is interconnected by communication paths in order to transmit, receive and exchange data voice and video traffic.
+There are some network characteristics:
+a. TOPOLOGY – it is the geometric sequence of the computer system. 
+b. PROTOCOL -  it is the set or rules and signals in which the computers on a network can communicate.
+c. ARCHITECTURE -  can be broadly classified as peer-to-peer or client/server architecture. 
+
+TCP/IP or the TRANSMISSION CONTROL PROTOCOL/INTERNET PROTOCOL,   is the protocol  used over the internet in order for the computers to communicate to each other. It is also used in a private network as a communication protocol. 
+TCP/IP is a consists of two-layer program. First, transmission control protocol which manages and assembles a file into packets in which it is transmitted on the internet and it is received by the TCP layer and reassembles it on the original form of the message. Second, is the internet protocol which holds the address part of every packet in order for the packet to get in the correct destination. 
+
+Device Driver is a program which controls a specific type of device and is attached to the computer. It is a bit of software which tells the (OS) Operating System in what way to communicate with the hardware.  It is said to be a small program which allows a computer and a device to connect with one another. Its purpose is to hold the requests which is made by the kernel with regard to a specific type of devices. It resides within the Digital UNIX kernel.  
+Block Device Drivers-supports a file system which is called as the block devices. 
+Character Device Drivers -   it performs the Input/output in the form of byte stream.
+Memory Mapped Devices -  it is the device driver which has direct access to the device memory. 
+
+
+Wired Interconnection Technology is a way to transmit data which uses wires to communicate between computers. It is said to be the most stable in all the types of communication services.
+Wireless Interconnection Technology is the way to transfer information within devices/ points that are not connected by any conductor. Information is transferred trough radio waves. 
+
+
+
+
+
