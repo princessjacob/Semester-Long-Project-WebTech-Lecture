@@ -31,7 +31,19 @@ A. RFC 7231
 B. RFC 5789 : PATCH Method
 
 EXTEND METHODS
+https://en.wikipedia.org/wiki/WebDAV
+i.e. WebDav
+WebDav methods
+1. PROPFIND – used to retrieve properties, stored as XML, from a web resource. It is also overloaded to allow one to retrieve the collection structure (also known as directory hierarchy) of a remote system.
+2. PROPPATCH – used to change and delete multiple properties on a resource in a single atomic act
+3. MKCOL – used to create collections (a.k.a. a directory)
+4. COPY – used to copy a resource from one URI to another
+5. MOVE – used to move a resource from one URI to another
+6. LOCK – used to put a lock on a resource. WebDAV supports both shared and exclusive locks.
+7. UNLOCK – used to remove a lock from a resource
 
+
+OTHER METHODS
 1. SAFE METHODS - these methods doesn't affect the resource. The only change to do is the log of the resource.
 i.e. GET, HEAD, TRACE and OPTIONS
 
