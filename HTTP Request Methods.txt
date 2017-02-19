@@ -1,27 +1,24 @@
 HTTP REQUEST METHODS
 
 STANDARD METHODS
-References: http://www.w3schools.com/Tags/ref_httpmethods.asp
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods, notes
 
-1. GET - requests data from a specified resource.
+1. GET - Requests data from a specified resource. The method itself is not going to affect the resource taken by the data.
 
 2. POST - Submits data to be processed to a specified resource. This often causes a change in state or side effects on the server.
 
 3. HEAD - Same as GET but returns only HTTP headers and no document body.
 
-4. PUT - uploads a representation of the specified URI. It replaces all current representations of the target resource with the request payload.
+4. PUT - Uploads a representation of the specified URI. It replaces all current representations of the target resource with the request payload.
 
-5. DELETE - deletes the specified resource
+5. DELETE - Deletes the specified resource and causes a change on the resource as a result.
 
-6. OPTIONS - returns the HTTP methods that the server supports. This is used to describe communication options for the target resource.
+6. OPTIONS - Returns the HTTP methods that the server supports. This is used to describe communication options for the target resource.
 
-7. CONNECT - converts the request connection to a transparent TCP/IP tunnel.
+7. CONNECT - Converts the request connection to a transparent TCP/IP tunnel.
 
-8. PATCH - this is used to apply partial modifications to a resource.
+8. PATCH - This is used to apply partial modifications to a resource.
 
-9. TRACE - request a loopback of the request message, request the server to echo back to the client the received request message.
-- typically used for testing/diagnostics of the request/response chain
+9. TRACE - Requests a loopback of the request message and then requests the server to echo back to the client the received request message. TRACE is also typically used for testing/diagnostics of the request/response chain
 
 * Chunk Encoding - message is sent by chunks and measured by its length.
 * content-length - identifies how large the file is; deals with what type the fata's file is
@@ -31,28 +28,49 @@ A. RFC 7231
 B. RFC 5789 : PATCH Method
 
 EXTEND METHODS
-https://en.wikipedia.org/wiki/WebDAV
-i.e. WebDav
-WebDav methods
-1. PROPFIND â€“ used to retrieve properties, stored as XML, from a web resource. It is also overloaded to allow one to retrieve the collection structure (also known as directory hierarchy) of a remote system.
-2. PROPPATCH â€“ used to change and delete multiple properties on a resource in a single atomic act
-3. MKCOL â€“ used to create collections (a.k.a. a directory)
-4. COPY â€“ used to copy a resource from one URI to another
-5. MOVE â€“ used to move a resource from one URI to another
-6. LOCK â€“ used to put a lock on a resource. WebDAV supports both shared and exclusive locks.
-7. UNLOCK â€“ used to remove a lock from a resource
+i.e. WebDav (World Wide Web Distributed Authoring and Versioning)
 
+What is WebDAV?
+- This is an IETF standard for collaborative authoring in the Web. This is commonly used for users located remotely from each other in the Internet that needs a tool for collaborative editing and file management. 
+
+WebDav methods
+1. PROPFIND – This is used to retrieve properties, stored as XML, from a web resource. It is also overloaded to allow one to retrieve the collection structure (also known as directory hierarchy) of a remote system.
+2. PROPPATCH – This is used to change and delete multiple properties on a resource in a single atomic act.
+3. MKCOL – This is used to create collections (a.k.a. a directory).
+4. COPY – This is used to copy a resource from one URI to another.
+5. MOVE – This is used to move a resource from one URI to another.
+6. LOCK – This is used to put a lock on a resource. WebDAV supports both shared and exclusive locks.
+7. UNLOCK – This is used to remove a lock from a resource.
+
+DAV SPECIFICATIONS
+1. RFC 4918
+2. RFC 3253
+3. RFC 5323
+4. WebDAV Bindings
+5. RFC 4437
+6. RFC 3648
+7. RFC 3744
+8. Advanced ATL Extensions to WebDAV
+9. RFC 4122
 
 OTHER METHODS
 1. SAFE METHODS - these methods doesn't affect the resource. The only change to do is the log of the resource.
 i.e. GET, HEAD, TRACE and OPTIONS
 
-2. IDEMPOTENT METHODS - repeated execution should result to the same effect.
+2. IDEMPOTENT METHODS - The repeated execution of the methods should result to the same effect.
 i.e. GET, HEAD, OPTIONS, TRACE, PUT, DELETE
 
-3. CACHEABLE METHODS - response to requests going to a cacheable
-- cache: where you can store something or local storage.
+3. CACHEABLE METHODS - The response to requests is going to a cacheable
+- cache: This is where you can store something or local storage.
 
+REFERENCES:
+HTTP Methods: GET vs. POST(n.d.). Retrieved from https://www.w3schools.com/Tags/ref_httpmethods.asp
 
+fscholz et.al.(2016). HTTP request methods. Retrieved from https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
 
+WebDAV(n.d.). Retrieved from https://en.wikipedia.org/wiki/WebDAV
+
+WebDAV Specifications(n.d.). Retrieved from http://www.webdav.org/specs/
+
+Rouse, M. (2005). WebDAV (World Wide Web Distributed Authoring and Versioning). Retrieved from http://searchmicroservices.techtarget.com/definition/WebDAV-World-Wide-Web-Distributed-Authoring-and-Versioning
 
