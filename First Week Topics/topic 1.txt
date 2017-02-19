@@ -17,19 +17,19 @@ Wired Interconnection Technology is a way to transmit data which uses wires to c
 Wireless Interconnection Technology is the way to transfer information within devices/ points that are not connected by any conductor. Information is transferred trough radio waves. 
 
 References:
-Beal, V. What is a computer network? Webopedia definition. Retrieved February 17, 2017, from http://www.webopedia.com/TERM/N/network.html
+Beal, V. (n.d). Retrieved from http://www.webopedia.com/TERM/N/network.html
 
-Posted, & Rouse, M. (2014, March 12). What is TCP/IP (transmission control protocol/Internet protocol)? - definition from WhatIs.Com. Retrieved February 17, 2017, from http://searchnetworking.techtarget.com/definition/TCP-IP
+Posted, & Rouse, M. (2014, March 12). Retrieved from http://searchnetworking.techtarget.com/definition/TCP-IP
 
-Posted, & Rouse, M. (2016, November 13). What is device driver? - definition from WhatIs.Com. Retrieved February 17, 2017, from http://searchenterprisedesktop.techtarget.com/definition/device-driver
+Posted, & Rouse, M. (2016, November 13). Retrieved from http://searchenterprisedesktop.techtarget.com/definition/device-driver
 
-What is device driver? Definition and meaning (2017). In . BusinessDictionary.com. Retrieved from http://www.businessdictionary.com/definition/device-driver.html
+What is device driver? Definition and meaning (2017). Retrieved from http://www.businessdictionary.com/definition/device-driver.html
 
-Fisher, T. (2016, September 21). What is a device driver? Retrieved February 17, 2017, from Lifewire, https://www.lifewire.com/what-is-a-device-driver-2625796
+Fisher, T. (2016, September 21). Retrieved from https://www.lifewire.com/what-is-a-device-driver-2625796
 
-Drivers, W. D., & Reference. Writing device drivers: Tutorial. Retrieved February 17, 2017, from http://iacoma.cs.uiuc.edu/~nakano/dd/drivertut3.html
+Drivers, W. D., & Reference. (n.d.). Retrieved from http://iacoma.cs.uiuc.edu/~nakano/dd/drivertut3.html
 
-Dinesh. (2011, January 7). Types of device Drivers. Retrieved February 17, 2017, from https://sonkusare.wordpress.com/2011/01/07/types-of-device-drivers/
+Dinesh. (2011, January 7). Retrieved from https://sonkusare.wordpress.com/2011/01/07/types-of-device-drivers/
 
 
 
