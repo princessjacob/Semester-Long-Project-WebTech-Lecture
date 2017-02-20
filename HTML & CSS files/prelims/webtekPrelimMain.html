@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prelim</title>
+</head>
+<body>
+	<div class = "PrelimMain">
+		<div id = "HTTP">
+		</div>
+
+		<div id = "HTML">
+		</div>
+
+		<div id = "Web Client">
+			<h1>Web Client</h1>
+			<p>
+				The web client typically refers to the browser and may also refer to plug-ins that support special services to the site. It can also refer to whatever a person is using to access a website like handheld devices or electronic devices. (Computer language company, Inc. n.d.)
+
+			</p>
+			<p>
+				This is also known as a thin client because it doesn’t handle the heavy work, which is the work of the server. (technopedia. n.d.)
+
+			</p>
+			<p>
+				The client is also referred to as either the human user or the browser. (technopedia. n.d.)
+			</p>
+			<p>
+				The main purpose of the web client is to search for the content in the world wide web and display it in the shape of a webpage, image, audio and the like as long as it is available.
+			</p>
+			<p>
+				The process is shown by the images below.
+			</p>
+			<div id = "webclientimage">
+				<img src = "First Week Topics/images to content//02.jpg">
+			</div>
+			<p>
+				Reference:
+				Client Server Process. Retrieved from: https://www.safaribooksonline.com/library/view/head-first-servlets/9780596516680/ch01s03.html
+			</p>
+			<p>
+				Examples: Chrome, Safari, Opera Mini, Firefox (or any other common browsers)
+			</p>
+		</div>
+
+		<div id = "WebServer">
+			<h1>Web Server</h1>
+			<p>
+				A web server in its simplest sense is simply what store, process and delivers web pages to clients (Beal, V. n.d.). Or to illustrate, imagine inputting a url(uniform resource locator) in your browser and once you press ‘Enter’ the website will immediately boot up whenever you are and wherever you are. So, in this process, once you inputted a url, it will send a request in the server. The server will then look through the data stored on it and find if it’s in there. If it is, it will send back the requested page. If it isn’t, it will send back an error message or the typical ‘Site not found error.’
+			</p>
+			<div id = "webserverimage">
+				<img src = "First Week Topics/image to content/01.gif">
+			</div>
+			<div id = "reference">
+				HowStuffWorks. Untitled Image. Retrieved from http://computer.howstuffworks.com/web-server1.htm
+			</div>
+
+			<p>
+				For a more technical way, the browser will break down the url into three parts.
+			</p>
+			<li>
+				The protocol(http://)
+			</li>
+			<li>
+				The server name(www.google.com)
+			</li>
+			<li>
+				The file name(dummy.htm)
+			</li>
+			<p>
+				The browser will communicate with a domain name. Afterwards, it will be translated to an IP address. The translated url will then be used to connect to the server. The browser then formed a connection to the server by that IP address.
+			</p>
+			<p>
+				Following the protocol, the server will then send a get request to the server and asking for the file that you are looking for. Once, it finds that content it will send the HTML text for the browser to interpret. It will read the HTML tags and format the page in your screen. (Brain, M. n.d.)
+
+			</p>
+
+			<h1>Architecture</h1>
+			<p>
+				The web server architecture follows two different approaches: 
+			</p>
+			<li>
+				Concurrent Approach - server takes multiple requests at the same time.
+			</li>
+			<li>
+				Single-Process-Event-Driven Approach - server takes only single requests at a time.
+			</li>
+
+			<p>
+				The Concurrent Approach:
+			</p>
+			<p>
+				This approach can be achieved in three ways:
+			</p>
+
+			<ul>
+				<li>
+					Multi-process – This is a process wherein a parent process starts several single-threaded child processes. Then, the parent process will distribute each incoming request among the children processes. The parent process will be in charge for loading and monitoring while the child will only be focused on a single task.
+				</li>
+				<li>
+					Multi-threaded – A parent process, unlike the multi-process, creates multiple single-threaded process.
+				</li>
+				<li>
+					Hybrid Method – This is a combination of the first two approaches.
+				</li>
+			</ul>
+
+			<h1>HISTORY</h1>
+			<ul>
+				<li>
+					1989 – Tim Berners-Lee proposed a new project to his employer CERN with the goal of making an exchange system between scientists through a hypertext system.
+				</li>
+
+				<li>
+					1990 – Berners-Lee wrote two programs: (1) World Wide Web browser, (2) the world’s first web server, later known as CERN httpd which ran on NeXTSTEP.
+				</li>
+
+				<li>
+					Mid 1991 and 1994 – the world-wide web is ported through different operating systems. This is the result of the simplicity and effectiveness of the technologies used in the exchange of data. Its use is spread among universities, scientific organizations and onwards the industry.
+				</li>
+
+				<li>
+					1994 – Berners-Lee constituted the World Wide Web Consortium(w3C) to regulate the further development of many technologies to standardization.
+				</li>
+			</ul>
+
+			<p>EXAMPLES</p>
+
+			<ul>
+				<li>
+					Apache HTTP Server
+				</li>
+
+				<li>
+					Internet Information Services
+				</li>
+
+				<li>
+					Lighttpd
+				</li>
+
+				<li>
+					Sun Java System Web Server
+				</li>
+
+				<li>
+					Jigsaw Server
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
