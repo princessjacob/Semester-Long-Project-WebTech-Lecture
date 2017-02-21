@@ -1,0 +1,30 @@
+HTTP Resource Addressing
+- It is a string of characters used to identify a resource. It 
+enables interaction with representations of the resource over a network, 
+typically the World Wide Web, using specific protocols.
+URI in technical term:
+a) Scheme
+-Sequence of characters starting with a letter followed by any combination
+of letters,digits,plus,period,or hypen. Below are the popular schemes. http,ftp,mailto,
+file,data and irc
+b) Authority
+	-It is a server DNS hostname or IP address. It also includes service port number 
+if it differs from the port for the URI. An optional authentication section of a user 
+name and password, separated by a colon, followed by an at symbol (@).
+- Hostname
+   -It does not include the port number.
+- Port Number
+   -it defines the protocol port used for contacting the server referenced in the URI.
+
+-Path to Resource, Path to unix
+  -It contains data, it is usually organized in hierarchical form, that appears 
+as a sequence of segments separated by slashes.
+- Query
+   -Separated from the preceding part by a question mark (?), query string of non-hierarchical data. 
+Its syntax is not well defined, but by convention is most often a sequence of attribute–value pairs separated by 
+a delimiter.
+- Fragment Identifier
+   -It provides direction to a secondary resource, such as 
+a section heading in an article identified by the remainder of the URI.
+a fragment identifier providing direction to a secondary resource, such as 
+a section heading in an article identified by the remainder of the URI. 
