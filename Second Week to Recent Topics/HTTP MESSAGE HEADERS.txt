@@ -1,48 +1,48 @@
 HTTP MESSAGE HEADERS
 	HTTP Protocol is the communication of takes place in a way of exchanging of requests and response messages between the client and a server. As the client sends a request to the server the server also gives back a response message to the client, in short, the client and the server are passing request and response to each other. 
 	HTTP message headers is also called the HTTP header fields. It provides the information about the requests or a response, and sometimes to the object being sent in the message body. Message headers conveys important information or detail about the clients and the server.  The message header does only apply in the message that is to be transmitted. It is normally a one message header per line. Message headers is composed of name of the header field and a field value. The common form of the header field is:
-		Message Header = Field name ì:î [ field-value]
+		Message Header = Field name ‚Äú:‚Äù [ field-value]
 There are four categories of message header:
 * GENERAL HEADER FIELDS
-       General header field is universal because it doesnít point to one specific kind of message. It is usable by both client and server. It appears in either of the two. General headers are primarily used to communicate information about the message alone as it resists to what is its content. It also gives the general information of the message and controls the message as how it is processed and handled. 
+       General header field is universal because it doesn‚Äôt point to one specific kind of message. It is usable by both client and server. It appears in either of the two. General headers are primarily used to communicate information about the message alone as it resists to what is its content. It also gives the general information of the message and controls the message as how it is processed and handled. 
        
 * CACHE-CONTROL
        Cache-control is used to identify the directives that is being obeyed by the caching mechanism in the request or response chain. It is also used by the http client and/or server to specify the parameters for the cache and also used to request kinds of documents from the cache. The directives have the behavior to prevent the cache from being harmfully interfering in the request or in the response. And also, these directives sometimes tend to override the caching algorithms. Cache directives should be passed by a proxy or a gateway application, since all the directives may be applicable in the recipients in the request or in the response chain.  The syntax for the cache-control is
 Cache-Control : cache-request-directive|cache-response-directive
 
 * CONNECTION
-       Connection is a general-header field in which it allows a sender to specify the options that are being desired for a specific connection and this shouldnít be communicated by any proxies in any connections. The most commonly used connection is the ìcloseî. Connection options are being signaled in the existence of a connection-token in the header field of Connection.  The Close Connection is an option for the client to signal in which the connection is to be closed when the response is being complete. There is also the Keep-Alive Connection in which it is a persistent connection, which means the connection doesnít close automatically when the execution is done.   The syntax for connection is 
-       Connection : ìConnectionî  
+       Connection is a general-header field in which it allows a sender to specify the options that are being desired for a specific connection and this shouldn‚Äôt be communicated by any proxies in any connections. The most commonly used connection is the ‚Äúclose‚Äù. Connection options are being signaled in the existence of a connection-token in the header field of Connection.  The Close Connection is an option for the client to signal in which the connection is to be closed when the response is being complete. There is also the Keep-Alive Connection in which it is a persistent connection, which means the connection doesn‚Äôt close automatically when the execution is done.   The syntax for connection is 
+       Connection : ‚ÄúConnection‚Äù  
 
 * DATE
-       Date is a general header field which specifies the exact date and time when the message is originated. The  origin servers  includes the Date header field in all the responses except of some cases. The date is always in Greenwich Mean Time (GMT). The most used date format is ìDay, Date-Month-Year Hour:Minutes:Seconds GMTî.  The date syntax is :
-       Date : ìDay, Date-Month-Year Hour:Minutes:Seconds GMTî
+       Date is a general header field which specifies the exact date and time when the message is originated. The  origin servers  includes the Date header field in all the responses except of some cases. The date is always in Greenwich Mean Time (GMT). The most used date format is ‚ÄúDay, Date-Month-Year Hour:Minutes:Seconds GMT‚Äù.  The date syntax is :
+       Date : ‚ÄúDay, Date-Month-Year Hour:Minutes:Seconds GMT‚Äù
 
 
 
 * PRAGMA
-       Pragma is a general header field which is used to include the implementation-specific directives which may apply to any of the recipient in the request or response chain. The common use of the header field is to suppress the caching by the means of including ìPragma : no-cacheî, which has the same as the ìCache-Control : no-cacheî . Pragma directives should be passed by a proxy or a gateway application, since all the directives may be applicable in the recipients in the request or in the response chain. The syntax for Pragma header is:
-       Pragma : ìpragma-directiveî
+       Pragma is a general header field which is used to include the implementation-specific directives which may apply to any of the recipient in the request or response chain. The common use of the header field is to suppress the caching by the means of including ‚ÄúPragma : no-cache‚Äù, which has the same as the ‚ÄúCache-Control : no-cache‚Äù . Pragma directives should be passed by a proxy or a gateway application, since all the directives may be applicable in the recipients in the request or in the response chain. The syntax for Pragma header is:
+       Pragma : ‚Äúpragma-directive‚Äù
 
 
 * TRAILER
-       Trailer is a general header field which indicates the given set of the header field is said to be present in the trailer in the message encoded with the chunked transfer coding.  Trailer is said to be a hop-by-hop header. If there is no header field Trailer, it shouldnít include any of the header fields.  The syntax for Trailer header field is:
-Trailer : ìfield-nameî
+       Trailer is a general header field which indicates the given set of the header field is said to be present in the trailer in the message encoded with the chunked transfer coding.  Trailer is said to be a hop-by-hop header. If there is no header field Trailer, it shouldn‚Äôt include any of the header fields.  The syntax for Trailer header field is:
+Trailer : ‚Äúfield-name‚Äù
 
 
 * UPGRADE
        Upgrade is a general header field which allow a client to identify the additional communication protocols that it supports and like to use when the server found it appropriate to switch between protocols. It is used to provide a simple system for a transition from HTTP/1.1 to any other incompatible protocol. Upgrade header field is also a hop-by-hop header like the Trailer. The syntax for Upgrade header field is:
-Upgrade : ìproductî
+Upgrade : ‚Äúproduct‚Äù
 
 
 * VIA
        Via is a general header field is used by gateways and the proxies which indicates an intermediate protocols and also recipients. It is intended as a tracking messages forwards, also avoiding the request loops  and identifying the capabilities of the protocol of any of the sender in the request chain and also in response chain.  It is also used to provide a simple system for a transition from HTTP/1.1 to any other incompatible protocol. The syntax for Via header field is:
-Via : ì1#( received-protocol received-by [ comment ] )î
+Via : ‚Äú1#( received-protocol received-by [ comment ] )‚Äù
 
 
 * WARNING
-       Warning is a general header fields that is usually used to carry the additional information which is about the status of a message that shouldnít be reflected in the message. It is typically used to warn about the possible lack of the semantic transparency from the caching operations that is applied to the entity-body of a message. The syntax for Warning header fields is:
-       Warning : ì1#warning-valueî
+       Warning is a general header fields that is usually used to carry the additional information which is about the status of a message that shouldn‚Äôt be reflected in the message. It is typically used to warn about the possible lack of the semantic transparency from the caching operations that is applied to the entity-body of a message. The syntax for Warning header fields is:
+       Warning : ‚Äú1#warning-value‚Äù
 
 
 * REQUEST HEADER FIELDS
