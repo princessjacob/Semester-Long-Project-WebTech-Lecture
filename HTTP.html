@@ -1,31 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
 <head>
-<title> WebTek</title>
+<title> HTTP </title>
 
 </head>
 
 <body>
 
-<header align="center">Web Systems and Technologies</header>
-
-<nav>
-  <ul>
-	<li><a href="Home.html">Home</a></li>
-  <li><a href="HTML.html">HTML</a></li>
-  <li><a href="SSS.html">Server Side Scripting</a></li>
-  </ul>
-</nav>
+<header>Web Systems and Technologies</header>
 
 <article>
   <h1>HTTP</h1>
-	<p> - Application layer used primarily to retrieve hypertext (on hypermedia) documents and resources on the World Wide Web</p>
-    <p> - Jointly developed by the <b>W3C (World Wide Web Consortium)</b> and the <b>IETF (Internet Engineering Task Force)</b> .</p>
+    <p> - The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, and hypermedia information systems.
+    <p> - HTTP is the foundation of data communication for the World Wide Web.
+  	<p> - Application layer used primarily to retrieve hypertext (on hypermedia) documents and resources on the World Wide Web
+    <p> - Development of HTTP was initiated by <b>Tim Berners-Lee</b> at <b>CERN</b> in 1989.
+    <p> - Jointly developed by the <b>W3C (World Wide Web Consortium)</b> and the <b>IETF (Internet Engineering Task Force)</b>.
   <h1>HTTP Version History</h1>
-    <p>1.<a href="https://www.w3.org/Protocols/HTTP/AsImplemented.html">HTTP 0.9</a></p>
-    <p>2.<a href="https://www.w3.org/Protocols/HTTP/1.0/spec.html">HTTP 1.0</a></p>
-    <p>3.<a href="https://www.w3.org/Protocols/rfc2616/rfc2616.html">HTTP 1.1</a></p>
-    <p>4.<a href="https://tools.ietf.org/html/rfc7540">HTTP 2</a></p>
+    <p>1. <u>HTTP 0.9 : The One-Line Protocol</u>
+      <ul>
+        <p>The original HTTP proposal by Tim Berners-Lee was designed with simplicity in mind as to help with the adoption of his other nascent idea: the World Wide Web. The strategy appears to have worked: aspiring protocol designers, take note.
+        <br>
+        <p>In 1991, Berners-Lee outlined the motivation for the new protocol and listed several high-level design goals: file transfer functionality, ability to request an index search of a hypertext archive, format negotiation, and an ability to refer the client to another server. To prove the theory in action, a simple prototype was built, which implemented a small subset of the proposed functionality:
+            <ul>
+              <li>Client request is a single ASCII character string.
+              <li>Client request is terminated by a carriage return (CRLF).
+              <li>Server response is an ASCII character stream.   
+              <li>Server response is a hypertext markup language (HTML).
+              <li>Connection is terminated after the document transfer is complete. 
+            </ul>
+      </ul>
+    <p>2. <u>HTTP 1. : Rapid Growth and Informational RFC</u>
+       <ul>
+        <p>The period from 1991 to 1995 is one of rapid coevolution of the HTML specification, a new breed of software known as a "web browser," and the emergence and quick growth of the consumer-oriented public Internet infrastructure.
+        <br>
+        <p>The growing list of desired capabilities of the nascent Web and their use cases on the public Web quickly exposed many of the fundamental limitations of HTTP 0.9: we needed a protocol that could serve more than just hypertext documents, provide richer metadata about the request and the response, enable content negotiation, and more. In turn, the nascent community of web developers responded by producing a large number of experimental HTTP server and client implementations through an ad hoc process: implement, deploy, and see if other people adopt it.
+        <br>
+        <p>The preceding exchange is not an exhaustive list of HTTP/1.0 capabilities, but it does illustrate some of the key protocol changes:
+            <ul>
+              <li>Request line with HTTP version number, followed by request headers
+              <li>Response status, followed by response headers.
+              <li>Request may consist of multiple newline separated header fields.
+              <li>Response object is prefixed with a response status line.
+              <li>Response object has its own set of newline separated header fields.
+              <li>Response object is not limited to hypertext.
+              <li>The connection between server and client is closed after every request.
+            </ul>
+        <p>Both the request and response headers were kept as ASCII encoded, but the response object itself could be of any type: an HTML file, a plain text file, an image, or any other content type. Hence, the "hypertext transfer" part of HTTP became a misnomer not long after its introduction. In reality, HTTP has quickly evolved to become a hypermedia transport, but the original name stuck.
+        <br>
+        <p>In addition to media type negotiation, the RFC also documented a number of other commonly implemented capabilities: content encoding, character set support, multi-part types, authorization, caching, proxy behaviors, date formats, and more.
+      </ul>
+    <p>3. <u>HTTP 1.1 : Internet Standard</u>
+        <p>The work on turning HTTP into an official IETF Internet standard proceeded in parallel with the documentation effort around HTTP/1.0 and happened over a period of roughly four years: between 1995 and 1999. In fact, the first official HTTP/1.1 standard is defined in RFC 2068, which was officially released in January 1997, roughly six months after the publication of HTTP/1.0. Then, two and a half years later, in June of 1999, a number of improvements and updates were incorporated into the standard and were released as RFC 2616.
+        <br>
+        <p>The HTTP/1.1 standard resolved a lot of the protocol ambiguities found in earlier versions and introduced a number of critical performance optimizations: keepalive connections, chunked encoding transfers, byte-range requests, additional caching mechanisms, transfer encodings, and request pipelining.
+        <br>
+        <p>With these capabilities in place, we can now inspect a typical HTTP/1.1 session as performed by any modern HTTP browser and client:
+        <br>
+            <ul>
+              <li>Request for HTML file, with encoding, charset, and cookie metadata
+              <li>Chunked response for original HTML request
+              <li>Number of octets in the chunk expressed as an ASCII hexadecimal number (256 bytes)
+              <li>End of chunked stream response
+              <li>Request for an icon file made on same TCP connection
+              <li>Inform server that the connection will not be reused
+              <li>Icon response, followed by connection close
+            </ul>
+        <p>Additionally, the HTTP/1.1 protocol added content, encoding, character set, and even language negotiation, transfer encoding, caching directives, client cookies, plus a dozen other capabilities that can be negotiated on each request.
+    <p>4. <u>HTTP 2 : Improving Transport Performance</u>
+        <p>The primary focus of HTTP/2 is on improving transport performance and enabling both lower latency and higher throughput. The major version increment sounds like a big step, which it is and will be as far as performance is concerned, but it is important to note that none of the high-level protocol semantics are affected: all HTTP headers, values, and use cases are the same.
   <h1>HTTP Fundamentals</h1>
   <ul>
     <li>HTTP typically runs on top of TCP/IP using TCP port 80 by default (TCP port 443 for HTTPS)
@@ -74,12 +117,61 @@
         <li>etc.
       </ul>
     <li>
-  <h1>HTTP Request Methods</h1>   
+  <h1>HTTP Request Methods</h1>  
+   <ul>
+        <li>GET
+          <ul>
+            <li>Most commonly used HTTP Method
+            <li>Used to request from the server the retrieval of the source identified by the request URI; the retrieved resource is returned in the message body as an entity.
+            <li>Can be combined with conditional and/or range request headers to effect conditional and/or partial resource retrieval.
+            <li>Must be supported by all general-purpose servers.
+          </ul>
+        <li>HEAD
+          <ul>
+            <li>Identical to GET, except the message body is not included in the response
+          </ul>
+        <li>POST
+          <ul>
+            <li>Request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line.
+          </ul>
+        <li>OPTIONS
+          <ul>
+            <li>Request for information about the communication options available on the request/response chain identified by the Request-URI. This method allows the client to determine the options and/or requirements associated with a resource, or the capabilities of a server, without implying a resource action or initiating resource retrieval.
+          </ul>
+        <li>TRACE
+          <ul>
+            <li>Request the server to “echo” back to the client the received request.
+            <li>Typically used for testing/diagnostics of the request chain.
+          </ul>
+        <li>PUT
+          <ul>
+            <li>Request the server to store the enclosed entity in the message under the specified request URI.
+          </ul>
+        <li>DELETE
+          <ul>
+            <li>Request the server to delete the resource identified by the request URI.
+          </ul>
+        <li>CONNECT
+          <ul>
+            <li>Reserved for use of tunneling proxy servers.
+          </ul>
+      </ul>
   <h1>HTTP Response Message</h1>
-  <h1>HTTP Status Codes</h1>
-	
-    <a href="#top">Go to top</a>
+    <ul>
+      <li>Status line
+          <ul>
+            <li>HTTP Protocol version
+            <li><a href = "statuscode.html">Status Code</a>
+            <li>Reason Phrase
+          </ul>
+        </li>
+      <li><a href = "responseheaders.html">Response Headers</a>
+      <li>Empty line
+      <li>Message Body
+    </ul>
+
 </article>
+<a href="#top">Go to top</a>
 
 <footer> WebTek @ 2017 &copy;</footer>
 
