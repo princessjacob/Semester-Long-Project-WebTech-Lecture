@@ -1,6 +1,6 @@
 Computer network or network is well-defined as a group or collection of computer systems that are linked together. It is also called the data network.  It is the series of nodes, physical device, that is interconnected by communication paths in order to transmit, receive and exchange data voice and video traffic.
 There are some network characteristics:
-a. TOPOLOGY – it is the geometric sequence of the computer system. 
+a. TOPOLOGY â€“ it is the geometric sequence of the computer system. 
 b. PROTOCOL -  it is the set or rules and signals in which the computers on a network can communicate.
 c. ARCHITECTURE -  can be broadly classified as peer-to-peer or client/server architecture. 
 
