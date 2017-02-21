@@ -1,0 +1,6 @@
+URL
+URL or Uniform Resource Locator is a type of URI or Uniform Resource Identifier. URL is also termed as “web address”. URL is used to locate a resource on the web. It has four components which are the scheme or protocol identifier, host or resource owner or domain name, the path, and the query strings. Example is the www.inquirer.net “www” is the protocol identifier or scheme, “inquirer” is the domain name, and “net” is the domain extension. A path of a URL identifies a certain resource in the host that the client/user wants to access . The query strings can be seen after the component of the path. It simply shows the word that is contained on the string that the client inputted. URL is always in lowercase and it doesn’t contain space. Most URLs starts in http:// and others starts with https:// which means it is secured. Some of the URLs contains “?” or question mark especially when a URL is too long. The question mark is a sign that it is the end of the domain and and it is where the parameter list begins.  
+References:
+Beal, V. (n.d.). URL - Uniform Resource Locator. Retrieved February 21, 2017, from http://www.webopedia.com/TERM/U/URL.html
+
+IBM Knowledge Center. (n.d.). Retrieved February 21, 2017, from http://www.ibm.com/support/knowledgecenter/SSGMCP_5.2.0/com.ibm.cics.ts.internet.doc/topics/dfhtl_uricomp.html
