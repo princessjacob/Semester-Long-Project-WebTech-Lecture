@@ -1,4 +1,5 @@
 HTTP REQUEST METHODS
+- The HTTP REQUEST METHODS are commonly used to specify a certain action for a given resource. While commonly nouns, they are referred to as HTTP verbs. The most commonly used methods are the POST, GET, PUT, PATCH and DELETE, which corresponds with CRUD(create, read, update and delete). 
 
 STANDARD METHODS
 
