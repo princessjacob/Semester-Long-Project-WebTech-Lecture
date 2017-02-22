@@ -21,10 +21,23 @@ name and password, separated by a colon, followed by an at symbol (@).
 as a sequence of segments separated by slashes.
 - Query
    -Separated from the preceding part by a question mark (?), query string of non-hierarchical data. 
-Its syntax is not well defined, but by convention is most often a sequence of attribute–value pairs separated by 
+Its syntax is not well defined, but by convention is most often a sequence of attributeâ€“value pairs separated by 
 a delimiter.
 - Fragment Identifier
    -It provides direction to a secondary resource, such as 
 a section heading in an article identified by the remainder of the URI.
 a fragment identifier providing direction to a secondary resource, such as 
 a section heading in an article identified by the remainder of the URI. 
+
+References:
+Uniform Resource Identifier. (n.d.). Retrieved from: https://en.wikipedia.org/
+wiki/Uniform_Resource_Identifier
+
+Uri.Authority Property (System). (n.d.). Retrieved from: https://
+msdn.microsoft.com/en-us/library/system.uri.authority(v=vs.110).aspx
+
+Uri.Host Property. (n.d.). Retrieved from: https://msdn.microsoft.com/en-us/
+library/system.uri.host(v=vs.110).aspx
+
+Uri.Port Property. (n.d.). Retrieved from: https://msdn.microsoft.com/en-us/
+library/system.uri.port(v=vs.110).aspx
