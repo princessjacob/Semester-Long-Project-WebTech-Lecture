@@ -1,0 +1,9 @@
+HTTP REQUEST MESSAGE
+	a.    STATUS LINE/REQUEST LINE: begins with a method token, followed by the Request-URI and the protocol version, and ending with CRLF. The elements are separated by SP characters. No CR or LF is allowed	except in the final CRLF sequence. 
+	b. HTTP PROTOCOL
+	c. REASON PHRASE: intended to give a short textual description of the Status-Code.
+	d. MESSAGE HEADERS: request-header fields allow the client to pass additional information about the request, and about the client itself, to the server.
+	e. EMPTY LINE: a line with nothing preceding the CRLF) indicating the end of the header fields, and possibly a message-body.
+	f. MESSAGE BODY: an HTTP message is used to carry the	entity-body associated with the request or response.
+	g. PAYLOAD: The payload body is obtained from the	message-body by decoding any Transfer-Encoding that might have been applied to ensure safe and proper	transfer of the message. Usually, used for POST and PUT method.
+	h. CONTENT-TYPE: entity header is used to indicate the media type of the resource.
