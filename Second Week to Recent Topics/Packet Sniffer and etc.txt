@@ -1,0 +1,19 @@
+(GLOSSARY - TYPE TOPICS)
+
+Packet Sniffer
+	* A computer program or piece of computer hardware that can intercept and log traffic that passes over a digital	 network or part of a network.
+IANA (Internet Assigned Numbers Authority)
+	* controls numbers for protocols, the Country Code Top Level Domains and maintains the IP Address allotments.
+Socket
+	* one endpoint of a two-way communication link between two programs running on the network.
+Digital Certificates
+	* verify that a user sending a message is who he or she claims to be, and to provide the receiver with the means	to encode a reply.
+
+Web Crawlers/ Web Spiders
+	* sometimes called a spider, is an Internet bot which systematically browses the World Wide Web, typically for the purpose of Web indexing (web spidering).
+Servers: Origin and Proxy
+	* ORIGIN: A Web server that contains the original Web page. 
+	* PROXY: a server that acts as an intermediary for requests from clients seeking resources from other servers.
+HTTP Traffic
+	* amount of data sent and received by visitors to a website.
+
