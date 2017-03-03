@@ -1,0 +1,22 @@
+HTTP (Hypertext transfer protocol)
+
+DEFINITION
+	* An application protocol for distributed, collaborative,and hypermedia information systems.
+	* HTTP is the foundation of data communication for the 	World Wide Web.
+	* Development of HTTP was initiated by Tim Berners-Lee at CERN in 1989.
+	* Jointly developed by the W3C (World Wide Web Consortium) and the IETF (Internet Engineering Task Force)
+	* stateless communication protocol
+	* based on client-server architecture
+	* typically runs on port 80
+	* uses a response-request protocol
+
+VERSION HISTORY
+HTTP 0.9 One line Protocol 
+	* The original HTTP proposal by Tim Berners-Lee was	designed with simplicity in mind as to help with the adoption of his other nascent idea: the World Wide Web. The strategy appears to have worked: aspiring protocol designers, take note. 
+	* 1991. Berners-Lee outlined the motivation for the new protocol and listed several high-level design goals: file transfer functionality, ability to request an index search of a hypertext archive, format negotiation, and an ability to refer the client to another server.
+HTTP 1: Rapid Growth and Informational RFC 
+ 	* The period from 1991 to 1995. A new breed of software	known as a "web browser" and the emergence and quick growth of the consumer-oriented public Internet infrastructure. 
+	* They	needed a protocol that could serve more than just	hypertext documents, provide richer metadata about	the request and the response, enable content negotiation, and more. 
+	HTTP 1.1: Internet Standard
+	* This resolved a lot of the protocol ambiguities found in earlier versions and introduced a number of critical performance optimizations: keepalive connections,	chunked encoding transfers, byte-range requests, additional caching mechanisms, transfer encodings, and		 request pipelining.
+	* It also added content, encoding, character set, and even	 language negotiation, transfer encoding, caching directives, client cookies, plus a dozen other capabilities	 that can be negotiated on each request.
