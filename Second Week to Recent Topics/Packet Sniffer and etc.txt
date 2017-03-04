@@ -1,19 +1,39 @@
 (GLOSSARY - TYPE TOPICS)
 
 Packet Sniffer
-	* A computer program or piece of computer hardware that can intercept and log traffic that passes over a digital	 network or part of a network.
+	*  A computer program or piece of computer hardware that can intercept and log traffic that passes over a digital network or part of a network. This is also called a packet analyzer.
+	
 IANA (Internet Assigned Numbers Authority)
 	* controls numbers for protocols, the Country Code Top Level Domains and maintains the IP Address allotments.
+	
 Socket
 	* one endpoint of a two-way communication link between two programs running on the network.
+	
 Digital Certificates
-	* verify that a user sending a message is who he or she claims to be, and to provide the receiver with the means	to encode a reply.
+	* verify that a user sending a message is who he or she claims to be, and to provide the receiver with the means to encode a reply.
 
 Web Crawlers/ Web Spiders
-	* sometimes called a spider, is an Internet bot which systematically browses the World Wide Web, typically for the purpose of Web indexing (web spidering).
+	* sometimes called a spider, is an Internet bot which systematically browses the World Wide Web, typically for the purpose of Web indexing (web spidering). This is often used in an automated manner.
+	
 Servers: Origin and Proxy
 	* ORIGIN: A Web server that contains the original Web page. 
 	* PROXY: a server that acts as an intermediary for requests from clients seeking resources from other servers.
+	
 HTTP Traffic
 	* amount of data sent and received by visitors to a website.
+	
+	
+References:
+Packet Analyzer(n.d.). Retrieved from https://en.wikipedia.org/wiki/Packet_analyzer
+IANA(n.d.). Retrieved from http://www.iana.org/
+Internet Assigned Numbers Authority(n.d.). Retrieved from https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority
+Rouse, M. (n.d.). Network socket. Retrieved from http://whatis.techtarget.com/definition/sockets
+Digital certificate(n.d.). Retrieved from https://www.comodo.com/resources/small-business/digital-certificates-intro.php
+Web crawler(n.d.). Retrieved from https://en.wikipedia.org/wiki/Web_crawler
+Origin server(n.d.). Retrieved from http://www.pcmag.com/encyclopedia/term/48611/origin-server
+Proxy server(n.d.). Retrieved from https://en.wikipedia.org/wiki/Proxy_server
+Web traffic(n.d.). Retrieved from https://en.wikipedia.org/wiki/Web_traffic
+
+
+
 
