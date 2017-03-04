@@ -1,11 +1,11 @@
 INTERNET
 
 DEFINITION
-•	It is the GLOBAL NETWORK OF NETWORKS
-•	short word for INTERNETWORKING or INTERNETWORK
-•	INTER (outside boundaries) + NETWORK (computer network) = 	interconnecting devices
+• This is a global network that connects computer systems across the world, hence the reason why it is the GLOBAL NETWORK OF NETWORKS. It is also the shorten form of the term 'INTERNETWORKING' or 'INTERNETWORK'. 
+• A massive network infrastructure supporting different networks.
 
-A LITTLE BIT OF HISTORY
+
+HISTORY
 •	1961. A first paper about Packet Switching.
 •	1964. The first book about Packet Switching is created.
 •	1965. Merill and Roberts connected TX-2 computer in Mass. to the Q-32 in California with a low speed dial-up telephone line creating the first (however small) wide-area computer network ever built.
@@ -26,9 +26,25 @@ A LITTLE BIT OF HISTORY
 •	1991. The NSF allowed commercial enterprises to use the Internet for the first time.
 •	1994. Jeff Bezos founded Amazon. A whole new world of e-commerce was born.
 •	1995. The NSF ceased funding the Internet altogether, leaving it a completely self-sustaining industry. 
-•	From Arpanet and Information Superhighway to becoming a globalization enabler and a major driver behind the outsourcing industry, the Internet has seen one transformation and expansion after another. Where it will head next is anyone’s guess. But you can be sure that great minds everywhere are hard at work on it.
+
 •	MEN BEHIND INTERNET: Barry M. Leiner, Vinton G. Cerf, David D. Clark, Robert E. Kahn, Leonard Kleinrock, Daniel C. Lynch, Dr. Lawrence G. Roberts, Stephen Wolff
 
+Uses of the Internet Today:
+- Communication
+- Research
+- Education
+- Financial Transaction
+- Real Time Updates
+- Leisure
+- Online Booking
+- Job Search
+- Blogging
+- Shopping
+
+
 Reference: 
-http://intetics.com/blog/a-simple-history-of-the-internet/
-http://www.internetsociety.org/internet/what-internet/history-internet/brief-history-internet
+Rouse, M.(n.d.). Internet. Retrieved from http://searchwindevelopment.techtarget.com/definition/Internet
+Christensson, P. (2015, September 17). Internet Definition. Retrieved from https://techterms.com
+Beal, V.(n.d.). Internet. Retrieved from http://www.webopedia.com/TERM/I/Internet.html
+Intetics Inc. (2014).  A simple history of the internet. Retrieved from http://intetics.com/blog/a-simple-history-of-the-internet/
+Leiner, et.al. (n.d.). Brief History of the Internet. Retrieved from http://www.internetsociety.org/internet/what-internet/history-internet/brief-history-internet
