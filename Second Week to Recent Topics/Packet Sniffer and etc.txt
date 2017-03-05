@@ -1,28 +1,28 @@
 (GLOSSARY - TYPE TOPICS)
 
 Packet Sniffer
-	*  A computer program or piece of computer hardware that can intercept and log traffic that passes over a digital network or part of a network. This is also called a packet analyzer.
-	
+	*  A computer program or hardware that can intercept and log traffic that passes over a digital network or part of a network. This is also called a packet analyzer.
+
 IANA (Internet Assigned Numbers Authority)
-	* controls numbers for protocols, the Country Code Top Level Domains and maintains the IP Address allotments.
-	
-Socket
-	* one endpoint of a two-way communication link between two programs running on the network.
-	
+	* IANA is a department of ICANN( Internet Corporation for Assigned Names and Numbers) and is tasked to control numbers for protocols, the Country Code Top Level Domains and maintains the IP Address allotments.
+
+Socket / Network Socket
+	* Socket is a one endpoint of a two-way communication link between two programs running on the network.
+
 Digital Certificates
-	* verify that a user sending a message is who he or she claims to be, and to provide the receiver with the means to encode a reply.
+	* Digital certificates are used to verify that a user sending a message is who he or she claims to be, and to provide the receiver with the means to encode a reply.
 
 Web Crawlers/ Web Spiders
-	* sometimes called a spider, is an Internet bot which systematically browses the World Wide Web, typically for the purpose of Web indexing (web spidering). This is often used in an automated manner.
-	
+	* Web crawlers, sometimes called a spider, is an Internet bot which systematically browses the World Wide Web. Web spiders are typically for the purpose of Web indexing (web spidering). This is often used in an automated manner.
+
 Servers: Origin and Proxy
-	* ORIGIN: A Web server that contains the original Web page. 
-	* PROXY: a server that acts as an intermediary for requests from clients seeking resources from other servers.
-	
+	* ORIGIN: A Web server that contains the original Web page.
+	* PROXY: A server that acts as an intermediary for requests from clients seeking resources from other servers.
+
 HTTP Traffic
-	* amount of data sent and received by visitors to a website.
-	
-	
+	* The amount of data sent and received by visitors to a website.
+
+
 References:
 Packet Analyzer(n.d.). Retrieved from https://en.wikipedia.org/wiki/Packet_analyzer
 IANA(n.d.). Retrieved from http://www.iana.org/
