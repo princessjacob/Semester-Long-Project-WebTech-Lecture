@@ -35,6 +35,10 @@ Content media type
 https://msdn.microsoft.com/en-us/library/ms526938(v=exchg.10).aspx
 
 Language and Character set specification
+  HTTP has support for multiple languages and different character set specifications, this is to allow more flexibility to the different languages and character set specifications used in HTTP Requests Headers.
+  
+ Reference:
+  J. Reschke(2010). RFC 5987. Retrieved from https://tools.ietf.org/html/rfc5987
 
 Content/Transfer codings
 The values of content codings indicates an transformation of encoding that has been or can be applied to an entity. It is the same with transfer codings but with an explanation for the applied encoding transformation, it is to ensure the safe transport through network. The difference between content and transfer coding is that transfer coding is the property of the message not property of the original entity.
@@ -48,7 +52,7 @@ Content negotiation. (n.d.). Retrieved March 03, 2017, from https://developer.mo
 M. (n.d.). Content Negotiation in ASP.NET Web API. Retrieved March 03, 2017, from https://docs.microsoft.com/en-us/aspnet/web-api/overview/formats-and-model-binding/content-negotiation
 
 Persistent Connections
-Persistent connection is also called as ìHTTP keep-aliveî or connection reuse. Persistent connection offers some advantages such as being network friendly, reduced latency on subsequent request and etc. Keep-alive or persistent connection is also considered as deprecated since it is no longer included in the HTTP1.1 specification. Persistent connections just requests to keep a connection alive.
+Persistent connection is also called as ‚ÄúHTTP keep-alive‚Äù or connection reuse. Persistent connection offers some advantages such as being network friendly, reduced latency on subsequent request and etc. Keep-alive or persistent connection is also considered as deprecated since it is no longer included in the HTTP1.1 specification. Persistent connections just requests to keep a connection alive.
 Reference:
 Persistent Connections. (n.d.). Retrieved March 03, 2017, from http://docs.oracle.com/javase/7/docs/technotes/guides/net/http-keepalive.html
 
