@@ -1,0 +1,43 @@
+HTML
+
+HTML or HyperText Markup Language was developed by Tim Berners-Lee in 1990. Web pages are made up of HTML. HTML is composed of tags, such as <body>, <title>, <head> and etc. HTML tags are composed of opening and closing tags . Opening tag starts with a less than angle bracket, attribute name and a greater than angle bracket. A closing tag also starts with a less than angle bracket, forward slash, attribute name, and lastly a greater than angle bracket.
+HTML is also consist of links that connects web pages to one another. 
+Example of a HTML file below:
+<html>
+<head>
+<title> Sample HTML </title>
+<body>This is a HTML file</body>
+</head>
+</html>
+
+References:
+
+HTML. (n.d.). Retrieved March 05, 2017, from https://developer.mozilla.org/en-US/docs/Web/HTML
+
+What is HTML (HyperText Markup Language)? (n.d.). Retrieved March 05, 2017, from http://www.computerhope.com/jargon/h/html.htm
+
+CSS
+
+CSS or Cascading Style Sheets is used to control the design of a web page. It is used in formatting the style or design of the elements/ attributes that has been implemented in the html. In other words, CSS instructs the content of a webpage on how should it look. Example of CSS below:
+
+body {
+font-family: Times New Roman;
+color: red;
+font-size: 16px;
+}
+
+References:
+
+Kirkwood, A. (2005, June 3). Definition: Cascading style sheets (CSS), stylesheet, styles, specifications. Retrieved March 5, 2017, from http://www.motive.co.nz/glossary/stylesheets.php
+
+Posted, & Rouse, M. (2015, October 9). What is cascading style sheet (CSS)? - definition from WhatIs.Com. Retrieved March 5, 2017, from http://searchmicroservices.techtarget.com/definition/cascading-style-sheet-CSS
+
+WWW
+
+WWW or World Wide Web was designed by Tim Berners-Lee in 1991 while he was working at CERN as a contractor. It is where internet resources are located such as media files, cites and etc. that can be accessed or search by users by using a web browser like Firefox, Google Chrome and many more. 
+
+References:
+
+Divestopedia, & Institute, S. (2017). What is the world wide web (WWW)? - definition from Techopedia. Retrieved March 5, 2017, from https://www.techopedia.com/definition/5217/world-wide-web-www
+
+What is the world wide web (WWW)? Definition and meaning (2017). In . BusinessDictionary.com. Retrieved from http://www.businessdictionary.com/definition/World-Wide-Web-WWW.html
