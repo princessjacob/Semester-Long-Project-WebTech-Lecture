@@ -1,0 +1,7 @@
+DOM (Document Object Model)
+ * This defines a logical document structure that shows how a document is accessed and manipulated. 
+ * It can also be called a programming API for documents because it closely resembles a structure of the document that it models.
+ i.e. <p> <img> text </p>
+ 
+ References:
+ Hégaret, et. al. What is the Document Object Model?. Retrieved from https://www.w3.org/TR/DOM-Level-2-Core/introduction.html
