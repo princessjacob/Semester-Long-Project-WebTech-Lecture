@@ -1,0 +1,43 @@
+=====================
+Two Types of Rendering
+1) Standards - Rendering on browsers is consistent.
+2) Quirks - Each browser renders the page on their own way. i.e. A placing of an image may look different in Firefox and Internet Explorer
+
+
+=====================
+Bad Practices in HTML and CSS | Tips
+* Before, HTML documents include inline styles or simply place them on a head element. But nowadays, there is a commonly used ideology and that is:
+1) HTML will only focus on structure and content.
+2) CSS  will only focus on presentational and aesthetics.
+3) JAVASCRIPT is only focused on behavioral aspects.
+
+* Why should we stop these bad practices?
+    Not everyone who uses the web is abled, and with that considerations, people usually uses a web helper to read for them. Using the bad practices usually makes it easy to misunderstand what your content really is.
+
+* Here are common bad practices and tips on how to deal with it:
+1) The common use of the <br> element as empty lines between paragraphs:
+    - The <br> element is only used to separate content with different themes. It shouldn't be used as an empty line between paragraphs, using it that way would make it seem like it's used for design instead for structuring content.
+
+    TIP: In cases of br inside a <p> tag: Simply enclose each paragraphs in tags and that will make the empty line for you. If you need to style the spacing between paragraphs, use CSS for it.
+
+2) The use of the table element for design.
+    - The table element should only be used to keep textual data and not used as a gallery or for design purposes.
+
+    TIP: Use CSS to create a gallery, there are frameworks out there that can be used for it such as Bootstrap Carousel.js,Gallery.css and etc. Aside from that you can also use elements such as grid, flex, and float.
+
+3) Using the div as placeholders for nav, headers, footers and etc.
+    - HTML 4.0 didn't introduce a nav, headers and footers property before so the commonly used format is to make such as a class for div. However, HTML 5 introduced the following.
+
+    TIP: Use proper tags for HTML and not used it as classes in divs.
+
+4) The improper use of special characters.
+    TIP: Using special characters will only make it serve presentational purposes. Instead use them only when needed. For example when you need to use a greater than and a less than symbol for when used in alphabet, it might be rendered differently than expected.
+    A list of special characters can be found here. (http://www.htmlhelp.com/reference/html40/entities/special.html)
+
+
+
+
+
+========
+TIPS
+1) The DOCTYPE element is important, this is because it will tell the browser to render the HTML page in standards mode.
