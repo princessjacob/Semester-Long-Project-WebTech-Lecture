@@ -6,7 +6,7 @@ DEFINITION
 	* Development of HTTP was initiated by Tim Berners-Lee at CERN in 1989.
 	* Jointly developed by the W3C (World Wide Web Consortium) and the IETF (Internet Engineering Task Force)
 	* HTTP is stateless communication protocol, which means that it doesn't take information about clients in between request. 
-	* This is based on client-server architecture or a request-response standard, wherein the clients sends an HTTP request to a server and the server replies with a response message.
+	* This is based on client(i.e. Web browsers, web crawlers, email clients, other end user tools and applications)-server(i.e.Origin servers, proxy servers, gateways, tunnels) architecture or a request-response standard, wherein the clients sends an HTTP request to a server and the server replies with a response message.
 	* HTTP typically runs on top of TCP/IP using port 80 by default while port 443 for HTTPS.
 
 VERSION HISTORY
