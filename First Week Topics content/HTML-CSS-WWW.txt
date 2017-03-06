@@ -1,6 +1,6 @@
 HTML
 
-HTML or HyperText Markup Language was developed by Tim Berners-Lee in 1990. Web pages are made up of HTML. HTML is composed of tags, such as <body>, <title>, <head> and etc. HTML tags are composed of opening and closing tags . Opening tag starts with a less than angle bracket, attribute name and a greater than angle bracket. A closing tag also starts with a less than angle bracket, forward slash, attribute name, and lastly a greater than angle bracket.
+HTML or HyperText Markup Language was proposed by Tim Berners-Lee in 1989 and was developed in 1990. HTML is the presentational aspect/ aesthetic of a web page. Web pages are made up of HTML. HTML is composed of tags, such as <body>, <title>, <head> and etc. HTML tags are composed of opening and closing tags . Opening tag starts with a less than angle bracket, attribute name and a greater than angle bracket. A closing tag also starts with a less than angle bracket, forward slash, attribute name, and lastly a greater than angle bracket.
 HTML is also consist of links that connects web pages to one another. 
 Example of a HTML file below:
 <html>
@@ -34,8 +34,7 @@ Posted, & Rouse, M. (2015, October 9). What is cascading style sheet (CSS)? - de
 
 WWW
 
-WWW or World Wide Web was designed by Tim Berners-Lee in 1991 while he was working at CERN as a contractor. It is where internet resources are located such as media files, cites and etc. that can be accessed or search by users by using a web browser like Firefox, Google Chrome and many more. 
-
+WWW or World Wide Web was designed by Tim Berners-Lee in 1989 and was released in 1991 while he was working at CERN as a contractor. Tim-Berners Lee who is a European was considered as father of WWW. It is an information system that allows documents to be connected to other documents. It is where internet resources are located such as media files, cites and etc. that can be accessed or search by users by using a web browser like Firefox, Google Chrome and many more. 
 References:
 
 Divestopedia, & Institute, S. (2017). What is the world wide web (WWW)? - definition from Techopedia. Retrieved March 5, 2017, from https://www.techopedia.com/definition/5217/world-wide-web-www
