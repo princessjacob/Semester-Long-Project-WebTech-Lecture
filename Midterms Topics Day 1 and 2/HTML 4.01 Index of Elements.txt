@@ -1,0 +1,154 @@
+*Structural Level Tags
+	-It structure the document instead of the content
+1.Basic Structural Tags
+	1.<body> - contains all the contents of an HTML document, text, hyperlinks, images, tables, lists, etc.
+	2.<head> - container for all the head elements (title for the document, scripts, styles, meta information, etc.)
+	3.<html> - it tells the browser taht it is an html document
+2.Header Tags
+	1.<base> - specify a base URI or URL for relative links
+	2.<isindex> - obsolete HTML element that puts a text field in a page for querying the document
+	3.<link> - used to link to external style sheets
+	4.<meta> - used to specify page description, keywords, author of the document, last modified, and other metadata
+	5.<script> - used to define a client-side script (JavaScript)
+	6.<style> - used to define style information for an HTML document
+	7.<title> - defines a title in the browser toolbar
+3.Frame Tags
+	1.<frame> - used to divide your browser window into multiple sections
+	2.<frameset> - collections of frame in the browser window
+	3.<noframes> - used to link to a non-frameset version of the web site
+
+*Block Level Tags
+1.Basic Block Level Tags
+	1.<address> - defines the contact information for the author/owner of a document or an article
+	2.<blockquote> - used for indicating long quotations
+	3.<center> - used to center-align text
+	4.<div> - used to group block-elements to format them with CSS
+	5.<h1> - used to be the title of a post, to emphasize text on the page. It is also the most important heading
+	6.<h2> - used to indicate a heading whose level of importance is exceeded only by h1
+	7.<h3> - used to indicate a heading whose level of importance is exceeded by h1 and h2
+	8.<h4> - used to indicate a heading whose level of importance is exceeded by h1, h2, and h3
+	9.<h5> - used to indicate a heading whose level of importance is exceeded by h1, h2, h3 and h4
+	10.<h6> - used to define heading levels (Table of Contents). It is also the least important heading
+	11.<hr> - represent a horizontal rule
+	12.<isindex> - obsolete HTML element that puts a text field in a page for querying the document. 
+It is also both Structural Level and Block Level Tags
+	13.<p> - used to define the HTML paragraph element
+	14.<pre> - defines preformatted text
+2.List Tags
+	1.<dd> - used to describe a term/name in a description list
+	2.<dir> - used to list directory titles
+	3.<dl> - defines a description list
+	4.<dt> - defines a term/name in a description list
+	5.<li> - used for specifying a list item in ordered, unordered, directory and menu lists
+	6.<menu> - defines a list/menu of commands
+	7.<ol> - defines an ordered list, it can be numerical or alphabetical
+	8.<ul> - defines an unordered list (bulleted)
+3.Form Tags
+	1.<fieldset> - used for grouping related form elements
+	2.<form> - used to create an HTML form for user input
+	3.<legend>
+	4.<optgroup>
+	5.<option>
+4.Table Tags
+	1.<caption>
+	2.<col>
+	3.<colgroup>
+	4.<table>
+	5.<tbody>
+	6.<td>
+	7.<tfoot>
+	8.<th>
+	9.<thead>
+	10.<tr>
+
+*Text Level Tags
+1.Text Markup Tags
+	1.<b>
+	2.<big>
+	3.<i<
+	4.<s<
+	5.<small>
+	6.<strike>
+	7.<tt>
+	8.<u>
+2.Phrase Markup Tags
+	1.<abbr>
+	2.<acronym>
+	3.<cite>
+	4.<code>
+	5.<del>
+	6.<dfn>
+	7.<em>
+	8.<ins>
+	9.<kbd>
+	10.<samp>
+	11.<strong>
+	12.<var>
+3.Special Markup Tags
+	1.<a>
+	2.<applet>
+	3.<basefont>
+	4.<bdo>
+	5.<br>
+	6.<font>
+	7.<iframe>
+	8.<img>
+	9.<nonscript>
+	10.<object>
+	11.<param>
+	12.<q>
+	13.<script>
+	14.<span>
+	15.<sub>
+	16.<sup>
+4.Client-side Image Map Tags
+	1.<area>
+	2.<map>
+5.Form Control Text Tags
+	1.<button>
+	2.<input>
+	3.<label>
+	4.<select>
+	5.<textarea>
+
+
+
+
+References:
+Hernandez, G. (2015, March 3). Tags by Category. Retrieved from: http://www.georgehernandez.com/h/xComputers/HTML/TagsByCategory.asp
+HTML <body> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_body.asp
+HTML <head> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_head.asp
+HTML <html> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_html.asp
+HTML <base> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_base_tag.htm
+<isindex>. (2016, April 21). Retrieved from: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/isindex
+HTML <link> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_link.asp
+HTML <meta> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_meta.asp
+HTML <script> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_script.asp
+HTML <style> Tag. (n.d.) Retrieved from: https://www.w3schools.com/tags/tag_style.asp
+HTML <title> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_title.asp
+HTML Frames. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_frames.htm
+HTML <noframes> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_noframes.asp
+HTML <address> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_address.asp
+HTML <blockquote> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_blockquote_tag.htm
+HTML <center> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_center.asp
+HTML <div> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_div.asp
+How To Write a Header Tag (h1) for SEO. (2014, August 18). Retrieved from: http://pearanalytics.com/blog/2014/how-to-write-a-header-tag-h1-for-seo/
+HTML <h1> to <h6> Tags. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_hn.asp
+h2 (HTML element). (n.d.). Retrieved from: http://reference.sitepoint.com/html/h2
+h3 (HTML element). (n.d.). Retrieved from: http://reference.sitepoint.com/html/h3
+h4 (HTML element). (n.d.). Retrieved from: http://reference.sitepoint.com/html/h4
+h5 (HTML element). (n.d.). Retrieved from: http://reference.sitepoint.com/html/h5
+HTML: <h6> tag. (n.d.). Retrieved from: https://www.techonthenet.com/html/elements/h6_tag.php
+HTML <hr> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_hr.asp
+HTML Paragraph Tag. (n.d.). Retrieved from: http://www.comptechdoc.org/independent/web/html/terms/html-paragraph-tag.html
+HTML <pre> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_pre.asp
+HTML <dd> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_dd.asp
+HTML <dir> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_dir.asp
+HTML <dl> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_dl.asp
+HTML <dt> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_dt.asp
+HTML <li> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_li_tag.htm
+HTML <menu> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_menu.asp
+HTML <ol> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_ol.asp
+HTML <ul> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_ul.asp
+HTML <fieldset> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_fieldset_tag.htm
+HTML <form> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_form.asp
