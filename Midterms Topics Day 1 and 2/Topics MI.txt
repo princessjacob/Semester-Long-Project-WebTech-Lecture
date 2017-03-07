@@ -33,7 +33,10 @@ Bad Practices in HTML and CSS | Tips
 4) The improper use of special characters.
     TIP: Using special characters will only make it serve presentational purposes. Instead use them only when needed. For example when you need to use a greater than and a less than symbol for when used in alphabet, it might be rendered differently than expected.
     A list of special characters can be found here. (http://www.htmlhelp.com/reference/html40/entities/special.html)
+5) Using two forward slashes (//) as comments in css.
+    - The two forward slashes is read by the browser as something invalid so it is best to avoid using it as comments.
 
+    TIP: Use the /* */ block for comments.
 
 
 
@@ -41,3 +44,6 @@ Bad Practices in HTML and CSS | Tips
 ========
 TIPS
 1) The DOCTYPE element is important, this is because it will tell the browser to render the HTML page in standards mode.
+2) Websites should always go with the line of thinking that it should be mobile ready. A site can be mobile ready by the use of frameworks or media queries (if handcoded).
+3) Don't rely on default values set by user agent styles, instea create a Reset.css or download a framework for it. Having this css will help you have a fixed value of comparison once you set something up.
+4)
