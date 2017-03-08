@@ -1,0 +1,51 @@
+INTERNET
+
+DEFINITION
+• This is a global network that connects computer systems across the world, hence the reason why it is the GLOBAL NETWORK OF NETWORKS
+• It is also the shorten form of the term 'INTERNETWORKING' or 'INTERNETWORK'.
+• A massive network infrastructure supporting different networks.
+
+
+HISTORY
+•	1961. A first paper about Packet Switching is published by Leonard Kleinrock at MIT.
+•	1964. The first book about Packet Switching is created.
+•	1965. Merill and Roberts connected TX-2 computer in Mass. to the Q-32 in California with a low speed dial-up telephone line creating the first (however small) wide-area computer network ever built.
+•	1966. Roberts went to DARPA to develop the computer network concept and quickly put together his plan for the "ARPANET"
+•	1967. Roberts plan for the “ARPANET” is published.
+•	1968. An RFQ was released by DARPA for the development of one of the key components, the packet switches called Interface Message Processors (IMP's)
+•	1968. While Frank Heart at Bolt Beranek and Newman (BBN) of the BBN team worked on the IMP's with Bob Kahn playing a major role in the overall ARPANET architectural design, network topology and economics were designed. This was then optimized by Roberts working with Howard Frank and his team at Network Analysis Corporation, and the network measurement system was prepared by Kleinrock's team at UCLA.
+•	1969. BBN installed the first IMP at UCLA and the first host computer was connected.
+•	end of 1969. Four host computers were connected together into the initial ARPANET, and the budding Internet was off the ground.
+•	1970. The Network Working Group (NWG) working under S. Crocker finished the initial ARPANET Host-to-Host protocol, called the Network Control Protocol (NCP).
+•	Period of 1971-1972. The network users finally could begin to develop applications.
+•	1972. Kahn organized a large, very successful demonstration of the ARPANET at the International Computer Communication Conference (ICCC).
+•	1974. The word “Internet” first appeared in print—in a DARPA-published Request for Comments document on TCP/IP, a new set of communications and networking protocols for managing data transmissions on the new system.
+•	1976. Queen Elizabeth of England became the first head of state to send an email. Jimmy Carter followed suit and used email several times while campaigning.
+•	1983. The Domain Name System (DNS) was invented.
+•	1985. The National Science Foundation (NSF) funded construction of Arpanet’s biggest upgrade yet: the NSFNET, a command hub of five supercomputers to serve as highways for all data traffic.
+•	1990. Tim Berners-Lee invented HTML and a text browser, as well as a hypertext graphical user interface (GUI) browser. Then he established the first successful communication between a Hypertext Transfer Protocol client and a server via the Internet.
+•	1991. The NSF allowed commercial enterprises to use the Internet for the first time.
+•	1994. Jeff Bezos founded Amazon. A whole new world of e-commerce was born.
+•	1995. The NSF ceased funding the Internet altogether, leaving it a completely self-sustaining industry.
+
+•	MEN BEHIND INTERNET: Barry M. Leiner, Vinton G. Cerf, David D. Clark, Robert E. Kahn, Leonard Kleinrock, Daniel C. Lynch, Dr. Lawrence G. Roberts, Stephen Wolff
+
+Uses of the Internet Today:
+- Communication
+- Research
+- Education
+- Financial Transaction
+- Real Time Updates
+- Leisure
+- Online Booking
+- Job Search
+- Blogging
+- Shopping
+
+
+Reference:
+Rouse, M.(n.d.). Internet. Retrieved from http://searchwindevelopment.techtarget.com/definition/Internet
+Christensson, P. (2015, September 17). Internet Definition. Retrieved from https://techterms.com
+Beal, V.(n.d.). Internet. Retrieved from http://www.webopedia.com/TERM/I/Internet.html
+Intetics Inc. (2014).  A simple history of the internet. Retrieved from http://intetics.com/blog/a-simple-history-of-the-internet/
+Leiner, et.al. (n.d.). Brief History of the Internet. Retrieved from http://www.internetsociety.org/internet/what-internet/history-internet/brief-history-internet
