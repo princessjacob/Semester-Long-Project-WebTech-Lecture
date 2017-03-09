@@ -1,0 +1,70 @@
+Client Side Scripting
+
+Allows program (i.e. scripts) to be downloaded from a web server and executed in the
+client environment (e.g. browser)
+
+Common client-side scripting technologies
+  -JavaScript
+	-It was invented in 1995 by Brendan Eich and in 1997 it became an ECMA standard.
+It is designed for creating network-centric applications.
+  -ECMAScript 
+	-European Computer Manufacturer's Association. 
+	-It is a subset of JavaScript. 
+	-It is a Standard for a scripting languages
+  -Jscript
+	-Microsoft dialect of the ECMAScript scripting language specification.
+The modern scripting language with a wide variety of applications is the 
+JScript 10.0.
+  -Java Applets
+	-It is a small application which is written in Java or another programming
+language.
+  -ActiveX Controls
+	-It is a component program object that can be re-used by many application
+programs within a computer or among computers in a network.
+  -Flash Animations
+	-It is also called as Flash cartoon. It is an animated film that is created 
+with the Adobe Flash.
+  -Microsoft Silverlight 
+	-Integrates multimedia,graphics,animations, and interactivity into a single 
+run-time environment.
+  -Adobe Integrated Runtime (Adobe AIR)
+	-It is a cross-operating system runtime
+	-It lets the developers combine HTML,JavaScript,Adobe Flash and Flex 
+technologies, and ActionScript
+
+Common uses:
+  -Dynamic (X)HTML
+      -Page embelishments, visual "effects", content generation and manipulation,
+user interaction, document and page navigation
+  -Client-side form data validation
+	-Checking a web form and making sure all the data are complete and correct 
+before sending off to the server.
+
+Common issues:
+  -Browser support
+      -No scripting support
+      -Scripting disabled
+      -Plugin availability
+  -Version incompatibilities, non-standard implementations
+  -Capabilities restrictions
+      -Scripting languages are not for general-purpose programming
+      -E.g. Javascript is restricted by the sandbox execution model and the same origin
+policy
+  -Security risks
+      -Browser implementation defects (e.g. buffer overflows)
+      -E.g. Javascript, cross-site scripting (XSS) or cross-site request forgery
+(XSRF) issues
+      -Malicious ActiveX controls
+
+
+References:
+JavaScript Tutorial. (n.d.). Retrieved from: https://www.w3schools.com/js/
+JavaScript-Overview. (n.d.). Retrieved from: https://www.tutorialspoint.com/javascript/javascript_overview.htm
+What is ECMAScript?. (n.d.). Retrieved from: http://stackoverflow.com/questions/4269150/what-is-ecmascript
+JScript. (n.d.). Retrieved from: https://msdn.microsoft.com/en-us/library/72bd815a(v=vs.100).aspx
+What's the difference between JavaScript and JScript?. (n.d.). Retrieved from: http://stackoverflow.com/questions/135203/whats-the-difference-between-javascript-and-jscript
+http://searchenterprisedesktop.techtarget.com/definition/ActiveX-control
+Flash animation. (2017, February 15). Retrieved from: https://en.wikipedia.org/wiki/Flash_animation
+Microsoft Silverlight. (2017, February 21). Retrieved from: https://en.wikipedia.org/wiki/Microsoft_Silverlight
+Project: Client-Side Form Validation. (n.d.). Retrieved from: https://www.codecademy.com/courses/web-beginner-en-0r6I6/0/1
+ADOBE AIR/FAQ. (n.d.). Retrived from: http://www.adobe.com/products/air/faq.html
