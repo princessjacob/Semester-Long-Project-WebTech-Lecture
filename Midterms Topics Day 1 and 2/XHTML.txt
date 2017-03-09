@@ -1,0 +1,15 @@
+XHTML - Extensible Hypertext Markup Language
+      - Reformulation of XHTML in XML 
+
+Versions
+	- XHTML 1.0 
+	- XHTML 1.1
+	- XHTML 1.2
+	- XHTML 2.0
+	- XHTML 5
+
+XHTML Document Components
+	Document Type Declaration (DOCTYPES)
+		-HTML 4.01 DOCTYPES
+		-XHTML 1.0 DOCTYPES
+	
