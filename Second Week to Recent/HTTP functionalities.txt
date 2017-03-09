@@ -1,0 +1,71 @@
+Cache control
+Cache control is a header field that is used to specify directives. These directives are unidirectional and for caching mechanisms in requests and responses. These directives have an optional argument and case-sensitive. 
+Cache request directives
+- they are used by the client in a HTTP request
+max-age
+max-stale
+no-cache
+no-store
+no-transform
+only-if-cached
+Cache response directives
+- they are used by the client in a HTTP response
+must-revalidate
+no-cache
+no-store
+no-transform
+publin
+private
+proxy-revalidate
+max-age
+s-maxage
+Extension Cache-Control directives
+- these directives are not part of the caching standards document of HTTP.
+immutable
+stale-while-revalidate
+stale-if-error
+
+References:
+Cache-Control. (n.d.). Retrieved March 03, 2017, from https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
+
+Cache-Control HTTP Headers. (n.d.). Retrieved March 03, 2017, from http://condor.depaul.edu/dmumaugh/readings/handouts/SE435/HTTP/node24.html
+
+Content media type
+- this simply describes the type of media that is on the body part of an html file. Example are plain text, image, gif,
+https://msdn.microsoft.com/en-us/library/ms526938(v=exchg.10).aspx
+
+Language and Character set specification
+  HTTP has support for multiple languages and different character set specifications, this is to allow more flexibility to the different languages and character set specifications used in HTTP Requests Headers.
+  
+ Reference:
+  J. Reschke(2010). RFC 5987. Retrieved from https://tools.ietf.org/html/rfc5987
+
+Content/Transfer codings
+The values of content codings indicates an transformation of encoding that has been or can be applied to an entity. It is the same with transfer codings but with an explanation for the applied encoding transformation, it is to ensure the safe transport through network. The difference between content and transfer coding is that transfer coding is the property of the message not property of the original entity.
+Reference:
+http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html
+Content Negotiation
+Content negotiation is the way of showing the different representations or format of a resource within the same URI so user agent or the software who acts on behalf of the user can prescribe which suits best for the user. Example is the language of the user , image format and etc. There are some primary mechanisms for the content negotiation, the accept, accept-charset, accept-encoding, and accept-language. 
+Reference:
+Content negotiation. (n.d.). Retrieved March 03, 2017, from https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation
+
+M. (n.d.). Content Negotiation in ASP.NET Web API. Retrieved March 03, 2017, from https://docs.microsoft.com/en-us/aspnet/web-api/overview/formats-and-model-binding/content-negotiation
+
+Persistent Connections
+Persistent connection is also called as “HTTP keep-alive” or connection reuse. Persistent connection offers some advantages such as being network friendly, reduced latency on subsequent request and etc. Keep-alive or persistent connection is also considered as deprecated since it is no longer included in the HTTP1.1 specification. Persistent connections just requests to keep a connection alive.
+Reference:
+Persistent Connections. (n.d.). Retrieved March 03, 2017, from http://docs.oracle.com/javase/7/docs/technotes/guides/net/http-keepalive.html
+
+Totty, B., Sayer, M., Reddy, S., Aggarwal, A., & Gourley, D. (n.d.). 4.5. Persistent Connections [Book]. Retrieved March 03, 2017, from https://www.safaribooksonline.com/library/view/http-the-definitive/1565925092/ch04s05.html
+
+Request Pipelining
+In request pipelining, we can send request one after another without waiting for the response of every request that has been sent.
+Reference:
+HTTP/1.1: Connections. (n.d.). Retrieved March 03, 2017, from http://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html
+
+Authentication/ Authorization
+HTTP Authentication have some mechanisms named Basic, Digest, and NTLM. In HTTP authentication it controls the access web pages and other web resources. Authentication identifies whether a client have the right to access to a resource.
+References:
+HTTP Authentication | HttpWatch. (n.d.). Retrieved March 03, 2017, from https://www.httpwatch.com/httpgallery/authentication/
+
+Understanding HTTP Authentication. (n.d.). Retrieved March 03, 2017, from https://msdn.microsoft.com/en-us/library/ms789031(v=vs.110).aspx
