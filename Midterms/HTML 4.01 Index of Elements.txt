@@ -1,0 +1,192 @@
+*Structural Level Tags
+	-It structure the document instead of the content
+1.Basic Structural Tags
+	1.<body> - contains all the contents of an HTML document, text, hyperlinks, images, tables, lists, etc.
+	2.<head> - container for all the head elements (title for the document, scripts, styles, meta information, etc.)
+	3.<html> - it tells the browser taht it is an html document
+2.Header Tags
+	1.<base> - specify a base URI or URL for relative links
+	2.<isindex> - obsolete HTML element that puts a text field in a page for querying the document
+	3.<link> - used to link to external style sheets
+	4.<meta> - used to specify page description, keywords, author of the document, last modified, and other metadata
+	5.<script> - used to define a client-side script (JavaScript)
+	6.<style> - used to define style information for an HTML document
+	7.<title> - defines a title in the browser toolbar
+3.Frame Tags
+	1.<frame> - used to divide your browser window into multiple sections
+	2.<frameset> - collections of frame in the browser window
+	3.<noframes> - used to link to a non-frameset version of the web site
+
+*Block Level Tags
+	-Insert a line break before and after itself
+1.Basic Block Level Tags
+	1.<address> - defines the contact information for the author/owner of a document or an article
+	2.<blockquote> - used for indicating long quotations
+	3.<center> - used to center-align text
+	4.<div> - used to group block-elements to format them with CSS
+	5.<h1> - used to be the title of a post, to emphasize text on the page. It is also the most important heading
+	6.<h2> - used to indicate a heading whose level of importance is exceeded only by h1
+	7.<h3> - used to indicate a heading whose level of importance is exceeded by h1 and h2
+	8.<h4> - used to indicate a heading whose level of importance is exceeded by h1, h2, and h3
+	9.<h5> - used to indicate a heading whose level of importance is exceeded by h1, h2, h3 and h4
+	10.<h6> - used to define heading levels (Table of Contents). It is also the least important heading
+	11.<hr> - represent a horizontal rule
+	12.<isindex> - obsolete HTML element that puts a text field in a page for querying the document. 
+It is also both Structural Level and Block Level Tags
+	13.<p> - used to define the HTML paragraph element
+	14.<pre> - defines preformatted text
+2.List Tags
+	1.<dd> - used to describe a term/name in a description list
+	2.<dir> - used to list directory titles
+	3.<dl> - defines a description list
+	4.<dt> - defines a term/name in a description list
+	5.<li> - used for specifying a list item in ordered, unordered, directory and menu lists
+	6.<menu> - defines a list/menu of commands
+	7.<ol> - defines an ordered list, it can be numerical or alphabetical
+	8.<ul> - defines an unordered list (bulleted)
+3.Form Tags
+	1.<fieldset> - used for grouping related form elements
+	2.<form> - used to create an HTML form for user input
+	3.<legend> - used to define a caption for <fieldset> tag
+	4.<optgroup> - used to group related options in a drop-down list
+	5.<option> - used within a form for defining options in the drop-down list
+4.Table Tags
+	1.<caption> - defines a table caption
+	2.<col> - specifies column properties for each column within a <colgroup> element
+	3.<colgroup> - specifies a group of one or more column in a table for formatting
+	4.<table> - defines an HTML table
+	5.<tbody> - used to group the body content in an HTML table
+	6.<td> - (table data/cell), defines a cell in a table
+	7.<tfoot> - used to group footer content in an HTML table
+	8.<th> - (table header), defines a header cell in a table
+	9.<thead> - used to group header content in an HTML table
+	10.<tr> - (table row), defines a row in a table
+
+*Text Level Tags
+	-Do not insert breaks before and after themselves, but instead can be inserted inline and flow with the text
+1.Text Markup Tags
+	1.<b> - specifies bold text
+	2.<big> - defines bigger text
+	3.<i> - displayed in italic
+	4.<s> - specifies text that is no longer correct, accurate, relevant
+	5.<small> - defines smaller text
+	6.<strike> - defines strikethrough text
+	7.<tt> - (Teletype Text), produces an inline element displayed in the browser's default monotype font
+	8.<u> - renders text with an underline
+2.Phrase Markup Tags
+	1.<abbr> - defines an abbreviation or an acronym
+	2.<acronym> - used only where the phrase comprises initial letters that make a word
+	3.<cite> - defines the title of a work
+	4.<code> - defines a piece of computer code
+	5.<del> - defines text that has been deleted from a document
+	6.<dfn> - represents the defining instance of a term in HTML
+	7.<em> - it renders as emphasized text
+	8.<ins> - defines a text that has been inserted into a document
+	9.<kbd> - defines keyboard input
+	10.<samp> - defines sample output from a computer program
+	11.<strong> - specifies strong text
+	12.<var> - specifies a variable
+3.Special Markup Tags
+	1.<a> - specifies an anchor
+	2.<applet> - used for embedding a Java applet within an HTML document
+	3.<basefont> - used to specify a base font for the document to use
+	4.<bdo> - specifies the direction of text display
+	5.<br> - inserts a single line break
+	6.<font> - specifies text font, size, and color
+	7.<iframe> - specifies an inline sub window
+	8.<img> - specifies an image
+	9.<noscript> - defines an alternate content for users tah that have disabled scripts in their browser 
+or have a browser that doesn't support script.
+	10.<object> - specifies an embedded object
+	11.<param> - specifies a parameter for an object
+	12.<q> - specifies a short quotation
+	13.<script> - used to define a client-side script (JavaScript)
+	14.<span> - specifies a section in a document
+	15.<sub> - specifies a superscripted text
+	16.<sup> - specifies a subscripted text
+4.Client-side Image Map Tags
+	1.<area> - specifies an area inside an image map
+	2.<map> - specifies an image map
+5.Form Control Text Tags
+	1.<button> - specifies a push button
+	2.<input> - specifies an input field
+	3.<label> - specifies a label for a form control
+	4.<select> - specifies a selectable list
+	5.<textarea> - defines a multi-line text input control
+
+
+
+
+References:
+Hernandez, G. (2015, March 3). Tags by Category. Retrieved from: http://www.georgehernandez.com/h/xComputers/HTML/TagsByCategory.asp
+HTML <body> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_body.asp
+HTML <head> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_head.asp
+HTML <html> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_html.asp
+HTML <base> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_base_tag.htm
+<isindex>. (2016, April 21). Retrieved from: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/isindex
+HTML <link> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_link.asp
+HTML <meta> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_meta.asp
+HTML <script> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_script.asp
+HTML <style> Tag. (n.d.) Retrieved from: https://www.w3schools.com/tags/tag_style.asp
+HTML <title> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_title.asp
+HTML Frames. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_frames.htm
+HTML <noframes> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_noframes.asp
+HTML <address> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_address.asp
+HTML <blockquote> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_blockquote_tag.htm
+HTML <center> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_center.asp
+HTML <div> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_div.asp
+How To Write a Header Tag (h1) for SEO. (2014, August 18). Retrieved from: http://pearanalytics.com/blog/2014/how-to-write-a-header-tag-h1-for-seo/
+HTML <h1> to <h6> Tags. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_hn.asp
+h2 (HTML element). (n.d.). Retrieved from: http://reference.sitepoint.com/html/h2
+h3 (HTML element). (n.d.). Retrieved from: http://reference.sitepoint.com/html/h3
+h4 (HTML element). (n.d.). Retrieved from: http://reference.sitepoint.com/html/h4
+h5 (HTML element). (n.d.). Retrieved from: http://reference.sitepoint.com/html/h5
+HTML: <h6> tag. (n.d.). Retrieved from: https://www.techonthenet.com/html/elements/h6_tag.php
+HTML <hr> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_hr.asp
+HTML Paragraph Tag. (n.d.). Retrieved from: http://www.comptechdoc.org/independent/web/html/terms/html-paragraph-tag.html
+HTML <pre> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_pre.asp
+HTML <dd> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_dd.asp
+HTML <dir> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_dir.asp
+HTML <dl> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_dl.asp
+HTML <dt> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_dt.asp
+HTML <li> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_li_tag.htm
+HTML <menu> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_menu.asp
+HTML <ol> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_ol.asp
+HTML <ul> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_ul.asp
+HTML <fieldset> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_fieldset_tag.htm
+HTML <form> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_form.asp
+HTML <legend> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_legend_tag.htm
+HTML <optgroup> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_optgroup.asp
+HTML <option> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_option_tag.htm
+HTML <caption> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_caption.asp
+HTML <col> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_col.asp
+HTML <colgroup> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_colgroup.asp
+HTML <table> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_table.asp
+HTML <tbody> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_tbody.asp
+HTML Tables. (n.d.). Retrieved from: https://www.w3schools.com/html/html_tables.asp
+HTML <tfoot> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_tfoot.asp
+HTML <thead> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_thead.asp
+HTML <b> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_b.asp
+HTML <big> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_big.asp
+HTML <i> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_i.asp
+HTML <s> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_s.asp
+HTML <small> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_small.asp
+HTML <strike> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_strike.asp
+Scarfone, K. (2013, November 22). <tt>.  Retrieved from: https://developer.mozilla.org/en/docs/Web/HTML/Element/tt
+Smith, Michael. (2017, January 1). <u>. Retrieved from: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u
+HTML <abbr> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_abbr.asp
+acronym (HTML element). (n.d.). Retrieved from: http://reference.sitepoint.com/html/acronym
+HTML <cite> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_cite.asp
+HTML <code> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_code.asp
+HTML <del> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_del.asp
+HTML <dfn> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_dfn.asp
+HTML <em> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_em.asp
+HTML <ins> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_ins.asp
+HTML <kbd> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_kbd.asp
+HTML <samp> Tag. (n.d). Retrieved from: https://www.w3schools.com/tags/tag_samp.asp
+HTML 4.01 / XHTML 1.0 Tags Reference. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_tags_ref.htm
+HTML <applet> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_applet_tag.htm
+HTML <basefont> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_basefont_tag.htm
+HTML <noscript> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_noscript.asp
+HTML <script> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_script.asp
+HTML <textarea> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_textarea.asp
