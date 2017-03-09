@@ -18,6 +18,7 @@
 	3.<noframes> - used to link to a non-frameset version of the web site
 
 *Block Level Tags
+	-Insert a line break before and after itself
 1.Basic Block Level Tags
 	1.<address> - defines the contact information for the author/owner of a document or an article
 	2.<blockquote> - used for indicating long quotations
@@ -46,70 +47,72 @@ It is also both Structural Level and Block Level Tags
 3.Form Tags
 	1.<fieldset> - used for grouping related form elements
 	2.<form> - used to create an HTML form for user input
-	3.<legend>
-	4.<optgroup>
-	5.<option>
+	3.<legend> - used to define a caption for <fieldset> tag
+	4.<optgroup> - used to group related options in a drop-down list
+	5.<option> - used within a form for defining options in the drop-down list
 4.Table Tags
-	1.<caption>
-	2.<col>
-	3.<colgroup>
-	4.<table>
-	5.<tbody>
-	6.<td>
-	7.<tfoot>
-	8.<th>
-	9.<thead>
-	10.<tr>
+	1.<caption> - defines a table caption
+	2.<col> - specifies column properties for each column within a <colgroup> element
+	3.<colgroup> - specifies a group of one or more column in a table for formatting
+	4.<table> - defines an HTML table
+	5.<tbody> - used to group the body content in an HTML table
+	6.<td> - (table data/cell), defines a cell in a table
+	7.<tfoot> - used to group footer content in an HTML table
+	8.<th> - (table header), defines a header cell in a table
+	9.<thead> - used to group header content in an HTML table
+	10.<tr> - (table row), defines a row in a table
 
 *Text Level Tags
+	-Do not insert breaks before and after themselves, but instead can be inserted inline and flow with the text
 1.Text Markup Tags
-	1.<b>
-	2.<big>
-	3.<i<
-	4.<s<
-	5.<small>
-	6.<strike>
-	7.<tt>
-	8.<u>
+	1.<b> - specifies bold text
+	2.<big> - defines bigger text
+	3.<i> - displayed in italic
+	4.<s> - specifies text that is no longer correct, accurate, relevant
+	5.<small> - defines smaller text
+	6.<strike> - defines strikethrough text
+	7.<tt> - (Teletype Text), produces an inline element displayed in the browser's default monotype font
+	8.<u> - renders text with an underline
 2.Phrase Markup Tags
-	1.<abbr>
-	2.<acronym>
-	3.<cite>
-	4.<code>
-	5.<del>
-	6.<dfn>
-	7.<em>
-	8.<ins>
-	9.<kbd>
-	10.<samp>
-	11.<strong>
-	12.<var>
+	1.<abbr> - defines an abbreviation or an acronym
+	2.<acronym> - used only where the phrase comprises initial letters that make a word
+	3.<cite> - defines the title of a work
+	4.<code> - defines a piece of computer code
+	5.<del> - defines text that has been deleted from a document
+	6.<dfn> - represents the defining instance of a term in HTML
+	7.<em> - it renders as emphasized text
+	8.<ins> - defines a text that has been inserted into a document
+	9.<kbd> - defines keyboard input
+	10.<samp> - defines sample output from a computer program
+	11.<strong> - specifies strong text
+	12.<var> - specifies a variable
 3.Special Markup Tags
-	1.<a>
-	2.<applet>
-	3.<basefont>
-	4.<bdo>
-	5.<br>
-	6.<font>
-	7.<iframe>
-	8.<img>
-	9.<nonscript>
-	10.<object>
-	11.<param>
-	12.<q>
-	13.<script>
-	14.<span>
-	15.<sub>
-	16.<sup>
+	1.<a> - specifies an anchor
+	2.<applet> - used for embedding a Java applet within an HTML document
+	3.<basefont> - used to specify a base font for the document to use
+	4.<bdo> - specifies the direction of text display
+	5.<br> - inserts a single line break
+	6.<font> - specifies text font, size, and color
+	7.<iframe> - specifies an inline sub window
+	8.<img> - specifies an image
+	9.<noscript> - defines an alternate content for users tah that have disabled scripts in their browser 
+or have a browser that doesn't support script.
+	10.<object> - specifies an embedded object
+	11.<param> - specifies a parameter for an object
+	12.<q> - specifies a short quotation
+	13.<script> - used to define a client-side script (JavaScript)
+	14.<span> - specifies a section in a document
+	15.<sub> - specifies a superscripted text
+	16.<sup> - specifies a subscripted text
 4.Client-side Image Map Tags
-	1.<area>
-	2.<map>
+	1.<area> - specifies an area inside an image map
+	2.<map> - specifies an image map
 5.Form Control Text Tags
-	1.<button>
-	2.<input>
-	3.<label>
-	4.<select>
-	5.<textarea>
+	1.<button> - specifies a push button
+	2.<input> - specifies an input field
+	3.<label> - specifies a label for a form control
+	4.<select> - specifies a selectable list
+	5.<textarea> - defines a multi-line text input control
 
 
 
@@ -152,3 +155,38 @@ HTML <ol> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_ol.asp
 HTML <ul> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_ul.asp
 HTML <fieldset> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_fieldset_tag.htm
 HTML <form> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_form.asp
+HTML <legend> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_legend_tag.htm
+HTML <optgroup> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_optgroup.asp
+HTML <option> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_option_tag.htm
+HTML <caption> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_caption.asp
+HTML <col> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_col.asp
+HTML <colgroup> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_colgroup.asp
+HTML <table> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_table.asp
+HTML <tbody> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_tbody.asp
+HTML Tables. (n.d.). Retrieved from: https://www.w3schools.com/html/html_tables.asp
+HTML <tfoot> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_tfoot.asp
+HTML <thead> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_thead.asp
+HTML <b> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_b.asp
+HTML <big> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_big.asp
+HTML <i> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_i.asp
+HTML <s> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_s.asp
+HTML <small> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_small.asp
+HTML <strike> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_strike.asp
+Scarfone, K. (2013, November 22). <tt>.  Retrieved from: https://developer.mozilla.org/en/docs/Web/HTML/Element/tt
+Smith, Michael. (2017, January 1). <u>. Retrieved from: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u
+HTML <abbr> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_abbr.asp
+acronym (HTML element). (n.d.). Retrieved from: http://reference.sitepoint.com/html/acronym
+HTML <cite> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_cite.asp
+HTML <code> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_code.asp
+HTML <del> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_del.asp
+HTML <dfn> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_dfn.asp
+HTML <em> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_em.asp
+HTML <ins> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_ins.asp
+HTML <kbd> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_kbd.asp
+HTML <samp> Tag. (n.d). Retrieved from: https://www.w3schools.com/tags/tag_samp.asp
+HTML 4.01 / XHTML 1.0 Tags Reference. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_tags_ref.htm
+HTML <applet> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_applet_tag.htm
+HTML <basefont> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_basefont_tag.htm
+HTML <noscript> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_noscript.asp
+HTML <script> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_script.asp
+HTML <textarea> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_textarea.asp
