@@ -8,15 +8,14 @@ The data-* attributes consists of two parts:
     a.1) an attribute name that should be in lowercase letters and should be at least one character long from data-*
     a.2) an attribute value that can be any string
 
-b) role, aria-* attributes: This attributes provides accessibility to people with disabilities, user agents with WAI-ARIA capabilities, developers, authoring tools and confromance checkers
+b) role, aria-* attributes: These attributes provide accessibility to people with disabilities, user agents with WAI-ARIA capabilities, developers, authoring tools and confromance checkers.
 
     i.e. USAGE:
          <aria-live = "assertive">
          <li role = "menuitem">
 
     i.e. Related to aria-* attributes
-        WAI-ARIA - WCAG : used for contents; to conform page with certain guidelines.
-            i.e. alt text in images
+        WAI-ARIA - WCAG : This is used for contents to conform the page with certain guidelines.
 
 RULES OF ARIA USE:
 1) Don't repurpose an already built-in native HTML element.
