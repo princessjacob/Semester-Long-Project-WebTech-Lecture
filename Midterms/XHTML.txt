@@ -1,0 +1,40 @@
+XHTML 	- Extensible Hypertext Markup Language
+      	- Reformulation of XHTML in XML 
+     	- Almost alike with HTML 4.01 with some differences
+ 	- Stricter than HTML 4.01
+	- Developed by W3C (World Wide Web Consortium)
+
+Versions
+	- XHTML 1.0 
+		-In December 1998, the working draft was entitled Reformulating 
+HTML in XML. And it was changed into XHTML 1.0: The Extensible Hypertext Markup
+Language in February 1999.
+
+		*XHTML 1.0 Strict - includes elements and attributes that have
+not been marked deprecated in the HTML 4.01 specification.
+		
+		*XHTML 1.0 Transitional - includes the presentational elements
+
+		*XHTML 1.0 Frameset -  allows for the definition of frameset 
+documents. It is a common web feature in 1990's
+
+	- XHTML 1.1
+		-In 1999, the W3C released a first draft.
+		-One of the two first implementations of modular XHTML
+
+	- XHTML 1.2
+		-An extension for XHTML 1.1 that uses RDFa, Access, and Role
+
+	- XHTML 2.0
+		-HTML frames was replaced by XFrames
+		-A general-purpose semantic markup language designed with extension in mind.
+
+	- XHTML 5.0
+		-It adds many new elements
+		-Such as section and aside tags
+
+XHTML. (2017, March 4). Retrieved from: https://en.wikipedia.org/wiki/XHTML
+McCarron,S. (2008, December 23). XHTML 1.2. Retrieved from: https://www.w3.org/MarkUp/Drafts/#xhtml12
+XHTML 2. (2010, November 27). Retrieved from: https://www.w3.org/MarkUp/Drafts/#xhtml12
+HTML and XHTML. (n.d.). Retrieved from: https://www.w3schools.com/html/html_xhtml.asp
+XHTML - Introduction. (n.d.). Retrieved from: https://www.tutorialspoint.com/xhtml/what_is_xhtml.htm
