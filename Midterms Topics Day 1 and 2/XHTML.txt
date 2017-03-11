@@ -1,6 +1,9 @@
 XHTML - Extensible Hypertext Markup Language
-      - Reformulation of XHTML in XML 
-
+      - Reformulation of XHTML in XML   
+      - Almost alike with HTML 4.01 with some differences
+      - Stricter than HTML 4.01
+      - Developed by W3C (World Wide Web Consortium)
+      
 Versions
 	- XHTML 1.0 
 		-In December 1998, the working draft was entitled Reformulating 
