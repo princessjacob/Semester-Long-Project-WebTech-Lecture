@@ -33,6 +33,8 @@ documents. It is a common web feature in 1990's
 		-It adds many new elements
 		-Such as section and aside tags
 
-Anonymous. (2017, March 4). XHTML. Retrieved from: https://en.wikipedia.org/wiki/XHTML
+XHTML. (2017, March 4). Retrieved from: https://en.wikipedia.org/wiki/XHTML
 McCarron,S. (2008, December 23). XHTML 1.2. Retrieved from: https://www.w3.org/MarkUp/Drafts/#xhtml12
-Anonymous. (2010, November 27). XHTML 2. Retrieved from: https://www.w3.org/MarkUp/Drafts/#xhtml12
+XHTML 2. (2010, November 27). Retrieved from: https://www.w3.org/MarkUp/Drafts/#xhtml12
+HTML and XHTML. (n.d.). Retrieved from: https://www.w3schools.com/html/html_xhtml.asp
+XHTML - Introduction. (n.d.). Retrieved from: https://www.tutorialspoint.com/xhtml/what_is_xhtml.htm
