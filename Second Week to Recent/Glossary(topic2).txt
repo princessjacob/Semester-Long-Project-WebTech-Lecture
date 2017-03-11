@@ -1,0 +1,56 @@
+Accept is a type of request header fields which is used for specifying a certain media types which are being acceptable for the response or server side.
+Accept-Charset is a request header field which is used in indicating on what set of character are accepted in the response.
+Accept-Encoding is a request header field which is the same as to Accept, but in this limits the content-coding which is acceptable by the response.
+Accept-Language is a request header field which is similar to other Accept header field types. It is used to provide what languages that the client supports and/ or what does the server expects to use in its response to the request of the client.
+Accept-Ranges is a response header field which allows the server to specify the acceptance of range request in a resource.
+Age is a response header field which is used to convey the client’s estimates time since the response was generated in the origin server.
+Allow is an entity header field which list the set of method that is supported by the resource that is identified by the request URI.
+Authorization is a request header field which consists of the credentials that provides the information of the authentication of the client for the resource that is being requested.
+Cache-control is used to identify the directives that is being obeyed by the caching mechanism in the request or response chain. It is also used by the http client and/or server to specify the parameters for the cache and also used to request kinds of documents from the cache.
+Connection is a general-header field in which it allows a sender to specify the options that are being desired for a specific connection and this shouldn’t be communicated by any proxies in any connections.
+Content Encoding is an entity header field which is used to modify media-type.
+Content Language is an entity header field which describes the language that is used by the audience for the enclosed entity. It is said to be an optional header and  may not be appropriate for all the resources.
+
+Content Length is an entity header field which identify the size of the entity-body representing in the decimal number of Octets that are sent into the recipient.
+Content Location is an entity header field which is used to supply the resource location for the entity that is enclosed in the message, if and only if the entity can access form the location to the requested resource URI.
+
+Content MD5 is an entity header field which is used in giving MD5 digest of entity for the checking of the integrity of the message in the receipt.
+
+Content Range is an entity header field which is sent together with a partial of the entity-body in order to specify where in the full entity-body the partial body to be applied is.
+Content-Type is an entity header field which is used to specify the media type of the entity-body that is being sent to the recipient or the media type that have been sent.
+
+Date is a general header field which specifies the exact date and time when the message is originated. The  origin servers  includes the Date header field in all the responses except of some cases.
+Entity header fields is the meta-data about the entity-body, but if there is no body, the information about the resource being acknowledged by the request is added.
+ETag is a response header field which is providing the value of the entity tag for the requested variant. It identifies the entity tag that is included in the response.
+
+Expect is a request header field is used in indicating the specific set of server behaviors  which is required by the client.
+Expires is an entity header field which provides the date and the time after the response has been considered stale.
+From is a request header field which contains the e-mail address of the user which controls the requesting client.
+General header field is universal because it doesn’t point to one specific kind of message. It is usable by both client and server.
+HTTP message headers is also called the HTTP header fields. It provides the information about the requests or a response, and sometimes to the object being sent in the message body.
+HTTP Protocol is the communication of takes place in a way of exchanging of requests and response messages between the client and a server.
+If-match is a request header field that makes the methods in conditional by the way of specifying entity tags with the corresponding specific entity which the client wants to access.
+If-Modified-Since is a request header field which is used in a method to make it in a conditional in the way of telling to the server to return the entity that is requested, if and only if it has been modified since the time placed in the header. 
+
+If-None-Match header field is a request header field which is used to make the methods in conditional form.
+If-Range header field is a request header field which is used in the conditional GET in order to get only the part of the entity that is missing.
+
+If-unmodified-since is a request header field which is logically opposite of the if-modified-since header field.
+
+Location is a response header field which is used in redirecting the sender to a location other than in the Request-URI for the completion.
+
+Pragma is a general header field which is used to include the implementation-specific directives which may apply to any of the recipient in the request or response chain.
+Proxy-Authenticate is a response header field which is the version of WWW-Authenticate header, but this time the it is a proxy version.
+Proxy-authentication is a request header field which allows the client identifies himself into a proxy that requires some authentication.
+Referer is a request header field in which it allows the clients to identify the resource of the address in which URL has been requested.
+Request header fields is only applicable in request, only clients use this. It is only used in HTTP request messages.
+Response header fields is only used by the servers. It is the opposite of request header fields, it only appears in response messages which is being sent by the servers.
+Server is a response header field which is containing the information that is all about the software that is used by the origin server in order to handle the requests of the client.
+TE is a request header field which specifies extension of transfer coding will the response is going to accept and whether it is going to accept trailer fields in chunked transfer coding or not.
+Trailer is a general header field which indicates the given set of the header field is said to be present in the trailer in the message encoded with the chunked transfer coding.
+Upgrade is a general header field which allow a client to identify the additional communication protocols that it supports and like to use when the server found it appropriate to switch between protocols.
+User-Agent is a request header field which provides the information about the user originating the request. It is generally the Web browser’s name and version number or the other program that is sending the request.
+Vary is a response header field which is used in specifying whether the entity has a multiple sources and may vary according to the list of request header.
+Via is a general header field is used by gateways and the proxies which indicates an intermediate protocols and also recipients.
+Warning is a general header fields that is usually used to carry the additional information which is about the status of a message that shouldn’t be reflected in the message.
+
