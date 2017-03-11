@@ -1,0 +1,45 @@
+HTML ATTRIBUTES
+Global attributes
+1. accesskey
+2. class
+3. contenteditable
+4. contextmenu
+5. data-*
+6. dir 
+7. draggable
+8. dropzone
+9. hidden
+10. id
+11. lang
+12. spellcheck
+13. title
+14. translate
+
+Element-Specific Attributes
+
+data-* attributes
+
+Attributes in data-* shouldn’t contain uppercase letters. It is used to make the data of a web page or web application be private. Example syntax of the attribute is <element data-* = ”value”>. data-* attributes or custom data- attributes simplifies the storage of the application data in web page or web application. 
+
+References:
+HTML data-* Attributes. (n.d.). Retrieved March 10, 2017, from 						https://www.w3schools.com/tags/att_global_data.asp
+
+(n.d.). Retrieved March 10, 2017, from 											http://html5doctor.com/html5-custom-data-attributes/
+
+Role, ARIA-* Attributes
+
+Accessible Rich Internet Applications or ARIA is a way to make the content of a web page or web applications be used or understand by the people with disabilities. 
+Roles that are included to make it clearly part of WAI-ARIA Role taxonomy.
+1. application
+2. banner
+3. complementary
+4. contentinfo
+5. form
+6. main
+7. navigation
+8. search
+
+References:
+W. (n.d.). HTML: Global Attributes. Retrieved March 10, 2017, from 					https://www.techonthenet.com/html/elements/global_attributes.php
+
+5. The Roles Model. (n.d.). Retrieved March 10, 2017, from 							https://www.w3.org/TR/wai-aria/roles#role_definitions
