@@ -1,0 +1,54 @@
+HTML ELEMENTS
+
+HTML element is composed of a start tag and an end tag. Between the start and end tag will be the content. There are different type of HTML elements, the document elements, body elements, style and appearance elements, image elements, list elements, anchor element which has two types; the links and name targets, and other elements.
+
+Document elements:
+1.html - it means that the file is in html format. <html>, this is how the html tag looks like.
+2.head - the <head> tag will contain the title tag. 
+3.title - the <title> tag contains the title of the header of the browser.
+4.body - the <body> tag will contain all the body elements which will contain the content of the web page.
+
+Body elements:
+1.h1, h2, h3, h4, h5, h6 - these are the heading elements. It will contain the heading/ sub-headings 					of the web page.
+2.p - the <p> tag contains the paragraph/s in the document.
+3.br - <br> tag means break or line break, when we use <br> tag it doesn’t need to have an end tag. I	  t is used for breaking lines into two parts, the other part will be the new line.
+4.Hr - <hr> tag means horizontal rule, it creates a horizontal line across the page
+5.blockquote - <blockquote> tag is used for creating a blockquote element, it is use when quoting a 			content that is from another source.
+6.pre - <pre> tag means preformatted text, it is mostly used for formatting the spacing, indentation, breaks and etc. of a text.
+
+Style and Appearance Elements:
+1.strong - <strong> is used to emphasize the content of a document, it means that it is important 		and it will bold the content inside the tag.
+2.em - <em> tag means emphasis, it will italicize the content inside the tag to indicate that it is 		   important.
+3.cite - <cite> tag means citation. It will display the content inside the tag as Italic to indicate that it 		is the title of the cited work.
+4.code - <code> tag means computer code, it will display the content inside the tag in a fixed font.
+5.b - <b> tag will make the content inside it into a bold text
+6.i - <i> tag italicize the content inside it
+7.u - <u> tag underlines the content inside it
+8.tt - <tt> tag means fixed font, it will display the content inside it with a fixed font like “Courier” it is 	 the same as the pre tag and the code tag.
+9.font - <font> tag will turn the content inside it to what the user want the font size, color, and style 	   it will be displayed.
+
+Anchor Element: Links and Named Targets
+1.a href= “URL” -  the < a href = “URL”> tag will display the content inside it into a hyperlink text.
+2.a name = “name” - the <a name = “name”> tag sets an anchor/target where the hyperlink can 					  point to.
+
+Image Element:
+img - the <img> tag will contain the path of the image the user wants to display and it doesn’t 		need to have an end tag. 
+
+List Elements:
+1.ul - <ul> tag displays the content inside it into an unordered list and will be displayed with a bullet.
+2.ol - <ol> tag displays the content inside it into an ordered list, whether the user wants it to be a 	  numbered list or in a letter list.
+3.li - <li> tag means list item, it will display the content/item inside in a bullet list or numbered list.
+4.dl - <dl> tag means descriptive/ definition list, it will contain the dt and the dd tag.
+5.dt - <dt> tag means the content it the term in the definition list.
+6.dd - <dd> tag means that the content inside it is the definition of the term in definition list.
+
+Other elemets:
+<!-- --> - this tag is a comment tag.
+
+References:
+
+HTML Elements. (n.d.). Retrieved March 12, 2017, from https://www.w3schools.com/html/html_elements.asp
+
+HTML element reference. (n.d.). Retrieved March 12, 2017, from https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+Basic HTML Elements. (n.d.). Retrieved March 12, 2017, from https://www.lehigh.edu/~inwww/seminar/reference/htmlchart.html
