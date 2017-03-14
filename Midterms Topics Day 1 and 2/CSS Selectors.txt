@@ -15,6 +15,24 @@ CSS Selectors
     - This cannot contain other type selectors or universal selectors.
 
 ====
+TYPE SELECTORS
+    - selectors that match elements by node name.
+
+    i.e.
+        p (element) {
+
+        }
+
+UNIVERSAL SELECTORS
+    - An asterisk
+    - matches a single element of any type
+    - CSS3: Asterisks can be used as namespaces combination.
+
+    i.e.
+    * {
+
+    }
+
 ATTRIBUTE SELECTORS
     - Targets an element based on a particular attribute.
     - Specifies attribute in brackets
@@ -25,13 +43,13 @@ ATTRIBUTE SELECTORS
     }
 
 Syntax:
-[attr]
-[attr=value]
+[attr] - attr attribute element representation
+[attr=value] - selects specified attributes and values kind of elements
 [attr~=value] - defines a set from the set of values and separated by a space.
 [attr|=value] - targets the lang attribute
-[attr^=value] - beginning
-[attr$=value] - end
-[attr*=value] - contains
+[attr^=value] - beginning of the specified value
+[attr$=value] - ending of the specified value
+[attr*=value] - containing a specified value
 
 
 CLASS SELECTOR
@@ -42,6 +60,7 @@ CLASS SELECTOR
 
     i.e.
     .x {
+
     }
 
 ID SELECTOR
@@ -50,6 +69,7 @@ ID SELECTOR
 
     i.e.
     #bgio {
+
     }
 
 PSEUDO CLASS SELECTORS
@@ -58,8 +78,8 @@ PSEUDO CLASS SELECTORS
     TYPES:
 
     A) Link pseudo classes
-        :link - not visited
-        :visited
+        :link - for links that are not visited
+        :visited - for links that are visited
 
     B) User action pseudo classes
         :hover - hovering over something, usually called a rollover effect.
@@ -69,33 +89,43 @@ PSEUDO CLASS SELECTORS
     C) Target pseudo classes
         :target - used if the element targeted is using an ID.
 
-    D) Language pseudo classes - allows the targeting of language classes.
-        :lang
+    D) Language pseudo classes
+        :lang - targets language classes.
 
     E) UI elements status pseudo classes
-        :enabled
-        :disabled
-        :checked
-        :indeterminate
+        :enabled - represents enabled elements
+        :disabled - represents disabled elements
+        :checked - represents checked elements
+        :indeterminate- represents elements that are indeterminates such as <progress> elements, <input type = ""> and etc.
 
     F) Structural pseudo classes
         :root - root element
-        :first-child - paragraphs which are first children
-        :last-child
-        :only-child
-        :nth-child(<odd, even argument>)
-        :nth-last-child - counted from the last child
+        :first-child - represents the first child of an element.
+        :last-child - represents the last child of an element.
+        :only-child - represents the only child of an element
+        :nth-child(an+b) - has an an+b-1 siblings before it in the DOM tree.
+        :nth-last-child - counted from the last child; backwards counting on the same basis as nth-child
 
         ** The children pseudo classes basis is the DOM tree, which is a structure built by the HTML tag structure. The tree is built in every browser which allows it to understand your HTML tag structure even if it isn't tagged properly.
 
         //Structural pseudo classes continued...
-        :first-of-type
-        :last-of-type
-        :only-of-type
+        :first-of-type - first sibling of its type
+        :last-of-type - last sibling of its type
+        :only-of-type - no siblings from the given type
         :nth-of-last-type
-        :empty
+        :empty - no children at all.
 
     G) Negation pseudo classes
         :not - used for simple selectors only. It can be placed in any of the other elements and would negate a content. If what it should modify is not specified, it will be read as a general selector and would affect the whole HTML document.
 
 
+REFERENCES:
+CSS Selectors(n.d.). Retrieved from https://www.w3schools.com/css/css_attribute_selectors.asp
+Doyle, E. et.al.(n.d.). Attribute Selectors. Retrieved from https://developer.mozilla.org/en/docs/Web/CSS/Attribute_selectors
+Doyle, E. et.al.(n.d.).Type Selector(n.d.). Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors
+Doyle, E. et.al.(n.d.). :indeterminate. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
+Doyle, E. et.al.(n.d.). :last-child. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child
+Doyle, E. et.al.(n.d.). :nth-child. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child
+Doyle, E. et.al.(n.d.). :first-of-type. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/:first-of-type
+Doyle, E. et.al.(n.d.). :only-of-type. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/:only-of-type
+Doyle, E. et.al.(n.d.). :empty. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/:empty
