@@ -1,0 +1,37 @@
+Netscape presented a usage of JavaScript for server-side scripting with Netscape Enterprise Server, initially released in December, 1994 (not long after in the wake of releasing JavaScript for programs). 
+
+Server-side scripting was later utilized as a part of mid 1995 by Fred DuFresne while building up the principal site for Boston, MA TV channel WCVB. The innovation is depicted in US patent 5835712. The patent was issued in 1998 and is currently claimed by Open Invention Network (OIN). In 2010 OIN named Fred DuFresne a "Recognized Inventor" for his work on server-side scripting. 
+
+Today, an assortment of administrations utilize server-side scripting to convey comes about back to a customer as a paid or free administration. An illustration would be WolframAlpha, which is a computational learning motor that registers comes about outside the customers condition and returns the figured outcome back. An all the more usually utilized administration is Google's exclusive web index, which seeks a great many reserved outcomes identified with the client determined catchphrase and returns a requested rundown of connections back to the customer. Apple's Siri application additionally utilizes server-side scripting outside of a web application. The application takes an information, figures an outcome, and returns the outcome back to the customer.
+
+In the prior days of the web, server-side scripting was solely performed by utilizing a blend of C projects, Perl scripts, and shell scripts utilizing the Common Gateway Interface (CGI). Those scripts were executed by the working framework, and the outcomes were served back by the web server. Numerous current web servers can straightforwardly execute on-line scripting dialects, for example, ASP, JSP, Perl, PHP and Ruby either by the web server itself or by means of augmentation modules (e.g. mod_perl or mod_php) to the web server. For instance, WebDNA incorporates its own particular installed database framework. Either type of scripting (i.e., CGI or direct execution) can be utilized to develop complex multi-page locales, however coordinate execution ordinarily brings about less overhead in light of the lower number of calls to outside translators. 
+
+Dynamic sites in some cases utilize custom web application servers, for example, Glassfish, Plack and Python's "Base HTTP Server" library, albeit some may not view this as server-side scripting. When outlining utilizing dynamic electronic scripting systems engineers must have a sharp comprehension of the sensible, worldly, and physical partition between the customer and the server. For a client's activity to trigger the execution of server-side code, for instance, a designer working with great ASP should expressly bring about the client's program to make a demand back to the web server. Making such cooperations can undoubtedly expend much advancement time and prompt to mixed up code. 
+
+Server-side scripts are totally prepared by the servers rather than customers. At the point when customers ask for a page containing server-side scripts, the relevant server forms the scripts and returns a HTML page to the customer.
+
+There are a number of server-side scripting languages available, including:
+•	ASP (*.asp)
+•	ActiveVFP (*.avfp)
+•	ASP.NET (*.aspx)
+•	ASP.NET MVC (*.cshtml)
+•	ColdFusion Markup Language (*.cfm)
+•	Go (*.go)
+•	Google Apps Script (*.gs)
+•	Hack (*.php)
+•	Haskell (*.hs) (example: Yesod)
+•	Java (*.jsp) via JavaServer Pages
+•	JavaScript using Server-side JavaScript (*.ssjs, *.js) (example: Node.js)
+•	Lasso (*.lasso)
+•	Lua (*.lp *.op *.lua)
+•	Parser (*.p)
+•	Perl via the CGI.pm module (*.cgi, *.ipl, *.pl)
+•	PHP (*.php, *.php3, *.php4, *.phtml)
+•	Python (*.py) (examples: Pyramid, Flask, Django)
+•	R (*.rhtml) - (example: rApache)
+•	Ruby (*.rb, *.rbw) (example: Ruby on Rails)
+•	SMX (*.smx)
+•	Tcl (*.tcl)
+•	WebDNA (*.dna,*.tpl)
+•	Progress WebSpeed (*.r,*.w)
+•	Bigwig (*.wig)
