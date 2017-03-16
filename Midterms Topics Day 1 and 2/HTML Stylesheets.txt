@@ -91,3 +91,6 @@ Link: <bigprint.css>; rel="alternate template"; title="big print"
 This ought to likewise work when HTML reports are being by transported by means of email. Some email operators can adjust the requesting of [RFC822] headers. To secure against this influencing the falling request for style sheets determined by Link headers, you can utilize header connection to blend a few examples of a similar header field. The quote imprints are just required when the property estimations incorporate whitespace. Utilize SGML elements to reference characters that are generally not allowed inside HTTP or email headers, or that are probably going to be influenced by travel through doors. 
 
 Link and META components inferred by HTTP headers are characterized as happening before any express LINK and META components in the archive's HEAD.
+
+Reference:
+HTML Stylesheets (2017 March 15) Retrieved From https://www.w3.org/TR/WD-html40-970917/present/styles.html
