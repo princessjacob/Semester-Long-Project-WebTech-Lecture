@@ -1,0 +1,14 @@
+HyperText Mark-up Language Syntax and terminologies (Glossary)
+Attributes is an html properties which provide an additional informations about the elements. It is specified in the opening tag after the name of the element.
+Body is an html tag which comes after the head tag. It contains all the content of the html.
+Closing Tag is the opposite of the opening tag which is found in the end of every tag. It is the an html instruction which turns off the feature that is used in the  beginning of the  content of the document. It is also called the End Tag. it is written like the start tag but in the end tag there is a forward slas before the tag name. 
+class attribute is used to classify an element. The class element is used when styling in CSS by selecting the class value.
+Footer is located at the lower part of the web page. It is the last tag in the html document.
+href attribute which is used to  provide a hyperlink reference that is used in the linked resource.
+HTML Tag  is said to be the basic tag in html which defines an html document. It holds the whole html document.
+Head is an html tag which is used to surround an important content in the html document.
+id attribute which is used to identify an element.
+Opening Tag is a type of html instruction which tells the the browser to turn on a feature and apply that feature to the content of the document. It is is found in the beginning of the html tags.
+Footer is located at the lower part of the web page. It is the last tag in the html document.
+Tags  is the html code which controls the features and appearance of the html content.
+Web Browsers is the program that reads and display the html document.
