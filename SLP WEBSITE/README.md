@@ -1,4 +1,4 @@
-Folder assigned for the newly designed page.
+Folder assigned for the newly designed website.
 
 PROGRESS LEVELS
 
