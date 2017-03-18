@@ -1,0 +1,60 @@
+#prelims {
+    background-color: #8B008B;
+    width: auto;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+#midterms {
+    background-color: #BA55D3;
+    width: auto;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+#finals {
+    background-color: #DDA0DD;
+    color: black;
+    width: auto;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+#about {
+   background-color: black;
+   width: auto;
+   padding-top: 80px;
+   padding-bottom: 70px; 
+}
+
+.tab-content h3 {
+    padding-top: 20px; 
+}
+
+.tab-content li {
+    font-size: 1.35em;
+}
+
+.titleHeader {
+  padding-top: 50px;  
+}
+
+#glos {
+    background-color: #5E0087;
+    color: white;
+}
+.nav-tabs a{
+    font-size: 1.5em;
+    color: white;
+}
+
+.topics {
+    background-color: #8B008B;
+    width: auto; 
+}
+
+.tab-pane {
+    background-color: ghostwhite;
+    padding: 2em;
+    color: black;
+}
+
+
