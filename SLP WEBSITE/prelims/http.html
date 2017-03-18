@@ -43,6 +43,7 @@
     <li><a data-toggle="tab" href="#functional">Functionalities</a></li>
     <li><a data-toggle="tab" href="#resourceAdd">Resource Addressing</a></li>
     <li><a data-toggle="tab" href="#reqMessage">Request Message</a></li>
+    <li><a data-toggle="tab" href="#ref">Reference</a></li>
     <li><a href="httpp2.html" class="btn btn-info" role="button">NEXT</a></li>
   </ul>
   <div class="tab-content">
@@ -58,21 +59,228 @@
         </ul>
     </div>
     <div id="ver" class="tab-pane fade">
-      <h3>HTTP 0.9 One line Protocol </h3>
+      <h3>HTTP 0.9 ONE LINE PROTOCOL </h3>
       <p>The original HTTP proposal by Tim Berners-Lee was designed with simplicity in mind as to help with the adoption of his other idea: the World Wide Web. </p>
       <p>During 1991, Berners-Lee outlined the motivation for the new protocol and listed several high-level design goals: file transfer functionality, ability to request an index search of a hypertext archive, format negotiation, and an ability to refer the client to another server.</p>
     </div>
+    <div id="ver" class="tab-pane fade">
+      <h3>HTTP 1: RAPID GROWTH AND INFORMATIONAL RFC </h3>
+      <p>The period from 1991 to 1995. A new breed of software	known as a "web browser" and the emergence and quick growth of the consumer-oriented public Internet infrastructure. 
+      </p>
+      <p>
+     	They needed a protocol that could serve more than just hypertext documents, provide richer metadata about the request and the response, enable content negotiation, and more. 
+      </p>
+    </div>
+
+    <div id="ver" class="tab-pane fade">
+      <h3>HTTP 1.1: INTERNET STANDARD</h3>
+      <p>
+      	This resolved a lot of the protocol ambiguities found in earlier versions and introduced a number of critical performance optimizations: keepalive connections, chunked encoding transfers, byte-range requests, additional caching mechanisms, transfer encodings, and request pipelining.
+      </p>
+      <p>
+      	It also added content, encoding, character set, and even language negotiation, transfer encoding, caching directives, client cookies, plus a dozen other capabilities that can be negotiated on each request.
+      </p>
+    </div>
+
+    <div id="ver" class="tab-pane fade">
+      <h3>HTTP 2: IMPROVING TRANSPORT PERFORMANCE</h3>
+      <p>
+      	The primary focus is on improving transport performance and enabling both lower latency and higher throughput.
+      </p>
+      <p>
+     	None of the high-level protocol semantics are affected: all HTTP headers, values, and use cases are the same.
+      </p>
+    </div>
+
+
+    <div id="ref" class="tab-pane fade">
+      <h3>REFERENCES:</h3>
+      <p>
+      	Hypertext Transfer Protocol (n.d.). Retrieved from https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+      </p>
+      <p>
+     	HTTP Tutorial(n.d.). Retrieved from https://www.tutorialspoint.com/http/
+      </p>
+      <p>
+      	Grigorik, I.(2013). Brief History of HTTP. Retrieved from https://hpbn.co/brief-history-of-http/
+      </p>
+    </div>
+
     <div id="functional" class="tab-pane fade">
-      <h3>Place header here (ALL IN CAPS)</h3>
-      <p>Place content Here</p>
+      <h3>CACHE CONTROL</h3>
+      <p>
+      	Cache control is a header field that is used to specify directives. These directives are unidirectional and for caching mechanisms in requests and responses. These directives have an optional argument and case-sensitive. 
+      </p>
     </div>
+
+    <div id="functional" class="tab-pane fade">
+      <h3>CACHE REQUEST DIRECTIVES</h3>
+      <p>They are used by the client in a HTTP request</p>
+      <li>max-age</li>
+      <li>max-stale</li>
+      <li>no-cache</li>
+      <li>no-store</li>
+      <li>no-transform</li>
+      <li>only-if-cached</li>
+    </div>
+
+    <div id="functional" class="tab-pane fade">
+      <h3>CACHE RESPONSE DIRECTIVES</h3>
+      <p>They are used by the client in a HTTP response</p>
+      <li>must-revalidate</li>
+      <li>no-cache</li>
+      <li>no-store</li>
+      <li>no-transform</li>
+      <li>public</li>
+      <li>private</li>
+      <li>proxy-revalidate</li>
+      <li>max-age</li>
+      <li>s-maxage</li>
+    </div>
+
+    <div id="functional" class="tab-pane fade">
+      <h3>EXTENSION CACHE-CONTROL DIRECTIVES</h3>
+      <p>These directives are not part of the caching standards document of HTTP.</p>
+      <li>immutable</li>
+      <li>stale-while-revalidate</li>
+      <li>stale-if-error</li>
+    </div>
+
+    <div id="functional" class="tab-pane fade">
+      <h3>REFERENCES:</h3>
+      <p>
+      	Cache-Control. (n.d.). Retrieved March 03, 2017, from https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
+      </p>
+      <p>
+      	Cache-Control HTTP Headers. (n.d.). Retrieved March 03, 2017, from http://condor.depaul.edu/dmumaugh/readings/handouts/SE435/HTTP/node24.html
+      </p>
+    </div>
+
+    <div id="functional" class="tab-pane fade">
+      <h3>CONTENT MEDIA TYPE</h3>
+      <p>
+      	This simply describes the type of media that is on the body part of an html file. Example are plain text, image, gif, and etc.
+      </p>
+    </div>
+    <div id="ref" class="tab-pane fade">
+      <h3>REFERENCE:</h3>
+      <p>
+      	Content-media-type Field. (n.d.). Retrieved March 18, 2017, from https://msdn.microsoft.com/en-us/library/ms526938(v=exchg.10).aspx
+      </p>
+    </div>
+
+    <div id="functional" class="tab-pane fade">
+      <h3>LANGUAGE AND CHARACTER SET SPECIFICATION</h3>
+      <p>
+      	HTTP has support for multiple languages and different character set specifications, this is to allow more flexibility to the different languages and character set specifications used in HTTP Requests Headers.
+      </p>
+    </div>
+    <div id="ref" class="tab-pane fade">
+      <h3>REFERENCE:</h3>
+      <p>
+      	J. Reschke(2010). RFC 5987. Retrieved from https://tools.ietf.org/html/rfc5987
+      </p>
+    </div>
+
     <div id="resourceAdd" class="tab-pane fade">
-      <h3>Place header here (ALL IN CAPS)</h3>
+      <h3>HTTP RESOURCE ADDRESSING</h3>
+      <p>
+      	It is a string of characters used to identify a resource. It enables interaction with representations of the resource over a network, typically the World Wide Web, using specific protocols.
+      </p>
+    </div>
+
+    <div id="resourceAdd" class="tab-pane fade">
+      <h3>URI IN TECHNICAL TERM:</h3>
+      <h4>Scheme</h4>
+      <p>
+      	Sequence of characters starting with a letter followed by any combination of letters,digits,plus,period,or hypen. Below are the popular schemes. http,ftp,mailto, file,data and irc
+      </p>
+
+      <h4>Authority</h4>
+      <p>
+      	It is a server DNS hostname or IP address. It also includes service port number if it differs from the port for the URI. An optional authentication section of a user name and password, separated by a colon, followed by an at symbol (@).
+      </p>
+      <li>Hostname</li>
+      <p>
+      	It does not include the port number.
+      </p>
+      <li>Port Number</li>
+      <p>
+      	It defines the protocol port used for contacting the server referenced in the URI.
+      </p>
+      <li>Path to Resource, Path to unix</li>
+      <p>
+      	It contains data, it is usually organized in hierarchical form, that appears as a sequence of segments separated by slashes.
+      </p>
+      <li>Query</li>
+      <p>
+      	Separated from the preceding part by a question mark (?), query string of non-hierarchical data. Its syntax is not well defined, but by convention is most often a sequence of attribute–value pairs separated by a delimiter.
+      </p>
+      <li>Fragment Identifier</li>
+      <p>
+      	It provides direction to a secondary resource, such as a section heading in an article identified by the remainder of the URI. A fragment identifier providing direction to a secondary resource, such as a section heading in an article identified by the remainder of the URI. 
+      </p>
+    </div>
+
+    <div id="ref" class="tab-pane fade">
+      <h3>REFERENCES:</h3>
+      <p>
+      	Uniform Resource Identifier. (n.d.). Retrieved from: https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
+	  </p>
+	  <p>
+      	Uri.Authority Property (System). (n.d.). Retrieved from: https://msdn.microsoft.com/en-us/library/system.uri.authority(v=vs.110).aspx
+	  </p>
+	  <p>
+      	Uri.Host Property. (n.d.). Retrieved from: https://msdn.microsoft.com/en-us/library/system.uri.host(v=vs.110).aspx
+	  </p>
+	  <p>
+      	Uri.Port Property. (n.d.). Retrieved from: https://msdn.microsoft.com/en-us/library/system.uri.port(v=vs.110).aspx
+	  </p>
+    </div>
+
+    <div id="reqMessage" class="tab-pane fade">
+      <h3>HTTP REQUEST MESSAGE</h3>
       <p>Place content Here</p>
     </div>
+
     <div id="reqMessage" class="tab-pane fade">
       <h3>Place header here (ALL IN CAPS)</h3>
-      <p>Place content Here</p>
+      <li>REQUEST LINE</li>
+      <p>
+      	Begins with a method token, followed by the Request-URI and the protocol version, reason phrase and ending with CRLF (carrier-read-line-feed). The elements are separated by SP(whitespace) characters.
+      </p>
+      <p>
+      	PARTS:
+      </p>
+      <li>REQUEST METHOD</li>
+      <p>
+      	The method to be performed on the resource.
+      </p>
+      <li>REQUEST URI</li>
+      <p>
+      	This is an identified resource where the request method is to be applied
+      </p>
+
+      <li>REQUEST HEADER FIELDS</li>
+      <p>
+      	(General|Request|Entity) fields followed by CRLF. This allows a client to pass additional information to the server.
+      </p>
+      <li>EMPTY LINE</li>
+      <p>
+      	A blank line indicating the end of the header fields, and possibly a message-body.
+      </p>
+      <li>OPTIONAL MESSAGE BODY</li>
+      <p>
+      	A general content for both Request and Response Message. This details the message and for the request message, filling this up is optional.
+      </p>
+    </div>
+
+    <div id="ref" class="tab-pane fade">
+      <h3>REFERENCES:</h3>
+      <p>HTTP Requests (n.d.). Retrieved from https://www.tutorialspoint.com/http/http_requests.htm</p>
+      <p>R. Fielding, et.al. (1997). Request. Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html</p>
+      <p>R. Fielding, et.al. (1997). HTTP Message. Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html</p>
+      <p>HTTP Message body(n.d.). Retrieved from https://en.wikipedia.org/wiki/HTTP_message_body/p>
     </div>
   </div>
 </div>
