@@ -1,132 +1,19 @@
 HTTP REQUEST MESSAGE
 
-	a. STATUS LINE/REQUEST LINE: begins with a method token, followed by the Request-URI and the protocol version, status code, reason phrase and ending with CRLF (carrier-read-line-feed). The elements are separated by SP(whitespace) characters.
+	a. REQUEST LINE: begins with a method token, followed by the Request-URI and the protocol version, reason phrase and ending with CRLF (carrier-read-line-feed). The elements are separated by SP(whitespace) characters.
 
-	b. STATUS CODES: A three digit code usually followed by a reason phrase.
+	PARTS:
+		* REQUEST METHOD: the method to be performed on the resource.
+		* REQUEST URI: this is an identified resource where the request method is to be applied
 
-	c. REASON PHRASE: intended to give a short textual description of the Status-Code.
+	b. REQUEST HEADER FIELDS: (General|Request|Entity) fields followed by CRLF. This allows a client to pass additional information to the server.
 
-	d. MESSAGE HEADERS: request-header fields allow the client to pass additional information about the request, and about the client itself, to the server. This usually contains general headers, response headers and/or entity headers.
+	c. EMPTY LINE: a blank line indicating the end of the header fields, and possibly a message-body.
 
-	e. EMPTY LINE: a blank line indicating the end of the header fields, and possibly a message-body.
-
-	f. MESSAGE BODY: A general content for both Request and Response Message. This details the message and for the request message, filling this up is optional.
-
-	g. PAYLOAD: The payload body is obtained from the message-body by decoding any Transfer-Encoding that might have been applied to ensure safe and proper	transfer of the message. Usually, used for POST and PUT method and contains the actual html code.
-
-	h. CONTENT-TYPE: entity header is used to indicate the media type of the resource. i.e. plain/text
-
-HTTP Status Codes
-
-INFORMATIONAL (1XX)
-	This class of status codes simply gives information about the response of the server to a client's request.
-
-	100 Continue: In this case, the client is required to proceed in sending the request body.
-
-	101 Switching Protocols: This means that the server understands the request from the client and will comply through switching the protocol.
-
-	102 Processing: If the user agent receives this message, it indicates that the server is currently processing the request.
-
-SUCCESS (2XX)
-	This class of status code indicates that the client's request was successfully received, understood, and accepted.
-
-	200 OK: The request has succeeded.
-
-	201 Created: The request has been fulfilled and resulted in a new resource being created.
-
-	202 Accepted: The request has been accepted for processing, but the processing has not been completed.
-
-	203 Non-Authoritative Information: The returned metainformation in the entity-header is not the definitive set as available from the origin server, but is gathered from a local or a third-party copy.
-
-	204 No Content: The server has fulfilled the request but there is no new information to send back.
-
-	205 Reset Content: The server has fulfilled the request and the user agent SHOULD reset the document view.
-
-	206 Partial Content: The server has fulfilled the partial GET request for the resource. The request MUST have included a Range header field indicating the desired range, and MAY have included an If-Range header field to make the request conditional.
-
-REDIRECTION (3XX)
-	This class of status code indicates that further action needs to be taken by the user agent in order to fulfill the request.
-
-	300 Multiple Choices: The requested resource corresponds to any one of a set of representations, each with its own specific location, and agent- driven negotiation information is being provided so that the user (or user agent) can select a preferred representation and redirect its request to that location.
-
-	301 Moved Permanently: The requested resource has been assigned a new permanent URI and any future references to this resource SHOULD use one of the returned URIs.
-
-	302 Found: The requested resource resides temporarily under a different URI.
-
-	303 See Other: The response to the request can be found under a different URI and SHOULD be retrieved using a GET method on that resource.
-
-	304 Not Modified: If the client has performed a conditional GET request and access is allowed, but the document has not been modified, the server SHOULD respond with this status code.
-
-	305 Use Proxy: The requested resource MUST be accessed through the proxy given by the Location field.
-
-	306 (Unused): The 306 status code was used in a previous version of the specification, is no longer used, and the code is reserved.
-
-	307 Temporary Redirect: The requested resource resides temporarily under a different URI.
-
-CLIENT ERROR (4XX)
-	The 4xx class of status code is intended for cases in which the client is the root of the error.
-
-	400 Bad Request: The request could not be understood by the server due to malformed syntax.
-
-	401 Unauthorized: The request requires user authentication. The response must include a WWW-Authenticate header field	containing a challenge applicable to the requested resource.
-
-	402 Payment Required: This code is reserved for future use.
-
-	403 Forbidden: The server understood the request, but is refusing to fulfill it. This status code is commonly used when the server does not wish to reveal exactly why the request has been refused.
-
-	404 Not Found: The server has not found anything matching the Request-URI.
-
-	405 Method Not Allowed: The method specified in the Request-Line is not allowed for the resource identified by the Request-URI.
-
-	406 Not Acceptable: The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to the accept headers sent in the request.
-
-	407 Proxy Authentication Required: This code is similar to 401 (Unauthorized), but indicates that the client MUST first authenticate itself with the proxy.
-
-	408 Request Timeout: The client did not produce a request within the time that the server was prepared to wait.
-
-	409 Conflict: The request could not be completed due to a conflict with the current state of the resource.
-
-	410 Gone: The requested resource is no longer available at the server and no forwarding address is known.
-
-	411 Length Required: The server refuses to accept the request without a defined Content-Length.
-
-	412 Precondition Failed: The precondition given in one or more of the request-header fields evaluated to false when it was tested on the server.
-
-	413 Request Entity Too Large: The server is refusing to process a request because the request entity is larger than the server is willing or able to process.
-
-	414 Request URI Too Long: The server is refusing to service the request because the Request-URI is longer than the server is willing to interpret.
-
-	415 Unsupported Media Type: The server is refusing to service the request because the entity of the request is in a format not supported by the	requested resource for the requested method.
-
-	416 Request Range Not Satisfiable: A server SHOULD return a response with this status code if a request included a Range request-header field.
-
-	417 Expectation Failed: The expectation given in an Expect request-header field could not be met by this server, or, if the server is a	proxy, the server has unambiguous evidence that the request could not be met by the next-hop server.
-
-	426 Upgrade Required: The client should switch to a different protocol such as TLS/1.0 or WebSockets, specified by the accompanying Upgrade response-header field.
-
-SERVER ERROR (5XX)
-	Response status codes beginning with the digit "5" indicate cases in which the server is aware that it is incapable of performing the request.
-
-	500 Internal Server Error: The server encountered an unexpected condition which prevented it from fulfilling the request.
-
-	501 Not Implemented: The server does not support the functionality required to fulfill the request.
-
-	502 Bad Gateway: The server, while acting as a gateway or proxy, received an invalid response from the upstream server it accessed in attempting to fulfill the request.
-
-	503 Service Unavailable: The server is currently unable to handle the request due to a temporary overloading or maintenance of the server.
-
-	504 Gateway Timeout: The server, while acting as a gateway or proxy, did not receive a timely response from the upstream server specified by the URI (e.g. HTTP, FTP, LDAP) or some other auxiliary server (e.g. DNS) it needed to access in	attempting to complete the request.
-
-	505 HTTP Version Not Supported: The server does not support, or refuses to support, the HTTP protocol version that was used in the request message.
+	d. OPTIONAL MESSAGE BODY: A general content for both Request and Response Message. This details the message and for the request message, filling this up is optional.
 
 REFERENCES:
- R. Fielding, et.al. (1997). Request. Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html
- R. Fielding, et.al. (1997). HTTP Message. Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html
- HTTP Message body(n.d.). Retrieved from https://en.wikipedia.org/wiki/HTTP_message_body
- Christensson, P. (2006). Payload Definition. Retrieved from https://techterms.com
- fscholz, et.al.(2016). Content-Type. Retrieved from https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type
- R. Fielding, et.al. (1997). 1xx Informational. Retrieved from https://wasd.vsm.com.au/httpd/-/status1xx.html
- R. Fielding, et.al. (1997). 2xx Success. Retrieved from https://wasd.vsm.com.au/httpd/-/status2xx.html
- R. Fielding, et.al. (1997). 3xx Redirection. Retrieved from https://wasd.vsm.com.au/httpd/-/status3xx.html
- R. Fielding, et.al. (1997). 4xx Client Error. Retrieved from https://wasd.vsm.com.au/httpd/-/status4xx.html
- R. Fielding, et.al. (1997). 5xx Server Error. Retrieved from https://wasd.vsm.com.au/httpd/-/status5xx.html
+HTTP Requests (n.d.). Retrieved from https://www.tutorialspoint.com/http/http_requests.htm
+R. Fielding, et.al. (1997). Request. Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html
+R. Fielding, et.al. (1997). HTTP Message. Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html
+HTTP Message body(n.d.). Retrieved from https://en.wikipedia.org/wiki/HTTP_message_body

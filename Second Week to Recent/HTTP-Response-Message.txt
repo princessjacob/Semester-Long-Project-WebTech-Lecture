@@ -1,0 +1,23 @@
+HTTP RESPONSE MESSAGE
+
+    a. STATUS LINE: A status line contains the protocol version, status code and a reason phrase.
+
+    PARTS:
+        * HTTP VERSION: shows the version information that the server supports.
+        * STATUS CODES: A three digit code usually followed by a reason phrase.
+        * REASON PHRASE: intended to give a short textual description of the Status-Code.
+
+    b. RESPONSE HEADER FIELDS: It can be a general, response, entity header fields. This header fields are usually used to add additional information about what is sent by the server to the client.
+
+    c. EMPTY LINE: a blank line indicating the end of the header fields, and possibly a message-body.
+
+    d. MESSAGE BODY: A general content for both Request and Response Message. This details the message and for the request message, filling this up is optional.
+
+    e. PAYLOAD: The payload body is obtained from the message-body by decoding any Transfer-Encoding that might have been applied to ensure safe and proper transfer of the message. Usually, used for POST and PUT method and contains the actual html code.
+
+    f. CONTENT-TYPE: entity header is used to indicate the media type of the resource. i.e. plain/text
+
+REFERENCES:
+HTTP - Responses (n.d.). Retrieved from https://www.tutorialspoint.com/http/http_responses.htm
+Christensson, P. (2006). Payload Definition. Retrieved from https://techterms.com
+fscholz, et.al.(2016). Content-Type. Retrieved from https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type
