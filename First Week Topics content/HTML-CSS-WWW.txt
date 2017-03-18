@@ -34,9 +34,9 @@ Posted, & Rouse, M. (2015, October 9). What is cascading style sheet (CSS)? - de
 
 WWW
 
-WWW or World Wide Web was designed by Tim Berners-Lee in 1989 and was released in 1991 while he was working at CERN as a contractor. Tim-Berners Lee who is a European was considered as father of WWW. It is an information system that allows documents to be connected to other documents. It is where internet resources are located such as media files, cites and etc. that can be accessed or search by users by using a web browser like Firefox, Google Chrome and many more. 
+WWW or World Wide Web or simply "Web" was designed by Tim Berners-Lee in 1989 and was released in 1991 while he was working at CERN as a contractor. Tim-Berners Lee who is a European was considered as father of WWW. It is an information system that allows documents to be connected to other documents. It is where internet resources are located such as media files, cites and etc. that can be accessed or search by users by using a web browser like Firefox, Google Chrome and many more. WWW is a way of accessing information over the medium of Internet. WWW is based on the 3 core technologies, the HTML or Hypertext Markup Language, HTTP or Hypertext Transfer Protocol and Web servers and Web browsers. Many people think that WWW and Internet are the same, but the truth is no, WWW is just a part of the Internet.
 References:
-
 Divestopedia, & Institute, S. (2017). What is the world wide web (WWW)? - definition from Techopedia. Retrieved March 5, 2017, from https://www.techopedia.com/definition/5217/world-wide-web-www
-
+Beal, V. (n.d.). Web - World Wide Web, from http://www.webopedia.com/TERM/W/World_Wide_Web.html
 What is the world wide web (WWW)? Definition and meaning (2017). In . BusinessDictionary.com. Retrieved from http://www.businessdictionary.com/definition/World-Wide-Web-WWW.html
+Mitchell, B. (n.d.). The World Wide Web is not the Internet, from https://www.lifewire.com/history-of-world-wide-web-816583
