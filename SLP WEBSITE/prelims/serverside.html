@@ -10,6 +10,9 @@
 
     <title>WEBTEK | SERVER SIDE SCRIPTING</title>
     
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    
     <!-- Overwrite CSS -->
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     
@@ -41,23 +44,73 @@
     <li class="active"><a data-toggle="tab" href="#definition">Definition</a></li>
     <li><a data-toggle="tab" href="#hist">History</a></li>
     <li><a data-toggle="tab" href="#uses">Uses</a></li>
+    <li><a data-toggle="tab" href="#langu">Languages Available</a></li>
+    <li><a data-toggle="tab" href="#refs">References</a></li>
   </ul>
   <div class="tab-content">
     <div id="definition" class="tab-pane fade in active">
-      <h3>DEFINITION</h3>
-        <ul>
-            <li>Def Here</li>
-        </ul>
+      <p>Server-side scripting is a strategy utilized as a part of web development which includes utilizing scripts on a web server which deliver a reaction altered for every client's demand to the site. The option is for the web server itself to convey a static website page. Scripts can be composed in any of various server-side scripting dialects that are accessible. Server-side scripting is recognized from customer side scripting where installed scripts, for example, JavaScript, are run client side in a web program, yet both systems are regularly utilized together.</p> 
     </div>
     <div id="hist" class="tab-pane fade">
-      <h3>Place header here (ALL IN CAPS)</h3>
-      <p>Place content Here</p>
+      <img src="../img/histInfographic/2092667573_5fea1e114f_o.jpg" alt="Server Side Scripting History" class="img-responsive">
+        <p>In the prior days of the web, server-side scripting was solely performed by utilizing a blend of C projects, Perl scripts, and shell scripts utilizing the Common Gateway Interface (CGI). Those scripts were executed by the working framework, and the outcomes were served back by the web server. Numerous current web servers can straightforwardly execute on-line scripting dialects, for example, ASP, JSP, Perl, PHP and Ruby either by the web server itself or by means of augmentation modules (e.g. mod_perl or mod_php) to the web server. For instance, WebDNA incorporates its own particular installed database framework. Either type of scripting (i.e., CGI or direct execution) can be utilized to develop complex multi-page locales, however coordinate execution ordinarily brings about less overhead in light of the lower number of calls to outside translators.</p> 
+
+        <p>Dynamic sites in some cases utilize custom web application servers, for example, Glassfish, Plack and Python's "Base HTTP Server" library, albeit some may not view this as server-side scripting. When outlining utilizing dynamic electronic scripting systems engineers must have a sharp comprehension of the sensible, worldly, and physical partition between the customer and the server. For a client's activity to trigger the execution of server-side code, for instance, a designer working with great ASP should expressly bring about the client's program to make a demand back to the web server. Making such cooperations can undoubtedly expend much advancement time and prompt to mixed up code. </p>
+
+        <p>Server-side scripts are prepared by the servers rather than customers. At the point when customers ask for a page containing server-side scripts, the relevant server forms the scripts and returns a HTML page to the customer.</p>
+        
+        <p>Netscape presented a usage of JavaScript for server-side scripting with Netscape Enterprise Server, initially released in December, 1994 (not long after in the wake of releasing JavaScript for programs).</p>
+
+        <p>Server-side scripting was later utilized as a part of mid 1995 by Fred DuFresne while building up the principal site for Boston, MA TV channel WCVB. The innovation is depicted in US patent 5835712. The patent was issued in 1998 and is currently claimed by Open Invention Network (OIN). In 2010 OIN named Fred DuFresne a "Recognized Inventor" for his work on server-side scripting. </p>
+
+        <p>Today, an assortment of administrations utilize server-side scripting to convey comes about back to a customer as a paid or free administration. An illustration would be WolframAlpha, which is a computational learning motor that registers comes about outside the customers condition and returns the figured outcome back. An all the more usually utilized administration is Google's exclusive web index, which seeks a great many reserved outcomes identified with the client determined catchphrase and returns a requested rundown of connections back to the customer. Apple's Siri application additionally utilizes server-side scripting outside of a web application. The application takes an information, figures an outcome, and returns the outcome back to the customer.</p>
     </div>
     <div id="uses" class="tab-pane fade">
-      <h3>Place header here (ALL IN CAPS)</h3>
-      <p>Place content Here</p>
-    </div>   
-  </div>
+      <p>Server-side scripting is frequently used to give a renewed interface to the client. These scripts may gather customer qualities for use in altering the reaction in terms of those attributes, the client's necessities, rights, and so forth. Server-side scripting additionally empowers the site proprietor to shroud the source code that creates the interface, while with customer side scripting, the client has admittance to all the code got by the customer. A drawback to the utilization of server-side scripting is that the customer needs to make additionally asks for over the system to the server so as to show new data to the client by means of the web program. These solicitations can back off the experience for the client, put more load on the server, and counteract utilization of the application when the client is separated from the server. 
+        </p>
+
+      <p>At the point when the server serves information in a regularly utilized way, for instance as indicated by the HTTP or FTP conventions, clients may have their decision of various customer programs (most current web programs can ask for and get information utilizing both of those conventions). On account of more specific applications, developers may compose their own particular server, customer, and interchanges convention that must be utilized with each other. 
+        </p>
+
+      <p>Programs that keep running on a client's PC while never sending or getting information over a system are not considered customers, thus the operations of such projects would not be considered customer side operations.</p>
+    </div>
+    <div id="langu" class="tab-pane fade">
+        <p>There are a number of server-side scripting languages available, including:</p>
+            <ul>
+                <li>ASP (*.asp)</li>
+                <li>ActiveVFP (*.avfp)</li>
+                <li>ASP.NET (*.aspx)</li>
+                <li>ASP.NET MVC (*.cshtml)</li>
+                <li>ColdFusion Markup Language (*.cfm)</li>
+                <li>Go (*.go)</li>
+                <li>Google Apps Script (*.gs)</li>
+                <li>Hack (*.php)</li>
+                <li>Haskell (*.hs) (example: Yesod)</li>
+                <li>Java (*.jsp) via JavaServer Pages</li>
+                <li>JavaScript using Server-side JavaScript (*.ssjs, *.js) (example: Node.js)</li>
+                <li>Lasso (*.lasso)</li>
+                <li>Lua (*.lp *.op *.lua)</li>
+                <li>Parser (*.p)</li>
+                <li>Perl via the CGI.pm module (*.cgi, *.ipl, *.pl)</li>
+                <li>PHP (*.php, *.php3, *.php4, *.phtml)</li>
+                <li>Python (*.py) (examples: Pyramid, Flask, Django)</li>
+                <li>R (*.rhtml) - (example: rApache)</li>
+                <li>Ruby (*.rb, *.rbw) (example: Ruby on Rails)</li>
+                <li>SMX (*.smx)</li>
+                <li>Tcl (*.tcl)</li>
+                <li>WebDNA (*.dna,*.tpl)</li>
+                <li>Progress WebSpeed (*.r,*.w)</li>
+                <li>Bigwig (*.wig)</li>
+            </ul>
+    </div>
+    <div id="refs" class="tab-pane fade">
+        <p>Server-Side Scripting, (2017, March 13). Retrieved from http://www.computerhope.com/jargon/s/server-side-scripting.htm</p>
+        <p>Tech Blog. The History of the Dynamic Web -- A timeline. Retrieved from http://royal.pingdom.com/2007/12/07/a-history-of-the-dynamic-web/</p>
+        <p>History of CSS and Common Server Side Scripting Languages: Web Design Lesson 7(d), (2017, March 14) Retrieved from http://www.interactiontalks.com/history-of-css-and-common-server-side-scripting-languages-web-design-lesson-7/</p>
+        <p>W3Techs 2012, Usage of Server Side Programming Languages for Websites, (2017, March 14) Retrieved from http://w3techs.com/technologies/overview/programming_language/all</p>
+    </div>
+</div>
+</div>
 
  
     <!-- Footer -->

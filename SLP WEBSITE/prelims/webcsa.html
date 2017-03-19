@@ -10,6 +10,9 @@
 
     <title>WEBTEK | WEB SERVER, WEB CLIENT, WEB APPLICATIONS</title>
     
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    
     <!-- Overwrite CSS -->
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     
@@ -41,22 +44,96 @@
     <li class="active"><a data-toggle="tab" href="#webserver">Web Server</a></li>
     <li><a data-toggle="tab" href="#webclient">Web Client</a></li>
     <li><a data-toggle="tab" href="#webapp">Web Applications</a></li>
+    <li><a data-toggle="tab" href="#hist">Bit of History</a></li>
+    <li><a data-toggle="tab" href="#ref">References</a></li>
   </ul>
   <div class="tab-content">
-    <div id="definition" class="tab-pane fade in active">
+    <div id="webserver" class="tab-pane fade in active">
       <h3>DEFINITION</h3>
-      <p>Place content Here</p>
+      <p>A web server in its simplest sense is simply what store, process and delivers web pages to clients (Beal, V. n.d.). Or to illustrate, imagine inputting a url(uniform resource locator) in your browser and once you press ‘Enter’ the website will immediately boot up whenever you are and wherever you are. So, in this process, once you inputted a url, it will send a request in the server. The server will then look through the data stored on it and find if it’s in there. If it is, it will send back the requested page. If it isn’t, it will send back an error message or the typical ‘Site not found error.’</p>
+      <img src="../img/webcsa/01.gif" alt="Process Illustration 1" class="img-responsive">
+      <h4>For a more technical way, the browser will break down the url into three parts.</h4>
+        <ol>
+            <li>The protocol (http://)</li>
+            <li>The server name (www.google.com)</li>
+            <li>The file name (dummy.htm)</li>
+        </ol>
+      <p>The browser will communicate with a domain name. Afterwards, it will be translated to an IP address. The translated url will then be used to connect to the server. The browser then formed a connection to the server by that IP address.</p>
+      <p>Following the protocol, the server will then send a get request to the server and asking for the file that you are looking for. Once, it finds that content it will send the HTML text for the browser to interpret. It will read the HTML tags and format the page in your screen. (Brain, M. n.d.)</p>
+      <h3>ARCHITECTURE</h3>
+      <p>The web server architecture follows two different approaches: </p>
+      <ol>
+        <li>Concurrent Approach</li>
+          <p>The server takes multiple requests at the same time.</p>
+        <li>Single-Process-Event-Driven Approach </li>
+          <p>The server takes only single requests at a time.</p>
+      </ol>
+      <h4>The Concurrent Approach</h4>
+      <p>This approach can be achieved in three ways:</p>
+      <ol>
+          <li>Multi-process </li>
+          <p>This is a process wherein a parent process starts several single-threaded child processes. Then, the parent process will distribute each incoming request among the children processes. The parent process will be in charge for loading and monitoring while the child will only be focused on a single task.</p>
+          <li>Multi-threaded </li>
+          <p>A parent process, unlike the multi-process, creates multiple single-threaded process.</p>
+          <li>Hybrid Method </li>
+          <p>This is a combination of the first two approaches.</p>
+      </ol>
+      <h3>EXAMPLES OF WEB SERVERS:</h3>
+      <ul>
+          <li>Apache HTTP Server</li>
+          <li>Internet Information Services</li>
+          <li>Lighttpd</li>
+          <li>Sun Java System Web Server</li>
+          <li>Jigsaw Server</li>
+      </ul>
     </div>
     <div id="webclient" class="tab-pane fade">
-      <h3>Place header here (ALL IN CAPS)</h3>
-      <p>Place content Here</p>
+      <h3>DEFINITION</h3>
+      <p>The web client typically refers to the browser and may also refer to plug-ins that support special services to the site. It can also refer to whatever a person is using to access a website like handheld devices or electronic devices. (Computer language company, Inc. n.d.)</p>
+      <p>This is also known as a thin client because it doesn’t handle the heavy work, which is the work of the server. (technopedia. n.d.)</p>
+      <p>The client is also referred to as either the human user or the browser. (technopedia. n.d.)</p>
+      <p>The main purpose of the web client is to search for the content in the world wide web and display it in the shape of a webpage, image, audio and the like as long as it is available.</p>
+      <p>The process is shown by the images below.</p>
+      <img src="../img/webcsa/02.jpg" alt="Client Process" class="img-responsive">
+      <img src="../img/webcsa/04.jpg" alt="Server Process" class="img-responsive">
+      <h3>EXAMPLES:</h3>
+      <p>Chrome, Safari, Opera Mini, Firefox (or any other common browsers)</p>
     </div>
     <div id="webapp" class="tab-pane fade">
-      <h3>Place header here (ALL IN CAPS)</h3>
-      <p>Place content Here</p>
-    </div>   
+      <h3>DEFINITION</h3>
+      <p>This is an application that runs on a web server and must be accessed through a web browser. A web application can run through any kind of browsers. In a user standpoint, it shows a more consistent user interface because the appearance is dependent on the browser. (Rouse, M. n.d.)</p>
+      <p>As long as a website component performs some function that can be used then it qualifies as a web application.</p>
+      <p>From a technical point of view, the web application is a highly programmable environment that allows mass customization through the immediate deployment of diverse applications that can be accessed by billions and billions of people. (acunetix. n.d.)</p>
+      <p>Web applications are computer programs that allows the user to retrieve and send data to a database from the internet. This is always achieved by the user using their preferred browser. The data is then presented to the user in specific formats(such as HTML using CSS) through the web application through a web server. (acunetix. n.d.)</p>
+      <h3>HOW IT WORKS AND ITS ISSUES</h3>
+      <img src="../img/webcsa/05.gif" alt="How it works Illustration" class="img-responsive">
+      <img src="../img/webcsa/06.jpg" alt="Issues Illustration" class="img-responsive">
+    </div> 
+    <div id="hist" class="tab-pane fade">
+        <h3>WEB SERVER</h3>
+        <h4>1990</h4>
+        <p>Berners-Lee wrote two programs: (1) World Wide Web browser, (2) the world’s first web server, later known as CERN httpd which ran on NeXTSTEP.</p>
+        <h3>WEB APPLICATION</h3>
+        <p>The Web Applications have been around since the Web gained mainstream popularity. In the future, some common apps like the Microsoft Office are now going web or leaning more to cloud given the fact that data can now be stored to a database. This is also convenient for people to be able to access their data anywhere and anytime. (Nations, D. 2016)</p>
+    </div>
+    <div id="ref" class="tab-pane fade">
+        <p>Beal, V. (n.d.). Web server. Retrieved from  http://www.webopedia.com/TERM/W/Web_server.html</p>
+        <p>Whatismyipaddress.com (n.d.). Web server. Retrieved from http://whatismyipaddress.com/web-server</p>
+        <p>Brain, M. (n.d.). How web servers work. Retrieved from http://computer.howstuffworks.com/web-server.htm</p>
+        <p>HowStuffWorks. Untitled Image. Retrieved from http://computer.howstuffworks.com/web-server1.htm</p>
+        <p>Tutorialspoint.com (n.d.). Web server. Retrieved from https://www.tutorialspoint.com/internet_technologies/web_servers.htm</p>
+        <p>Computer Language Inc. (n.d.). Web client definition. Retrieved from http://www.pcmag.com/encyclopedia/term/54284/web-client</p>
+        <p>Technopedia.com(n.d.). Web client. Retrieved from https://www.techopedia.com/definition/24352/web-client-j2ee</p>
+        <p>Client Server Process. Retrieved from: https://www.safaribooksonline.com/library/view/head-first-servlets/9780596516680/ch01s03.html</p>
+        <p>Bates, et.al. (2008). Head First Servlets and JSP, 2nd Edition. Retrieved from https://www.safaribooksonline.com/library/view/head-first-servlets/9780596516680/ch01s03.html</p>
+        <p>Rouse, M. (n.d.). Web application (web app). Retrieved from https://www.safaribooksonline.com/library/view/head-first-servlets/9780596516680/ch01s03.html</p>
+        <p>Acutenix.com(n.d.). Web applications: What are they? What of them? Retrieved from http://www.acunetix.com/websitesecurity/web-applications/</p>
+        <p>Nations, D. (2016). Improve your understanding of web applications. Retrieved from https://www.lifewire.com/what-is-a-web-application-3486637</p>
+        <p>Untitled image. Retrieved from http://www.acunetix.com/websitesecurity/web-applications/</p>
+        <p>Untitled image. Retrieved from http://www.acunetix.com/websitesecurity/web-applications/</p>
+    </div>
   </div>
-
+</div>
  
     <!-- Footer -->
     <footer>
