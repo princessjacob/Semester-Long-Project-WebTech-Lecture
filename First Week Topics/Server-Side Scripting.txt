@@ -44,28 +44,82 @@ There are a number of server-side scripting languages available, including:
   In case you're new to JavaScript, Codecademy offers an extraordinary course for learners. (Take note of that this course was not created by and is not related with Google.)
   
 •	Hack (*.php)
-  -
+  -Hack is a programming language for HHVM. Hack accommodates the quick advancement cycle of a dynamically typed language with the discipline provided by static typing, while including many elements generally found in other present day programming dialects. 
+  Hack gives prompt sort checking by incrementally checking your documents as you alter them. It normally keeps running in under 200 milliseconds, making it simple to coordinate into your advancement work process immediately.
   
 •	Haskell (*.hs) (example: Yesod)
-  -
+  -Haskell is an institutionalized, broadly useful simply practical programming language, with non-strict semantics and solid static typing. It is named after philosopher Haskell Curry. The most recent standard of Haskell will be Haskell 2010. As of May 2016, a gathering is dealing with the following variant, Haskell 2020. 
+  Haskell highlights a sort framework with sort induction and lazy evaluation. Sort classes initially showed up in the Haskell programming language. Its primary usage is the Glasgow Haskell Compiler. 
+  Haskell depends on the semantics, yet not the punctuation, of the language Miranda, which served to center the endeavors of the underlying Haskell working gathering. Haskell is utilized generally in the scholarly world and furthermore utilized as a part of industry.
   
 •	Java (*.jsp) via JavaServer Pages
-  -
+  -Java is a broadly useful PC programming language that is simultaneous, class-based, protest oriented, and particularly intended to have as few execution conditions as could reasonably be expected. It is expected to give application designers "a chance to compose once, run anyplace" (WORA), implying that incorporated Java code can keep running on all stages that bolster Java without the requirement for recompilation. Java applications are regularly aggregated to bytecode that can keep running on any Java virtual machine (JVM) paying little mind to PC engineering. Starting at 2016, Java is a standout amongst the most famous programming language in use, especially for customer server web applications, with an announced 9 million developers. Java was initially created by James Gosling at Sun Microsystems (which has since been procured by Oracle Corporation) and discharged in 1995 as a center segment of Sun Microsystems' Java stage. The language infers a lot of its linguistic structure from C and C++, yet it has less low-level offices than both of them. 
+  The first and reference execution Java compilers, virtual machines, and class libraries were initially discharged by Sun under restrictive licenses. As of May 2007, in consistence with the determinations of the Java Community Process, Sun relicensed a large portion of its Java advances under the GNU General Public License. Others have additionally created elective usage of these Sun innovations, for example, the GNU Compiler for Java (bytecode compiler), GNU Classpath (standard libraries), and IcedTea-Web (program module for applets). 
+  The most recent adaptation is Java 8 Update 121 which is the main form as of now upheld for nothing by Oracle, albeit prior renditions are bolstered both by Oracle and different organizations on a business premise.
   
 •	JavaScript using Server-side JavaScript (*.ssjs, *.js) (example: Node.js)
+  -JavaScript is an high-level, dynamic, untyped, and interpreted programming language. It has been institutionalized in the ECMAScript language detail. Nearby HTML and CSS, JavaScript is one of the three center advancements of World Wide Web content generation; the greater part of sites utilize it, and all present day Web programs bolster it without the requirement for modules. JavaScript is model based with five star capacities, making it a multi-worldview language, supporting item oriented,[9] basic, and practical programming styles. It has an API for working with content, clusters, dates and normal expressions, however does exclude any I/O, for example, systems administration, stockpiling, or illustrations offices, depending for these upon the host condition in which it is installed. 
+  Despite the fact that there are solid outward likenesses amongst JavaScript and Java, including language name, sentence structure, and separate standard libraries, the two are particular languages and vary enormously in their outline. JavaScript was impacted by programming languages, for example, Self and Scheme. 
+  JavaScript is additionally utilized as a part of conditions that are not Web-based, for example, PDF records, website particular programs, and desktop gadgets. More current and speedier JavaScript virtual machines (VMs) and stages based upon them have additionally expanded the notoriety of JavaScript for server-side Web applications. On the customer side, designers have customarily executed JavaScript as a deciphered language, however later programs perform without a moment to spare accumulation. Software engineers additionally utilize JavaScript in computer game improvement, in creating desktop and portable applications, and in server-side system programming with run-time situations, for example, Node.js.
+  
 •	Lasso (*.lasso)
+  -Lasso is an application server and server administration interface used to create web applications and is a universally useful, abnormal state programming language. Initially a web datasource association instrument, for Filemaker and later incorporated into Apple Computer's FileMaker 4.0 and Claris Homepage as CDML, it has since advanced into a mind boggling language used to create and serve expansive scale web applications and website pages. 
+  Lasso incorporates a straightforward format framework permitting code to control era of HTML and other substance sorts. Lasso is protest arranged and each esteem is a question. It likewise bolsters procedural programming through unbound techniques. The language utilizes characteristics and various dispatch broadly. 
+  Lasso has a dynamic sort framework, where articles can be stacked and increased at runtime, programmed memory administration, an extensive standard library, and three gathering systems: dynamic (practically identical to PHP-Python), in the nick of time assemblage (similar to Java or .NET Framework), and pre-incorporated (equivalent to C). Lasso likewise underpins Query Expressions, permitting components inside clusters and different sorts of groupings to be iterated, separated, and controlled utilizing a characteristic language sentence structure like SQL. Lasso incorporates full Unicode character bolster in the standard string object, permitting it to serve and support multi-byte characters, for example, Japanese and Swedish, and backings straightforward UTF-8 change when composing string information to the system or document framework. 
+  Lasso is regularly utilized as a scripting language, and furthermore utilized as a part of an extensive variety of non-scripting settings. Lasso code can be bundled into independent executable projects called "LassoApps", in which organizer structures are assembled into single records. 
+  The Lasso Server application server keeps running as a framework benefit and gets demands from the web server through FastCGI. It then hands the demand off to the suitable Lasso Instance, which details the reaction. Different individual occasions are bolstered, permitting one server to deal with numerous locales, each as particular procedures. The server utilizes a superior IO-based green threading framework intended for multi-center frameworks. 
+   Lasso can be contrasted with the server-side scripting languages PHP and Python, ColdFusion, Ruby, and so on. 
+  Free for advancement, Lasso permits halfway access to its source code, permitting engineers to include or change real parts of the language (for instance, Ke Carlton's DS usage of the Lasso Inline). Authorizing comes in both SAS and remain solitary adaptations.
+  
 •	Lua (*.lp *.op *.lua)
+  -Lua is a lightweight multi-worldview programming language composed fundamentally for inserted frameworks and customers. Lua is cross-stage, since it is composed in ANSI C, and has a generally straightforward C API. 
+  Lua was initially composed in 1993 as a language for stretching out programming applications to take care of the expanding demand for customization at the time. It gave the essential offices of most procedural programming languages, yet more confused or space particular components were excluded; rather, it included instruments for developing the language, permitting software engineers to execute such elements. As Lua was expected to be a general embeddable augmentation language, the fashioners of Lua concentrated on enhancing its speed, versatility, extensibility, and convenience being developed.
+  
 •	Parser (*.p)
+  -Alluding to the syntactic investigation of the info code into its segment parts with a specific end goal to encourage the written work of compilers and mediators. The term may likewise be utilized to portray a part or partition.
+  
 •	Perl via the CGI.pm module (*.cgi, *.ipl, *.pl)
+  -Perl is a group of high level, universally useful, interpreted, dynamic programming languages. The languages in this family incorporate Perl 5 and Perl 6. 
+  In spite of the fact that Perl is not formally an acronym, there are different backronyms being used, the best-known being "Handy Extraction and Reporting Language". Perl was initially created by Larry Wall in 1987 as a universally useful Unix scripting language to make report handling simpler. From that point forward, it has experienced many changes and modifications. Perl 6, which started as an overhaul of Perl 5 in 2000, in the long run advanced into a different language. Both languages keep on being created autonomously by various improvement groups and generously get thoughts from each other. 
+  The Perl languages get highlights from other programming languagess including C, shell script (sh), AWK, and sed. They give intense content preparing offices without the subjective information length points of confinement of numerous contemporary Unix commandline devices, encouraging simple control of content records. Perl 5 increased across the board prominence in the late 1990s as a CGI scripting language, to a limited extent because of its (then) top notch general expression and string parsing capacities. 
+  Notwithstanding CGI, Perl 5 is utilized for framework organization, arrange programming, fund, bioinformatics, and different applications, for example, for GUIs. It has been nicknamed "the Swiss Army cutting apparatus of scripting languges" in view of its adaptability and control, and perhaps at the same time due to its "offensiveness". In 1998, it was additionally alluded to as the "pipe tape that holds the Internet together", in reference to both its pervasive use as a paste language and its apparent inelegance.
+  
 •	PHP (*.php, *.php3, *.php4, *.phtml)
+  -PHP (recursive acronym for PHP: Hypertext Preprocessor) is a broadly utilized open source universally useful scripting language that is particularly suited for web advancement and can be installed into HTML
+  
 •	Python (*.py) (examples: Pyramid, Flask, Django)
+  -Python is a broadly utilized high level programming language for universally useful programming, made by Guido van Rossum and initially discharged in 1991. A interpreted language, Python has an outline logic which underlines code intelligibility (eminently utilizing whitespace space to delimit code squares as opposed to wavy props or watchwords), and a linguistic structure which permits developers to express ideas in less lines of code than conceivable in languages, for example, C++ or Java. The language gives builds expected to empower composing clear projects on both a little and extensive scale.
+  Python highlights a dynamic sort framework and programmed memory administration and backings numerous programming ideal models, including object-arranged, basic, practical programming, and procedural styles. It has a vast and thorough standard library.
+  Python mediators are accessible for some working frameworks, permitting Python code to keep running on a wide assortment of frameworks. CPython, the reference usage of Python, is open source software and has a group based improvement display, as do about the greater part of its variation executions. CPython is overseen by the non-profit Python Software Foundation.
+  
 •	R (*.rhtml) - (example: rApache)
+  -R is an open source programming language and programming condition for measurable figuring and design that is upheld by the R Foundation for Statistical Computing. The R language is broadly utilized among analysts and information mineworkers for creating measurable programming and information examination. Surveys, reviews of information mineworkers, and investigations of insightful writing databases demonstrate that R's ubiquity has expanded considerably as of late. 
+  R is a GNU bundle. The source code for the R programming condition is composed principally in C, Fortran, and R. R is uninhibitedly accessible under the GNU General Public License, and pre-arranged parallel adaptations are accommodated different working frameworks. While R has an order line interface, there are a few graphical front-closes accessible.
+  
 •	Ruby (*.rb, *.rbw) (example: Ruby on Rails)
+  -Ruby is a dynamic, intelligent, object-oriented, broadly useful programming dialect. It was composed and created in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan. 
+  As indicated by its maker, Ruby was affected by Perl, Smalltalk, Eiffel, Ada, and Lisp. It bolsters different programming standards, including functional, object oriented, and imperative. It additionally has a dynamic type framework and programmed memory administration.
+  
 •	SMX (*.smx)
+  -SMX (from Server Macro Expansion) is a macro processing language intended to install macros in website pages. Initially released with the famous Internet Factory's Commerce Builder software, it has been ported as an Apache module
+  
 •	Tcl (*.tcl)
+  -Tcl is a high-level, all-purpose, interpreted, dynamic programming language. It was outlined with the objective of being extremely straightforward yet powerful. Tcl throws everything into the shape of a summon, notwithstanding programming develops like variable task and system definition. Tcl underpins different programming ideal models, including object-situated, basic and practical programming or procedural styles. 
+  It is ordinarily utilized implanted into C applications, for fast prototyping, scripted applications, GUIs, and testing. Tcl translators are accessible for some working frameworks, permitting Tcl code to keep running on a wide assortment of frameworks. Since Tcl is an exceptionally smaller language, it is utilized on installed frameworks stages, both in its full shape and in a few other little impression versions.
+  The famous blend of Tcl with the Tk expansion is alluded to as Tcl/Tk, and empowers assembling a graphical UI (GUI) locally in Tcl. Tcl/Tk is incorporated into the standard Python establishment as Tkinter.
+  
 •	WebDNA (*.dna,*.tpl)
+  -WebDNA is a server-side scripting, interpreted language with an implanted database framework, particularly intended for the World Wide Web. Its essential utilize is in making database-driven element site page applications. Discharged in 1995, the name was enrolled as a trademark in 1998. WebDNA is at present kept up by WebDNA Software Corporation.
+  
 •	Progress WebSpeed (*.r,*.w)
+  -Communication between a web application and an Appserver.
+  
 •	Bigwig (*.wig)
+  -Bigwig is an high level programming language for creating intuitive Web services. 
+  The objective of the bigwig venture is to expel a large portion of the snags that face current designers of Web administrations to lower cost while expanding usefulness and dependability, contrasted with CGI/Perl scripts, ASP, or PHP based arrangements. The <bigwig> dialect is a relative of the Mawl extend, acquiring the ideas of sessions and record layouts. 
+  Bigwig is being created at the BRICS look into focus at the Department of Computer Science, Aarhus University, Denmark. 
+  In the event that this is your first visit to the bigwig landing page we urge you to peruse the presentation. 
+  The most recent arrival of the bigwig compiler and runtime framework is adaptation 2.0. It is accessible for download under the GNU Public License. It keeps running on Linux/Solaris frameworks with the Apache Web server.
 
 
 References:
