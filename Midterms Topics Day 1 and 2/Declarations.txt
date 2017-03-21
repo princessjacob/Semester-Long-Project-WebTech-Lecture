@@ -1,0 +1,37 @@
+CSS Declarations
+1. Properties
+	-Shorthand Properties
+	-Vendor specific extensions (aka vendor prefixes)
+2. Values
+	-Keywords
+	-Numbers (int, real numbers in decimal notation)
+3. Lengths
+	a. Length in units
+		-em
+		-px
+		-in
+		-cm
+		-mm
+		-pt (point 1/72")
+		-pc (pica 1/6")
+	b.Percentages
+	c. URLs and URIs
+	d. Counters
+	e. Colors
+		-rgb (_,_,_)
+		-rgba (_,_,_) a: alphachannel/opacity
+		-Hsl: hue, saturation, lightness hsl(_,_,_) and hsla (_,_,_)
+	f. Strings
+4. Others wich are also used at the same time, but no lengths:
+	a. angles: transformation
+		-deg
+		-rad
+		-grad
+		-turn
+	b. time: animation
+		-ms
+		-s
+	c. frequencies: speech
+		-hz
+		-khz
+	d. resolution
