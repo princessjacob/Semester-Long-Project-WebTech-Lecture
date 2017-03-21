@@ -20,30 +20,52 @@ Dynamic sites in some cases utilize custom web application servers, for example,
 Server-side scripts are totally prepared by the servers rather than customers. At the point when customers ask for a page containing server-side scripts, the relevant server forms the scripts and returns a HTML page to the customer.
 
 There are a number of server-side scripting languages available, including:
-•	ASP (*.asp)
-•	ActiveVFP (*.avfp)
-•	ASP.NET (*.aspx)
-•	ASP.NET MVC (*.cshtml)
-•	ColdFusion Markup Language (*.cfm)
-•	Go (*.go)
-•	Google Apps Script (*.gs)
-•	Hack (*.php)
-•	Haskell (*.hs) (example: Yesod)
-•	Java (*.jsp) via JavaServer Pages
-•	JavaScript using Server-side JavaScript (*.ssjs, *.js) (example: Node.js)
-•	Lasso (*.lasso)
-•	Lua (*.lp *.op *.lua)
-•	Parser (*.p)
-•	Perl via the CGI.pm module (*.cgi, *.ipl, *.pl)
-•	PHP (*.php, *.php3, *.php4, *.phtml)
-•	Python (*.py) (examples: Pyramid, Flask, Django)
-•	R (*.rhtml) - (example: rApache)
-•	Ruby (*.rb, *.rbw) (example: Ruby on Rails)
-•	SMX (*.smx)
-•	Tcl (*.tcl)
-•	WebDNA (*.dna,*.tpl)
-•	Progress WebSpeed (*.r,*.w)
-•	Bigwig (*.wig)
+â€¢	ASP (*.asp)
+  -It was initially released in January 2002 with version 1.0 of the .NET Framework, and is the successor to Microsoft's Active Server Pages (ASP) technology. ASP.NET is based on the Common Language Runtime (CLR), permitting software engineers to compose ASP.NET code utilizing any bolstered .NET dialect. The ASP.NET SOAP expansion system permits ASP.NET segments to process SOAP messages.
+  
+â€¢	ActiveVFP (*.avfp)
+  -ActiveVFP (otherwise called AVFP) is a server-side scripting system intended for Web improvement to create dynamic Web pages. Like PHP, however utilizing the local Visual Foxpro (VFP) dialect and database (or different databases like Microsoft SQL and MySQL), ActiveVFP can likewise be utilized as a part of Model-View-Controller (MVC) web applications and in addition RESTful API. ActiveVFP is totally free and open source and does not require the buy of Microsoft Visual FoxPro or any extra programming. 
+  ActiveVFP was initially made in 2001. The principle execution of ActiveVFP is currently created by the Foxpro Community at activevfp.codeplex.com and fills in as the formal reference to ActiveVFP. ActiveVFP is free programming discharged under the MIT License.
+
+â€¢	ASP.NET (*.aspx)
+  -It was initially released in January 2002 with version 1.0 of the .NET Framework, and is the successor to Microsoft's Active Server Pages (ASP) technology. ASP.NET is based on the Common Language Runtime (CLR), permitting software engineers to compose ASP.NET code utilizing any bolstered .NET dialect. The ASP.NET SOAP expansion system permits ASP.NET segments to process SOAP messages.
+  
+â€¢	ASP.NET MVC (*.cshtml)
+  --The Model-View-Controller (MVC) compositional example isolates an application into three principle segments: the model, the view, and the controller. The ASP.NET MVC system gives a contrasting option to the ASP.NET Web Forms design for making Web applications. The ASP.NET MVC structure is a lightweight, exceptionally testable introduction system that (as with Web Forms-based applications) is coordinated with existing ASP.NET components, for example, ace pages and participation based validation. The MVC structure is characterized in the System.Web.Mvc gathering.
+  
+â€¢	ColdFusion Markup Language (*.cfm)
+  -ColdFusion Markup Language, all the more generally known as CFML, is a scripting dialect for web improvement that keeps running on the JVM, the .NET structure, and Google App Engine. Numerous business and open source usage of CFML motors are accessible, including Adobe ColdFusion, Lucee, New Atlanta BlueDragon (who makes both a Java-based and a .NET-based form), Railo, and Open BlueDragon and other CFML server motors.
+  
+â€¢	Go (*.go)
+  -Go (regularly alluded to as golang) is a free and open source programming dialect made at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson. It is an assembled, statically written dialect in the convention of Algol and C, with trash accumulation, restricted auxiliary typing, memory security elements and CSP-style simultaneous programming highlights added.
+  
+â€¢	Google Apps Script (*.gs)
+  -Google Apps Script is a scripting language in view of JavaScript that gives you a chance to do new and cool things with Google Apps like Docs, Sheets, and Forms. There's nothing to introduce â€” we give you a code supervisor ideal in your program, and your scripts keep running on Google's servers. 
+  In case you're new to JavaScript, Codecademy offers an extraordinary course for learners. (Take note of that this course was not created by and is not related with Google.)
+  
+â€¢	Hack (*.php)
+  -
+  
+â€¢	Haskell (*.hs) (example: Yesod)
+  -
+  
+â€¢	Java (*.jsp) via JavaServer Pages
+  -
+  
+â€¢	JavaScript using Server-side JavaScript (*.ssjs, *.js) (example: Node.js)
+â€¢	Lasso (*.lasso)
+â€¢	Lua (*.lp *.op *.lua)
+â€¢	Parser (*.p)
+â€¢	Perl via the CGI.pm module (*.cgi, *.ipl, *.pl)
+â€¢	PHP (*.php, *.php3, *.php4, *.phtml)
+â€¢	Python (*.py) (examples: Pyramid, Flask, Django)
+â€¢	R (*.rhtml) - (example: rApache)
+â€¢	Ruby (*.rb, *.rbw) (example: Ruby on Rails)
+â€¢	SMX (*.smx)
+â€¢	Tcl (*.tcl)
+â€¢	WebDNA (*.dna,*.tpl)
+â€¢	Progress WebSpeed (*.r,*.w)
+â€¢	Bigwig (*.wig)
 
 
 References:
