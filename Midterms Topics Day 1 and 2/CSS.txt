@@ -1,0 +1,12 @@
+CSS
+CSS or Cascading Style Sheets is used to control the design of a web page. It is used in formatting the style or design of the elements/ attributes that has been implemented in the html. In other words, CSS instructs the content of a webpage on how should it look. It is the presentation aspects of structural makup documents like HTML. It was developed by Håkon Wium Lie and Bert Bos.
+Example of CSS below:
+body {
+font-family: Times New Roman;
+color: red;
+font-size: 16px;
+}
+
+References:
+Kirkwood, A. (2005, June 3). Definition: Cascading style sheets (CSS), stylesheet, styles, specifications. Retrieved March 5, 2017, from http://www.motive.co.nz/glossary/stylesheets.php
+Posted, & Rouse, M. (2015, October 9). What is cascading style sheet (CSS)? - definition from WhatIs.Com. Retrieved March 5, 2017, from http://searchmicroservices.techtarget.com/definition/cascading-style-sheet-CSS
