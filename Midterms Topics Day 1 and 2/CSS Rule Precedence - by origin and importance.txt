@@ -1,0 +1,54 @@
+CSS RULE PRECEDENCE
+
+What is it?
+- CSS rule precedence refers to the CSS declarations that are displayed in the browser with considerations on three levels: by rule and importance, by specifity and by order.
+
+LEVEL 1: BY RULE AND IMPORTANCE
+
+HIERARCHY:
+
+-- Important declarations - these declarations are usually prioritized first because of the tagline !important.
+
+a. user agent important declarations - declarations from a user agent stylesheet that contains an !important tagline. These declarations takes precedence because these are the stylesheets used by browsers to render html files.
+    i.e. li { margin-left: 10px !important }
+
+b. user important declarations - user declarations that contains !important tagline. User important declarations can override author important declarations.
+
+c. author important declarations - author declarations that contains the !important tagline.
+
+    i.e. (To further show the difference between user important declarations and author important declarations)
+
+    /* User Important declarations */
+
+        p {
+            color: red !important;
+            font-weight: 2em;
+        }
+
+        (attach image for the result)
+
+    /* Author Important declarations */
+        p {
+            color: blue !important;
+            font-weight: 1em;
+        }
+        (attach image for the result)
+
+        ** Even with both declarations containing an !important tagline, the user important declarations is still given precedence.
+
+-- Normal declarations - declarations that doesn't contain an !important tagline.
+
+d. author normal declarations - author specified declarations that are written to create a style for the document. These declarations take precedence for it can override the other following declarations.
+
+e. user normal declarations - declarations specified by the user (i.e. A person wanted to make the font style bigger than the normal size. To do that, he can then edit such in the browser options or through some third party software or extension installed in the browser such as ChromeVox for example.) They can overwrite user agent normal declarations if an author normal declaration is not set.
+
+f. user agent normal declarations - declarations that served as a default style formatting for web pages.
+
+    i.e.
+    <li>I</li> <!-- This item will be styled as a list item -->
+
+
+REFERENCES:
+Bos, B. et.al. (2011, June 7). Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification. Retrieved from https://www.w3.org/TR/2011/REC-CSS2-20110607/#minitoc
+Zartner, S. et.al. (2015, July 7). Cascade. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade
+Meiert, J. (2007, September 22). User Agent Stylesheets: Basics and Samples. Retrieved from https://meiert.com/en/blog/20070922/user-agent-style-sheets/
