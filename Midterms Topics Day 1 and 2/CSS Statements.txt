@@ -1,0 +1,117 @@
+CSS Statements
+The CSS style sheet consist of a list if statements. The CSS Statement is either an AT RULE or a RULE SET. 
+The AT RULE is a CSS statement which has a beginning with a at sign “@” and followed by  an identifier then it includes all until it comes to the next semicolon  . It composed of a semicolon in the ending of the first line. It gives the CSS with instructions to perform or on how to behave.
+	The format for AT RULE CSS statement is:
+		@[keyword] (rule);
+	For example:
+		<style tyle="text/css">
+ 		  	@import "mystyle.css";
+  		</style> 
+** There are also the rules of at rules :
+
+@charset 
+	The @charset is a rule used to define the character set that is used by the browser. The @charset that is placed on the HTTP header will override any @charset rule. This must be located and written at the beginning of the CSS. 
+	The syntax for the @charset is:
+		@charset “value”;
+	For example:
+		<style tyle=”text/css”>
+			@charset “UTF-8”;
+		</style>
+
+
+@import
+	The @import a rule that is used to insert in the very top of the document and instructs the stylesheet to request and also to include an external CSS file. It is used to import styles from other stylesheet. 
+	 The syntax for the @charset is:
+		@import “value”;
+	For example:
+		<style tyle=”text/css”>
+			@import “style.css”;
+		</style>
+
+
+@namespace
+	The @namespace is a rule which is very useful in applying CSS to XML HTML in order for the XHTML elements can be used as a selector in the CSS. 
+	The syntax for the @namespace is:
+		@namespace “URL”
+	For example:
+		@namespace url(http://www.webtek.org/xhtml);
+
+@document 
+	 The @document is a rule which specifies the conditions for the styles that apply to a specific page. 
+	The syntax for the @document is:
+		@document “URL”
+	For example:
+		@document  url(http://webtek.com)
+
+@font-face
+	The @font-face is a rule which allow to custom fonts on a webpage. It accepts statements which creates and serves those fonts. It is used 
+	The syntax for the @font-face is:
+		@font-face { values }
+	For example:
+		@font-face {
+			font-family: “Scarborough Light”;
+			src: url(http://www.webtek.com);
+		}
+
+@keyframes
+	The @keyframes is a rule which is the basis for the keyframe animations on many CSS properties by the means of allowing us to mark the start and the stop mark for what is being animated. 
+	The syntax for the @keyframes is:
+		@keyframes { values }
+	For example:
+		@keyframes pulse {
+			0%{
+				background-color: red;
+			}
+			100%{
+				background-color: blue;
+			}
+		}
+
+@media
+	The @media is a rule which consist of conditional statements for targeting styles to specific screen.
+	The syntax for the @media is:
+		@media { values }
+	For example:
+		@keyframes only screen  
+			and (min-device-width: 340px)
+			and (max-device-width: 500px)
+			and (-webkit-min-device-pixel-ratio: 2){
+				.module { width: 100%; }
+			}
+		}
+
+@page
+	The @page is a rule which defines the styles that are to individual pages in terms of printing the document. This is composed pseudo-elements for styling the :first page the same as the :left and the :right margins of the page. 
+	The syntax for the @page is:
+		@page { values }
+	For example:
+		@page :first {
+			margin: 1.5in;
+		}
+
+@supports
+	The @supports is a rule that tests whether a browser supports a feature, and then applies the styles for those of the elements if the condition occurred.
+	The syntax for the @supports is:
+		@supports { values }
+	For example:
+		@supports (display: flex) {
+			.module { display: flex; }
+		}
+
+References:
+https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule
+https://css-tricks.com/the-at-rules-of-css/
+http://reference.sitepoint.com/css/atrules
+
+
+
+The RULE SET includes a selector then followed by a declaration block. It applies any declarations that is in the declaration block to all of the tags/elements that is matched by the selector. It is composed of closing curly braces. The rule set is simply called the Rule.
+	For example:
+		h1{
+			color: red;
+			font-weight: bold;
+		}
+
+References:
+http://reference.sitepoint.com/css/rulesets
+
