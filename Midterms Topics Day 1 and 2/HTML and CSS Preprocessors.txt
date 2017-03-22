@@ -1,0 +1,64 @@
+What are Preprocessors
+	-In time composing HTML and CSS may feel somewhat saddling, requiring a considerable measure of similar errands to be finished again and again. Errands, for example, shutting labels in HTML or monotonously looking up hexadecimal shading values in CSS. 
+
+These distinctive assignments, while generally little, do signify a lot of wastefulness. Luckily these, and a modest bunch of different wasteful aspects, have been perceived and preprocessor arrangements have adapted to present circumstances. 
+
+A preprocessor is a program that takes one sort of information and believers it to another kind of information. On account of HTML and CSS, a portion of the more prominent preprocessor dialects incorporate Haml and Sass. Haml is handled into HTML and Sass is prepared into CSS. 
+
+After embarking to tackle a portion of the more typical issues, Haml and Sass discovered numerous extra approaches to enable HTML and CSS, by evacuating the wasteful aspects as well as in making approaches to make building sites less demanding and more consistent. The notoriety of preprocessors have additionally conveyed along various structures to bolster them, one of the more famous being Compass.
+
+
+HTML Preprocessors:
+
+ > Haml 
+
+Haml, known as HTML abstraction markup dialect, is a markup language with the single objective of giving the capacity to compose delightful markup. Filling in as its own markup dialect, code written in Haml is later prepared to HTML. Haml advances DRY and very much organized markup, giving a satisfying knowledge to anybody writing or read it.
+
+ > Installation of Haml
+
+Haml requires Ruby to be accumulated to HTML, so the initial step to utilizing it is to guarantee that Ruby is introduced. Luckily for those on Mac OS X Ruby comes preinstalled, and those on a Windows machine may visit Windows Installer for headings. After affirming Ruby is introduced the jewel introduce haml charge should be keep running from the summon line, utilizing Terminal or the alike order line program, to introduce Haml.
+
+Documents written in the Haml markup ought to be spared with the record expansion of .haml. To then change over these documents from Haml to HTML the haml
+
+ > Doctype 
+
+The initial segment to composing a record in Haml is comprehending what sort of doctype is to be utilized. When working with HTML reports, the general archive sort will be the HTML5 doctype. In Haml report sorts are related to three shout focuses, !!! taken after by a specifics if fundamental. 
+document sort so keeping in mind the end goal to make this the HTML5 doctype the number five must be passed in after the outcry focuses, !!! 5.
+
+ > Declaring Elements 
+
+One of the characterizing components of Haml is its linguistic structure, and how to proclaim and settle components. HTML components for the most part have opening and shutting labels, however inside Haml components just have one tag, the opening. Components are introduced with a percent sign, %, and after that indented to recognize settling. Space with Haml can be achieve with at least one spaces, however what is critical is that the space stay steady. Hard tabs or spaces can't be combines, and a similar number of tabs or spaces must be the same all through a whole record. 
+
+Expelling the requirement for both opening and shutting labels, and also ordering the structure with space makes a simple to take after diagram. At any given time the markup can be checked and changed without struggle.
+
+ > Escaping Text 
+
+One of the advantages of Haml is the capacity to assess and run Ruby, however this isn't generally the coveted activity. Content, and lines of code, can be gotten away by utilizing an oblique punctuation line, \, permitting the content to be rendered unequivocally without being executed. 
+
+In the case beneath, the initial occurrence of = @author is executed Ruby, pulling the creators name from the application. The second case, beginning with the oblique punctuation line, is gotten away content, printing it as seems to be, without execution.
+
+ > Text Escaping Alternatives 
+
+Occassionally escaping text doesn't exactly carry out the task and Ruby is expected to create the coveted yield. One well known occurrence of this is when attempting to incorporate a period straightforwardly after a connection, yet not as a component of the stay content. Putting the period on another line isn't satisfactory as it will be dealt with as a void class esteem, creating an incorporating mistake. Including an oblique punctuation line before the period will get away from the character anyway it puts a clear space between the last word and the period. Once more, not creating the coveted yield. 
+
+In these cases a Ruby partner proves to be useful. In the case underneath, the assistant is utilized to put a period straightforwardly after the last word yet at the same time outside of the stay content.
+
+ > Comments 
+
+Similarly as with components and traits, remarks are taken care of a bit diversely in Haml also. Basically enough, code can be remarked out with the utilization of a solitary forward cut,/. Singular lines might be remarked out with the utilization of a forward cut toward the start of the line, and pieces of code can be remarked out by being settled underneath a forward cut.
+
+ > Conditonal Comments 
+
+Contingent remarks are additionally taken care of diversely in Haml. To make a contingent remark utilize square sections, [], around the condition. These square sections should be set specifically after the forward slice.
+
+ > Filters 
+
+Haml gives a modest bunch of filters, permitting diverse sorts of contribution to be utilized within Haml. Filters are related to a colon took after by the name of the filter, :markdown for instance, with the majority of the substance to be separated settled underneath.
+
+ > Ruby Interpolation 
+
+As beforehand specified Haml can assess Ruby, and there may once in a while be times where Ruby should be assessed within plain content. In this occasion Ruby should be interjected, fulfilled by wrapping the fundamental Ruby code inside .
+
+
+
+References: http://learn.shayhowe.com/advanced-html-css/preprocessors/
