@@ -1,0 +1,62 @@
+HTML ATTRIBUTES
+
+a) global attributes
+    a.1. accesskey - key labels representing keyboard shortcuts and associated with elements. This is commonly used to activate or give focus to elements.
+    a.2. class - a name of a classification for belonging to an element.
+    a.3. contenteditable - usually, just specified as true or false. It specifies whether the content is editable or not.
+    a.4. contextmenu - elements associated with the value id menu attribute.
+    a.5. dir - specifies the directionality of an element's text
+    a.6. draggable - evaluated to true or false and specifies whether an element is draggable or not.
+    a.7. dropzone - used to specify contents that can be dropped on an element.
+    a.8. hidden - specifies that an element no longer exists or unimportant.
+    a.9. id - an element's unique identifier
+    a.10. lang - used to specify a default or commonly used language for all elements
+    a.11. spellcheck - evaluated as either true or false, this specifies that the elements are subjected for spelling and grammar check.
+    a.12. title - an advisory information with association with an element.
+    a.13. translate - evaluated as yes or no, this specifies whether all the attributes values and contents of its children to an element should be translated.
+    a.14. style - specifies CSS declarations that affects an element's default design.
+    a.15. tabindex - shows whether a represented element is focusable or not.
+
+b) data-* attributes: used to keep custom data taken from the user that should be kept in hidden or private to a network or page. This data can be extracted afterwards and is usually used in the page's Javascript to extend user experience.
+
+    i.e. <p data-name = " ">
+
+The data-* attributes consists of two parts:
+    b.1) an attribute name that should be in lowercase letters and should be at least one character long from data-*
+    b.2) an attribute value that can be any string
+
+c) role, aria-* attributes: These attributes provide accessibility to people with disabilities, user agents with WAI-ARIA capabilities, developers, authoring tools and confromance checkers.
+
+    i.e. USAGE:
+         <aria-live = "assertive">
+         <li role = "menuitem">
+
+    i.e. Related to aria-* attributes
+        WAI-ARIA - WCAG : This is used for contents to conform the page with certain guidelines.
+
+    Roles that are included to make it clearly part of WAI-ARIA Role taxonomy.
+    c.1. application - a region declared as a web application
+    c.2. banner -  a region that is mostly site-oriented content
+    c.3. complementary - designed to complement the main content similar to the level of its DOM hierarchy
+    c.4. contentinfo - a region that mostly containts the parent document's information
+    c.5. form - a collection of items and objects that once combined as a whole can be identified as a form
+    c.6. main - the document's main content
+    c.7. navigation - collection of navigational links that a user can visit
+    c.8. search - a collection of items and objects that once combined as a whole can be identified as a search facility.
+
+RULES OF ARIA USE:
+1) Don't repurpose an already built-in native HTML element.
+2) Don't change native sematics unless there is a need to do so.
+3) All interactive ARIA controls should be accessible by the keyboard.
+4) Don't use alternatative aria-* attributes on a visible focusable element.
+5) All interactive elements should be assigned an accessible name.
+
+REFERENCES:
+
+HTML data-* Attributes(n.d.). Retrieved from https://www.w3schools.com/tags/att_global_data.asp
+Diggs, J. et.al. (2016). Accessible Rich Internet Applications (WAI-ARIA) 1.1. Retrieved from https://www.w3.org/TR/wai-aria-1.1/#introduction
+
+8.1 Core attributes(2012). Retrieved from https://www.w3.org/TR/2012/WD-html-markup-20121025/global-attributes.html
+
+Accessible Rich Internet Applications(WAI-ARIA 1.0)(2014). Retrieved from https://www.w3.org/TR/wai-aria/introduction
+
