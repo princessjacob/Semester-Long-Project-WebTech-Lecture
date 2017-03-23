@@ -1,37 +1,128 @@
 CSS Declarations
+-made up of a property name and a value
+-separated by a semicolon (;)
+-must appear within a declaration block
+
 1. Properties
 	-Shorthand Properties
+		- group the definition of common properties acting on the same theme
+		- set the values of several other CSS properties simultaneously
+		- to specify values for related properties in a single declaration.
+
 	-Vendor specific extensions (aka vendor prefixes)
+		- browser makers
+		- release and test browser features
+		- keywords and property names beginning with 
+	– (dash) or _ (underscore) 
+
 2. Values
 	-Keywords
-	-Numbers (int, real numbers in decimal notation)
+		- identifier
+		- mustn’t be surrounded by quotation marks ("")
+	-Numbers 
+		- integer, real numbers in decimal notation
+		- can have an initial - or + to indicate its sign
 3. Lengths
-	a. Length in units
-		-em
-		-px
-		-in
-		-cm
-		-mm
-		-pt (point 1/72")
-		-pc (pica 1/6")
-	b.Percentages
+	a. Length and Units
+		Length - comprising a numeric value and a unit only
+		Units -  in which length is measured can be either 
+	relative or absolute
+
+Relative:
+a. em - current font size	
+    - equal to the font size
+b. ex - x-height of the current font
+    - height of a lowercase x
+c. px - pixels
+    - relative to the viewing distance
+    - standard pixel is 0.26mm (1/96 inch) square
+    - must not be used for a tty media type 
+
+Absolute:
+a. mm - millimeters
+    - SI standard
+b. cm - centimeters
+    -SI standard
+c. in - inches
+    - 1 inch = 25.4mm
+d. pt - point 
+    - old typographic measurement
+    - used in print
+    - 1 point = 1/72 inch (o.353mm)
+e. pc - pica	
+      - equal to 12 points
+      - 1/6 inch or 4.23mm
+
+	b. Percentages (%)
+		- integer or a decimal number
+		- Whitespace characters mustn’t appear 
+		between the number and the % (i.e. 50%)
+		
 	c. URLs and URIs
+		a. URL - denotes a pointer to a resource
+		       - unquoted or quoted by single or double quotes
+		b. URI - argument for URI is a string that may be enclosed in quotes
+
 	d. Counters
+		- adjust the appearance of content based on its
+		placement in the document.
+		a. counter-reset - creates or resets a counter
+		b. counter-increment - increments a counter value
+		c. content - inserts generated content
+		d. counter() or counters() function - adds the value of a counter
+			to an element
+
 	e. Colors
-		-rgb (_,_,_)
-		-rgba (_,_,_) a: alphachannel/opacity
-		-Hsl: hue, saturation, lightness hsl(_,_,_) and hsla (_,_,_)
+		-RGB (red,green,blue)	
+			- Hexadecimal 
+			- common format
+			- consists of a # character
+			- i.e. (#09f is the same as #0099ff - red=00, green=99, blue=ff)
+		Decimal Notation:	
+		- RGBA (red,green,blue,alpha) 
+			- extension of RGB with alpha channel
+			- alpha parameter
+				a. between 0.0 (fully transparent)
+				b. 1.0 (fully opaque)
+		- HSL (hue,saturation,lightness) 
+			a. hue - degree on the color wheel
+			       - 0 (360) - red
+			       - 120 - green
+    			       - 250 - blue
+				
+		- HSLA (hue,saturation,alpha)
+			       - extension of HSL with alpha channel
+			       - alpha parameter
+				a. between 0.0 (fully transparent)
+				b. 1.0 (fully opaque)
+		- Opacity
+			- both background color and text will be opaque/transparent
+			- opacity property
+				a. between 0.0 (fully transparent)
+				b. 1.0 (fully opaque)
+
 	f. Strings
-4. Others wich are also used at the same time, but no lengths:
-	a. angles: transformation
-		-deg
-		-rad
-		-grad
-		-turn
-	b. time: animation
-		-ms
-		-s
-	c. frequencies: speech
-		-hz
-		-khz
-	d. resolution
+		- enclosed in double or single quotes ("" or '')
+		- escape it with a backslash character (\)
+
+
+References:
+Olsson, T. & O'Brien, P. (n.d.). Declarations, Properties, and Values. 
+Retrieved from: http://reference.sitepoint.com/css/declarations
+Roberts, A. (2014, September 03). Vendor-specific Properties. 
+Retrieved from: https://www.sitepoint.com/web-foundations/vendor-specific-properties/
+Olsson, T. & O'Brien, P. (n.d.). Lengths and Units. 
+Retrieved from: http://reference.sitepoint.com/css/lengthunits
+Olsson, T. & O'Brien, P. (n.d.). Percentages.
+Retrieved from: http://reference.sitepoint.com/css/percentages
+Olsson, T. & O'Brien, P. (n.d.). Colors.
+Retrieved from: http://reference.sitepoint.com/css/colorvalues
+CSS3 Colors. (n.d). Retrieved from: https://www.w3schools.com/css/css3_colors.asp
+Olsson, T. & O'Brien, P. (n.d.). Numbers. Retrieved from: http://reference.sitepoint.com/css/numbers
+Olsson, T. & O'Brien, P. (n.d.). Strings. Retrieved from: http://reference.sitepoint.com/css/strings
+Olsson, T. & O'Brien, P. (n.d.). Shorthand Properties. 
+Retrieved from: http://reference.sitepoint.com/css/shorthandproperties
+Olsson, T. & O'Brien, P. (n.d.). Keywords. Retrieved from: http://reference.sitepoint.com/css/keywords
+<url>. (2016. July 12). Retrieved from: https://developer.mozilla.org/en-US/docs/Web/CSS/url
+Olsson, T. & O'Brien, P. (n.d.). URIs. Retrieved from: http://reference.sitepoint.com/css/uris
+CSS Counters. (n.d.). Retrieved from: https://www.w3schools.com/css/css_counters.asp
