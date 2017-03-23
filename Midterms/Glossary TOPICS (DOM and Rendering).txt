@@ -1,0 +1,19 @@
+DOM (Document Object Model)
+ * This defines a logical document structure that shows how a document is accessed and manipulated. 
+ * It can also be called a programming API for documents because it closely resembles a structure of the document that it models.
+ i.e. <p> <img> text </p>
+ 
+ References:
+ Hégaret, et. al. What is the Document Object Model?. Retrieved from https://www.w3.org/TR/DOM-Level-2-Core/introduction.html
+
+=====================================================================================================================================
+Two Types of Rendering
+    The two types of rendering pages are created as standards so that new compliant sites are interpreted differently from legacy ones.
+
+1) Standards - Rendering on browsers is consistent.
+    a. Almost Standards Mode - a small number of quirks is implemented
+    b. Full Standards Modes - the behavior is described by the HTML and CSS in hopeful terms.
+2) Quirks - Each browser renders the page on their own way. i.e. A placing of an image may look different in Firefox and Internet Explorer
+
+REFERENCE:
+Donahue, J. et.al. (2016). Quirks Mode and Standards Mode. Retrieved from https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode
