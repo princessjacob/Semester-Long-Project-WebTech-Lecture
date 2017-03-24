@@ -1,0 +1,46 @@
+HTML
+
+HTML or HyperText Markup Language was proposed by Tim Berners-Lee in 1989 and was developed in 1990. HTML is the presentational aspect/ aesthetic of a web page. Web pages are made up of HTML. HTML is composed of tags, such as <body>, <title>, <head> and etc. HTML tags are composed of opening and closing tags . Opening tag starts with a less than angle bracket, attribute name and a greater than angle bracket. A closing tag also starts with a less than angle bracket, forward slash, attribute name, and lastly a greater than angle bracket.
+HTML is also consist of links that connects web pages to one another.
+Example of a HTML file below:
+<html>
+<head>
+<title> Sample HTML </title>
+<body>This is a HTML file</body>
+</head>
+</html>
+
+HTML Versions
+
+1. HTML 1.0
+
+HTML 1.0 was the first release of HTML to the world. Not many people were involved in website creation at the time, and the language was very limiting. There really wasn’t much you could do with it bar getting some simple text onto the web. But then, just that got the beardos a-foamin’ back in the day.
+
+2. HTML 2.0
+
+HTML 2.0 included everything from the original 1.0 specifications but added a few new features to the mix. » HTML 2.0 was the standard for website design until January 1997 and defined many core HTML features for the first time.
+
+3. HTML 3.0
+
+An HTML working group, led by a man named » Dave Raggett introduced a new HTML draft, HTML 3.0. It included many new and improved abilities for HTML, and promised far more powerful opportunities for webmasters to design their pages. Sadly, the browsers were awfully slow in implementing any of the new improvements, only adding in a few and leaving out the rest. Partly, this failure can be attributed to the size of the overhaul; and so the HTML 3.0 spec was abandoned.
+
+4. HTML 3.2
+
+The browser-specific tags kept coming, and it became increasingly apparent that a standard needed to be found. To this end, the » World Wide Web Consortium (abbreviated to the W3C) was founded in 1994 to standardise the language and keep it evolving in the right direction. Their first work was code-named WILBUR, and later became known as » HTML 3.2. This was a toned-down change to the existing standards, leaving many of the big steps forward for later versions. Most of the extensions tags that had been introduced by Netscape (and to a lesser-extent, Microsoft) did not make it into these new standards. It soon caught on and became the official standard in January ’97, and today practically all browsers support it fully.
+
+5. HTML 4.01
+
+HTML 4.0 was a large evolution of the HTML standards, and the last iteration of classic HTML. Early in development it had the code-name COUGAR. Most of the new functionality brought in this time is from the ill-fated HTML 3.0 spec, as well as a host of trimmings on old tags, a focus on internationalisation, and support for HTML’s new supporting presentational language, cascading stylesheets.
+
+HTML 4.0 was recommended by the W3C in December ’97 and became the official standard in April 1998. Browser support was undertaken surprisingly earnestly by Microsoft in their Internet Explorer browser, and the market-leading IE5 (and current successor IE6) have excellent support for almost all of the new tags and attributes. In comparison, Netscape’s terribly flawed Navigator 4.7 was inept when it came to HTML 4.0 and even basic CSS. Modern browsers however, are a vast improvement.
+
+6. HTML 5
+
+HTML5 is designed for the web, both now and in the future. This is the specification that we will be working with for the next decade at least, so the process of its development is relatively slow and considered.
+References:
+
+HTML. (n.d.). Retrieved from https://developer.mozilla.org/en-US/docs/Web/HTML
+
+What is HTML (HyperText Markup Language)? (n.d.). Retrieved from http://www.computerhope.com/jargon/h/html.htm
+
+Shannon R. (2012, August 21). The History of HTML. Retrieved from http://www.yourhtmlsource.com/starthere/historyofhtml.html
