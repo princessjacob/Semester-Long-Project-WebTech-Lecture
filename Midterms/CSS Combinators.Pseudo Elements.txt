@@ -1,0 +1,68 @@
+CSS Combinators
+
+A combinator is something that explains the relationship between the selectors.
+A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+There are four different combinators in CSS3:
+
+
+Adjacent sibling selectors
+
+The '+' combinator selects nodes that immediately follow the former specified element.
+Syntax: A + B
+Example: div + p will match any <p> that immediately follows a <div>.
+
+General sibling selectors
+
+The '~' combinator selects nodes that follow (not necessarily immediately) the former specified element, if both elements shared the same parent.
+Syntax: A ~ B
+Example: p ~ span will match all <span> elements that follow a <p> element inside the same element.
+
+Child selectors
+
+The '>' combinator selects nodes that are direct children of the former specified element.
+Syntax: A > B
+Example: ul > li will match all <li> elements that are inside a <ul> element.
+
+Descendant selectors
+
+The ' ' combinator selects nodes that are children (not necessary direct children) of the former specified element.
+Syntax: A B
+Example: div span will match any <span> element that is inside a <div> element.
+
+Pseudo Element
+
+PSEUDO-ELEMENTS are used to address sub-parts of elements. They allow you to set style on a part of an element's content beyond what is specified in the documents. In other words they allow logical elements to be defined which are not actually in the document element tree. Logical elements allow implied semantic structure to be addressed in CSS selectors.
+
+Pseudo-elements may only be applied to external and document-level contexts - not to in-line styles. Pseudo-elements are restricted in where they can appear in a rule. They may only appear at the end of a selector chain (after the subject of the selector). They should come after any class or ID names found in the selector. Only one pseudo-element can be specified per selector. To address multiple pseudo-elements on a single element structure, multiple style selector/declaration statements must be made.
+
+Pseudo-elements:
+
+* ::after
+
+::after pseudo-element matches a virtual last child of the selected element. It is typically used to add cosmetic content to an element by using the content CSS property. This element is inline by default.
+
+* ::before
+
+::before creates a pseudo-element that is the first child of the element matched. It is often used to add cosmetic content to an element by using the content property. This element is inline by default.
+
+* ::first-letter
+
+The ::first-letter CSS pseudo-element selects the first letter of the first line of a block, if it is not preceded by any other content (such as images or inline tables) on its line.
+
+* ::first-line
+
+The ::first-line CSS pseudo-element applies styles only to the first line of an element. The amount of the text on the first line depends of numerous factors, like the width of the element, width of the document, and the font size of the text. As all pseudo-elements, ::first-line does not match any real HTML element.
+
+A first line has only meaning in a block-container box, therefore the ::first-line pseudo-element has only an effect on elements with a display value of block, inline-block, table-cell or table-caption. In all other cases, ::first-line has no effect.
+
+
+REFERENCES:
+
+Chen, H.J., et.al. (2016, December 17). Combinators. Retrieved from https://tympanus.net/codrops/css_reference/combinators/
+
+
+Mills, C.D. (2017, February 5). CSS Combinators and multiple selectors. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors
+
+Carlson, L. (1998-2017). Difference between a pseudo-class and a pseudo-element. Retrieved from http://www.d.umn.edu/~lcarlson/csswork/selectors/pseudo_dif.html
+
+Zea, R. (2016, May 3). An Ultimate Guide to CSS Pseudo-Classes and Pseudo-Elements. Retrieved from https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/
