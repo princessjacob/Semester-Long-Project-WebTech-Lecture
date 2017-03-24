@@ -1,0 +1,30 @@
+CSS Versions
+
+CSS 1 
+It has the basic structure that still uses today such as fonts, backgrounds, 
+text alignment, spacing, margins. This is the first version of CSS and it was
+introduced in December 17, 1996. It was recommended by the W3C (World Wide Web Consortium).
+CSS 1 is no longer maintained by the W3C
+
+CSS 2
+It has more features such as more powerful selectors, bidirectional text, 
+and targeting media types. CSS 2 was published in 1998. The specification
+was developed by W3C and the properties that was added allowed CSS to be used 
+for page layout. Same with CSS 1, CSS 2 is no longer maintained by the W3C.
+
+CSS 2.1
+CSS 2.1 has all the specifications of CSS 1. It was published in 2011 and the
+co-editor of CSS 2.1 specification was Ian Hickson. It has several properties 
+and this is the current accepted standard.
+
+CSS 3
+It is divided into modules (e.g. Selectors, Box Model, Backgrounds and Borders,
+Text Effects, Animations). The earliest drafts of CSS 3 was published in 1999.
+And this is the latest standard.
+
+References:
+CSS Versions. (2015). Retrieved from: http://www.corelangs.com/css/basics/versions.html
+Shamberger, H. (2013) CSS versions. Retrieved from: http://cccvc.com/faculty/hshamberger/vc147/week01/css_vs.html
+Olsson, T., & O'Brien, P. (n.d). CSS Versions. http://reference.sitepoint.com/css/csshistory
+Ian Hickson. (2016, November 23). Retrieved from: https://en.wikipedia.org/wiki/Ian_Hickson
+CSS3 Introduction. (n.d.). Retrieved from: https://www.w3schools.com/css/css3_intro.asp
