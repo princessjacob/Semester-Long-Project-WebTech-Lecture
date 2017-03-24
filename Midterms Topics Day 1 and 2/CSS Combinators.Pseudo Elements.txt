@@ -56,9 +56,13 @@ The ::first-line CSS pseudo-element applies styles only to the first line of an 
 A first line has only meaning in a block-container box, therefore the ::first-line pseudo-element has only an effect on elements with a display value of block, inline-block, table-cell or table-caption. In all other cases, ::first-line has no effect.
 
 
-CSS (Cascading Style sheet). Retrieved March 11, 2017 from https://developer.mozilla.org/en-US/docs/Web/CSS/
+REFERENCES:
 
-CSS Combinators. Retrieved, March 11, 2017 from https://www.w3schools.com/css/css_combinators.asp
+Chen, H.J., et.al. (2016, December 17). Combinators. Retrieved from https://tympanus.net/codrops/css_reference/combinators/
 
-Pseudo-elements. Retrieved, March 11, 2017 from https://www.w3schools.com
-https://www.w3.org
+
+Mills, C.D. (2017, February 5). CSS Combinators and multiple selectors. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors
+
+Carlson, L. (1998-2017). Difference between a pseudo-class and a pseudo-element. Retrieved from http://www.d.umn.edu/~lcarlson/csswork/selectors/pseudo_dif.html
+
+Zea, R. (2016, May 3). An Ultimate Guide to CSS Pseudo-Classes and Pseudo-Elements. Retrieved from https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/
