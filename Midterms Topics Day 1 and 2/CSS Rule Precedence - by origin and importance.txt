@@ -1,3 +1,4 @@
+n
 CSS RULE PRECEDENCE
 
 What is it?
@@ -7,14 +8,14 @@ LEVEL 1: BY RULE AND IMPORTANCE
 
 HIERARCHY:
 
--- Important declarations - these declarations are usually prioritized first because of the tagline !important.
+-- Important declarations - these declarations are usually prioritized first because of the tagline !important. Although, the tagline important should be used sparingly and used only when it's needed. This is due to the fact that adding an important declaration will disrupt the natural flow of your declarations. After all, an important declaration gives weight to elements, which should only be used for those that need it. Using it too much will abuse its usefulness and make it harder for you to maintain your code.
 
-a. user agent important declarations - declarations from a user agent stylesheet that contains an !important tagline. These declarations takes precedence because these are the stylesheets used by browsers to render html files.
+a. user agent important declarations - declarations from a user agent stylesheet that contains an !important tagline. These declarations when declared important takes precedence because these are the stylesheets used by browser to render html files.
     i.e. li { margin-left: 10px !important }
 
 b. user important declarations - user declarations that contains !important tagline. User important declarations can override author important declarations.
 
-c. author important declarations - author declarations that contains the !important tagline.
+c. author important declarations - author declarations that contains the !important tagline. These declarations takes the lowest importance from user important and user agent important but takes precedence before normal declarations.
 
     i.e. (To further show the difference between user important declarations and author important declarations)
 
@@ -38,7 +39,7 @@ c. author important declarations - author declarations that contains the !import
 
 -- Normal declarations - declarations that doesn't contain an !important tagline.
 
-d. author normal declarations - author specified declarations that are written to create a style for the document. These declarations take precedence for it can override the other following declarations.
+d. author normal declarations - author specified declarations that are written to create a style for the document. These declarations take precedence for it can override the other following declarations below.
 
 e. user normal declarations - declarations specified by the user (i.e. A person wanted to make the font style bigger than the normal size. To do that, he can then edit such in the browser options or through some third party software or extension installed in the browser such as ChromeVox for example.) They can overwrite user agent normal declarations if an author normal declaration is not set.
 
@@ -50,5 +51,6 @@ f. user agent normal declarations - declarations that served as a default style 
 
 REFERENCES:
 Bos, B. et.al. (2011, June 7). Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification. Retrieved from https://www.w3.org/TR/2011/REC-CSS2-20110607/#minitoc
+Lazaris, L. (2010, November 2). !important CSS Declarations: How and When to use them. Retrieved from https://www.smashingmagazine.com/2010/11/the-important-css-declaration-how-and-when-to-use-it/
 Zartner, S. et.al. (2015, July 7). Cascade. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade
 Meiert, J. (2007, September 22). User Agent Stylesheets: Basics and Samples. Retrieved from https://meiert.com/en/blog/20070922/user-agent-style-sheets/
