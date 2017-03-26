@@ -17,11 +17,11 @@ The estimation of this characteristic determines the kind of media for which the
 
 The style component permits a creator to put template governs in the leader of the record. XHTML allows any number of style components in the head area of a report. 
 
-Client operators that don't bolster templates, or don't bolster the particular template dialect utilized by a style component, must conceal the substance of the style component. It is a mistake to render the substance as a major aspect of the report's content. 
+Client operators that don't bolster templates, or don't bolster the particular style sheet language utilized by a style component, must conceal the substance of the style component. It is a mistake to render the substance as a major aspect of the report's content. 
 
-The sentence structure of style information relies on upon the template dialect. 
+The sentence structure of style information relies on upon the style sheet language. 
 
-Rules for style govern priorities and legacy rely on upon the template dialect. 
+Rules for style govern priorities and legacy rely on upon the style sheet language. 
 
 Example: 
 
