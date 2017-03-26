@@ -23,11 +23,11 @@ Setting style sheets in independent files makes them easier to reuse. In some ca
 
 Autonomy from particular style sheet languages
 
-This detail doesn't attach HTML to a specific style sheet languages. This takes into consideration a scope of such dialects to be utilized, for example basic ones for the dominant part of clients and a great deal more perplexing ones for the minority of clients with very particular needs. The cases included beneath all utilization the CSS (Cascading Style Sheets) dialect [CSS1], yet other style sheets languages would be conceivable. 
+This detail doesn't attach HTML to a specific style sheet languages. This takes into consideration a scope of such languages to be utilized, for example basic ones for the dominant part of clients and a great deal more perplexing ones for the minority of clients with very particular needs. The cases included beneath all utilization the CSS (Cascading Style Sheets) language [CSS1], yet other style sheets languages would be conceivable. 
 
 Cascading Style Sheets 
 
-This is the capacity gave by some template dialects, for example, CSS to permit style data from a few sources to be mixed together. For example, corporate style rules, styles basic to a gathering of archives, and styles particular to a solitary report. By putting away these independently, templates can be reused, rearranging composing and making more successful utilization of system storing. The course characterizes a requested grouping of templates where controls in later sheets have more noteworthy priority than prior ones. Not all style sheet languages bolster cascading.
+This is the capacity gave by some template languages, for example, CSS to permit style data from a few sources to be mixed together. For example, corporate style rules, styles basic to a gathering of archives, and styles particular to a solitary report. By putting away these independently, templates can be reused, rearranging composing and making more successful utilization of system storing. The course characterizes a requested grouping of templates where controls in later sheets have more noteworthy priority than prior ones. Not all style sheet languages bolster cascading.
 
 Media Dependencies 
 
@@ -50,7 +50,7 @@ By and large, authors will exploit a typical style sheet for a gathering of arch
 1.2. Inheritance and Cascading:
 At the point when the user agent needs to render an archive, it needs to discover values for style properties, e.g. the textual style family, text style, estimate, line stature, content shading et cetera. The correct component relies on upon the Style sheet language, however the accompanying depiction is by and large material: 
 
-The cascading mechanism is utilized when various style governs all apply straightforwardly to a component. The mechanism permits the user agent to sort the standards by specificity, to figure out which govern to apply. In the event that no govern can be found, the following stride relies on upon whether the style property can be acquired or not. Not all properties can be acquired. For these properties the template dialect gives default qualities to utilize when there are no unequivocal principles for a specific component. 
+The cascading mechanism is utilized when various style governs all apply straightforwardly to a component. The mechanism permits the user agent to sort the standards by specificity, to figure out which govern to apply. In the event that no govern can be found, the following stride relies on upon whether the style property can be acquired or not. Not all properties can be acquired. For these properties the template language gives default qualities to utilize when there are no unequivocal principles for a specific component. 
 
 On the off chance that the property can be acquired, the client specialist inspects the instantly encasing component to check whether a decide applies to that. This procedure proceeds until an appropriate administer is found. This instrument permits templates to be determined minimally. For example, you can indicate the textual style family for all components inside the BODY by a solitary decide that applies to the BODY component.
 
