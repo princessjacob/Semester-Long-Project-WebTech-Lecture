@@ -1,0 +1,32 @@
+CSS
+CSS or Cascading Style Sheets is used to control the design of a web page. It is used in formatting the style or design of the elements/ attributes that has been implemented in the html or it simply controls on how the content of the HTML document will be presented. In other words, CSS instructs the content of a webpage on how should it look. It is the presentation aspects of structural makup documents like HTML. It was developed by Håkon Wium Lie and Bert Bos. CSS works  with different markup languages popularly with HTML, it is also used in other markup languages like XML and XHTML. CSS files can be created on lots of text editors such as Notepad++, Sublime Text and etc. CSS uses the attributes "class", "id" to manipulate the styles.
+CSS was made a specification by the W3C and today allows web developers to alter the layout and appearance of their web pages.
+W3m or the World Wide Web Consortium was the one who standardized CSS, it allows web developers to change the layout  or how their web page looks.
+Other concepts: CSS is managed by W3C - Recommendations are created when something is old enough
+Example of CSS below:
+body {
+font-family: Times New Roman;
+color: red;
+font-size: 16px;
+}
+
+Types of Style Sheets
+1.  Embedded style sheets - these are style sheets that are part of an HTML document, it is more useful when used in single web  pages.
+2. External style sheets -the content of  external style sheet looks the same with embedded but they are not included in the HTML page, they are placed in a separate file with an extension file of ".css".
+3. Inline style sheets - this style sheet is the same with embedded because they are placed inside the HTML document. It is easier to edit styles while using inline style because you can easily edit your style within the document.
+
+References:
+
+Kirkwood, A. (2005, June 3). Definition: Cascading style sheets (CSS), stylesheet, styles, specifications. Retrieved March 5, 2017, from http://www.motive.co.nz/glossary/stylesheets.php
+
+Posted, & Rouse, M. (2015, October 9). What is cascading style sheet (CSS)? - definition from WhatIs.Com. Retrieved March 5, 2017, from http://searchmicroservices.techtarget.com/definition/cascading-style-sheet-CSS
+
+Cascading Style Sheets. (n.d.). Retrieved from http://www.edb.utexas.edu/minliu/multimedia/PDFfolder/CSSGottlieb.pdf
+
+Cascading Style Sheets (CSS). (n.d.). Retrieved from http://www.inf.ufsc.br/~bosco.sobral/downloads/Livro-Java-Como-Programar-Deitel-Ed6/additional/addnlRefs/CSS/CSS.pdf
+
+Introduction to Cascading Style Sheets. (n.d.). Retrieved from https://www.austincc.edu/hr/profdev/eworkshops/docs/CSS_intro.pdf
+
+What is CSS (Cascading Style Sheet)? (n.d.). Retrieved March 26, 2017, from http://www.computerhope.com/jargon/c/css.htm
+
+History of HTML and CSS. (n.d.). Retrieved March 26, 2017, from http://amyhissom.com/HTML5-CSS3/history.html
