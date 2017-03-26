@@ -7,6 +7,10 @@ The Common collection
 
 A colection of other characteristic accumulations, including: Core, Events, I18N, Bi-directional, Edit, Embedding, Map, and Hypertext 
 
+disabled = "disabled" 
+
+Whenever introduced, this boolean quality makes the present component idle (e.g., an "disabled" style component would have its styles expelled from the dynamic style accumulation).
+
 media = MediaDesc 
 
 The estimation of this characteristic determines the kind of media for which the component is expected. 
