@@ -13,11 +13,11 @@ Whenever introduced, this boolean quality makes the present component idle (e.g.
 
 media = MediaDesc 
 
-The estimation of this characteristic determines the kind of media for which the component is expected. 
+The estimation of this characteristic is a comma-isolated rundown of media descriptors for which this get to component is expected. At the point when the estimation of this characteristic matches the present handling media, the related get to component is viewed as dynamic and prepared regularly; else it is latent and overlooked. The default an incentive for this property is all.
 
 The style component permits a creator to put template governs in the leader of the record. XHTML allows any number of style components in the head area of a report. 
 
-Client operators that don't bolster templates, or don't bolster the particular style sheet language utilized by a style component, must conceal the substance of the style component. It is a mistake to render the substance as a major aspect of the report's content. 
+User Agents that don't bolster stylesheets, or don't bolster the particular style sheet language utilized by a style component, must conceal the substance of the style component. It is a mistake to render the substance as a major aspect of the report's content. 
 
 The sentence structure of style information relies on upon the style sheet language. 
 
@@ -36,22 +36,22 @@ h1 {border-width: thin; fringe style: strong; content adjust: center}
 </head>
 
 2.1.1 External style sheets
-Authors may isolate templates from XHTML archives. This offers a few advantages: 
+Authors may isolate stylesheets from XHTML archives. This offers a few advantages: 
 
->Authors and site directors may share templates over various archives (and locales). 
+>Authors and site directors may share stylesheets over various archives (and locales). 
 
 >Authors may change the template without obliging adjustments to the report. 
 
->User Agents may stack templates specifically (in view of media descriptors).
+>User Agents may stack stylesheets specifically (in view of media descriptors).
 
 2.1.2 Preferred and alternate style sheets
-XHTML permits authors to relate any number of outer style sheets with a document. The style sheet language characterizes how numerous outside templates communicate (for instance, the CSS "cascade" rules). 
+XHTML permits authors to relate any number of outer style sheets with a document. The style sheet language characterizes how numerous outside stylesheets communicate (for instance, the CSS "cascade" rules). 
 
 Authors may determine various fundamentally unrelated style sheet called alternate style sheets. Clients may choose their most loved among these relying upon their inclinations. For example, a creator may determine one template intended for little screens and another for clients with feeble vision (e.g., vast textual styles). User Agents ought to permit clients to choose from alternate style sheets. 
 
 The author may determine that one of the exchanges is a favored style sheet. User agents ought to apply the author's favored style sheet unless the client has chosen an alternate substitute. 
 
-Authors may aggregate a few alternate templates (counting the author's favored style sheet) under a solitary style name. At the point when a client chooses a named style, the user agent must apply all style sheets with that name. User Agents must not have any significant bearing substitute Style sheet with an alternate style name. The area on determining external style sheet discloses how to name a gathering of style sheets. 
+Authors may aggregate a few alternate stylesheets (counting the author's favored style sheet) under a solitary style name. At the point when a client chooses a named style, the user agent must apply all style sheets with that name. User Agents must not have any significant bearing substitute Style sheet with an alternate style name. The area on determining external style sheet discloses how to name a gathering of style sheets. 
 
 2.1.3 Specifying external style sheets
 Authors determine external style sheets with the accompanying properties of the connection component: 
