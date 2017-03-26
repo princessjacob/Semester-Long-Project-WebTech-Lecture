@@ -427,12 +427,84 @@
 	</div>
       
     <div id="htmlAt" class="tab-pane fade">
-        <!-- GENERAL STRUCTURE -->
-        <h3><!-- Place title of the type of attribute here. i.e. Global attributes --></h3>
+        <h3>Global Attributes</h3>
         <ol>
-            <li><!-- Place name of the attribute here i.e. accesskey --></li>
-            <p><!-- Place description of the attribute here --></p>
+            <li>accesskey</li>
+                <p>Key labels representing keyboard shortcuts and associated with elements. This is commonly used to activate or give focus to elements.</p>
+            <li>class</li>
+                <p>A name of a classification for belonging to an element.</p>
+            <li>contenteditable</li>
+                <p>Usually, just specified as true or false. It specifies whether the content is editable or not.</p>
+            <li>contextmenu</li>
+                <p>Elements associated with the value id menu attribute.</p>
+            <li>dir</li>
+                <p>Specifies the directionality of an element's text</p>
+            <li>draggable</li>
+                <p>Evaluated to true or false and specifies whether an element is draggable or not.</p>
+            <li>dropzone</li>
+                <p>Used to specify contents that can be dropped on an element.</p>
+            <li>hidden</li>
+                <p>Specifies that an element no longer exists or unimportant.</p>
+            <li>id</li>
+                <p>An element's unique identifier</p>
+            <li>lang</li>
+                <p>Used to specify a default or commonly used language for all elements</p>
+            <li>spellcheck</li>
+                <p>Evaluated as either true or false, this specifies that the elements are subjected for spelling and grammar check.</p>
+            <li>title</li>
+                <p>An advisory information with association with an element.</p>
+            <li>translate</li>
+                <p>Evaluated as yes or no, this specifies whether all the attributes values and contents of its children to an element should be translated.</p>
+            <li>style</li>
+                <p>Apecifies CSS declarations that affects an element's default design.</p>
+            <li>tabindex</li>
+                <p>Shows whether a represented element is focusable or not.</p>
         </ol>
+        <h3>DATA-* ATTRIBUTES</h3>
+        <p>Used to keep custom data taken from the user that should be kept in hidden or private to a network or page. This data can be extracted afterwards and is usually used in the page's Javascript to extend user experience.</p>
+        <p>i.e. &lt;p data-name = " "&gt;</p>
+        <p>The data-* attributes consists of two parts:</p>
+        <ul>
+            <li>an attribute name that should be in lowercase letters and should be at least one character long from data-*</li>
+            <li>an attribute value that can be any string</li>
+        </ul>
+        <h3>ROLE, ARIA-* ATTRIBUTES</h3>
+        <p>These attributes provide accessibility to people with disabilities, user agents with WAI-ARIA capabilities, developers, authoring tools and confromance checkers.</p>
+        <p>i.e.</p>
+        <ul>
+            <li>&lt;aria-live = "assertive"&gt;</li>
+            <li>&lt;li-role = "menuitem"&gt;</li>
+        </ul>
+        <p>i.e. Related to aria-* attributes</p>
+        <p>WAI-ARIA - WCAG : This is used for contents to conform the page with certain guidelines.</p>
+        <p>Roles that are included to make it clearly part of WAI-ARIA Role taxonomy.</p>
+        <ol>
+            <li>application</li>
+                <p>A region declared as a web application.</p>
+            <li>banner</li>
+                <p>A region that is mostly site-oriented content.</p>
+            <li>complementary</li>
+                <p>Designed to complement the main content similar to the level of its DOM hierarchy</p>
+            <li>contentinfo</li>
+                <p>A region that mostly contains the parent document's information.</p>
+            <li>form</li>
+                <p>A collection of items and objects that once combined as a whole can be identified as a form</p>
+            <li>main</li>
+                <p>The document's main content.</p>
+            <li>navigation</li>
+                <p>A collection of navigational links that a user can visit.</p>
+            <li>search</li>
+                <p>A collection of items and objects that once combined as a whole can be identified as a search facility.</p>
+        </ol>
+        
+        <p>RULES OF ARIA USE:</p>
+        <ul>
+            <li>Don't repurpose an already built-in native HTML element.</li>
+            <li>Don't change native sematics unless there is a need to do so.</li>
+            <li>All interactive ARIA controls should be accessible by the keyboard.</li>
+            <li>Don't use alternatative aria-* attributes on a visible focusable element.</li>
+            <li>All interactive elements should be assigned an accessible name.</li>
+        </ul>   
     </div>
       
   <div id="ref" class="tab-pane fade">
@@ -444,13 +516,13 @@
         <p class="wb">HTML and XHTML. (n.d.). Retrieved from: https://www.w3schools.com/html/html_xhtml.asp</p>
         <p class="wb">XHTML - Introduction. (n.d.). Retrieved from: https://www.tutorialspoint.com/xhtml/what_is_xhtml.htm</p>
         <p class="wb">Hernandez, G. (2015, March 3). Tags by Category. Retrieved from: http://www.georgehernandez.com/h/xComputers/HTML/TagsByCategory.asp</p>
-        <p class="wb">HTML <body> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_body.asp</p>
-        <p class="wb">HTML <head> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_head.asp</p>
-        <p class="wb">HTML <html> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_html.asp</p>
-        <p class="wb">HTML <base> Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_base_tag.htm</p>
-        <p class="wb"><isindex>. (2016, April 21). Retrieved from: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/isindex</p>
-        <p class="wb">HTML <link> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_link.asp</p>
-        <p class="wb">HTML <meta> Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_meta.asp</p>
+        <p class="wb">HTML &lt;body&gt; Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_body.asp</p>
+        <p class="wb">HTML &lt;head&gt; Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_head.asp</p>
+        <p class="wb">HTML &lt;html&gt; Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_html.asp</p>
+        <p class="wb">HTML &lt;base&gt; Tag. (n.d.). Retrieved from: https://www.tutorialspoint.com/html/html_base_tag.htm</p>
+        <p class="wb">HTML &lt;isindex&gt;. (2016, April 21). Retrieved from: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/isindex</p>
+        <p class="wb">HTML &lt;link&gt; Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_link.asp</p>
+        <p class="wb">HTML &lt;meta&gt; Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_meta.asp</p>
         <p class="wb">HTML  &lt;script&gt; Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_script.asp</p>
         <p class="wb">HTML  &lt;style&gt; Tag. (n.d.) Retrieved from: https://www.w3schools.com/tags/tag_style.asp</p>
         <p class="wb">HTML &lt;title&gt; Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_title.asp</p>
@@ -467,7 +539,7 @@
         <p class="wb">h4 (HTML element). (n.d.). Retrieved from: http://reference.sitepoint.com/html/h4</p>
         <p class="wb">h5 (HTML element). (n.d.). Retrieved from: http://reference.sitepoint.com/html/h5</p>
         <p class="wb">HTML: &lt;h6&gt; tag. (n.d.). Retrieved from: https://www.techonthenet.com/html/elements/h6_tag.php</p>
-        HTML &lt;hr&gt; Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_hr.asp</p>
+        <p>HTML &lt;hr&gt; Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_hr.asp</p>
         <p class="wb">HTML Paragraph Tag. (n.d.). Retrieved from: http://www.comptechdoc.org/independent/web/html/terms/html-paragraph-tag.html</p>
         <p class="wb">HTML &lt;pre&gt; Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_pre.asp</p>
         <p class="wb">HTML &lt;dd&gt; Tag. (n.d.). Retrieved from: https://www.w3schools.com/tags/tag_dd.asp</p>
@@ -518,7 +590,10 @@
 		<p class="wb">HTML Elements. (n.d.). Retrieved March 12, 2017, from https://www.w3schools.com/html/html_elements.asp</p>
 		<p class="wb">HTML element reference. (n.d.). Retrieved March 12, 2017, from https://developer.mozilla.org/en-US/docs/Web/HTML/Element</p>
 		<p class="wb">Basic HTML Elements. (n.d.). Retrieved March 12, 2017, from https://www.lehigh.edu/~inwww/seminar/reference/htmlchart.html</p>
-        
+        <p class="wb">HTML data-* Attributes(n.d.). Retrieved from https://www.w3schools.com/tags/att_global_data.asp</p>
+        <p class="wb">Diggs, J. et.al. (2016). Accessible Rich Internet Applications (WAI-ARIA) 1.1. Retrieved from https://www.w3.org/TR/wai-aria-1.1/#introduction</p>
+        <p class="wb">8.1 Core attributes(2012). Retrieved from https://www.w3.org/TR/2012/WD-html-markup-20121025/global-attributes.html</p>
+        <p class="wb">Accessible Rich Internet Applications(WAI-ARIA 1.0)(2014). Retrieved from https://www.w3.org/TR/wai-aria/introduction</p>      
     </div>
     </div>
     
