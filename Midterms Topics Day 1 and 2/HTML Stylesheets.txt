@@ -11,7 +11,7 @@ Style sheets represent a noteworthy leap forward in how Web page developers/desi
 
 >Composing a program as opposed to utilizing HTML
 
-These procedures impressively increment the many-sided quality of Web pages, have constrained adaptability and in addition experiencing interoperability issues, and making hardships for individuals with inabilities. 
+These procedures impressively increment the many-sided quality of Web pages, have constrained adaptability and in addition experiencing interoperability issues, and making it hard for individuals with inabilities. 
 
 Style sheets bring back the simplicity of control over introduction, and supersede the constrained scope of introduction instruments added to HTML in the course of the most recent couple of years. Templates make it simple to determine the measure of white space between content lines, the sum lines are indented, the hues utilized for the content and the foundations, the text dimension and style, and a large group of different points of interest. 
 
