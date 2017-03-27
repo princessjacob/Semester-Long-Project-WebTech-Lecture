@@ -1,0 +1,15 @@
+SCREEN
+The object screen holds or contains the visitor's screen information.
+
+SCREEN OBJECT PROPERTIES
+width
+pixelDepth
+height
+colorDepth
+availWidth
+availHeight
+
+
+References:
+The Screen Object. (n.d.). Retrieved March 27, 2017, from https://www.w3schools.com/jsref/obj_screen.asp
+Javascript BOM : Screen Object. (n.d.). Retrieved March 27, 2017, from http://www.tutorialspark.com/javascript/JavaScript_Browser_Object_Model_Screen_Object.php
