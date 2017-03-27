@@ -1,0 +1,59 @@
+NAVIGATOR Object
+Navigator is the object that holds or contains browser's information.
+
+NAVIGATOR OBJECT PROPERTIES
+appCodeName
+appName
+appVersion
+appMinorVersion
+cpuClass
+mimeTypes
+opsProfile
+systemLanguage
+cookieEnabled
+geolocation
+language
+userLanguage
+userProfie
+onLine
+platform
+product
+userAgent
+
+NAVIGATOR OBJECT METHODS
+javaEnabled()
+taintEnabled()
+
+NAVIGATOR OBJECTS
+MimeType
+plugin 
+window 
+frame
+history 
+location 
+document
+anchor object anchors array 
+applet 
+area
+image object images array
+link object links array
+layer
+forms 
+button
+checkbox
+element
+FileUpLoad
+hidden 
+option
+password
+radio
+reset
+select
+submit
+text
+			textarea
+embeds
+
+Reference:
+The Navigator Object. (n.d.). Retrieved March 27, 2017, from https://www.w3schools.com/jsref/obj_navigator.asp
+JavaScript Navigator Object. (n.d.). Retrieved March 27, 2017, from http://www.comptechdoc.org/independent/web/cgi/javamanual/javanavigator.html
