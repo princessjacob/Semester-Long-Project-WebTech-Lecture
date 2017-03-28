@@ -1,0 +1,25 @@
+It is a global object. The window object is the primary object of a browser 
+and represent the browser's window.  
+
+Properties of Window Object
+1. window.alert()
+2. window.open()
+3. window.setTimeout()
+4. window.setInterval
+5. window.encoderURI
+6. window.innerWidth
+7. window.localStorage
+8. window.history
+9. window.location
+
+References:
+JavaScript Window - The Browser Object Model. (n.d.). Retrieved from:
+https://www.w3schools.com/js/js_window.asp
+
+JavaScript Window Object. (n.d.). Retrived from: 
+http://www.afterhoursprogramming.com/tutorial/JavaScript/Window-Object/
+
+JavaScript: Browser Window Object, Document Object Model. (n.d.).
+Retrieved from: http://xahlee.info/js/js_window_object.html
+
+
