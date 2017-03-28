@@ -1,0 +1,37 @@
+WHAT IS ECMAScript?
+    It is the main basis language of Javascript. It is also treated as an official documentation of Javascript. This is standardized by ECMA International.
+
+HISTORY OF ECMA
+
+April 27, 1960 : In Brussels, the European Computer Manufacturers Association or ECMA and a committee was nominated to prepare for the formation of the Association and to draw up by-law and rules.
+
+December 1960: The headquarters is decided to be moved in Geneva to be near headquarters of the International Standard Organization (ISO) and the International Electrotechnical Commission.
+
+May 17, 1961: The constituent assemply happened as well as the association becoming official with the attendees becoming the official members.
+
+1987: ECMA became A-liasion member of JTC-1 when TC97 became part of ISO/IEC JTC 1.
+
+1994: The name of ECMA was changed to Ecma International - European Association for standardizing information and communication systems.
+
+June 2011: Ecma international celebrated Golden Jubilee while organizing the 101st General Assembly.
+
+Since 2013: ECMA international regularly grants Awards of appreciation to standardization experts.
+
+VERSIONS (Currently contains 7 editions -- With an 8th edition coming underway)
+
+1st edition
+2nd edition
+3rd edition
+4th edition
+5th edition
+6th edition
+7th edition
+
+IMPLEMENTATIONS
+SpiderMonkey
+
+
+REFERENCES:
+What is ECMA? (n.d.). Retrieved from http://www.ecma-international.org/memento/history.htm
+Waldron, R. et. al.(2017, January 9). Javascript Language Resources. Retrieved from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources
+ECMAScript(n.d.). Retrieved from https://en.wikipedia.org/wiki/ECMAScript
