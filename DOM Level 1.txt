@@ -1,0 +1,20 @@
+DOM Level 1
+
+It was introduced in 1998 by W3C.
+Provided a complete model for an entire HTML or XML document, 
+including means to change any portion of the document.
+It defines <html> tag as a special element node, called as the document 
+element.
+
+Most Common Object Types:
+1. Document
+2. Element
+3. Attr
+4. Text
+
+References:
+Document Object Model. (2017, February 21). Retrieved from:
+https://en.wikipedia.org/wiki/Document_Object_Model
+
+Javascript DOM: Document Object Model. (n.d.). Retrieved from:
+http://www.tutorialspark.com/javascript/JavaScript_Document_Object_Model.php
