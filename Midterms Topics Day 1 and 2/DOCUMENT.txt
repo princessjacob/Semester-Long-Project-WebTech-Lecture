@@ -1,0 +1,133 @@
+DEFINITION
+    It represents any web page loaded in the browser and servers as an entry point into the web page's content.
+
+PROPERTIES
+
+Document.all
+Document.async
+Document.characterSet
+Document.charset
+Document.compatMode
+Document.contentType
+Document.doctype
+Document.documentElement
+Document.documentURI
+Document.domConfig
+Document.fullscreen
+Document.hidden
+Document.implementation
+Document.inputEncoding
+Document.lastStyleSheetSet
+Document.mozSynthetic Document
+Document.mozFullScreenElement
+Document.mozFullScreenEnabled
+Document.pointerLockElement
+Document.preferredStyleSheetSet
+Document.scrollingElement
+Document.selectedStyleSheetSet
+Document.styleSheets
+Document.styleSheetSets
+Document.timeline
+Document.undoManager
+Document.visibilityState
+Document.xmlEncoding
+Document.xmlStandalone
+Document.xmlVersion
+ParentNode.children
+ParentNode.lastElementChild
+ParentNode.childElementCount
+
+EXTENSION FOR HTML DOCUMENTS
+Document.activeElement
+Document.alinkColor
+Document.anchors
+Document.applets
+Document.bgColor
+Document.body
+Document.cookie
+Document.defaultView
+Document.designMode
+Document.dir
+Document.domain
+Document.head
+Document.height
+Document.images
+Document.lastModified
+Document.linkcolor
+Document.links
+Document.location
+Document.plugins
+Document.readyState
+Document.referrer
+Document.scripts
+Document.title
+Document.URL
+Document.vlinkColor
+Document.width
+
+EVENT HANDLERS
+Document.onafterscriptexecute
+Document.onbeforescriptexecute
+Document.oncopy
+Document.oncut
+Document.onfullscreenchange
+Document.onfullscreenerror
+Document.onpaste
+Document.onpointerlockchange
+Document.onpointerlockerror
+Document.onselectionchange
+Document.onwheel
+
+METHODS
+Document.adoptNode()
+Document.captureEvents()
+Document.caretPositionFromPoint()
+Document.caretRangeFromPoint()
+Document.createAttribute()
+Document.createAttributeNS()
+Document.createCDATASection()
+Document.createComment()
+Document.createElementNS()
+Document.createEntityReference()
+Document.createEvent()
+Document.createNodeIterator()
+Document.createProcessingInstruction()
+Document.createRange()
+Document.createTextNode()
+Document.createTouch()
+Document.createTouchList()
+Document.createTreeWalker()
+Document.elementFromPoint()
+Document.elementsFromPoint()
+Document.enableStyleSheetsForSet()
+Document.exitPointerLock()
+Document.getAnimations()
+Document.getElementsByClassName()
+Documnet.getElementsByTagNameNS()
+Document.getElementsByTagName()
+Document.importNode()
+Document.normalizeDocument()
+Document.registerElement()
+Document.releaseCapture()
+Document.releaseEvents()
+Document.routeEvent()
+Document.mozSetImageElement()
+document.getElementById(String id)
+document.querySelector(String selector)
+document.querySelectorAll(String selector)
+
+EXTENSION FOR HTML DOCUMENTS
+document.clear()
+document.close()
+document.execCommand(String command[, Boolean showUI][, String value]])
+document.getElementsByName(String name)
+document.getSelection()
+document.hasFocus()
+document.open()
+document.queryCommandEnabled(String command)
+document.queryCommandIndeterm(String command)
+document.queryCommandState(String command)
+document.queryCommandSupported(String command)
+document.queryCommandVallue(String command)
+document.write(String text)
+document.writeIn(String text)
