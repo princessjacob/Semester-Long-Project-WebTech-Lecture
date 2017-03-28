@@ -1,0 +1,25 @@
+DOM Level 2
+
+The DOM Level 2 specification contains six different specifications: The DOM2 Core, Views, Events, Style, Traversal and Range, and the DOM2 HTML. Most of the DOM Level 2 is supported in Mozilla.
+
+The DOM2 Core extends the functionality of the DOM1 Core. It also contains specialized interfaces dedicated to XML. Examples of methods introduced in the DOM2 Core include the famous getElementById, and many namespace-related methods.
+Level of support: Very good. See our bugs in the Core specification.
+
+The DOM2 Views allows programs and scripts to dynamically access and update the content of a representation of a document. The introduced interfaces are AbstractView and DocumentView.
+Level of support: Perfect.
+
+The DOM2 Events gives a generic event system to programs and scripts. It introduces the concepts of event flow, capture, bubbling, and cancellation. Famous methods here include addEventListener and handleEvent. Several interfaces make your life easier when dealing with events: EventTarget, EventListener, Event, DocumentEvent, MouseEvent, MutationEvent, etc. However, it does not include an interface for the keyboard events, which will be dealt with in later versions of the DOM.
+Level of support: Very good. See our bugs in the Events specification.
+
+The DOM2 CSS, or DOM2 Style, allows programs and scripts to dynamically access and update the content of style sheets. It has interfaces for Style Sheets, Cascading Style Sheets, CSSRule, CSSStyleDeclaration, the famous getComputedStyle (supported in Mozilla), the many many CSS2Properties, and all the media rules you can imagine.
+Level of support: Good. See our bugs in the Style specification.
+
+The DOM2 Traversal and Range allow programs and scripts to dynamically traverse and identify a range of content in a document. The DOM2 Traversal provides interfaces like NodeIterator and TreeWalker to easily traverse the content of a document. The DOM2 Range allows the creation, insertion, modification, and deletion of a range of content in a Document, DocumentFragment, or Attr. It can be characterized as selecting all of the content between a pair of boundary-points.
+Level of support: Good for Range; for Traversal, the TreeWalker is supported, and NodeIterator support was implemented in Firefox 3.5.
+
+The DOM2 HTML allows programs and scripts to dynamically access and update the content and structure of HTML documents. It extends the interfaces defined in the DOM1 HTML, using the DOM2 Core possibilities. It introduces the contentDocument property, a useful way to access the document contained in a frame.
+
+
+REFERENCES:
+
+Guisset, F. (1998-2006). DOM Levels. Retrieved from https://developer.mozilla.org/fr/docs/DOM_Levels
