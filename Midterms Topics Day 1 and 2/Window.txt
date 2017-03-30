@@ -2,15 +2,37 @@ It is a global object. The window object is the primary object of a browser
 and represent the browser's window.  
 
 Properties of Window Object
-1. window.alert()
-2. window.open()
-3. window.setTimeout()
-4. window.setInterval
-5. window.encoderURI
-6. window.innerWidth
-7. window.localStorage
-8. window.history
-9. window.location
+1. window.alert() - It is a method that displays an alert box with a message in it.
+The use of this is to make sure that the information comes through the user.
+
+2. window.open() - It is a method that opens a new browser. And the .close() is 
+a method to close the window.
+
+3. window.setTimeout() - It is a method that evaluates an expression after a specified 
+number of milliseconds. And the clearTimeout() is a method to stop it from running.
+
+4. window.setInterval - It is a method that evaluates an expression after at specified  
+intervals in milliseconds. It also continues calling the function until clearInterval() 
+is called.
+
+5. window.encodeURI - It is a function that is used to encode a URI. To decode an encoded 
+URI, use the decodeURI().
+
+6. window.innerWidth - Get the computed inner width for the first element (include the padding 
+but not the border). It is a method that returns the width of the element. 
+
+7. window.localStorage - It allows you to access a local Storage Object. And it has no expiration time.
+
+8. window.history - It is an object that can be written without the window prefix. To load the previous URL 
+in the history list, use history.back(). To load the next URL in the history list, use history.forward().
+
+9. window.location - It is an object that can be written without the window prefix. 
+Here are some examples:
+	a. .href() - returns the URL of the current page
+	b. .hostname() - returns the name of the internet host of the current page
+	c. .pathname() - returns the pathname of the current page
+	d. .protocol() - returns the web protocol of the page (http: or https:)
+	e. .asign() - it is a method that loads a new document
 
 References:
 JavaScript Window - The Browser Object Model. (n.d.). Retrieved from:
@@ -22,4 +44,28 @@ http://www.afterhoursprogramming.com/tutorial/JavaScript/Window-Object/
 JavaScript: Browser Window Object, Document Object Model. (n.d.).
 Retrieved from: http://xahlee.info/js/js_window_object.html
 
+Window alert() Method. (n.d.). Retrieved from: 
+https://www.w3schools.com/jsref/met_win_alert.asp
 
+Window open() Method. (n.d.). Retrieved from: 
+https://www.w3schools.com/jsref/met_win_open.asp
+
+Window setTimeout() Method. (n.d.). Retrieved from:
+https://www.w3schools.com/jsref/met_win_settimeout.asp
+
+Window setInterval() Method. (n.d.). Retrieved from:
+https://www.w3schools.com/jsref/met_win_setinterval.asp
+
+JavaScript encodeURI() Function. (n.d.). Retrieved from:
+https://www.w3schools.com/jsref/jsref_encodeuri.asp
+
+.innerWidth(). (n.d.). Retrieved from: http://api.jquery.com/innerwidth/
+
+Mills, C. Window.localStorage. (2017, March 29). Retrieved from:
+https://developer.mozilla.org/en/docs/Web/API/Window/localStorage
+
+JavaScript Window History. (n.d.). Retrieved from:
+https://www.w3schools.com/js/js_window_history.asp
+
+JavaScript Window Location. (n.d.). Retrieved from:
+https://www.w3schools.com/js/js_window_location.asp
