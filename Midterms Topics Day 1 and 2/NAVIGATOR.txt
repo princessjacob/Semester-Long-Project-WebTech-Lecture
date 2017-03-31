@@ -2,13 +2,26 @@ NAVIGATOR Object
 Navigator is the object that holds or contains browser's information.
 
 NAVIGATOR OBJECT PROPERTIES
-appCodeName
+appCodeName 
+	The appCodeName property pertains to a browser's code name, this property is 	considered  as deprecated because it was removed from the standards of Web, but 		other browsers maybe still support this property since it is being processed to be 	dropped.
+		Syntax:  x = window.navigator.appCodeName
 appName
+	This property returns the name of the browser, it is also considered as  deprecated. 
+		Syntax:  x = window.navigator.appName
 appVersion
+	This property returns a string value of the information of the version of the browser. 	This property is also considered as a deprecated.
+		Syntax:  window.navigator
 appMinorVersion
+	This property returns a string value of the browser's minor version.
+		Syntax: navigator.appMinorVersion
 cpuClass
+	It returns the user's operating system's CPU class.
+		Syntax: navigator.cpuClass
 mimeTypes
+	It returns a list of the browser's supported MIME types.
+		Syntax: navigator.mimeTypes
 opsProfile
+	
 systemLanguage
 cookieEnabled
 geolocation
@@ -20,40 +33,14 @@ platform
 product
 userAgent
 
-NAVIGATOR OBJECT METHODS
-javaEnabled()
-taintEnabled()
-
-NAVIGATOR OBJECTS
-MimeType
-plugin 
-window 
-frame
-history 
-location 
-document
-anchor object anchors array 
-applet 
-area
-image object images array
-link object links array
-layer
-forms 
-button
-checkbox
-element
-FileUpLoad
-hidden 
-option
-password
-radio
-reset
-select
-submit
-text
-			textarea
-embeds
-
 Reference:
 The Navigator Object. (n.d.). Retrieved March 27, 2017, from https://www.w3schools.com/jsref/obj_navigator.asp
 JavaScript Navigator Object. (n.d.). Retrieved March 27, 2017, from http://www.comptechdoc.org/independent/web/cgi/javamanual/javanavigator.html
+NavigatorID.appCodeName. (n.d.). Retrieved March 29, 2017, from https://developer.mozilla.org/en-US/docs/Web/API/NavigatorID/appCodeName
+NavigatorID.appName. (n.d.). Retrieved March 29, 2017, from https://developer.mozilla.org/en-US/docs/Web/API/NavigatorID/appName
+Navigator appVersion Property. (n.d.). Retrieved March 29, 2017, from https://www.w3schools.com/jsref/prop_nav_appversion.asp
+NavigatorID.appVersion. (n.d.). Retrieved March 29, 2017, from https://developer.mozilla.org/en-US/docs/Web/API/NavigatorID/appVersion
+D. (n.d.). AppMinorVersion property (clientInformation, navigator). Retrieved March 29, 2017, from http://help.dottoro.com/ljrrulpb.php
+JavaScriptProgrammer'sReference. (n.d.). Retrieved March 29, 2017, from http://www.findmeat.org/tutorials/javascript/x498578.htm
+The cpuClass Property. (n.d.). Retrieved March 30, 2017, from http://whatsock.com/jsr/htmldom/prop_nav_cpuclass.htm
+JavaScript Navigator Object : mimeTypes Property. (n.d.). Retrieved March 30, 2017, from http://www.w3resource.com/javascript/client-object-property-method/navigator-mimeTypes.php
