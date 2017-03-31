@@ -1,37 +1,63 @@
 WHAT IS ECMAScript?
-    It is the main basis language of Javascript. It is also treated as an official documentation of Javascript. This is standardized by ECMA International.
+    The official name of Javascript. This is a language standardized by ECMA International. This language is also mainly used for the client-side scripting by coders and also used for server side scripting and Node.js services. The file extension that ECMAScript uses is .es.
 
 HISTORY OF ECMA
 
-April 27, 1960 : In Brussels, the European Computer Manufacturers Association or ECMA and a committee was nominated to prepare for the formation of the Association and to draw up by-law and rules.
+April 27, 1960
+    In Brussels, the European Computer Manufacturers Association or ECMA and a committee was nominated to prepare for the formation of the Association and to draw up by-law and rules.
 
-December 1960: The headquarters is decided to be moved in Geneva to be near headquarters of the International Standard Organization (ISO) and the International Electrotechnical Commission.
+December 1960
+    The headquarters is decided to be moved in Geneva to be near headquarters of the International Standard Organization (ISO) and the International Electrotechnical Commission.
 
-May 17, 1961: The constituent assemply happened as well as the association becoming official with the attendees becoming the official members.
+May 17, 1961
+    The constituent assemply happened as well as the association becoming official with the attendees becoming the official members.
 
-1987: ECMA became A-liasion member of JTC-1 when TC97 became part of ISO/IEC JTC 1.
+1987
+    ECMA became A-liasion member of JTC-1 when TC97 became part of ISO/IEC JTC 1.
 
-1994: The name of ECMA was changed to Ecma International - European Association for standardizing information and communication systems.
+1994
+    The name of ECMA was changed to Ecma International - European Association for standardizing information and communication systems.
 
-June 2011: Ecma international celebrated Golden Jubilee while organizing the 101st General Assembly.
+June 2011
+    Ecma international celebrated Golden Jubilee while organizing the 101st General Assembly.
 
-Since 2013: ECMA international regularly grants Awards of appreciation to standardization experts.
+Since 2013
+    ECMA international regularly grants Awards of appreciation to standardization experts.
 
 VERSIONS (Currently contains 7 editions -- With an 8th edition coming underway)
 
-1st edition
-2nd edition
-3rd edition
-4th edition
-5th edition
-6th edition
-7th edition
+ECMAScript 1
+    Created on 1997 and by Guy J. Steele. This is the first version of ECMAScript.
 
-IMPLEMENTATIONS
-SpiderMonkey
+ECMAScript 2
+    Created on 1998 and by Mike Cowlishaw. This is the second version of ECMAScript and is only composed of editorial changes to fully align it with with an ISO standard.
 
+ECMAScript 3
+    Created on 1999 by Mike Cowlishaw. This is the third version of ECMAScript. This version comprised the langauges core functionalities such as regular expressions, better string handling, new control statments, try/catch exceptions, tighter definition of errors and formatting.
+
+ECMAScript 4 (Abandoned)
+    The fourth version due to language complexity underlying on political differences.
+
+ECMAScript 5
+    Created on 2009 by Pratap Lakshman and Alen Wirfs-Brock. This version introduced the strict mode, which gives more thorough error checking and avoidance of error-prone constructs. It clarifies ambiguities in the 3rd edition of ECMAScript. It also added getters and setters, JSON library and a more complete reflection on objects.
+
+ECMAScript 5.1
+    Created on 2011 by the same authors as ECMAScript 5. It is fully aligned with the third edition and conformed with an ISO international standard.
+
+ECMAScript 6
+    Created on 2015 by Allen Wirfs-Brock. This is initially called as ECMAScript 6 or ES6 but have been later renamed as ECMAScript 2015. It is also known as ES Harmony given as it is the first ECMAScript Harmony. This version included classes and modules as well as some new features such as iterators, for/of loops, Python-style generators, and the like. Most features added gave more functionality to ECMAScript.
+
+ECMAScript 7
+    Created on 2016 by Brian Terlson. This is the seventh version of ECMAScript. It added functionalities such as exponentation operator and Array.prototype.includes.
+
+BROWSER SUPPORT
+ES 3 - support for all browsers
+ES 5 - fully supported on modern browsers
+ES 6 - partially supported on modern browsers
+ES 7 - poorly supported on modern browsers
 
 REFERENCES:
 What is ECMA? (n.d.). Retrieved from http://www.ecma-international.org/memento/history.htm
 Waldron, R. et. al.(2017, January 9). Javascript Language Resources. Retrieved from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources
 ECMAScript(n.d.). Retrieved from https://en.wikipedia.org/wiki/ECMAScript
+Javascript Versions (n.d.). Retrieved from https://www.w3schools.com/js/js_versions.asp
