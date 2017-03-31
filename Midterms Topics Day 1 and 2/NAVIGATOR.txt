@@ -21,19 +21,39 @@ mimeTypes
 	It returns a list of the browser's supported MIME types.
 		Syntax: navigator.mimeTypes
 opsProfile
-	
+	This property is only visible when the object navigator is placed in an enumerating  for loop.
+		Syntax: navigator.opsProfile
 systemLanguage
+	
 cookieEnabled
+	It determines if the cookies in the browser are enabled or not.
+		Syntax: navigator.cookieEnabled
 geolocation
+	Returns an object of geolocation that can be used to know the position of the user.
 language
-userLanguage
-userProfie
+	Returns the browser's language.
+		Syntax:.navigator.language
 onLine
+	It determines if the browser is online or not.
+		Syntax: navigator.onLine
 platform
+	Returns the platform on which the browser is compiled.
+		Syntax: navigator.platform
 product
+	Returns the browser's engine name.
+		Syntax: navigator.product
 userAgent
+	Returns the header of the user-agent sent to the server by the browser. It is also considered as deprecated.
+		Syntax: navigator.userAgent
+NAVIGATOR OBJECT METHODS
+javaEnabled()
+	It specifies if the browser has a Java that is enabled or not.
+		Syntax: navigator.javaEnabled()
+taintEnabled()
+	It specifies if the browser has a data tainting that is enabled or not.
+		Syntax: navigator.taintEnabled()
 
-Reference:
+References:
 The Navigator Object. (n.d.). Retrieved March 27, 2017, from https://www.w3schools.com/jsref/obj_navigator.asp
 JavaScript Navigator Object. (n.d.). Retrieved March 27, 2017, from http://www.comptechdoc.org/independent/web/cgi/javamanual/javanavigator.html
 NavigatorID.appCodeName. (n.d.). Retrieved March 29, 2017, from https://developer.mozilla.org/en-US/docs/Web/API/NavigatorID/appCodeName
@@ -44,3 +64,13 @@ D. (n.d.). AppMinorVersion property (clientInformation, navigator). Retrieved Ma
 JavaScriptProgrammer'sReference. (n.d.). Retrieved March 29, 2017, from http://www.findmeat.org/tutorials/javascript/x498578.htm
 The cpuClass Property. (n.d.). Retrieved March 30, 2017, from http://whatsock.com/jsr/htmldom/prop_nav_cpuclass.htm
 JavaScript Navigator Object : mimeTypes Property. (n.d.). Retrieved March 30, 2017, from http://www.w3resource.com/javascript/client-object-property-method/navigator-mimeTypes.php
+NavigatorID.userAgent. (n.d.). Retrieved March 31, 2017, from https://developer.mozilla.org/en-US/docs/Web/API/NavigatorID/userAgent
+Navigator userAgent Property. (n.d.). Retrieved March 31, 2017, from https://www.w3schools.com/jsref/prop_nav_useragent.asp
+Navigator product Property. (n.d.). Retrieved March 31, 2017, from https://www.w3schools.com/jsref/prop_nav_product.asp
+Navigator platform Property. (n.d.). Retrieved March 31, 2017, from https://www.w3schools.com/jsref/prop_nav_platform.asp
+Navigator geolocation Property. (n.d.). Retrieved March 31, 2017, from https://www.w3schools.com/jsref/prop_nav_geolocation.asp
+Navigator onLine Property. (n.d.). Retrieved March 31, 2017, from https://www.w3schools.com/jsref/prop_nav_online.asp
+JavaScriptProgrammer'sReference. (n.d.). Retrieved March 31, 2017, from http://www.findmeat.org/tutorials/javascript/x501685.htm
+Navigator cookieEnabled Property. (n.d.). Retrieved March 31, 2017, from https://www.w3schools.com/jsref/prop_nav_cookieenabled.asp
+Navigator javaEnabled() Method. (n.d.). Retrieved March 31, 2017, from https://www.w3schools.com/jsref/met_nav_javaenabled.asp
+Navigator taintEnabled() Method. (n.d.). Retrieved March 31, 2017, from https://www.w3schools.com/jsref/met_nav_taintenabled.asp
