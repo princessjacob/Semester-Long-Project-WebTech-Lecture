@@ -9,13 +9,13 @@
     <meta name="author" content="">
 
     <title>WEBTEK | HTML</title>
-    
+
     <!-- Reset CSS -->
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    
+
     <!-- Overwrite CSS -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    
+
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -53,7 +53,7 @@
         <p>
             HTML or HyperText Markup Language was proposed by Tim Berners-Lee in 1989 and was developed in 1990. HTML is the presentational aspect/ aesthetic of a web page. Web pages are made up of HTML. HTML is composed of tags, such as &lt;body&gt;, &lt;title&gt;, &lt;head&gt; and etc. HTML tags are composed of opening and closing tags . Opening tag starts with a less than angle bracket, attribute name and a greater than angle bracket. A closing tag also starts with a less than angle bracket, forward slash, attribute name, and lastly a greater than angle bracket. HTML is also consist of links that connects web pages to one another.
             Example of a HTML file below:
-            
+
         </p>
         <p>
             &lt;html&gt;
@@ -64,7 +64,7 @@
             &lt;/html&gt;
         </p>
     </div>
-      
+
     <div id="htmlVer" class="tab-pane fade">
       <h3>HTML Versions</h3>
         <h4>1. HTML 1.0</h4>
@@ -100,13 +100,13 @@
             HTML5 is designed for the web, both now and in the future. This is the specification that we will be working with for the next decade at least, so the process of its development is relatively slow and considered.
         </p>
     </div>
-      
+
     <div id="xhtml" class="tab-pane fade">
       <p>Extensible Hypertext Markup Language</p>
       <p>Reformulation of XHTML in XML</p>
       <p>Almost alike with HTML 4.01 with some differences</p>
       <p>Stricter than HTML 4.01</p>
-      <p>Developed by W3C (World Wide Web Consortium)</p>   
+      <p>Developed by W3C (World Wide Web Consortium)</p>
       <h3>XHTML Versions</h3>
         <h4>XHTML 1.0</h4>
         <p>In December 1998, the working draft was entitled Reformulating
@@ -129,20 +129,81 @@ documents. It is a common web feature in 1990's</p>
         <p>It adds many new elements</p>
         <p>Such as section and aside tags</p>
     </div>
-      
+
     <div id="synTem" class="tab-pane fade">
       <!-- GENERAL STRUCTURE -->
-      <p><!-- Place general definition here --></p>    
-      <h3><!-- Place General Title here. i.e. Tags, Attributes --></h3>
-      <p><!-- Place definition of the title above here --></p>
-      <h4><!-- Place Non General Title here. i.e. body tag --></h4>
-      <p><!-- Place definition of the title above here --></p>
-    </div>
-      
-    </div>
-    
+      <p>Web Browsers is the program that reads and display the html document. Some examples are the Internet Explorer, Netscape, Google Chrome Mozilla Firefox and etc.</p>
+      <h3>TAGS</h3>
+      <p>Tags  is the html code which controls the features and appearance of the html content. This are the element names that are surrounded by the angle brackets and normally come in pairs. </p>
+      <h3>OPENING TAG</h3>
+      <p>Opening Tag is a type of html instruction which tells the the browser to turn on a feature and apply that feature to the content of the document. It is is found in the beginning of the html tags. It is also called the Start Tag.
+	The format for the opening tag is:
+		&lt;'opening tag'&gt; &lt;/closing tag&gt;</p>
+      <h3>CLOSING TAG</h3>
+      <p>Closing Tag is the opposite of the opening tag which is found in the end of every tag. It is the an html instruction which turns off the feature that is used in the  beginning of the  content of the document. It is also called the End Tag. it is written like the start tag but in the end tag there is a forward slas before the tag name.
+	The format for the closing tag is:
+		&lt;opening tag&gt; &lt;/'closing tag'&gt;</p>
+      <h4>BODY TAG</h4>
+      <p>Body is an html tag which comes after the head tag. It contains all the content of the html.
+	The format for the body is :
+		&lt;body&gt; &lt;/body&gt;
+	For example:
+		&lt;head&gt;
+			&lt;title&gt;Webtek&lt;/title&gt;
+		&lt;/head&gt;
+		&lt;body&gt;
+			&lt;h1&gt; WEB SYSTEMA AND TECHNOLOGY &lt;/h1&gt;
+		&lt;/body&gt;</p>
+      <h4>HEAD TAG</h4>
+      <p>Head is an html tag which is used to surround an important content in the html document. it might not be visible to the user but it is important to the browser to be used. This contains the metadata about the html page and links.
+	The format for the head is:
+		&lt;head&gt; &lt;/head&gt;
+	For example;
+		&lt;head&gt;
+			&lt;title&gt; Webtek 2017 &lt;/title&gt;
+		&lt;/head&gt;
+		  <h4>HTML TAG </h4>
+      <p>HTML Tag  is said to be the basic tag in html which defines an html document. It holds the whole html document.
+	The format for the html tag is:
+		&lt;html&gt; &lt;/html&gt;
+	For example:
+		&lt;html&gt;
+			The content of your web page are placed here!!!
+		&lt;/html&gt;
+		  </p>
+      <h4>ATTRIBUTES</h4>
+      <p>Attributes is an html properties which provide an additional informations about the elements. It is specified in the opening tag after the name of the element. Attributes generally includes an attribute name and an attribute value.
+The format for the attributes is:
+	<'opening tag' 'attribute' = "value"> </'closing tag'>
+for example:
+	&lt;a href="http://webtek.org"&gt;&lt;/a&gt;</p>
+      <h4>ID ATTRIBUTE</h4>
+      <p>The id attribute which is used to identify an element. The  id attribute must be unique to every single element in the html file and each of the element shouldn't have more then one id.
+The format for the id attribute is:
+	&lt;'opening tag' id= "value"&gt; &lt;/closing tag&gt;
+for example:
+	&lt;div id="subject"&gt; The subject for this time is Web Systems and Technologies &lt;/div&gt;
+ The class attribute is used to classify an element. The class element is used when styling in CSS by selecting the class value. It can be more than one or more class and it is seperated by spaces.
+The format for the class atttribute is:
+	&lt;'opening tag' class= "value"&gt; &lt;/closing tag&gt;
+for example:
+	&lt;div class="course"&gt; The person over there is an IT student. &lt;/div&gt;</p>
+      <h4>SRC ATTRIBUTE</h4>
+      <p>The src attribute is used to specify a source fot the embeddable contents. It is commonly used in the img tag.
+	The format for the src attibute:
+		&lt;'opening tag' href= "value"&gt; &lt;/closing tag&gt;
+	For example:
+		&lt;img src="mypicture.jpg"/&gt;</p>
+      <h4>HREF ATTRIBUTE</h4>
+      <p>The href attribute which is used to  provide a hyperlink reference that is used in the linked resource. This attribute tells the browser where to go.
+The format for the href attribute is:
+	&lt;'opening tag' href= "value"&gt; &lt;/closing tag&gt;
+For example:
+	&lt;a href="http://google.com"&gt; Search &lt;/a&gt;
+Footer is located at the lower part of the web page. It is the last in the html document. It is moostly the copyright statements and the informations of the organization, or person who developed the web pages.</p>
     </div>
     <!-- Footer -->
+
     <footer>
         <div class="container text-center">
             <p>Copyright &copy; WEBTEK 2017</p>
