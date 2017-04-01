@@ -9,13 +9,13 @@
     <meta name="author" content="">
 
     <title>WEBTEK | CSS</title>
-    
+
     <!-- Reset CSS -->
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    
+
     <!-- Overwrite CSS -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    
+
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -42,7 +42,7 @@
   <h2 class = "titleHeader">CSS</h2>
     <ul class="nav nav-tabs">
     <!-- These list items is connected to a specific tab through their id. So the logic is href is equal to the id of one of the tabs. -->
-    <li class="active"><a data-toggle="tab" href="#definition">Definition</a></li>  
+    <li class="active"><a data-toggle="tab" href="#definition">Definition</a></li>
     <li><a data-toggle="tab" href="#cssVer">CSS Versions</a></li>
     <li><a data-toggle="tab" href="#htmlSt">HTML Stylesheets</a></li>
     <li><a data-toggle="tab" href="#xhtmlSt">XHTML Stylesheets</a></li>
@@ -56,7 +56,7 @@
         </p>
         <h3>MAIN CONCEPTS</h3>
         <p>
-            It was developed by Håkon Wium Lie and Bert Bos. CSS works  with different markup languages popularly with HTML, it is also used in other markup languages like XML and XHTML. CSS files can be created on lots of text editors such as Notepad++, Sublime Text and etc. CSS uses the attributes "class", "id" to manipulate the styles.<br>           
+            It was developed by Håkon Wium Lie and Bert Bos. CSS works  with different markup languages popularly with HTML, it is also used in other markup languages like XML and XHTML. CSS files can be created on lots of text editors such as Notepad++, Sublime Text and etc. CSS uses the attributes "class", "id" to manipulate the styles.<br>
             Example of CSS below:
         </p>
         <p>
@@ -88,7 +88,7 @@
         </p>
 
     </div>
-      
+
     <div id="cssVer" class="tab-pane fade">
         <h3>CSS 1</h3>
        <p>It has the basic structure that still uses today such as fonts, backgrounds,
@@ -111,15 +111,15 @@ Text Effects, Animations). The earliest drafts of CSS 3 was published in 1999.
 And this is the latest standard.</p>
    </div>
 
-    
-    <div id="htmlSt" class="tab-pane fade">  
+
+    <div id="htmlSt" class="tab-pane fade">
       <!-- GENERAL STRUCTURE -->
       <h3><!-- Place main title's here i.e. Stylesheets--></h3>
       <p><!-- Place main title's definition here --></p>
         <h4><!-- Place support title here. i.e. Author Stylesheets --></h4>
         <p><!-- Place definition of the support title defined here --></p>
     </div>
-      
+
     <div id="xhtmlSt" class="tab-pane fade">
       <!-- GENERAL STRUCTURE -->
       <h3><!-- Place main title's here i.e. Stylesheets--></h3>
@@ -127,16 +127,104 @@ And this is the latest standard.</p>
         <h4><!-- Place support title here. i.e. Author Stylesheets --></h4>
         <p><!-- Place definition of the support title defined here --></p>
     </div>
-      
+
     <div id="state" class="tab-pane fade">
       <!-- GENERAL STRUCTURE -->
-      <p><!-- Place general definition here. i.e. CSS Statements --></p>    
-      <h3><!-- Place title of an @rule here. --></h3>
-      <p><!-- Place definition of the @rule defined above here --></p>
+      <p>The CSS style sheet consist of a list if statements. The CSS Statement is either an AT RULE or a RULE SET.
+The AT RULE is a CSS statement which has a beginning with a at sign “@” and followed by  an identifier then it includes all until it comes to the next semicolon  . It composed of a semicolon in the ending of the first line. It gives the CSS with instructions to perform or on how to behave.
+	The format for AT RULE CSS statement is:
+		@[keyword] (rule);
+	For example:
+		&lt;style tyle="text/css"&gt;
+ 		  	@import "mystyle.css";
+  		&lt;/style&gt;</p>
+      <h3>@charset</h3>
+      <p>The @charset is a rule used to define the character set that is used by the browser. The @charset that is placed on the HTTP header will override any @charset rule. This must be located and written at the beginning of the CSS.
+	The syntax for the @charset is:
+		@charset “value”;
+	For example:
+		&lt;style tyle=”text/css”&gt;
+			@charset “UTF-8”;
+		&lt;/style&gt;</p>
+      <h3>@import</h3>
+      <p>The @import a rule that is used to insert in the very top of the document and instructs the stylesheet to request and also to include an external CSS file. It is used to import styles from other stylesheet.
+	 The syntax for the @charset is:
+		@import “value”;
+	For example:
+		&lt;style tyle=”text/css”&gt;
+			@import “style.css”;
+		&lt;/style&gt;</p>
+      <h3>@namespace</h3>
+      <p>The @namespace is a rule which is very useful in applying CSS to XML HTML in order for the XHTML elements can be used as a selector in the CSS.
+	The syntax for the @namespace is:
+		@namespace “URL”
+	For example:
+		@namespace url(http://www.webtek.org/xhtml);</p>
+      <h3>@document</h3>
+      <p>The @document is a rule which specifies the conditions for the styles that apply to a specific page.
+	The syntax for the @document is:
+		@document “URL”
+	For example:
+		@document  url(http://webtek.com)</p>
+      <h3>@font-face</h3>
+      <p>The @font-face is a rule which allow to custom fonts on a webpage. It accepts statements which creates and serves those fonts. It is used
+	The syntax for the @font-face is:
+		@font-face { values }
+	For example:
+		@font-face {
+			font-family: “Scarborough Light”;
+			src: url(http://www.webtek.com);
+		}</p>
+      <h3>@keyframes</h3>
+      <p>The @keyframes is a rule which is the basis for the keyframe animations on many CSS properties by the means of allowing us to mark the start and the stop mark for what is being animated.
+	The syntax for the @keyframes is:
+		@keyframes { values }
+	For example:
+		@keyframes pulse {
+			0%{
+				background-color: red;
+			}
+			100%{
+				background-color: blue;
+			}
+		}</p>
+      <h3>@media</h3>
+      <p>The @media is a rule which consist of conditional statements for targeting styles to specific screen.
+	The syntax for the @media is:
+		@media { values }
+	For example:
+		@keyframes only screen
+			and (min-device-width: 340px)
+			and (max-device-width: 500px)
+			and (-webkit-min-device-pixel-ratio: 2){
+				.module { width: 100%; }
+			}
+		}</p>
+      <h3>@page</h3>
+      <p>The @page is a rule which defines the styles that are to individual pages in terms of printing the document. This is composed pseudo-elements for styling the :first page the same as the :left and the :right margins of the page.
+	The syntax for the @page is:
+		@page { values }
+	For example:
+		@page :first {
+			margin: 1.5in;
+		}</p>
+      <h3>@supports</h3>
+      <p>The @supports is a rule that tests whether a browser supports a feature, and then applies the styles for those of the elements if the condition occurred.
+	The syntax for the @supports is:
+		@supports { values }
+	For example:
+		@supports (display: flex) {
+			.module { display: flex; }
+		}</p>
+      <h3>The RULE SET includes a selector then followed by a declaration block. It applies any declarations that is in the declaration block to all of the tags/elements that is matched by the selector. It is composed of closing curly braces. The rule set is simply called the Rule.</h3>
+      <p>For example:
+		h1{
+			color: red;
+			font-weight: bold;
+		}</p>
+
     </div>
-      
-    </div>
-    
+
     </div>
     <!-- Footer -->
     <footer>
