@@ -1,0 +1,253 @@
+DEFINITION
+    It represents any web page loaded in the browser and servers as an entry point into the web page's content.
+
+PROPERTIES
+
+Document.async
+    This indicates an asynchronous request and often worked with .load
+Document.characterSet (Read only)
+    Once requested, it will return the character set of a document.
+Document.charset (Read only)
+    An alias of .characterSet
+Document.compatMode (Read Only)
+    This is used to know whether the browser is rendering the document in strict's or quirk's mode.
+Document.contentType (Read only)
+    This would return the content type of a document. i.e. (.txt, .html)
+Document.doctype (Read only)
+    This would specify the document type definition of the viewed current document.
+Document.documentElement (Read only)
+    This would return a direct child element of the document.
+Document.documentURI (Read only)
+    This would return the location of the document as a string.
+Document.domConfig
+    This should return a DOMconfiguration of the document. A
+Document.fullscreen
+    This would return true if the document is in full screen. False, if not.
+Document.hidden (Read only)
+    This would return true if the document is hidden and false if not.
+Document.implementation (Read only)
+    This would return the document's implementation associated with the viewed current document.
+Document.inputEncoding (Read only)
+    Another alias of Document.characterSet
+Document.lastStyleSheetSet (Read only)
+    This would return the name of the stylesheet that is enabled last.
+Document.mozSynthetic Document (Read only)
+    This would return to true if the document is synthetic.
+Document.mozFullScreenElement (Read only)
+    An element that is currently in full screen mode.
+Document.mozFullScreenEnabled (Read only)
+    This would return true is Element.mozRequestFullScreen that would suceed in the current document.
+Document.pointerLockElement (Read only)
+    This would return the targeted element for mouse events while the pointer is locked. Or it would return as null if the lock is pending, or if the pointer is unlocked of the target is another document.
+Document.preferredStyleSheetSet (Read only)
+    This would return the preferredStyleSheet as specified by the author.
+Document.scrollingElement
+    This would return a reference to an element that scrolls the document.
+Document.selectedStyleSheetSet
+    This would return what is currently used as a stylesheet.
+Document.styleSheets
+    This would return a list of style sheet objects on the current document.
+Document.styleSheetSets
+    This would return a list of stylesheets available for the document.
+Document.timeline
+    This is an experimental technology and would represent the timeline of the document.
+Document.visibilityState
+    This would return the visibility stated of the document.
+Document.xmlEncoding
+    This would return and encoding as specified by an XML declaration.
+Document.xmlVersion
+    This would return the version of the XML used.
+ParentNode.children
+    This would return an HTMLCollection that contained all objects of type Element, that are children of the parent node.
+ParentNode.lastElementChild
+    This would return the last element child of the parent node.
+ParentNode.childElementCount
+    This would return the count of the children elements.
+
+EXTENSION FOR HTML DOCUMENTS
+Document.activeElement
+    This would returned what element is currently focused on.
+Document.alinkColor
+    This would return a set colors of active links in a document body.
+Document.anchors
+    This would return a list of anchors defined in the document.
+Document.applets
+    This would return an ordered list of all the applets existing in the document.
+Document.bgColor
+    This would either get or set the background color of the current document.
+Document.body
+    This would return the body element of the current document.
+Document.cookie
+    This would return a semi-colon separated list of the cookies in the document or sets a single cookie.
+Document.defaultView
+    This would return a reference to the window object.
+Document.designMode
+    This has the ability to get or set editting on a document.
+Document.dir
+    This has the ability to get or set the directionality of a document.
+Document.domain
+    This would return the document domain.
+Document.embeds
+    This would return the embedded elements within a current document.
+Document.fgColor
+    This would get or set the foreground color, or text color, of the current document.
+Document.forms
+    This would return a list of the form elements within the document.
+Document.head
+    This would return the current head of the document.
+Document.height
+    This would get or set the height of the current document.
+Document.images
+    This would return a list of images that is within the element.
+Document.lastModified
+    This would return the dates as to when the document was last modified.
+Document.linkcolor
+    This would set the colors of the hyperlinks in the document.
+Document.links
+    This would return the list of all the hyperlinks of the document.
+Document.location
+    This would return the URI of the current document.
+Document.plugins
+    This would return a list of available plugins.
+Document.readyState
+    This would retun the loading status of the document.
+Document.referrer
+    This would return the URI of the page linked to the document.
+Document.scripts
+    This would return all the script elements within the document.
+Document.title
+    This would set or get the title of the document.
+Document.URL
+    This would return the documents' location as a string.
+Document.vlinkColor
+    This would get or set the color of visited links.
+Document.width
+    This would get or set the width of the current document.
+
+EVENT HANDLERS
+Document.onafterscriptexecute
+    This would represent the event handling code for the afterscriptexecute event.
+Document.onbeforescriptexecute
+    This would represent the event handling code for the beforescriptexecute event.
+Document.oncopy
+    This would represent the event handling code for the copy event.
+Document.oncut
+    This would represent the event handling code for the cut event.
+Document.onfullscreenchange
+    This would represent the code to be called when the fullscreenchange event is raised.
+Document.onfullscreenerror
+    This would represent the code to be called when the fullscreenerror event is raised.
+Document.onpaste
+    This would represent the code to be called for the paste event.
+Document.onpointerlockchange
+    This would represent the code the onpointerlockchange event is called.
+Document.onpointerlockerror
+    This would represent the code the onpointerlockerror event is called.
+Document.onselectionchange
+    This would represent the code when onselectionchange event is called.
+Document.onwheel
+    This would represent the code when onwheel event is called.
+
+METHODS
+Document.adoptNode()
+    This adopts a node from an external document.
+Document.caretPositionFromPoint()
+    This gets the current position of a CaretPosition at or near teh specified coordinates. This is an experimental technology.
+Document.caretRangeFromPoint()
+    This gets the range object from the document fragment under specified coordinates.
+Document.createAttribute()
+    This would create a new Attr object and then return it.
+Document.createAttributeNS()
+    This creates a new attribute node.
+Document.createCDATASection()
+    This creates a new CDATAnode and returns it.
+Document.createComment()
+    This creates a new comment node and returns it.
+Document.createElementNS()
+    This creates a new element with a given tagname and namespace URI.
+Document.createEntityReference()
+    This creates a new Entity Reference object and returns it.
+Document.createEvent()
+    This creates an event object.
+Document.createNodeIterator()
+    This creates a node iterator object.
+Document.createProcessingInstruction()
+    This creates a new ProcessingInstruction object.
+Document.createRange()
+    This creates a range object.
+Document.createTextNode()
+    This creates a text node.
+Document.createTouch()
+    This creates a Touch object.
+Document.createTouchList()
+    This creates a TouchList object.
+Document.createTreeWalker()
+    This creates a TreeWalker object.
+Document.elementFromPoint()
+    This returns an array of all elements at the specified coordinates.
+Document.elementsFromPoint()
+    This returns the topmost element at the specified coordinates.
+Document.enableStyleSheetsForSet()
+    This enables the stylesheets for the specified stylesheets set.
+Document.exitPointerLock()
+    This releases the pointer lock.
+Document.getAnimations()
+    This returns an array of all Animation objects.
+Document.getElementsByClassName()
+    This returns a list of elements with the given class name.
+Documnet.getElementsByTagNameNS()
+    This returns a list of elements with the given tagname and namespace.
+Document.getElementsByTagName()
+    This returns a list of elements by the given tagname.
+Document.importNode()
+    This returns a clone of a node from an external document.
+Document.normalizeDocument()
+    This replaces entities and normalizes text nodes.
+Document.registerElement()
+    This registers a web component.
+Document.releaseCapture()
+    This releases the current mouse capture if it's an element in the document.
+Document.mozSetImageElement()
+    This allows changing of the element being used as the background image for a specified element id.
+document.getElementById(String id)
+    Thsi returns a an object reference to the identified element.
+document.querySelector(String selector)
+    This returns the first Element node within the document in the document order that matches the specified selectors.
+document.querySelectorAll(String selector)
+    This returns a list of all element nodes within the document that match the specified selectors.
+
+EXTENSION FOR HTML DOCUMENTS
+document.clear()
+    In recent versions, this method does nothing.
+document.close()
+    This closes the document stream for writing.
+document.execCommand(String command[, Boolean showUI][, String value]])
+    This executes a formating command.
+document.getElementsByName(String name)
+    This returns a list of elements with the given name.
+document.getSelection()
+    This returns a Selection object related to the text selected in the document.
+document.hasFocus()
+    This returns true if the focus is currently located anywhere inside the specified document.
+document.open()
+    This opens the document stream for writing.
+document.queryCommandEnabled(String command)
+    This would return true if the formatting command if it is enabled.
+document.queryCommandState(String command)
+    This would return true if the formatting command has been executed on the current range.
+document.queryCommandSupported(String command)
+    This would return true if the formatting command is supported on the current range.
+document.write(String text)
+    This allows writing of text in the document.
+document.writeIn(String text)
+    This allows writing a line of text in the document.
+
+
+REFERENCES:
+
+Teoli(n.d.). Document.hidden. Retrieved from https://developer.mozilla.org/en-US/docs/Web/API/Document/hidden
+
+Sheperd, E. et. al. (2017, January 13). Document. Retrieved from https://developer.mozilla.org/en/docs/Web/API/Document
+
+Mills, C. et. al. (2016, April 22), Document.timeline. Retrieved from https://developer.mozilla.org/en-US/docs/Web/API/Document/timeline
+
