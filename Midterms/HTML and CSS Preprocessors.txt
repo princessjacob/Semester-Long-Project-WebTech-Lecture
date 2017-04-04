@@ -1,0 +1,135 @@
+What are Preprocessors
+	-In time composing HTML and CSS may feel somewhat saddling, requiring a considerable measure of similar errands to be finished again and again. Errands, for example, shutting labels in HTML or monotonously looking up hexadecimal shading values in CSS. 
+
+These distinctive assignments, while generally little, do signify a lot of wastefulness. Luckily these, and a modest bunch of different wasteful aspects, have been perceived and preprocessor arrangements have adapted to present circumstances. 
+
+A preprocessor is a program that takes one sort of information and believers it to another kind of information. On account of HTML and CSS, a portion of the more prominent preprocessor dialects incorporate Haml and Sass. Haml is handled into HTML and Sass is prepared into CSS. 
+
+After embarking to tackle a portion of the more typical issues, Haml and Sass discovered numerous extra approaches to enable HTML and CSS, by evacuating the wasteful aspects as well as in making approaches to make building sites less demanding and more consistent. The notoriety of preprocessors have additionally conveyed along various structures to bolster them, one of the more famous being Compass.
+
+
+HTML Preprocessors:
+
+ > Haml 
+
+Haml, known as HTML abstraction markup dialect, is a markup language with the single objective of giving the capacity to compose delightful markup. Filling in as its own markup dialect, code written in Haml is later prepared to HTML. Haml advances DRY and very much organized markup, giving a satisfying knowledge to anybody writing or read it.
+
+ > Installation of Haml
+
+Haml requires Ruby to be accumulated to HTML, so the initial step to utilizing it is to guarantee that Ruby is introduced. Luckily for those on Mac OS X Ruby comes preinstalled, and those on a Windows machine may visit Windows Installer for headings. After affirming Ruby is introduced the jewel introduce haml charge should be keep running from the summon line, utilizing Terminal or the alike order line program, to introduce Haml.
+
+Documents written in the Haml markup ought to be spared with the record expansion of .haml. To then change over these documents from Haml to HTML the haml
+
+ > Doctype 
+
+The initial segment to composing a record in Haml is comprehending what sort of doctype is to be utilized. When working with HTML reports, the general archive sort will be the HTML5 doctype. In Haml report sorts are related to three shout focuses, !!! taken after by a specifics if fundamental. 
+document sort so keeping in mind the end goal to make this the HTML5 doctype the number five must be passed in after the outcry focuses, !!! 5.
+
+ > Declaring Elements 
+
+One of the characterizing components of Haml is its linguistic structure, and how to proclaim and settle components. HTML components for the most part have opening and shutting labels, however inside Haml components just have one tag, the opening. Components are introduced with a percent sign, %, and after that indented to recognize settling. Space with Haml can be achieve with at least one spaces, however what is critical is that the space stay steady. Hard tabs or spaces can't be combines, and a similar number of tabs or spaces must be the same all through a whole record. 
+
+Expelling the requirement for both opening and shutting labels, and also ordering the structure with space makes a simple to take after diagram. At any given time the markup can be checked and changed without struggle.
+
+ > Escaping Text 
+
+One of the advantages of Haml is the capacity to assess and run Ruby, however this isn't generally the coveted activity. Content, and lines of code, can be gotten away by utilizing an oblique punctuation line, \, permitting the content to be rendered unequivocally without being executed. 
+
+In the case beneath, the initial occurrence of = @author is executed Ruby, pulling the creators name from the application. The second case, beginning with the oblique punctuation line, is gotten away content, printing it as seems to be, without execution.
+
+ > Text Escaping Alternatives 
+
+Occassionally escaping text doesn't exactly carry out the task and Ruby is expected to create the coveted yield. One well known occurrence of this is when attempting to incorporate a period straightforwardly after a connection, yet not as a component of the stay content. Putting the period on another line isn't satisfactory as it will be dealt with as a void class esteem, creating an incorporating mistake. Including an oblique punctuation line before the period will get away from the character anyway it puts a clear space between the last word and the period. Once more, not creating the coveted yield. 
+
+In these cases a Ruby partner proves to be useful. In the case underneath, the assistant is utilized to put a period straightforwardly after the last word yet at the same time outside of the stay content.
+
+ > Comments 
+
+Similarly as with components and traits, remarks are taken care of a bit diversely in Haml also. Basically enough, code can be remarked out with the utilization of a solitary forward cut,/. Singular lines might be remarked out with the utilization of a forward cut toward the start of the line, and pieces of code can be remarked out by being settled underneath a forward cut.
+
+ > Conditonal Comments 
+
+Contingent remarks are additionally taken care of diversely in Haml. To make a contingent remark utilize square sections, [], around the condition. These square sections should be set specifically after the forward slice.
+
+ > Filters 
+
+Haml gives a modest bunch of filters, permitting diverse sorts of contribution to be utilized within Haml. Filters are related to a colon took after by the name of the filter, :markdown for instance, with the majority of the substance to be separated settled underneath.
+
+ > Ruby Interpolation 
+
+As beforehand specified Haml can assess Ruby, and there may once in a while be times where Ruby should be assessed within plain content. In this occasion Ruby should be interjected, fulfilled by wrapping the fundamental Ruby code inside .
+
+
+ > SCSS and Sass 
+
+ >SCSS and Sass are preprocessing languages which are assembled to CSS, taking after Haml a bit in that they make composing code less demanding, and give a considerable amount of use in doing as such. Exclusively SCSS and Sass originate from a similar beginning anyway they are specialized diverse punctuations. 
+
+Backtalk, Syntactically Awesome Stylesheets, started things out and is a strict indented syntax. SCSS, Sassy CSS, took after not long after giving a similar terminating force of Sass yet with a more adaptable language structure, including the capacity to compose plain CSS. 
+
+ > Installation 
+
+Similarly as with Haml, SCSS and Sass are gathered utilizing Ruby hence Ruby should be installed to create CSS records. 
+When Ruby is installed the gem install sass command should be keep running from the command line to introduce SCSS and Sass.
+Files written in SCSS or Sass need the .scss or .backtalk record expansions separately. To change over both of these file types to .css the accompanying sass charge should be run.
+Likewise with Haml, these document names are ways and should be executed individually. The above charge works when those records dwell inside the index from which the command is run, ought to the documents live outside of the catalog their way should be explicitly stated  inside the command. 
+Ought to changes to a record be continuous Sass can watch the document and recompile the CSS each time a change happens. 
+
+ > Syntax
+
+As already specified the essential contrast amongst SCSS and Sass is their syntax, and their distinction in seriousness. The syntax of SCSS isn't vastly different than that of consistent CSS. Truth be told, standard CSS will keep running within SCSS. Sass then again is genuinely strict, and any indenting or character mistakes will preclude the styles from arranging. Sass excludes every single wavy section, {}, and semicolons, ;, depending on space and clear line breaks for formatting.
+
+ > Utilizing SCSS versus Sass
+
+Settling on whether to utilize SCSS or Sass comes down to individual preference, and is a choice to be made in light of what is best for a particular group and venture. There are advantages and disadvantages to every language structure, all of which are reasonable. 
+
+Sass won't permit straight CSS contribution as SCSS does, and won't endure any structure mistakes. Sass has more of an expectation to learn and adapt, however an expectation to learn and adapt I see definitely justified even despite the simplicity of reasonable styles. 
+
+ > Nesting
+
+The settling rapidly diagrams identifiable selectors, in any case it is essential not to go over the edge. Try not to nest selectors for unapparent reasons or go over the edge nesting one selector under the earlier one. Utilizing particular selectors without raising specificity is critical.
+
+ > Nesting Properties 
+
+On top of nestling selectors it is also possible to nest properties. The absolute most mainstream employments of this might be seen with font, margin, padding, and border properties. Similarly as with the choice of SCSS versus Sass, this is especially an individual choice. Many feel that shorthand qualities are fine and softening out qualities up this more drawn out organization is pointless. At last your choice is up to individual inclination.
+
+ > Number Functions 
+
+Of course Sass incorporates a modest bunch of inherent capacities, large portions of which are utilized to control number values as wished. 
+
+The rate() work transforms an incentive into a rate. The round() capacity adjusts an incentive to the nearest entire number, defaulting to gathering together where important. The ceil() work gathers an esteem together to the nearest entire number, and the floor() work adjusts an incentive down to the nearest entire number. Finally, the abs() work finds the total estimation of a given number. 
+
+percentage() round() ceil() floor() abs()
+
+ > CoffeeScript
+
+ > CoffeeScript is a little language that aggregates into JavaScript. Underneath that clumsy Java-esque patina, JavaScript has dependably had an exquisite heart. CoffeeScript is an endeavor to uncover the great parts of JavaScript basically. 
+
+The brilliant lead of CoffeeScript is: "It's simply JavaScript". The code orders coordinated into the equal JS, and there is no elucidation at runtime. You can utilize any current JavaScript library flawlessly from CoffeeScript (and the other way around). The ordered yield is intelligible, pretty-printed, and tends to keep running as quick or speedier than the proportionate written by hand JavaScript. 
+
+The CoffeeScript compiler puts forth an admirable attempt to create yield JavaScript that keeps running in each JavaScript runtime, however there are special cases. Utilize generator capacities, for? from, or labeled layout literals just on the off chance that you realize that your objective runtimes can bolster them. On the off chance that you utilize modules, you should utilize an extra instrument to determine them.
+
+
+ > Scriptura
+ 
+ > Scriptura is a framework html/js/css light that plans to improve the format. Here, no supperflu including html labels or file in the stream of site pages with a specific end goal to bolster a script or a visual impact, need is given to content, the HTML code is spotless and regards the rationale of the stream Datas. 
+
+The thought is to begin from a legitimately organized content and to encompass it with a parent component with a class. The piece of the objective report will be changed as tabs or accordion menu, or whatever else as suitable. For illustrations see our StyleGuide. 
+
+The framework takes into consideration complex formats through a lattice framework in light of the modules css FlexBox and calc() work. 
+
+Their scripts sides depend on the Web Storage instead of treats. 
+
+These innovations infer a constraint of in reverse similarity with more seasoned programs, predisposition on our part that permits us the utilization of the most recent advancements without trade off web.
+
+ > Less
+ 
+ > Less is a CSS pre-processor, implying that it amplifies the CSS dialect, including highlights that permit factors, mixins, capacities and numerous different strategies that permit you to make CSS that is more viable, themeable and extendable. 
+
+Less keeps running inside Node, in the program and inside Rhino. There are likewise numerous outsider apparatuses that permit you to compile your files and look for changes.
+
+
+References: 
+Preprocessors.(March 25, 2017) Retrieved from http://learn.shayhowe.com/advanced-html-css/preprocessors/ 
+CoffeeScript.(March 25, 2017) Retrieved from http://coffeescript.org/
+Scriptura.(March 25, 2017) Retrieved from https://scriptura.github.io/
+Less.(March 25, 2017) Retrieved from http://lesscss.org/
