@@ -45,4 +45,4 @@ At the point when an occasion is dispatched to a question that takes an interest
 The troubleshoot capacity will be conjured twice. Each time the occasions' objective characteristic esteem will be the traverse component. The first run through currentTarget quality's esteem will be the archive, the second time the body component. eventPhase characteristic's esteem changes from CAPTURING_PHASE to BUBBLING_PHASE. On the off chance that an occasion audience was enrolled for the traverse component, eventPhase quality's esteem would have been AT_TARGET.
 
 References:
-Kesteren, Gregor,Ms2ger, Russell, Berjon. W3C DOM4. (March 31, 2017) Retrieved from https://www.w3.org/TR/dom/
+Kesteren et al. (March 31, 2017). W3C DOM4. Retrieved from https://www.w3.org/TR/dom/
