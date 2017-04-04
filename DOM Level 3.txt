@@ -63,4 +63,4 @@ Event articles are dispatched to an event target. Toward the start of the dispat
 The engendering way should be a requested rundown of current event targets through which the event object must pass. For DOM executions, the engendering way should mirror the various leveled tree structure of the archive. The last thing in the rundown must be the event target. The former things in the rundown are alluded to as the objective's predecessors, and the quickly going before thing as the objective's parent. Once decided, the proliferation way should not be changed. For DOM usage, this applies regardless of the possibility that a component in the proliferation way is moved inside the DOM or expelled from the DOM
 
 References: 
-Kacmarcik, Leithead, Rossi, Schepers, Höhrmann, Le Hégaret, Pixley. Document Object Model (DOM) Level 3 Events Specification.(March 31, 2017) Retrieved from https://www.w3.org/TR/2014/WD-DOM-Level-3-Events-20140925/#style-conventions
+Kacmarcik et al.(March 31, 2017). Document Object Model (DOM) Level 3 Events Specification. Retrieved from https://www.w3.org/TR/2014/WD-DOM-Level-3-Events-20140925/#style-conventions
