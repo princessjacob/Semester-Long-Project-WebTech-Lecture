@@ -1,0 +1,35 @@
+SCREEN
+The object screen holds or contains the visitor's screen information.
+
+SCREEN OBJECT PROPERTIES
+width
+- this property returns the screen's total width
+	Syntax: 
+		 width   =  window.screen.width;
+pixelDepth
+- return a bits per pixel of the screen's color resolution
+	Syntax:
+		 pixel   =  window.screen.pixelDepth ;
+height
+- return the screen's total height.
+	Syntax:
+		 height   =  window.screen.height ;
+colorDepth
+- it return the color palette for displaying images' bit depth
+	Syntax: 
+		 color  =  window.screen.colorDepth ;
+availWidth
+-it returns the the screen's width except the taskbar of the window
+	Syntax: 
+		 availwidth   =  window.screen.availWidth ;
+availHeight
+- it returns the screen's height except the taskbar of the window
+	Syntax:
+		 availheight   =  window.screen.availHeight ;
+
+
+References:
+The Screen Object. (n.d.). Retrieved March 27, 2017, from https://www.w3schools.com/jsref/obj_screen.asp
+Javascript BOM : Screen Object. (n.d.). Retrieved March 27, 2017, from http://www.tutorialspark.com/javascript/JavaScript_Browser_Object_Model_Screen_Object.php
+The Screen Object. (n.d.), from https://www.w3schools.com/jsref/obj_screen.asp
+JavaScript Screen Object. (n.d.), from http://www.w3webtutorial.com/javascript/javascript-screen-object.php
