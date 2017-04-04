@@ -1,0 +1,66 @@
+DOM Level 3, distributed in April 2004, included support for XPath and Keyboard even handling, and additional interface for serializing documents as XML.
+
+Inside this specification, the keywords must, must not, required, shall, shall not, should, should not, recommended, may, and optional are to be translated as depicted in [RFC2119]. 
+
+This specifiaction is to be comprehended with regards to the DOM Level 3 Core specification [DOM3 Core] and the general contemplations for DOM usage apply. For instance, treatment of namespace URIs is examined in XML Namespaces. A user agent is not required to fit in with the total of another specification so as to fit in with this specification, however it must adjust to the specific parts of some other specifications which are called out in this specification (e.g., an acclimating DOM3 Events user agent must bolster the DOMString information sort as characterized in Web IDL, yet require not bolster each technique or information sort characterized in Web IDL so as to fit in with DOM3 Events). 
+
+This specification characterizes a few classes of conformance for various user agents, specifications, and content authors: 
+
+Web browsers and other dynamic or interactive user agents
+
+A dynamic or intelligent user agents, alluded to here as a browser (be it a Web browser, AT (Accessibility Technology) application, or other similar program), complies with DOM Level 3 Events in the event that it underpins: 
+
+the Core module characterized in [DOM3 Core] 
+
+the Event dispatch and DOM occasion stream instrument 
+
+every one of the interfaces and occasions with their related strategies, traits, and semantics characterized in this detail except for those set apart as censured (a conforming user agent may actualize the expostulated interfaces, occasions, or APIs for in reverse similarity, however is not required to do as such so as to accommodate) 
+
+the entire arrangement of key and code values characterized in [DOM3 key Values] and [DOM3 code Values] (subject to stage accessibility), and 
+
+all other standardizing prerequisites characterized in this determination. 
+
+A conforming browser must dispatch occasions fitting to the given EventTarget when the conditions characterized for that occasion sort have been met. 
+
+A browser adjusts particularly to DOM Level 3 Events on the off chance that it actualizes the interfaces and related occasion sorts determined in Event Types. 
+
+A conforming browser must support scripting, decisive intelligence, or some different methods for recognizing and dispatching occasions in the way depicted by this determination, and must bolster the APIs indicated for that occasion sort. 
+
+Notwithstanding meeting all other conformance criteria, a conforming browser may actualize elements of this particular set apart as censured, for in reverse similarity with existing substance, however such execution is disheartened. 
+
+A conforming browser may likewise bolster highlights not found in this particular, but rather which utilize the Event dispatch and DOM occasion stream component, interfaces, occasions, or different elements characterized in DOM Level 3 Events, and may execute extra interfaces and occasion sorts proper to that usage. Such elements can be later institutionalized in future determinations. 
+
+A browser which does not fit in with every required bit of this particular must not assert conformance to DOM Level 3 Events. Such an execution which conforms to parts of this determination may guarantee conformance to those particular bits. 
+
+An acclimating browser should likewise be a conforming execution of the IDL sections in this particular, as portrayed in the Web IDL determination [WEBIDL].
+
+Authoring tools
+
+A content authoring tool fits in with DOM Level 3 Events on the off chance that it produces content which utilizes the occasion sorts and Event dispatch and DOM occasion stream display, predictable in a way as characterized in this determination. 
+
+A content authoring tool must not assert conformance to DOM Level 3 Events for substance it produces which utilizes components of this determination set apart as censured in this detail. 
+
+An acclimating content authoring tool should give to the content author a way to utilize all occasion sorts and interfaces proper to all host dialects in the content document being delivered.
+
+Content author and content
+
+A content author makes adjusting DOM Level 3 Events content if that content utilizes the event types and Event dispatch and DOM occasion stream show, steady in a way as characterized in this specification. 
+
+A content author ought not utilize components of this detail set apart as deplored, however ought to depend rather upon substitution instruments characterized in this specification and somewhere else. 
+
+conforming content must utilize the semantics of the interfaces and event types as portrayed in this specification.
+
+Specification and host languages 
+
+A specification or host languages fits in with DOM Level 3 Events on the off chance that it references and uses the Event dispatch and DOM occasion stream system, interfaces, occasions, or different components characterized in [DOM4], and does not develop these elements in contradictory ways. 
+
+A specification or host language adjusts particularly to DOM Level 3 Events on the off chance that it references and uses the interfaces and related occasion sorts indicated in Event Types. An adjusting particular may characterize extra interfaces and occasion sorts fitting to that specification, or may augment the DOM Level 3 Events interfaces and occasion sorts in a way that does not repudiate or struggle with the meanings of those interfaces and occasion sorts in this specification. 
+
+Particulars or host language which reference DOM Level 3 Events ought not utilize or suggest components of this specification set apart as censured, however ought to utilize or prescribe the showed trade for that the element (if accessible).
+
+Event articles are dispatched to an event target. Toward the start of the dispatch, executions should first decide the event objects's engendering way. 
+
+The engendering way should be a requested rundown of current event targets through which the event object must pass. For DOM executions, the engendering way should mirror the various leveled tree structure of the archive. The last thing in the rundown must be the event target. The former things in the rundown are alluded to as the objective's predecessors, and the quickly going before thing as the objective's parent. Once decided, the proliferation way should not be changed. For DOM usage, this applies regardless of the possibility that a component in the proliferation way is moved inside the DOM or expelled from the DOM
+
+References: 
+Kacmarcik et al.(March 31, 2017). Document Object Model (DOM) Level 3 Events Specification. Retrieved from https://www.w3.org/TR/2014/WD-DOM-Level-3-Events-20140925/#style-conventions
