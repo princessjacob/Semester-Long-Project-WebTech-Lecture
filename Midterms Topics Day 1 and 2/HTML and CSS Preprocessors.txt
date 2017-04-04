@@ -106,7 +106,7 @@ percentage() round() ceil() floor() abs()
 
 The brilliant lead of CoffeeScript is: "It's simply JavaScript". The code orders coordinated into the equal JS, and there is no elucidation at runtime. You can utilize any current JavaScript library flawlessly from CoffeeScript (and the other way around). The ordered yield is intelligible, pretty-printed, and tends to keep running as quick or speedier than the proportionate written by hand JavaScript. 
 
-The CoffeeScript compiler puts forth an admirable attempt to create yield JavaScript that keeps running in each JavaScript runtime, however there are special cases. Utilize generator capacities, for… from, or labeled layout literals just on the off chance that you realize that your objective runtimes can bolster them. On the off chance that you utilize modules, you should utilize an extra instrument to determine them.
+The CoffeeScript compiler puts forth an admirable attempt to create yield JavaScript that keeps running in each JavaScript runtime, however there are special cases. Utilize generator capacities, forÂ… from, or labeled layout literals just on the off chance that you realize that your objective runtimes can bolster them. On the off chance that you utilize modules, you should utilize an extra instrument to determine them.
 
 
  > Scriptura
@@ -129,7 +129,7 @@ Less keeps running inside Node, in the program and inside Rhino. There are likew
 
 
 References: 
-Preprocessors Retrieved at March 25, 2017 Retrieved from http://learn.shayhowe.com/advanced-html-css/preprocessors/ 
-CoffeeScript Retrieved at March 25, 2017 Retrieved from http://coffeescript.org/
-Scriptura Retrieved at March 25, 2017 Retrieved from https://scriptura.github.io/
-Less Retrieved at March 25, 2017 Retrieved from http://lesscss.org/
+Preprocessors.(March 25, 2017) Retrieved from http://learn.shayhowe.com/advanced-html-css/preprocessors/ 
+CoffeeScript.(March 25, 2017) Retrieved from http://coffeescript.org/
+Scriptura.(March 25, 2017) Retrieved from https://scriptura.github.io/
+Less.(March 25, 2017) Retrieved from http://lesscss.org/
