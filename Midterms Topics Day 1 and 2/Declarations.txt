@@ -1,27 +1,26 @@
 CSS Declarations
--made up of a property name and a value
--separated by a semicolon (;)
--must appear within a declaration block
+A CSS Declaration is made up of a property name and a value and it is separated by a 
+semicolon (;). And it must appear within a declaration block.
 
 1. Properties
 	-Shorthand Properties
 		- group the definition of common properties acting on the same theme
 		- set the values of several other CSS properties simultaneously
-		- to specify values for related properties in a single declaration.
+		- to specify values for related properties in a single declaration
 
 	-Vendor specific extensions (aka vendor prefixes)
 		- browser makers
-		- release and test browser features
-		- keywords and property names beginning with 
-	â€“ (dash) or _ (underscore) 
+		- It release and test browser features. Keywords and property names 
+		beginning with – (dash) or _ (underscore).
 
 2. Values
 	-Keywords
 		- identifier
-		- mustnâ€™t be surrounded by quotation marks ("")
+		- mustn’t be surrounded by quotation marks ("")
 	-Numbers 
-		- integer, real numbers in decimal notation
-		- can have an initial - or + to indicate its sign
+		- Numbers can have an initial - (negative) or + (positive) to indicate 
+its sign. It can be an integer and real numbers in decimal notation.
+
 3. Lengths
 	a. Length and Units
 		Length - comprising a numeric value and a unit only
@@ -54,9 +53,8 @@ e. pc - pica
       - 1/6 inch or 4.23mm
 
 	b. Percentages (%)
-		- integer or a decimal number
-		- Whitespace characters mustnâ€™t appear 
-		between the number and the % (i.e. 50%)
+		- Whitespace characters mustn’t appear between the number and the % 
+(i.e. 50%). Percentage can be an integer or a decimal number.
 		
 	c. URLs and URIs
 		a. URL - denotes a pointer to a resource
