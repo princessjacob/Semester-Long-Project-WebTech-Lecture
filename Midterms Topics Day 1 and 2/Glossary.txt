@@ -1,0 +1,68 @@
+Statically Typed: 
+
+A language is statically written if the kind of a variable is known at order time. For a few languages this implies you as the developer must indicate what sort every variable is (e.g.: Java, C, C++); different languages offer some type of sort surmising, the ability of the sort framework to conclude the kind of a variable (e.g.: OCaml, Haskell, Scala) 
+
+Dynamically Typed: 
+
+A language is dynamically written if the sort is related with run-time values, and not named variables/fields/and so forth. This implies you as a software engineer can compose a little faster on the grounds that you don't need to indicate sorts each time (unless utilizing a statically-wrote language with sort induction). Illustration: Perl, Ruby, Python 
+
+Weakly Typed: 
+
+Weakly written, which implies you, can work around the sort framework. C is famously weakly written in light of the fact that any pointer sort is convertible to some other pointer sort just by throwing. Pascal was proposed to be specifically, however an oversight in the outline (untagged variation records) brought an escape clause into the sort framework, so actually it is weakly written. Cases of really specifically languages incorporate CLU, Standard ML, and Haskell. Standard ML has in reality experienced a few updates to evacuate escape clauses in the sort framework that were found after the language was broadly conveyed. 
+
+String Interpolation: 
+
+In PC programming, string interjection (or variable introduction, variable substitution, or variable development) is the way toward assessing a string exacting containing at least one placeholders, yielding an outcome in which the placeholders are supplanted with their relating values. It is a type of basic layout preparing or, in formal terms, a type of semi citation (or rationale substitution elucidation). String introduction permits simpler and more instinctive string arranging and substance detail contrasted and string connection. 
+
+String insertion is regular in many programming languages which make substantial utilization of string portrayals of information, for example, Groovy, Kotlin, Perl, PHP, Python, Ruby, Scala, and Swift, and most Unix shells. Two methods of exacting expression are normally offered: one with introduction empowered, the other without (named crude string). Placeholders are normally spoken to by an uncovered or a named sigil (commonly $ or %), e.g. $placeholder or %123. Development of the string as a rule happens at run time. 
+
+undefined: 
+
+There is a global variable undefined, which is set to the undefined value. 
+
+>The undefined value is the arrival estimation of a capacity that does not give back an value. 
+
+>The undefined value is the estimation of a variable that has not been relegated. 
+
+>The undefined value is the estimation of a parameter that has not been passed. 
+
+>The undefined value is the estimation of a property that has not been doled out. 
+
+"undefined" is the sort of an undeclared variable. (typeof undeclaredVariable == 'unclear'. attempting to peruse the estimation of an undefined variable will get you a tossed ReferenceError.) 
+
+null: 
+
+Formally, null is a singleton individual from the null sort, which is characterized to be the subtype of each other Java sort. 
+
+null is a reference sort and its value is the main reference value which doesn't allude to any protest. Along these lines there is no portrayal of null in memory. The double estimation of a reference-wrote variable whose value is null is just zero (every one of the zero bits). Despite the fact that this is not unequivocally indicated, it takes after from the general introduction semantics of articles and some other value would make significant issues a usage. 
+
+Procedural Abstraction: 
+
+A procedural reflection is a mental model of what we need a subprogram to do (yet not how to do it). For instance, in the event that you needed to process the length of the a hypotenuse of a correct triangle, you may compose something like 
+
+twofold hypotenuse = sqrt(side1*side1 + side2*side2); 
+
+We can compose this, understanding the sqrt capacity should process a square root, regardless of the possibility that we have no clue how that square root really gets figured. 
+
+When we begin really composing the code, we execute a procedural deliberation by 
+
+allotting a properly named "capacity" to speak to that procedural reflection, 
+
+in the "principle" code, calling that capacity, assuming that it will really do what we need however not stressing over how it will do it, and 
+
+at long last, written work a capacity body utilizing a proper calculation to do what we need. 
+
+By and by, there might be numerous calculations to accomplish a similar reflection, and we utilize building contemplations, for example, speed, memory prerequisites, and simplicity of usage to pick among the potential outcomes. 
+
+For instance, the sqrt capacity is likely executed utilizing a system totally disconnected to any procedure you may have learned in review school for processing square roots. On numerous frameworks. sqrt doesn't register a square root by any stretch of the imagination, however processes a polynomial capacity that was picked as a decent guess to the real square root and that can be assessed significantly more rapidly than a real square root. (This underlying estimate may then be refined by a few emphasess of a numerical strategy known as the Newton-Raphson technique.) 
+
+Does it trouble you to hear that the execution of sqrt may not, truth be told, work by figuring a square root? It shouldn't. You are as yet being ensured that in the event that you call sqrt(x), then duplicate the arrival value without anyone else, you will get something that is around x.
+
+
+References:
+NomeN. What is the difference between statically typed and dynamically typed languages? (April 9, 2017). Retrieved from: http://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages
+Norman Ramsey. What is the difference between a strongly typed language and a statically typed language? (April 9, 2017). Retrieved from: http://stackoverflow.com/questions/2690544/what-is-the-difference-between-a-strongly-typed-language-and-a-statically-typed
+Sean McMillan. What exactly undefined means in JavaScript? Why it's there? What usages it has? How it could be useful?.(April 9,2017). Retrieved from: http://softwareengineering.stackexchange.com/questions/101107/what-exactly-undefined-means-in-javascript-why-its-there-what-usages-it-has
+Marko Topolnik. What does null mean? [duplicate]. (April 9, 2017) Retrived from: http://stackoverflow.com/questions/19336608/what-does-null-mean
+String Interpolation. (April 9, 2017) Retrieved from: https://en.wikipedia.org/wiki/String_interpolation
+Procedural Abstraction. (April 9, 2017). Retrieved from: https://secweb.cs.odu.edu/~zeil/cs361/web/website/Lectures/adts/pages/procabstr.html
