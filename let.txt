@@ -1,0 +1,93 @@
+The let statement declare a block scope variable, alternatively introducing it to a value.
+
+Syntax: let var1 [= value1] [, var2 [= value2]] [, ..., varN [= valueN]];
+
+Parameters 
+
+var1, var2, … , varN 
+
+Variable name. It can be any legitimate identifier. 
+
+value1, value2, … , valueN 
+
+Introductory estimation of the variable. It can be any legitimate expression. 
+
+Description
+
+let permits you to declare variables that are constrained in scope to the block, statement, or expression on which it is utilized. This is not at all like the var keyword, which characterizes a variable universally, or locally to an entire function paying little attention to block scope
+
+
+Scoping rules 
+
+Variables declared by let have as their scope the block in which they are characterized, and additionally in any contained sub-blocks . let works particularly like var. The principle distinction is that the extent of a var variable is the whole encasing function.
+
+var list = document.getElementById('list');
+
+for (let i = 1; i <= 5; i++) {
+  let item = document.createElement('li');
+  item.appendChild(document.createTextNode('Item ' + i));
+
+  item.onclick = function(ev) {
+    console.log('Item ' + i + ' is clicked.');
+  };
+  list.appendChild(item);
+}
+
+// to achieve the same effect with 'var'
+// you've to create a different context
+// using a closure to preserve the value
+for (var i = 1; i <= 5; i++) {
+  var item = document.createElement('li');
+  item.appendChild(document.createTextNode('Item ' + i));
+
+    (function(i){
+        item.onclick = function(ev) {
+            console.log('Item ' + i + ' is clicked.');
+        };
+    })(i);
+  list.appendChild(item);
+}
+
+The case above fills in as planned in light of the fact that the five examples of the (anonymous) inner function allude to five distinct cases of the variable i. Take note of that it doesn't act as planned on the off chance that you supplant let with var, since the greater part of the inward capacities would then give back a similar last estimation of i: 6. Likewise, we can keep the scope around the loop cleaner by moving the code that makes the new components into the extent of each loop. 
+
+At the top level of programs and functions, let, not at all like var, does not make a property on the global object. For instance:
+
+var x = 'global';
+let y = 'global';
+console.log(this.x); // "global"
+console.log(this.y); // undefined
+
+This technique just gives "static" private state - in the above case, all occurrences of SomeConstructor will have the same privateScope. 
+
+Temporal dead zone with let 
+
+Redeclaring a similar variable inside a similar function or block scope raises a SyntaxError.
+
+if (x) {
+  let foo;
+  let foo; // SyntaxError thrown.
+}
+
+In ECMAScript 2015, let will raise the variable to the highest point of the block. Notwithstanding, referencing the variable in the block before the variable assertion brings about a ReferenceError. The variable is in a "temporal dead zone" from the beginning of the block until the declaration is prepared.
+
+function do_something() {
+  console.log(foo); // ReferenceError
+  let foo = 2;
+}
+
+You may experience errors in switch statements on the grounds that there is just a single basic block.
+
+switch(x) {
+  case 0:
+    let foo;
+    break;
+    
+  case 1:
+    let foo; // SyntaxError for redeclaration.
+    break;
+}
+
+Utilizing let with a variable name that is the same as a parameter goes to a function will bring about an error inside a for loop.
+
+References:
+linnemann et al. let-JavaScript. (April 7, 2017) Retrieved at: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let
