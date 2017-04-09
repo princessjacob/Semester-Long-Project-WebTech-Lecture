@@ -161,25 +161,135 @@ Level of support: Good for Range; for Traversal, the TreeWalker is supported, an
     </div>
     <div id="navi" class="tab-pane fade in">
       <h3>Definition</h3>
-      <p><!--Place content here--></p>
+      <p>
+        Navigator is the object that holds or contains browser's information.
+      </p>
       <h3>Properties</h3>
       <ul>
-        <li><!-- property here --></li>
-          <p><!-- def here --></p>
+        <li>appCodeName </li>
+          <p>
+            The appCodeName property pertains to a browser's code name, this property is  considered  as deprecated because it was removed from the standards of Web, but other browsers maybe still support this property since it is being processed to be  dropped.
+          </p>
+          <p>Syntax:  x = window.navigator.appCodeName</p>
+          <li>appName</li>
+          <p>
+            This property returns the name of the browser, it is also considered as deprecated.
+          </p>
+          <p>Syntax:  x = window.navigator.appName</p>
+          <li>appVersion</li>
+          <p>
+            This property returns a string value of the information of the version of the browser. This property is also considered as a deprecated.
+          </p>
+          <p>Syntax:  window.navigator</p>
+          <li>appMinorVersion</li>
+          <p>
+            This property returns a string value of the browser's minor version.
+          </p>
+          <p>Syntax: navigator.appMinorVersion</p>
+          <li>cpuClass</li>
+          <p>
+            It returns the user's operating system's CPU class.
+          </p>
+          <p>Syntax: navigator.cpuClass</p>
+          <li>mimeTypes</li>
+          <p>
+            It returns a list of the browser's supported MIME types.
+          </p>
+          <p>Syntax: navigator.mimeTypes</p>
+          <li>opsProfile</li>
+          <p>
+            This property is only visible when the object navigator is placed in an enumerating for loop.
+          </p>
+          <p>Syntax: navigator.opsProfile</p>
+          <li>systemLanguage</li>
+          <p>
+            This property returns the language and country code that is specified.
+          </p>
+          <p>Syntax: navigator.systemLanguage</p>
+          <li>cookieEnabled</li>
+          <p>
+            It determines if the cookies in the browser are enabled or not.
+          </p>
+          <p>Syntax: navigator.cookieEnabled</p>
+          <li>geolocation</li>
+          <p>
+            Returns an object of geolocation that can be used to know the position of the user.
+          </p>
+          <li>language</li>
+          <p>
+            Returns the browser's language.
+          </p>
+          <p>Syntax: navigator.language</p>
+          <li>onLine</li>
+          <p>
+            It determines if the browser is online or not.
+          </p>
+          <p>Syntax: navigator.onLine</p>
+          <li>platform</li>
+          <p>
+            Returns the platform on which the browser is compiled.
+          </p>
+          <p>Syntax: navigator.platform</p>
+          <li>product</li>
+          <p>
+            Returns the browser's engine name.
+          </p>
+          <p>Syntax: navigator.product</p>
+          <li>userAgent</li>
+          <p>
+            Returns the header of the user-agent sent to the server by the browser. It is also considered as deprecated.
+          </p>
+          <p>Syntax: navigator.userAgent</p>
       </ul>
       <h3>Methods</h3>
       <ul>
-        <li><!-- method here --></li>
-          <p><!-- def here --></p>
+        <li>javaEnabled()</li>
+          <p>
+            It specifies if the browser has a Java that is enabled or not.
+          </p>
+          <p>Syntax: navigator.javaEnabled()</p>
+          <li>taintEnabled()</li>
+          <p>
+            It specifies if the browser has a data tainting that is enabled or not.
+          </p>
+          <p>Syntax: navigator.taintEnabled()</p>
       </ul>
     </div>
     <div id="scr" class="tab-pane fade in">
       <h3>Definition</h3>
-      <p><!--Place content here--></p>
+      <p>The object screen holds or contains the visitor's screen information.</p>
       <h3>Properties</h3>
       <ul>
-        <li><!-- property here --></li>
-          <p><!-- def here --></p>
+        <li>width</li>
+          <p>
+            - this property returns the screen's total width
+          </p>
+          <p>Syntax: width   =  window.screen.width;</p>
+          <li>pixelDepth</li>
+          <p>
+            - return a bits per pixel of the screen's color resolution
+          </p>
+          <p>Syntax:pixel   =  window.screen.pixelDepth ;</p>
+          <li>height</li>
+          <p>
+            - return the screen's total height.
+          </p>
+          <p>Syntax:height   =  window.screen.height ;</p>
+          <li>colorDepth</li>
+          <p>
+            - it return the color palette for displaying images' bit depth
+          </p>
+          <p>Syntax:color  =  window.screen.colorDepth ;</p>
+          <li>availWidth</li>
+          <p>
+            -it returns the the screen's width except the taskbar of the window
+          </p>
+          <p>Syntax:availwidth   =  window.screen.availWidth ;</p>
+          <li>availHeight</li>
+          <p>
+            - it returns the screen's height except the taskbar of the window
+          </p>
+          <p>Syntax:availheight   =  window.screen.availHeight ;</p>
       </ul>
     </div>
     <div id="win" class="tab-pane fade in">
