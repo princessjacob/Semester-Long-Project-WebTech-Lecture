@@ -1,0 +1,43 @@
+The Boolean object is an object wrapper for a boolean value.
+
+Syntax:
+	new Boolean([value])
+
+Parameters:
+	value
+		-Discretionary. The underlying value of the Boolean object.
+
+Description:
+	The value go as the main parameter is changed over to a boolean value, if fundamental. On the off chance that the value is precluded or is 0, - 0, invalid, false, NaN, unclear, or the void string (""), the object has an underlying estimation of false. In the event that the DOM protest document.all is passed as a parameter, the new boolean object likewise has an underlying estimation of false. Every single other value, including any object or the string "false", make a protest with an underlying estimation of true. 
+
+	Try not to confound the primitive Boolean values true and false with the true and false estimations of the Boolean object.
+
+
+Boolean Instances
+
+Every single Boolean example acquire from Boolean.prototype. Similarly as with all constructors, the model protest manages examples' acquired properties and methods. 
+
+
+Properties 
+
+Boolean.prototype.constructor 
+
+Gives back the capacity that made an occurrence's model. This is the Boolean capacity as a matter of course. 
+
+
+Methods 
+
+Boolean.prototype.toSource() 
+
+	Gives back a string containing the wellspring of the Boolean protest; you can utilize this string to make an identical question. Supersedes the Object.prototype.toSource() method. 
+
+Boolean.prototype.toString() 
+
+	Gives back a string of either "true" or "false" contingent on the estimation of the protest. Abrogates the Object.prototype.toString() technique. 
+
+Boolean.prototype.valueOf() 
+
+	Gives back the primitive estimation of the Boolean question. Supersedes the Object.prototype.valueOf() method.
+
+References:
+tickyd, bellentuck, nmve, fscholz, fasttime, rwaldron, Thebigbignooby, cloudbehl, Akkifokkusu, trebor1110, teoli, mvasilkov, clyra0791, deveedutta, Mingun, Sheppy, cbier90, xiongxin, ethertank, ziyunfei, evilpie, lmorchard, berkerpeksag, secoif, grendel, Sevenspade, Potappo, Mgjbot, Yuichirou, BenoitL, Maian, Marcoos, Dria (2017, March 9) Boolean. Retrieved from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
