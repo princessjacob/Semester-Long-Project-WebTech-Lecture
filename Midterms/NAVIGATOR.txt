@@ -24,7 +24,8 @@ opsProfile
 	This property is only visible when the object navigator is placed in an enumerating  for loop.
 		Syntax: navigator.opsProfile
 systemLanguage
-	
+	This property returns the language and country code that is specified.
+		Syntax: navigator.systemLanguage
 cookieEnabled
 	It determines if the cookies in the browser are enabled or not.
 		Syntax: navigator.cookieEnabled
@@ -74,3 +75,4 @@ JavaScriptProgrammer'sReference. (n.d.). Retrieved March 31, 2017, from http://w
 Navigator cookieEnabled Property. (n.d.). Retrieved March 31, 2017, from https://www.w3schools.com/jsref/prop_nav_cookieenabled.asp
 Navigator javaEnabled() Method. (n.d.). Retrieved March 31, 2017, from https://www.w3schools.com/jsref/met_nav_javaenabled.asp
 Navigator taintEnabled() Method. (n.d.). Retrieved March 31, 2017, from https://www.w3schools.com/jsref/met_nav_taintenabled.asp
+JavaScriptProgrammer'sReference. (n.d.). Retrieved March 31, 2017, from http://www.findmeat.org/tutorials/javascript/x532184.htm
