@@ -53,7 +53,53 @@
       <p><!--Place content here--></p>
     </div>
     <div id="es" class="tab-pane fade in">
-      <p><!--Place content here--></p>
+      <h3>What is ECMAScript?</h3>
+      <p> The official name of Javascript. This is a language standardized by ECMA International. This language is also mainly used for the client-side scripting by coders and also used for server side scripting and Node.js services. The file extension that ECMAScript uses is .es.</p>
+      <h3>History of ECMAScript</h3>
+      <h4>April 27, 1960</h4>
+      <p>In Brussels, the European Computer Manufacturers Association or ECMA and a committee was nominated to prepare for the formation of the Association and to draw up by-law and rules.</p>
+      <h4>December 1960</h4>
+      <p>The headquarters is decided to be moved in Geneva to be near headquarters of the International Standard Organization (ISO) and the International Electrotechnical Commission.</p>
+      <h4>May 17, 1961</h4>
+      <p>The constituent assemply happened as well as the association becoming official with the attendees becoming the official members.</p>
+      <h4>1987</h4>
+      <p>ECMA became A-liasion member of JTC-1 when TC97 became part of ISO/IEC JTC 1.</p>
+      <h4>1994</h4>
+      <p>The name of ECMA was changed to Ecma International - European Association for standardizing information and communication systems.</p>
+      <h4>June 2011</h4>
+      <p>Ecma international celebrated Golden Jubilee while organizing the 101st General Assembly.</p>
+      <h4>Since 2013</h4>
+      <p>ECMA international regularly grants Awards of appreciation to standardization experts.</p>
+      <h3>VERSIONS</h3>
+      <p>There are currently 7 editions of ECMAScript -- with an 8th edition coming underway.</p>
+      <h4>ECMAScript 1</h4>
+      <p>Created on 1997 and by Guy J. Steele. This is the first version of ECMAScript.</p>
+      <h4>ECMAScript 2</h4>
+      <p>Created on 1998 and by Mike Cowlishaw. This is the second version of ECMAScript and is only composed of editorial changes to fully align it with with an ISO standard.</p>
+      <h4>ECMAScript 3</h4>
+      <p>Created on 1999 by Mike Cowlishaw. This is the third version of ECMAScript. This version comprised the langauges core functionalities such as regular expressions, better string handling, new control statments, try/catch exceptions, tighter definition of errors and formatting.</p>
+      <h4>
+ECMAScript 4 (Abandoned)</h4>
+      <p>The fourth version due to language complexity underlying on political differences.</p>
+      <h4>ECMAScript 5</h4>
+      <p>Created on 2009 by Pratap Lakshman and Alen Wirfs-Brock. This version introduced the strict mode, which gives more thorough error checking and avoidance of error-prone constructs. It clarifies ambiguities in the 3rd edition of ECMAScript. It also added getters and setters, JSON library and a more complete reflection on objects.</p>
+      <h4>ECMAScript 5.1</h4>
+      <p>Created on 2011 by the same authors as ECMAScript 5. It is fully aligned with the third edition and conformed with an ISO international standard.</p>
+      <h4>ECMAScript 6</h4>
+      <p>Created on 2015 by Allen Wirfs-Brock. This is initially called as ECMAScript 6 or ES6 but have been later renamed as ECMAScript 2015. It is also known as ES Harmony given as it is the first ECMAScript Harmony. This version included classes and modules as well as some new features such as iterators, for/of loops, Python-style generators, and the like. Most features added gave more functionality to ECMAScript.</p>
+      <h4>ECMAScript 7</h4>
+      <p>Created on 2016 by Brian Terlson. This is the seventh version of ECMAScript. It added functionalities such as exponentation operator and Array.prototype.includes.</p>
+      <h3>BROWSER SUPPORT</h3>
+      <ul>
+        <li>ES 3</li>
+          <p>support for all browsers</p>
+        <li>ES 5</li>
+          <p>fully supported on modern browsers</p>
+        <li>ES 6</li>
+          <p>partially supported on modern browsers</p>
+        <li>ES 7</li>
+          <p>poorly supported on modern browsers</p>
+      </ul>
     </div>
     <div id="dom" class="tab-pane fade in">
       <h3>LEVEL 1</h3>
@@ -137,26 +183,247 @@ Level of support: Good for Range; for Traversal, the TreeWalker is supported, an
     </div>
     <div id="doc" class="tab-pane fade in">
       <h3>Definition</h3>
-      <p><!--Place content here--></p>
+      <p>It represents any web page loaded in the browser and servers as an entry point into the web page's content.</p>
       <h3>Properties</h3>
       <ul>
-        <li><!-- property here --></li>
-          <p><!-- def here --></p>
+        <li>Document.async</li>
+          <p>This indicates an asynchronous request and often worked with .load.</p>
+        <li>Document.characterSet (Read only)</li>
+          <p>Once requested, it will return the character set of a document.</p>
+        <li>Document.charset (Read only)</li>
+          <p>An alias of .characterSet.</p>
+        <li>Document.compatMode (Read Only)</li>
+          <p>This is used to know whether the browser is rendering the document in strict's or quirk's mode.</p>
+        <li>Document.contentType (Read only)</li>
+          <p>This would return the content type of a document. i.e. (.txt, .html)</p>
+        <li>Document.doctype (Read only)</li>
+        <p>This would specify the document type definition of the viewed current document.</p> <li>Document.documentElement (Read only)</li>
+          <p>This would return a direct child element of the document.</p>
+        <li>Document.documentURI (Read only)</li>
+        <p>This would return the location of the document as a string.</p>
+      <li>Document.domConfig</li>
+          <p>This should return a DOMconfiguration of the document.</p>
+        <li>Document.fullscreen</li>
+          <p>This would return true if the document is in full screen. False, if not.</p>
+        <li>Document.hidden (Read only)</li>
+          <p>This would return true if the document is hidden and false if not.</p>
+        <li>Document.implementation (Read only)</li>
+          <p>This would return the document's implementation associated with the viewed current document.</p>
+        <li>Document.inputEncoding (Read only)</li>
+          <p>Another alias of Document.characterSet</p>
+        <li>Document.lastStyleSheetSet (Read only)</li>
+          <p>This would return the name of the stylesheet that is enabled last.</p>
+        <li>Document.mozSynthetic Document (Read only)</li>
+          <p>This would return to true if the document is synthetic.</p>
+        <li>Document.mozFullScreenElement (Read only)</li>
+          <p>An element that is currently in full screen mode.</p>
+        <li>Document.mozFullScreenEnabled (Read only)</li>
+          <p>This would return true is Element.mozRequestFullScreen that would suceed in the current document.</p>
+        <li>Document.pointerLockElement (Read only)</li>
+          <p>This would return the targeted element for mouse events while the pointer is locked. Or it would return as null if the lock is pending, or if the pointer is unlocked of the target is another document.</p>
+        <li>Document.preferredStyleSheetSet (Read only)</li>
+          <p>This would return the preferredStyleSheet as specified by the author.</p>
+        <li>Document.scrollingElement</li>
+          <p>This would return a reference to an element that scrolls the document.</p>
+        <li>Document.selectedStyleSheetSet</li>
+          <p>This would return what is currently used as a stylesheet.</p>
+        <li>Document.styleSheets</li>
+          <p>This would return a list of style sheet objects on the current document.</p>
+        <li>Document.styleSheetSets</li>
+          <p> This would return a list of stylesheets available for the document.</p>
+        <li>Document.timeline</li>
+          <p>This is an experimental technology and would represent the timeline of the document.</p>
+        <li>Document.visibilityState</li>
+          <p>This would return the visibility stated of the document.</p>
+        <li>Document.xmlEncoding</li>
+          <p>This would return and encoding as specified by an XML declaration.</p>
+        <li>Document.xmlVersion</li>
+          <p> This would return the version of the XML used.</p>
+        <li>ParentNode.children</li>
+          <p>This would return an HTMLCollection that contained all objects of type Element, that are children of the parent node.</p>
+        <li>ParentNode.lastElementChild</li>
+          <p>This would return the last element child of the parent node.</p>
+        <li>ParentNode.childElementCount</li>
+          <p>This would return the count of the children elements.</p>
       </ul>
       <h3>Extension for HTML Documents</h3>
       <ul>
-        <li><!-- extension here --></li>
-          <p><!-- def here --></p>
+        <li>Document.activeElement</li>
+          <p>This would returned what element is currently focused on.</p>
+        <li>Document.alinkColor</li>
+          <p>This would return a set colors of active links in a document body.</p>
+        <li>Document.anchors</li>
+          <p>This would return a list of anchors defined in the document.</p>
+        <li>Document.applets</li>
+          <p>This would return an ordered list of all the applets existing in the document.</p>
+        <li>Document.bgColor</li>
+          <p>This would either get or set the background color of the current document.</p>
+        <li>Document.body</li>
+          <p>This would return the body element of the current document.</p>
+        <li>Document.cookie</li>
+          <p>This would return a semi-colon separated list of the cookies in the document or sets a single cookie.</p>
+        <li>Document.defaultView</li>
+          <p>This would return a reference to the window object.</p>
+        <li>Document.designMode</li>
+          <p>This has the ability to get or set editting on a document.</p>
+        <li>Document.dir</li>
+          <p>This has the ability to get or set the directionality of a document.</p>
+        <li>Document.domain</li>
+          <p>This would return the document domain.</p>
+        <li>Document.embeds</li>
+          <p>This would return the embedded elements within a current document.</p>
+        <li>Document.fgColor</li>
+          <p>This would get or set the foreground color, or text color, of the current document.</p>
+        <li>Document.forms</li>
+          <p>This would return a list of the form elements within the document.</p>
+        <li>Document.head</li>
+          <p>This would return the current head of the document.</p>
+        <li>Document.height</li>
+          <p>This would get or set the height of the current document.</p>
+        <li>Document.images</li>
+          <p>This would return a list of images that is within the element.</p>
+        <li>Document.lastModified</li>
+          <p>This would return the dates as to when the document was last modified.</p>
+        <li>Document.linkcolor</li>
+          <p>This would set the colors of the hyperlinks in the document.</p>
+        <li>Document.links</li>
+          <p>This would return the list of all the hyperlinks of the document.</p>
+        <li>Document.location</li>
+          <p>This would return the URI of the current document.</p>
+        <li>Document.plugins</li>
+          <p>This would return a list of available plugins.</p>
+        <li>Document.readyState</li>
+          <p>This would retun the loading status of the document.</p>
+        <li>Document.referrer</li>
+          <p>This would return the URI of the page linked to the document.</p>
+        <li>Document.scripts</li>
+          <p>This would return all the script elements within the document.</p>
+        <li>Document.title</li>
+          <p>This would set or get the title of the document.</p>
+        <li>Document.URL</li>
+          <p>This would return the documents' location as a string.</p>
+        <li>Document.vlinkColor</li>
+          <p>This would get or set the color of visited links.</p>
+        <li>Document.width</li>
+          <p>This would get or set the width of the current document.</p>
+        <li>document.clear()</li>
+          <p>In recent versions, this method does nothing.</p>
+        <li>document.close()</li>
+          <p>This closes the document stream for writing.</p>
+        <li>document.execCommand(String command[, Boolean showUI][, String value]])</li>
+          <p>This executes a formating command.</p>
+        <li>document.getElementsByName(String name)</li>
+          <p>This returns a list of elements with the given name.</p>
+        <li>document.getSelection()</li>
+          <p>This returns a Selection object related to the text selected in the document.</p>
+        <li>document.hasFocus()</li>
+          <p>This returns true if the focus is currently located anywhere inside the specified document.</p>
+        <li>document.open()</li>
+          <p>This opens the document stream for writing.</p>
+        <li>document.queryCommandEnabled(String command)</li>
+          <p>This would return true if the formatting command if it is enabled.</p>
+        <li>document.queryCommandState(String command)</li>
+          <p>This would return true if the formatting command has been executed on the current range.</p>
+        <li>document.queryCommandSupported(String command)</li>
+          <p>This would return true if the formatting command is supported on the current range.</p>
+        <li>document.write(String text)</li>
+          <p>This allows writing of text in the document.</p>
+        <li>document.writeIn(String text)</li>
+          <p>This allows writing a line of text in the document.</p>
       </ul>
       <h3>Event Handlers</h3>
-      <ul>
-        <li><!-- event handler here --></li>
-          <p><!-- def here --></p>
-      </ul>
+        <ul>
+            <li>Document.onafterscriptexecute</li>
+                <p>This would represent the event handling code for the afterscriptexecute event.</p>
+            <li>Document.onbeforescriptexecute</li>
+                <p>This would represent the event handling code for the beforescriptexecute event.</p>
+            <li>Document.oncopy</li>
+                <p>This would represent the event handling code for the copy event.</p>
+            <li>Document.oncut</li>
+                <p>This would represent the event handling code for the cut event.</p>
+            <li>Document.onfullscreenchange</li>
+                <p>This would represent the code to be called when the fullscreenchange event is raised.</p>
+            <li>Document.onfullscreenerror</li>
+                <p>This would represent the code to be called when the fullscreenerror event is raised.</p>
+            <li>Document.onpaste</li>
+                <p>This would represent the code to be called for the paste event.</p>
+            <li>Document.onpointerlockchange</li>
+                <p>This would represent the code the onpointerlockchange event is called.</p>
+            <li>Document.onpointerlockerror</li>
+                <p>This would represent the code the onpointerlockerror event is called.</p>
+            <li>Document.onselectionchange</li>
+                <p>This would represent the code when onselectionchange event is called.</p>
+            <li>Document.onwheel</li>
+                <p>This would represent the code when onwheel event is called.</p>
+        </ul>
       <h3>Methods</h3>
       <ul>
-        <li><!-- method here --></li>
-          <p><!-- def here --></p>
+        <li>Document.adoptNode()</li>
+          <p>This adopts a node from an external document.</p>
+        <li>Document.caretPositionFromPoint()</li>
+          <p>This gets the current position of a CaretPosition at or near teh specified coordinates. This is an experimental technology.</p>
+        <li>Document.caretRangeFromPoint()</li>
+          <p>This gets the range object from the document fragment under specified coordinates.</p>
+        <li>Document.createAttribute()</li>
+          <p>This would create a new Attr object and then return it.</p>
+        <li>Document.createAttributeNS()</li>
+          <p>This creates a new attribute node.</p>
+        <li>Document.createCDATASection()</li>
+          <p>This creates a new CDATAnode and returns it.</p>
+        <li>Document.createComment()</li>
+          <p>This creates a new comment node and returns it.</p>
+        <li>Document.createElementNS()</li>
+          <p>This creates a new element with a given tagname and namespace URI.</p>
+        <li>Document.createEntityReference()</li>
+          <p>This creates a new Entity Reference object and returns it.</p>
+        <li>Document.createEvent()</li>
+          <p>This creates an event object.</p>
+        <li>Document.createNodeIterator()</li>
+          <p>This creates a node iterator object.</p>
+        <li>Document.createProcessingInstruction()</li>
+          <p>This creates a new ProcessingInstruction object.</p>
+        <li>Document.createRange()</li>
+          <p>This creates a range object.</p>
+        <li>Document.createTextNode()</li>
+          <p>This creates a text node.</p>
+        <li>Document.createTouch()</li>
+          <p>This creates a Touch object.</p>
+        <li>Document.createTouchList()</li>
+          <p>This creates a TouchList object.</p>
+        <li>Document.createTreeWalker()</li>
+          <p> This creates a TreeWalker object.</p>
+        <li>Document.elementFromPoint()</li>
+          <p>This returns an array of all elements at the specified coordinates.</p>
+        <li>Document.elementsFromPoint()</li>
+          <p>This returns the topmost element at the specified coordinates.</p>
+        <li>Document.enableStyleSheetsForSet()</li>
+          <p>This enables the stylesheets for the specified stylesheets set.</p>
+        <li>Document.exitPointerLock()</li>
+          <p>This releases the pointer lock.</p>
+        <li>Document.getAnimations()</li>
+          <p>This returns an array of all Animation objects.</p>
+        <li>Document.getElementsByClassName()</li>
+          <p>This returns a list of elements with the given class name.</p>
+        <li>Document.getElementsByTagNameNS()</li>
+          <p>This returns a list of elements with the given tagname and namespace.</p>
+        <li>Document.getElementsByTagName()</li>
+          <p>This returns a list of elements by the given tagname.</p>
+        <li>Document.importNode()</li>
+          <p>This returns a clone of a node from an external document.</p>
+        <li>Document.normalizeDocument()</li>
+          <p>This replaces entities and normalizes text nodes.</p>
+        <li>Document.registerElement()</li>
+          <p>This registers a web component.</p>
+        <li>Document.releaseCapture()</li>
+          <p>This releases the current mouse capture if it's an element in the document.</p>
+        <li>Document.mozSetImageElement()</li>
+          <p>This allows changing of the element being used as the background image for a specified element id.</p>
+        <li>document.getElementById(String id)</li>
+          <p>This returns a an object reference to the identified element.</p>
+        <li>document.querySelector(String selector)</li>
+          <p>This returns the first Element node within the document in the document order that matches the specified selectors.</p>
+        <li>document.querySelectorAll(String selector)</li>
+          <p>This returns a list of all element nodes within the document that match the specified selectors.</p>
       </ul>
     </div>
     <div id="navi" class="tab-pane fade in">
