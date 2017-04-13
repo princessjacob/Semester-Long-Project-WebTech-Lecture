@@ -40,9 +40,10 @@
     <ul class="nav nav-tabs">
     <!-- These list items is connected to a specific tab through their id. So the logic is href is equal to the id of one of the tabs. -->
     <li><a href="cssA.html" class="btn btn-info" role="button">PREVIOUS</a></li>
-    <li class="active"><a data-toggle="tab" href="#select">CSS Selectors</a></li>
-    <li><a data-toggle="tab" href="#combi">CSS Combinators</a></li>
-    <li><a data-toggle="tab" href="#pseudo">CSS Pseudo-Elements</a></li>
+    <li class="active"><a data-toggle="tab" href="#select">Selectors</a></li>
+    <li><a data-toggle="tab" href="#combi">Combinators</a></li>
+    <li><a data-toggle="tab" href="#pseudo">Pseudo-Elements</a></li>
+    <li><a data-toggle="tab" href="#pre">Rule Precedence</a></li>
     <li><a data-toggle="tab" href="#ref">References</a></li>
   </ul>
   <div class="tab-content">
@@ -187,6 +188,38 @@ Example: div span will match any &lt;span&gt; element that is inside a &lt;div&g
         <p>The ::first-line CSS pseudo-element applies styles only to the first line of an element. The amount of the text on the first line depends of numerous factors, like the width of the element, width of the document, and the font size of the text. As all pseudo-elements, ::first-line does not match any real HTML element.</p>
         <p>A first line has only meaning in a block-container box, therefore the ::first-line pseudo-element has only an effect on elements with a display value of block, inline-block, table-cell or table-caption. In all other cases, ::first-line has no effect.</p>
     </div>
+    <div id="pre" class="tab-pane fade">
+        <h3>DEFINITION</h3>
+        <p>CSS rule precedence refers to the CSS declarations that are displayed in the browser with considerations on three levels: by rule and importance, by specifity and by order.</p>
+        <h3>LEVEL 1: By origin and importance</h3>
+        <h4>HIERARCHY</h4>
+        <p><b>Important Declarations: </b>these declarations are usually prioritized first because of the tagline !important. Although, the tagline important should be used sparingly and used only when it's needed. This is due to the fact that adding an important declaration will disrupt the natural flow of your declarations. After all, an important declaration gives weight to elements, which should only be used for those that need it. Using it too much will abuse its usefulness and make it harder for you to maintain your code.</p>
+        <ul>
+            <li>user agent important declarations</li>
+                <p>declarations from a user agent stylesheet that contains an !important tagline. These declarations when declared important takes precedence because these are the stylesheets used by browser to render html files.</p>
+                <p>i.e. li { margin-left: 10px !important }</p>
+            <li>user important declarations</li>
+                <p>user declarations that contains !important tagline. User important declarations can override author important declarations.</p>
+            <li>author important declarations</li>
+                <p>author declarations that contains the !important tagline. These declarations takes the lowest importance from user important and user agent important but takes precedence before normal declarations.</p>
+                <p>i.e. (To further show the difference between user important declarations and author important declarations)</p>
+                <p>Here is the declarations made in css:</p>
+                <img src="../img/cssImg/code.PNG" alt="Source Code" class="img-responsive">
+                <p>This is the result after opening the html file:</p>
+                <img src="../img/cssImg/result.PNG" alt="Result" class="img-responsive">
+                <p>As you can see, even with both declarations containing an !important tagline, the user important declarations is still given precedence.</p>
+        </ul>
+        <p><b>Normal Declarations: </b>declarations that doesn't contain an !important tagline.</p>
+        <ul>
+            <li>author normal declarations</li>
+                <p>author specified declarations that are written to create a style for the document. These declarations take precedence for it can override the other following declarations below.</p>
+            <li>user normal declarations</li>
+                <p>declarations specified by the user (i.e. A person wanted to make the font style bigger than the normal size. To do that, he can then edit such in the browser options or through some third party software or extension installed in the browser such as ChromeVox for example.) They can overwrite user agent normal declarations if an author normal declaration is not set.</p>
+            <li>user agent normal declarations</li>
+                <p>declarations that served as a default style formatting for web pages.</p>
+                <p>i.e. &lt;li&gt;I&lt;/li&gt; - This item will be styled as a list item once the html file is viewed in a browser.</p>
+        </ul>
+    </div>
 
   <div id="ref" class="tab-pane fade">
       <!-- All references from cssA.html to cssB.html should be placed here -->
@@ -222,12 +255,11 @@ Example: div span will match any &lt;span&gt; element that is inside a &lt;div&g
         <p class="wb">Olsson, T. &amp; O'Brien. P. (n.d.). Rule Sets. Retrieved from: http://reference.sitepoint.com/css/rulesets</p>
         <p class="wb">HTML Stylesheets (2017 March 15) Retrieved From https://www.w3.org/TR/WD-html40-970917/present/styles.html</p>
         <p class="wb">XHTML Style Sheet Module (2017 March 15) Retrieved from https://www.w3.org/TR/xhtml2/mod-styleSheet.html</p>
-        <p class="wb"></p>
-        <p class="wb"></p>
-
-
-
-    </div>
+        <p class="wb">Bos, B. et.al. (2011, June 7). Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification. Retrieved from https://www.w3.org/TR/2011/REC-CSS2-20110607/#minitoc</p>
+        <p class="wb">Lazaris, L. (2010, November 2). !important CSS Declarations: How and When to use them. Retrieved from https://www.smashingmagazine.com/2010/11/the-important-css-declaration-how-and-when-to-use-it/</p>
+        <p class="wb">Zartner, S. et.al. (2015, July 7). Cascade. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade</p>
+        <p class="wb">Meiert, J. (2007, September 22). User Agent Stylesheets: Basics and Samples. Retrieved from https://meiert.com/en/blog/20070922/user-agent-style-sheets/</p>
+        </div>
     </div>
 
     </div>
