@@ -1,0 +1,25 @@
+Specificity is a mechanism in which it is with the CSS cascade that resolves the conflict resolutions. It states that when there are two or more declarations to the same element that applies to the CSS files and it is set with the same properties, the declaration of the element with the most specific selector will be acknowledged or would take the precedence.  
+Specificity determines, which CSS rule is going to apply in the browsers. Every selector has its place in the specificity hierarchy. When the selectors have an equal number of specificity, the latest one that is declared is the one that counts. The ones with more specific selectors have the highest specificity.  The embedded style sheet has a greater specificity than the other. Always try to use an id to increase the specificity value. The universal selector and the inherited selectors are the one whose specificity is 0. CSS Specificity Calculator is used to calculate specificity.
+Here are some descriptions of the process by which the Specificity rule precedence of the selectors of two or more declarations is compared to one other. 
+1. The declaration from a style attribute has a highest specificity than the ones in a rule with a selector (an inline style). If there is no declaration are inline, then proceed to the second description.
+2. In the second description count the ID selectors. The declaration that has the highest number has the highest specificity. If there are the same number of declarations of the ID selectors or rather they had zero ID selectors, then proceed to the third description.
+3. After counting the ID selector, in the third description count the class selector, attribute selector and the pseudo-classes. The one that has the highest number of declaration has the highest specificity. If there are two or more that has the same total of number of declarations , or they have the total of zero, proceed to the fourth description. 
+4. In the fourth description count the element type selectors and the pseudo-elements. The declaration with the highest number has the highest specificity.  
+If there are two or more selectors have the same specificity, the latter specified takes the highest specificity. This is according to the rules of the CSS cascade. 
+ The more specific the greater precedence. In calculating the specificity, there are specificity values assigned to the elements.  For the HTML selector has a specificity of 1. The Class selector has a specificity of 10. The ID selector has a specificity of 100. 
+Examples:
+1. div has a specificity of 1 (1 HTML selector)
+2. div p has a specificity of 2 (2 HTML selector)
+3. .name has a specificity of 10 (1 class selector)
+4. div p.name has a specificity of 12 (2 HTML selector + 1 class selector)
+5. #lastname has a specificity of 100 ( 1 ID Selector) 
+6. body # lastname  .name p has a specificity of 112 ( HTML selector + Id selector + Class selector + HTML selector)
+
+The CSS Specificity is said to be the one of the most difficult concepts in Cascading Style Sheet. There are different weight of the selectors is really the reason why the css-rules don’t apply to some elements in the document. In order to minimize the time in finding the bugs of the CSS code, understand how the browsers interpret the codes. And in understanding it, having a firm understanding on how the specificity rule precedence works.  
+
+References:
+Htmldogcom. (2017). Htmldogcom. Retrieved from http://htmldog.com/guides/css/intermediate/specificity/
+Sitepointcom. (2017). SitePoint. Retrieved from https://www.sitepoint.com/web-foundations/specificity/
+Smashingmagazinecom. (2007). Smashing Magazine. Retrieved from https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/
+
+
