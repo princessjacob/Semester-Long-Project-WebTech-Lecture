@@ -18,8 +18,8 @@ Examples:
 The CSS Specificity is said to be the one of the most difficult concepts in Cascading Style Sheet. There are different weight of the selectors is really the reason why the css-rules don’t apply to some elements in the document. In order to minimize the time in finding the bugs of the CSS code, understand how the browsers interpret the codes. And in understanding it, having a firm understanding on how the specificity rule precedence works.  
 
 References:
-http://htmldog.com/guides/css/intermediate/specificity/
-https://www.sitepoint.com/web-foundations/specificity/
-https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/
+Htmldogcom. (2017). Htmldogcom. Retrieved from http://htmldog.com/guides/css/intermediate/specificity/
+Sitepointcom. (2017). SitePoint. Retrieved from https://www.sitepoint.com/web-foundations/specificity/
+Smashingmagazinecom. (2007). Smashing Magazine. Retrieved from https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/
 
 
