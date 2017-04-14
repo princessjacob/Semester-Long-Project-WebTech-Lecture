@@ -99,9 +99,11 @@ The AT RULE is a CSS statement which has a beginning with a at sign “@” and foll
 		}
 
 References:
-https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule
-https://css-tricks.com/the-at-rules-of-css/
-http://reference.sitepoint.com/css/atrules
+At-rule. (n.d.). Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule 
+
+The At-Rules of CSS. (2015, May 13). Retrieved from https://css-tricks.com/the-at-rules-of-css/
+
+At-rules. (n.d.). Retrieved from http://reference.sitepoint.com/css/atrules 
 
 
 
@@ -113,5 +115,5 @@ The RULE SET includes a selector then followed by a declaration block. It applie
 		}
 
 References:
-http://reference.sitepoint.com/css/rulesets
+Rule Sets. (n.d.). Retrieved from http://reference.sitepoint.com/css/rulesets 
 
