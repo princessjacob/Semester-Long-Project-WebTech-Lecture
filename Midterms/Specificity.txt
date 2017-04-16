@@ -15,7 +15,7 @@ Examples:
 5. #lastname has a specificity of 100 ( 1 ID Selector) 
 6. body # lastname  .name p has a specificity of 112 ( HTML selector + Id selector + Class selector + HTML selector)
 
-The CSS Specificity is said to be the one of the most difficult concepts in Cascading Style Sheet. There are different weight of the selectors is really the reason why the css-rules don’t apply to some elements in the document. In order to minimize the time in finding the bugs of the CSS code, understand how the browsers interpret the codes. And in understanding it, having a firm understanding on how the specificity rule precedence works.  
+The CSS Specificity is said to be the one of the most difficult concepts in Cascading Style Sheet. There are different weight of the selectors is really the reason why the css-rules donâ€™t apply to some elements in the document. In order to minimize the time in finding the bugs of the CSS code, understand how the browsers interpret the codes. And in understanding it, having a firm understanding on how the specificity rule precedence works.  
 
 References:
 Htmldogcom. (2017). Htmldogcom. Retrieved from http://htmldog.com/guides/css/intermediate/specificity/
