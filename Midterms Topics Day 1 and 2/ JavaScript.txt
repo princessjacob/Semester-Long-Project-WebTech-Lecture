@@ -8,18 +8,18 @@ Javascript
 		script.aculo.us, jQuery, MooTools, Prototype, Dojo Toolkit, etc.
 	- Linked/Embedded in web pages using the <script> element
 		Linked:
-		<script type=îtext/javascriptî src=îscripts.jsî /> </script>
+		<script type=‚Äùtext/javascript‚Äù src=‚Äùscripts.js‚Äù /> </script>
 		Embedded (either in the <head> or the < body> element)
-		<script type=îtext/javascriptî>
-			<!--hide script from non-JavaScript browsersÖ
+		<script type=‚Äùtext/javascript‚Äù>
+			<!--hide script from non-JavaScript browsers‚Ä¶
 			/* script code goes here */
-			// end of script hiding Ö -->
+			// end of script hiding ‚Ä¶ -->
 		</script>
 		<noscript>
-			Öcontent to show when scripting not available
+			‚Ä¶content to show when scripting not available
 		</noscript>
 	- JavaScript + DOM/BOM + CSS + (X)HTML = DHTML
-	- JavaScript code in (X)HTML pages can be executed ìon the flyî as the document is rendered (i.e. code outside of functions executes as the <script> element is 	encountered); in most cases though, JavaScript code is executed in response to document events (e.g. clicking a page element).
+	- JavaScript code in (X)HTML pages can be executed ‚Äúon the fly‚Äù as the document is rendered (i.e. code outside of functions executes as the <script> element is 	encountered); in most cases though, JavaScript code is executed in response to document events (e.g. clicking a page element).
 	- Basic language features:
 		Paradigm:
 			Object-oriented (prototype-based), functional, imperative scripting language
@@ -51,7 +51,7 @@ Javascript
 			- var
 				Used to declare global/local scoped variables
 			- if-else
-				Condition expressions having values of 0, ìî, null, and undefined evaluate to false
+				Condition expressions having values of 0, ‚Äú‚Äù, null, and undefined evaluate to false
 			- switch-case-default-break
 				allows any expression type to be used as the switch expression
 				case labels may be of different types
@@ -78,5 +78,5 @@ Javascript
 
 REFERENCES:
 
-Mills, C.D., (2017, March 15). ìWhat is JavaScript, really?î. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics.
-Wiley. (16 July 2016). ìWhat is JavaScript?î .Retrieved from https://en.wikipedia.org/wiki/JavaScript.
+Mills, C.D., (2017, March 15). ‚ÄúWhat is JavaScript, really?‚Äù. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics.
+Wiley. (16 July 2016). ‚ÄúWhat is JavaScript?‚Äù .Retrieved from https://en.wikipedia.org/wiki/JavaScript.
