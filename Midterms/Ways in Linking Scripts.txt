@@ -1,0 +1,65 @@
+Ways in Linking Scripts
+1. LINKED SCRIPT
+This is the way of linking scripts by the means of having a separate document for the javascript in the HTML document.  It allows one piece of source code is to be reused in multiple Script objects.
+The syntax of inline scripts is that:
+<script>
+JavaScript statements….
+</script>
+
+For example:
+<script>
+f1.document.write("<script>");
+f1.document.write("document.write('<h2>This is the quoted script</h2>')");
+f1.document.write("</" + "script>");
+</script>
+
+References:
+RobloxLandingPage - Roblox Wiki. (n.d.). Linked script - Roblox Wiki. Retrieved from http://wiki.roblox.com/index.php?title=Linked_script
+
+2. EMBEDDED SCRIPT
+This is the way of linking the scripts by the use of the <script> and </script> tag and the src attribute. The script is located in the HTML document. The src attribute is used to linked scripts in the way to locate of an external script. This attribute is said to be useful of sharing the functions among the different pages of the HTML. The external JavaScript contains only the JavaScript statements and some files with the .js extension.
+The syntax for the embedded script is that:
+<script src = “   “>
+</script>
+
+For example:
+<script type = “text/javascript” src = “script.js”> 
+</script>
+
+References:
+Web development tutorials | w3resource. (n.d.).  Embedding JavaScript in HTML - w3resource. Retrieved from http://www.w3resource.com/javascript/introduction/html-documents.php
+
+		
+
+3. INLINE SCRIPT
+This is the way of linking the scripts by the use of the <script> and </script> tag. It is also located in the HTML document but seen everywhere between the lines. It is executed as the script is encountered in the document.
+The syntax of inline scripts is that:
+<script>
+JavaScript statements….
+</script>
+
+For example:
+<script type = “text/javascript”>
+	start();
+</script>
+References:
+Web development tutorials | w3resource. (n.d.). Embedding JavaScript in HTML - w3resource. Retrieved from http://www.w3resource.com/javascript/introduction/html-documents.php
+
+ 
+4. NO SCRIPT
+This the way of linking the scripts by the use of the <no script> and </no script> tag. It is also located everywhere between the lines in HTML document. It is used when the browser doesn’t support the JavaScript code then the alternate content that is placed in the no script tag is being executed. The no script element can be used in <head> and also in <body>. In the no script
+tag that is located in the <head> element must contain the <link>, <style>, and the <meta> elements.
+
+The syntax for the no script is
+<no script>
+……..code……..
+</no script>
+
+For Example:
+<no script>
+        The browser doesn’t support JavaScript!!! 
+       </no script>
+
+References:
+Web development tutorials | w3resource. (n.d.). Embedding JavaScript in HTML - w3resource. Retrieved from http://www.w3resource.com/javascript/introduction/html-documents.php
+W3Schools Online Web Tutorials. (n.d.).  HTML noscript tag. Retrieved from http://www.w3schools.com/tags/tag_noscript.asp
