@@ -157,10 +157,123 @@ And this is the latest standard.</p>
 
     <div id="decl" class="tab-pane fade">
       <h3>DEFINITION</h3>
-      <p><!--Definition here--></p>
+      <p>A CSS Declaration is made up of a property name and a value and it is separated by a
+semicolon (;). And it must appear within a declaration block.</p>
+      <h3>1. Properties</h3>
       <ol>
-        <li><!--Title here--></li>
-          <p><!-- def here --></p>
+        <li>Shorthand Properties</li>
+          <p>- group the definition of common properties acting on the same theme</p>
+          <p>- set the values of several other CSS properties simultaneously</p>
+          <p>- to specify values for related properties in a single declaration</p>
+        <li>Vendor specific extensions (aka vendor prefixes)</li>
+
+          <p>- browser makers</p>
+          <p>- It release and test browser features. Keywords and property names beginning with – (dash) or _ (underscore).</p>
+        </ol>
+      <h3>2. Values</h3>
+      <ol>
+        <li>Keywords</li>
+          <p>- identifier</p>
+          <p>- mustn’t be surrounded by quotation marks ("")</p>
+        <li>Numbers</li>
+          <p>- Numbers can have an initial - (negative) or + (positive) to indicate its sign. It can be an integer and real numbers in decimal notation.</p>
+      </ol>
+      <h3>3. Lengths</h3>
+      <ol>
+        <p>a. Length and Units</p>
+          <p>Length - comprising a numeric value and a unit only</p>
+          <p>Units -  in which length is measured can be either relative or absolute</p>
+            <p>Relative:</p>
+            <li>a. em</li>
+              <p>- current font size</p>
+              <p>- equal to the font size</p>
+            <li>b. ex</li>
+              <p>- x-height of the current font</p>
+              <p>- height of a lowercase x</p>
+            <li>c. px</li>
+              <p>- pixels</p>
+              <p>- relative to the viewing distance</p>
+              <p>- standard pixel is 0.26mm (1/96 inch) square</p>
+              <p>- must not be used for a tty media type</p>
+        </ol>
+            <p>Absolute:</p>
+        <ol>
+            <li>a. mm</li>
+              <p>- millimeters</p>
+              <p>- SI standard</p>
+            <li>b. cm</li>
+              <p>- centimeters</p>
+              <p>- SI standard</p>
+            <li>c. in</li>
+              <p>- inches</p>
+              <p>- 1 inch = 25.4mm</p>
+            <li>d. pt</li>
+              <p>- point</p>
+              <p>- old typographic measurement</p>
+              <p>- used in print</p>
+              <p>- 1 point = 1/72 inch (o.353mm)</p>
+            <li>e. pc</li>
+              <p>- pica</p>
+              <p>- equal to 12 points</p>
+              <p>- 1/6 inch or 4.23mm</p>
+          </ol>
+        <p>b. Percentages (%)</p>
+          <p>- Whitespace characters mustn’t appear between the number and the % (i.e. 50%). Percentage can be an integer or a decimal number.</p>
+        <p>c. URLs and URIs</p>
+          <ol>
+            <li>a. URL</li>
+              <p>- denotes a pointer to a resource</p>
+              <p>- unquoted or quoted by single or double quotes</p>
+            <li>b. URI</li>
+              <p>- argument for URI is a string that may be enclosed in quotes</p>
+          </ol>
+        <p>d. Counters</p>
+          <p>- Adjust the appearance of content based on its placement in the document.</p>
+          <ol>
+            <li>a. counter-reset</li>
+              <p>- creates or resets a counter</p>
+            <li>b. counter-increment</li>
+              <p>- increments a counter value</p>
+            <li>c. content</li>
+              <p>- inserts generated content</p>
+            <li>d. counter() or counters() function</li>
+              <p>- adds the value of a counter to an element</p>
+          </ol>
+        <p>e. Colors</p>
+          <ol>
+            <li>- RGB (red, green, blue)</li>
+              <p>- Hexadecimal</p>
+              <p>- common format</p>
+              <p>- consists of a # character</p>
+              <p>- i.e. (#09f is the same as #0099ff - red=00, green=99, blue=ff)</p>
+          </ol>
+        <p>Decimal Notation:</p>
+          <ol>
+            <li>RGBA (red,green,blue,alpha)</li>
+              <p>- extension of RGB with alpha channel</p>
+              <p>- alpha parameter</p>
+              <p>a. between 0.0 (fully transparent)</p>
+              <p>b. 1.0 (fully opaque)</p>
+            <li>HSL (hue,saturation,lightness)</li>
+              <p>- hue</p>
+              <p>- degree on the color wheel</p>
+              <p>- 0 (360) - red</p>
+              <p>- 120 - green</p>
+              <p>- 250 - blue</p>
+            <li>Opacity</li>
+              <p>- both background color and text will be opaque/transparent</p>
+              <p>- opacity property</p>
+              <p>a. between 0.0 (fully transparent)</p>
+              <p>b. 1.0 (fully opaque)</p>
+          </ol>
+         <p>f. Strings</p>
+           <ol>
+             <p>- enclosed in double or single quotes ("" or '')</p>
+             <p>- escape it with a backslash character (\)</p>
+           </ol>
+
+
+
           <!-- Add more for the others -->
     </div>
 
@@ -523,4 +636,3 @@ The AT RULE is a CSS statement which has a beginning with a at sign “@” and 
 </body>
 
 </html>
-
