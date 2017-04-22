@@ -1,0 +1,22 @@
+Order of Precedence for the CSS Rules
+This are the rules in that stated determines the one that take precedence in some cases like the conflicts and repetitions. This can cascade in the order of the precedence.
+The more specific the rule is, the higher its precedence. The rule that are on tag has the least specific.
+The rules of precedence are located in a factor. The locations are Browser Default Rules, Embedded Styles, and Inline style Rules. 
+ Location of Rules
+The Cascading Style Sheet Rules are located in many places in which it includes the browser default style sheet, external style sheet, embedded styles and the inline style rules. The one which is closer to the rule is the one that is being styled, the higher its precedence. It starts to the furthest and goes to the closest to the content. 
+Browser Style Sheet
+There is built-in default style sheet in all the browsers. In default style sheet starts the cascading. If there are no styles defined in the file, the browser styles will be used. Defaults are slightly different inn each browser. 
+External Style Sheet
+This style sheet the browser default style sheet is overridden by the rules in the external style sheet. If there several many external style sheet, the one which is being applied is the one being listed. 
+Embedded Styles
+In this style sheet, the styles that are embedded in the header of the page are the next in the order of precedence. If there are several rules, naturally those rules are being placed in the external style sheet.
+Inline styles
+Lastly the inline styles. Inline styles are one that are closest in the contents of the file, they take the highest precedence because of this. 
+
+References:
+Kurtus, R. (n.d.). Order of Precedence for CSS Rules - Web Design lessons. Retrieved from http://www.school-for-champions.com/web/css_cascade_order.htm
+Jenkov, J. (n.d.). CSS Precedence. Retrieved from http://tutorials.jenkov.com/css/precedence.html
+Bradley, S. (n.d.). Understanding Style Precedence in CSS: Specificity, Inheritance, and the Cascade . Retrieved from http://vanseodesign.com/css/css-specificity-inheritance-cascaade/
+
+
+
