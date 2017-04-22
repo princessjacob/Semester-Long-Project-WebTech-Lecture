@@ -37,21 +37,7 @@ Boolean.prototype.toString()
 
 Boolean.prototype.valueOf() 
 
-	Gives back the primitive estimation of the Boolean question. Supersedes the Object.prototype.valueOf() method.
-
-DATE - The Date object has a large number of methods for setting, getting, and manipulating dates. It does not have any properties.The Date object range is -100,000,000 days to 100,000,000 days relative to 01 January, 1970 UTC.
-
-Syntax
-	dateObjectName = new Date([parameters])
-	new Date();
-	new Date(value);
-	new Date(dateString);
-	new Date(year, month[, date[, hours[, minutes[, second[,milliseconds]]]]]);
-Parameters
-	today = new Date()
-Description
-	The JavaScript date is based on a time value that is milliseconds since midnight 01 January, 1970 UTC. A day holds 86,400,000 milliseconds. The JavaScript Date object range is -100,000,000 days to 100,000,000 days relative to 01 January, 1970 UTC.
-	
+	Gives back the primitive estimation of the Boolean question. Supersedes the Object.prototype.valueOf() method.	
 
 MATH - Math is a built-in object that has properties and methods for mathematical constants and functions. Not a function object.
 
@@ -81,7 +67,20 @@ Description
 	Strings are useful for holding data that can be represented in text form. Some of the most-used operations on strings are to check their length, to build and concatenate them using the + and += string operators, checking for the existence or location of substrings with the indexOf() method, or extracting substrings with the substring() method.
 
 
-DATE - Composed of two Properties: Constructor and Prototype
+DATE(object) - The Date object has a large number of methods for setting, getting, and manipulating dates. It does not have any properties.The Date object range is -100,000,000 days to 100,000,000 days relative to 01 January, 1970 UTC.
+
+Syntax
+	dateObjectName = new Date([parameters])
+	new Date();
+	new Date(value);
+	new Date(dateString);
+	new Date(year, month[, date[, hours[, minutes[, second[,milliseconds]]]]]);
+Parameters
+	today = new Date()
+Description
+	The JavaScript date is based on a time value that is milliseconds since midnight 01 January, 1970 UTC. A day holds 86,400,000 milliseconds. The JavaScript Date object range is -100,000,000 days to 100,000,000 days relative to 01 January, 1970 UTC.
+
+DATE(constructor) - Composed of two Properties: Constructor and Prototype
 
 Constructors - Specifies the function that creates an object's prototype. Javascript date constructor property returns a reference to the array function that created the instance's prototype. 
 
