@@ -107,21 +107,37 @@
     </ol>
     </div>
     <div id="wrap" class="tab-pane fade in">
-    <h3>DEFINITION</h3>
+    <h3>BOOLEAN</h3>
     <p><!-- Place def here --></p>
-    <h3>PARAMETERS</h3>
+    <h4>PARAMETERS</h4>
         <p> <!-- Format this way == <b>Parameter here</b>. Def here --></p>
         <p><!-- Added param descript --></p>
-    <h3>BOOLEAN INSTANCES</h3>
+    <h4>BOOLEAN INSTANCES</h4>
         <p><!-- Place def here --></p>
-    <h3>PROPERTIES</h3>
+    <h4>PROPERTIES</h4>
         <p> <!-- Format this way == <b>Property here</b>. Def here --></p>
-    <h3>METHODS</h3>
+    <h4>METHODS</h4>
         <ul>
             <li><!-- Method here --></li>
                 <p><!-- Method descript here --></p>
             <!-- Add more for the following methods -->
         </ul>
+    <h3>NUMBER</h3>
+    <p><!-- Place def here --></p>
+    <h4>SYNTAX</h4>
+    <p><!-- Place syntax here --></p>
+    <!-- Add more p tags for the syntax -->
+    <h4>PARAMETERS</h4>
+    <p><!-- Parameter here --></p>
+    <p><!-- Place param descript here --></p>
+    <h3>STRING</h3>
+    <p><!-- Place def here --></p>
+    <h4>SYNTAX</h4>
+    <p><!-- Place syntax here --></p>
+    <!-- Add more p tags for the syntax -->
+    <h4>PARAMETERS</h4>
+    <p><!-- Parameter here --></p>
+    <p><!-- Place param descript here --></p>
     </div>
     <div id="big" class="tab-pane fade in">
     <h3>FUNCTIONS</h3>
@@ -141,28 +157,214 @@
             <p><!-- Def here --></p>
     </ul>
     <h3>ARRAYS</h3>
-    <p><!-- Place def here --></p>
-    <!-- Add more p tags for succeeding paragraphs -->
+    <p>An Array object is an JavaScript global object which is used in the construction of an arrays. It is a high-level, list-like objects.</p>
+    <p><b>The syntax for creating an array object is:</b> new Array(element0, element1[, ...[, elementN]]) | new Array(arrayLength)</p>
     <h3>PROPERTIES OF ARRAYS</h3>
     <ul>
-        <li><!-- Property here --></li>
-            <p><!-- Def here --></p>
+        <li>Array.length</li>
+            <p>This property which the Array constructor's length property whose value is 1.</p>
+        <li>get Array[@@species]</li>
+            <p>This property which the constructor function that is used to create derived objects.</p>
+        <li>Array.prototype</li>
+            <p>This property which allows the addition of properties to all array objects.</p>
+    </ul>
+    <h4>METHODS</h4>
+    <ul>
+        <li>Array.from()</li>
+            <p>This method creates a new Array instance from an array-like or iterable object.</p>
+        <li>Array.isArray()</li>
+            <p>This method returns true if a variable is an array, if not false.</p>
+        <li>Array.of()</li>
+            <p>This method creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments.</p>
+    </ul>
+    <h4>ARRAY INSTANCES</h4>
+    <p>This are the arrays which inherits from the Array.prototype.</p>
+    <ul>
+        <li>Array.prototype.constructor</li>
+            <p>This property specifies the function that creates an object's prototype.</p>
+        <li>Array.prototype.length</li>
+            <p>This property reflects the number of elements in an array.</p>
+        <li>Array.prototype[@@unscopables]</li>
+            <p>This property is a symbol containing property names to exclude from a with binding scope.</p>
     </ul>
     <h3>ARRAYS METHODS</h3>
     <h4>MUTATOR METHODS</h4>
     <ul>
-        <li><!-- Method here --></li>
-            <p><!-- Def here --></p>
+        <li>Array.prototype.copyWithin()</li>
+            <p>This method copies a sequence of array elements within the array.</p>
+        <li>Array.prototype.fill()</li>
+            <p>This method fills all the elements of an array from a start index to an end index with a static value.</p>
+        <li>Array.prototype.pop()</li>
+            <p>This method removes the last element from an array and returns that element.</p>
+        <li>Array.prototype.push()</li>
+            <p>This method adds one or more elements to the end of an array and returns the new length of the array.</p>
+        <li>Array.prototype.reverse()</li>
+            <p>This method reverses the order of the elements of an array in place — the first becomes the last, and the last becomes the first.</p>
+        <li>Array.prototype.shift()</li>
+            <p>This method removes the first element from an array and returns that element.</p>
+        <li>Array.prototype.sort()</li>
+            <p>This method sorts the elements of an array in place and returns the array.</p>
+        <li>Array.prototype.splice()</li>
+            <p>This method adds and/or removes elements from an array.</p>
+        <li>Array.prototype.unshift()</li>
+            <p>This method adds one or more elements to the front of an array and returns the new length of the array.</p>
     </ul>
     <h4>ACCESSOR METHODS</h4>
     <ul>
-        <li><!-- Method here --></li>
-            <p><!-- Def here --></p>
+        <li>Array.prototype.concat()</li>
+            <p>This method returns a new array comprised of this array joined with other array(s) and/or value(s).</p>
+        <li>Array.prototype.includes() </li>
+            <p>This method determines whether an array contains a certain element, returning true or false as appropriate.</p>
+        <li>Array.prototype.indexOf()</li>
+            <p>This method returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.</p>
+        <li>Array.prototype.join()</li>
+            <p>This method joins all elements of an array into a string.</p>
+        <li>Array.prototype.lastIndexOf()</li>
+            <p>This method returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.</p>
+        <li>Array.prototype.slice()</li>
+            <p>This method extracts a section of an array and returns a new array.</p>
+        <li>Array.prototype.toSource() </li>
+            <p>This method returns an array literal representing the specified array; you can use this value to create a new array. Overrides the Object.prototype.toSource() method.</p>
+        <li>Array.prototype.toString()</li>
+            <p>This method returns a string representing the array and its elements. Overrides the Object.prototype.toString() method.</p>
+        <li>Array.prototype.toLocaleString()</li>
+            <p>This method returns a localized string representing the array and its elements. Overrides the Object.prototype.toLocaleString() method.</p>
+    </ul>
+    <h4>ITERATOR METHODS</h4>
+    <ul>
+        <li>Array.prototype.entries()</li>
+            <p>This method returns a new Array Iterator object that contains the key/value pairs for each index in the array.</p>
+        <li>Array.prototype.every()</li>
+            <p>This method returns true if every element in this array satisfies the provided testing function.</p>
+        <li>Array.prototype.filter()</li>
+            <p>This method creates a new array with all of the elements of this array for which the provided filtering function returns true.</p>
+        <li>Array.prototype.find()</li>
+            <p>This method returns the found value in the array, if an element in the array satisfies the provided testing function or undefined if not found.</p>
+        <li>Array.prototype.findIndex()</li>
+            <p>This method returns the found index in the array, if an element in the array satisfies the provided testing function or -1 if not found.</p>
+        <li>Array.prototype.forEach()</li>
+            <p>This method calls a function for each element in the array.</p>
+        <li>Array.prototype.keys()</li>
+            <p>This method returns a new Array Iterator that contains the keys for each index in the array.</p>
+        <li>Array.prototype.map()</li>
+            <p>This method creates a new array with the results of calling a provided function on every element in this array.</p>
+        <li>Array.prototype.reduce()</li>
+            <p>This method applies a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value.</p>
+        <li>Array.prototype.reduceRight()</li>
+            <p>This method applies a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value.</p>
+        <li>Array.prototype.some()</li>
+            <p>This method returns true if at least one element in this array satisfies the provided testing function.</p>
+        <li>Array.prototype.values()</li>
+            <p>This method returns a new Array Iterator object that contains the values for each index in the array.</p>
+        <li>Array.prototype[@@iterator]()</li>
+            <p>This method returns a new Array Iterator object that contains the values for each index in the array.</p>
     </ul>
     </div>
     <div id="oob" class="tab-pane fade in">
-    <h3>DATE</h3>
+    <h3>DATE(OBJECT)</h3>
+    <p><!-- Place def here --></p>
+    <h4>SYNTAX</h4>
+    <p><!-- Place syntax here --></p>
+    <!-- Add more p tags for the syntax -->
+    <h4>PARAMETERS</h4>
+    <p><!-- Parameter here --></p>
+    <p><!-- Place param descript here --></p>
+    <h3>DATE(CONSTRUCTOR)</h3>
+    <p>Composed of two Properties: Constructor and Prototype</p>
+    <h4>CONSTRUCTORS</h4>
+    <p>Specifies the function that creates an object's prototype. Javascript date constructor property returns a reference to the array function that created the instance's prototype. </p>
+    <p><b>SYNTAX:</b> date.constructor </p>
+    <h4>Example:</h4>
+    <img src="../img/jsImg/DateConstructExample.PNG" alt="sample code" class="img-responsive">
+    <h4>PROTOTYPE</h4>
+    <p>The prototype property allows you to add properties and methods to an object. The prototype property allows you to add properties and methods to any object (Number, Boolean, String, Date, etc.). </p>
+    <p><b>Syntax: </b>object.prototype.name = value </p>
+    <h4>Example:</h4>
+    <img src="../img/jsImg/DatePrototype.PNG" alt="sample code" class="img-responsive">
+    <h4>DATE OBJECTS</h4>
+    <table>
+        <tr>
+            <th>METHODS</th>
+            <th>VALUE RANGE</th> 
+            <th>DESCRIPTION</th>
+          </tr>
+        <tr>
+            <td>dateObj.getDate()</td>
+            <td>1-31</td> 
+            <td>Date within the month</td>
+        </tr>
+        <tr>
+            <td>dateobj.setDate()</td>
+            <td></td> 
+            <td></td>
+        </tr>
+        <tr>
+            <td>dateObj. getDay()</td>
+            <td>0-6	</td> 
+            <td>Day of the Week</td>
+        </tr> 
+        <tr>
+            <td>dateObj. setDay()</td>
+            <td></td> 
+            <td></td>
+        </tr> 
+        <tr>
+            <td>dateObj. getFullYear()</td>
+            <td>1970-...</td> 
+            <td>Get the four digit year (yyyy).</td>
+        </tr> 
+        <tr>
+            <td>dateObj. setFullYear()</td>
+            <td></td> 
+            <td></td>
+        </tr> 
+        <tr>
+            <td>dateObj. getHours()</td>
+            <td>0-23</td> 
+            <td>dateObj. setHours()</td>
+        </tr> 
+        <tr>
+            <td>dateObj. getMilliseconds()</td>
+            <td>0-999</td> 
+            <td>Milliseconds since the previous full second(NN4+,Mozl+,Ie3+)</td>
+        </tr> 
+        <tr>
+            <td>dateObj. setMilliseconds()</td>
+            <td></td> 
+            <td></td>
+        </tr> 
+        <tr>
+            <td>dateObj. getMonth()</td>
+            <td>0-11</td> 
+            <td>Month within the year(January=0)</td>
+        </tr> 
+        <tr>
+            <td>dateObj.getSeconds()</td>
+            <td>0-59</td> 
+            <td>Second within the specified minute</td>
+        </tr> 
+        <tr>
+            <td>dateObj. getMinutes()</td>
+            <td>0-59</td> 
+            <td>Minute of the specified Hour</td>
+        </tr> 
+        <tr>
+            <td>dateObj. setMinutes()</td>
+            <td></td> 
+            <td></td>
+        </tr> 
+        <tr>
+            <td>dateObj.getTime()</td>
+            <td>0-…	</td> 
+            <td>Milliseconds since 1/1/70 00:00:00 GMT</td>
+        </tr> 
+    </table>
     <h3>MATH</h3>
+    <p><!-- Place syntax here --></p>
+    <!-- Add more p tags for the syntax -->
+    <h4>PARAMETERS</h4>
+    <p><!-- Parameter here --></p>
+    <p><!-- Place param descript here --></p>
     <h3>ERRORS</h3>
     <p><!-- Place def here --></p>
     <!-- Add more p tags for succeeding paragraphs -->
@@ -241,7 +443,8 @@ https://www.w3schools.com/js/js_window_location.asp</p>
         <p class="wb">Javascript BOM : Screen Object. (n.d.). Retrieved March 27, 2017, from http://www.tutorialspark.com/javascript/JavaScript_Browser_Object_Model_Screen_Object.php</p>
         <p class="wb">The Screen Object. (n.d.), from https://www.w3schools.com/jsref/obj_screen.asp</p>
         <p class="wb">JavaScript Screen Object. (n.d.), from http://www.w3webtutorial.com/javascript/javascript-screen-object.php</p>
-
+        <p class="wb">Mozilla Developer Network. (n.d.). Array - JavaScript | MDN. Retrieved from http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array</p>
+        <p class="wb">Sameer M. et al. (October 18, 2015) Javascript Retrieved from https://www.slideshare.net/frayoshwadia/javascript-math-boolean-string-date</p>
     </div>
 
   </div>
