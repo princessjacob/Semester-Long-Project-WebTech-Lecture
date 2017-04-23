@@ -48,9 +48,74 @@
     <li><a data-toggle="tab" href="#win">Window API</a></li>
     <li><a href="jsB.html" class="btn btn-info" role="button">NEXT</a></li>
   </ul>
-  <div class="tab-content">  <!-- Place definition and HTML versions here -->
+  <div class="tab-content">  
     <div id="definition" class="tab-pane fade in active">
-      <p><!--Place content here--></p>
+      <ul>
+        <li>Developed circa 1995 by Brendan Eich at Netscape Communications as the scripting language for the Netscape Navigator Browser.</li>
+        <li>Formerly called Mocha, then LiveScript, then JavaScript.</li>
+        <li>Standardized by ECMA International as ECMAScript.</li>
+        <li>Latest version: JavaScipt 1.8.1, ECMAScript 5 [ECMA-262 5th Edition].</li>
+        <li>Common version: JavaScript 1.5, Jscript 5.5, ECMAScript v3 [ECMA-262 3rd Edition]</li>
+        <li><b>JAVASCRIPT FRAMEWORKS: </b>script.aculo.us, jQuery, MooTools, Prototype, Dojo Toolkit, etc.</li>
+        <li>JavaScript + DOM/BOM + CSS + (X)HTML = DHTML</li>
+        <li>JavaScript code in (X)HTML pages can be executed "on the fly" as the document is rendered (i.e. code outside of functions executes as the &lt;script&gt; element is encountered); in most cases though, JavaScript code is executed in response to document events (e.g. clicking a page element).</li>
+      </ul>
+      <h3>BASIC LANGUAGE FEATURES</h3>
+        <ul>
+            <li>Paradigm</li>
+                <p>Object-oriented (prototype-based), functional, imperative scripting language</p>
+            <li>Java-/C-like syntax</li>
+                <p>Implicit semicolon insertion for statement termination; Identifiers are alphanumeric, _, and $ characters; Single-line (//) or block (/**/) comments</p>
+            <li>Type system and variable scoping rules:</li>
+                <p>Dynamic (aka loose or weak) typing and global (aka top-level) or local scopes.</p>
+        </ul>
+      <h3>DATA TYPES</h3>
+        <h4>Primitive types</h4>
+            <ul>
+                <li>Numbers (decimal, hexadecimal notation)</li>
+                <li>Booleans (true, false)</li>
+                <li>Strings (Single or Double quote delimited)</li>
+                <li>Undefined and Null</li>
+            </ul>
+        <h3>COMPOSITE(OBJECT) TYPES</h3>
+        <h4>Core Javascript</h4>
+            <ul>
+                <li>Object, Number, Boolean, String, Date, Math, Global, RegExp, Error</li>
+                <li>Arrays (Array)</li>
+                <li>Functions (Function, Arguments)</li>
+            </ul>
+        <h4>DOM Objects</h4>
+            <p>Anchor, Applet, Attr, Comment, DOMException, DOMImplementation, DocumentFragment, Element, Event, Form, Image, Input, Layer, Link, Node, Option, Select, Style, Text, TextArea</p>
+        <h4>Keywords</h4>
+            <p>break, case, catch, continue, default, delete, do, else, finally, for, function, if, in, instanceof, new, return, switch, this, throw, try, 	typeof, var, void, with</p>
+        <h3>RESERVED WORDS</h3>
+            <p>abstract, Boolean, byte, char, class, const, debugger, float</p>
+        <h3>STATEMENTS AND CONTROL STRUCTURE</h3>
+            <ul>
+                <li>var</li>
+                    <p>Used to declare global/local scoped variables</p>
+                <li>if-else</li>
+                    <p>Condition expressions having values of 0, "", null, and undefined evaluate to false</p>
+                <li>switch-case-default-break</li>
+                    <p>allows any expression type to be used as the switch expression; case labels may be of different types; case labels may be expressions; case execution falls-through, unless terminated by a break</p>
+                <li>while, do-while, for, for-in, break, continue</li>
+                    <p>for while and do-while, false condition expressions similar to if-else; for-in used for property enumeration; allows labeled break/continue</p>
+                <li>try-catch-finally, throw</li>
+                    <p>throw and catch can handle any expression type</p>
+                <li>function, return</li>
+                    <p>JavaScript functions are similar to Java methods except for the following differences:</p>
+                    <ul>
+                        <li>No return value type is specified, and return is optional within the function body.</li>
+                        <li>Functions may return a value on one invocation and not return a value (i.e. have an undefined return value) on another invocation.</li>
+                        <li>Functions may return different types of values on different invocations.</li>
+                        <li>Function parameters are dynamically typed.</li>
+                        <li>Functions can be invoked with an arbitrary number of arguments, regardless of the actual parameters specified in the function definition (the Arguments object can be used to access unnamed arguments passed to the function invocation).</li>
+                        <li>Functions are first-class objects.</li>
+                        <li>Functions can be invoked as global functions (i.e. as methods of the Global object) as methods of specific objects, or as object constructors.</li>
+                    </ul>
+                <li>with</li>
+                    <p>Used to access object properties without having to explicitly qualify the property with the object name (serves as shorthand notation for accessing object properties, at the expense of program readability).</p>
+            </ul>
     </div>
     <div id="es" class="tab-pane fade in">
       <h3>What is ECMAScript?</h3>
