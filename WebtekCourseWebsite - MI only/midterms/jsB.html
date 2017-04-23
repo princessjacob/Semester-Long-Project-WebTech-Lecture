@@ -97,24 +97,57 @@
     <p><!-- Place program here. Please put it in a way that it would look the same as how is it given. Add more p tags if needed. --></p>
 
     <h3>VAR</h3>
-    <p><!-- Place def here--></p>
+    <p>The variable statement declares a variable, alternatively instating it to a value.</p>
     <h4>SYNTAX</h4>
+            <p>var varname1 [= value1] [, varname2 [= value2] ... [, varnameN [= valueN]]];</p>
     <ul>
-        <li><!--Parameter here--></li>
-            <p><!-- Place def here--></p>
+        <li>varnameN</li>
+            <p>Variable name. It can be any legitimate identifier.</p>
+        <li>valueN</li>
+            <p>Initial value of the variable. It can be any lawful expression. Default value is undefined.</p>
         <!-- Add more for all given parameters-->
     </ul>
     <h4>DECLARATION</h4>
-    <p><!-- Place def here--></p>
+    <p>Variable declarations, wherever they happen, are handled before any code is executed. The extent of a variable declared with var is its present execution setting, which is either the encasing function or, for variables declared outside any function, global. In the event that you re-pronounce a JavaScript variable, it won't lose its Value.</p>
+    <p>Relegating an incentive to an undeclared variable certainly makes it as a global variable (it turns into a property of the global protest) when the task is executed. The contrasts amongst declared and undeclared variables are:</p>
     <ol>
-        <li><!-- Supported reasons for variables. Add more for succeeding items. --></li>
+        <li>Declared variables are obliged in the execution setting in which they are declared. Undeclared variables are constantly global.</li>
+        <li>Declared variables are made before any code is executed. Undeclared variables don't exist until the code allotting to them is executed.</li>
+        <li>Declared variables are a non-configurable property of their execution setting (work or global). Undeclared variables are configurable (e.g. can be erased).</li>
     </ol>
-    <p><!-- Place def here--></p>
+    <p>Due to these three contrasts, inability to proclaim variables will probably prompt surprising outcomes. In this way it is prescribed to dependably declare variables, paying little heed to whether they are in a function or global extension. Furthermore, in ECMAScript 5 strict mode, doling out to an undeclared variable throws a error.</p>
+    <ul>
+      <li>var hoisting</li>
+    </ul>
+      <p>Since variable statements (and presentations all in all) are prepared before any code is executed, pronouncing a variable anyplace in the code is comparable to proclaiming it at the top. This additionally implies a variable can give off an impression of being utilized before it's declared. This conduct is called "hoisting", as it creates the impression that the variable declaration is moved to the highest point of the function or global code.</p>
+      <p>Thus, it is prescribed to dependably declare variables at the highest point of their scope (the highest point of global code and the highest point of function code) so it's reasonable which variables are function scoped (local) and which are settled on the scope chain.</p>
+      <p>Illustrations</p>
+      <p>Proclaiming and instating two factors</p>
+      <p>var a = 0, b = 0;</p>
+      <p>Appointing two factors with single string value</p>
+      <p>var a = 'A';</p>
+      <p>var b = a;</p>
+      <p>/Equivalent to:</p>
+      <p>var a, b = a = 'A';</p>
+      <p>Be aware of the order:</p>
+      <p>var x = y, y = 'A';</p>
+      <p>console.log(x + y);/undefinedA</p>
+      <p>Here, x and y are proclaimed before any code is executed, the assignments happen later. At the time "x = y" is assessed, y exists so no ReferenceError is tossed and its esteem is 'undefined'. Along these lines, x is allocated the unclear esteem. At that point, y is appointed an estimation of 'A'. Subsequently, after the primary line, x === unclear &amp;&amp; y === 'A', consequently the outcome.</p>
     <!-- Add more for suceeding paragraphs -->
     <h4>INITIALIZATION OF MANY VARIABLES</h4>
-    <p><!-- Place program here. Please put it in a way that it would look the same as how is it given. Add more p tags if needed. --></p>
+    <p>var x = 0;</p>
+    <img src="function f.PNG" alt="sample code" class="img-responsive">
+    <p>console.log(x, y); // Throws a ReferenceError in strict mode (y is not defined). 0, 1 otherwise.</p>
+    <p>// In non-strict mode:</p>
+    <p>// x is the global one as expected</p>
+    <p>// y leaked outside of the function, though!</p>
     <h4>IMPLICIT GLOBALS AND OUTER FUNCTION SCOPE</h4>
-    <p><!-- Place program here. Please put it in a way that it would look the same as how is it given. Add more p tags if needed. --></p>
+    <p>Variables that seem, by all accounts, to be certain globals might be references to variables in an outer function scope</p>
+    <p>var x = 0;  // x is declared global, then assigned a value of 0</p>
+    <p>console.log(typeof z); // undefined, since z doesn't exist yet</p>
+    <img src="function a.PNG" alt="sample code" class="img-responsive">
+    <p>console.log(x, y);   // 0 2</p>
+    <img src="function b.PNG" alt="sample code" class="img-responsive">
     </div>
     <div id="linking" class="tab-pane fade in">
     <ol>
@@ -398,6 +431,7 @@
 
     </div>
     <div id="ref" class="tab-pane fade in">
+        <p class="wb">nmve et al. var-JavaScript. (April 7, 2017) Retrieved at: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/var</p>
         <p class="wb">linnemann et al. let-JavaScript. (April 7, 2017) Retrieved from: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let</p>
         <p class="wb">Mills, C.D., (2017, March 15). “What is JavaScript, really?”. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics.</p>
         <p class="wb">Wiley. (16 July 2016). “What is JavaScript?” .Retrieved from https://en.wikipedia.org/wiki/JavaScript.</p>
