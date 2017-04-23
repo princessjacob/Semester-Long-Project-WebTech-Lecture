@@ -193,7 +193,46 @@
     </div>
     <div id="big" class="tab-pane fade in">
     <h3>FUNCTIONS</h3>
-    <p><!-- Place def here --></p>
+    <p>The Function creates a new Function object. Every function in JavaScript is actually a Function object. It is less efficient than declaring a function with a function expression or function statement and it is used when calling it in to the code because this function are parsed in the rest of the code.</p>
+    <p>The syntax for the function is:</p>
+    <p>new Function ([ args1 [ , args2 [,…..argsN]],] functionBody )    //used for declaring a function</p>
+    <p>For example:</p>
+    <p>var adder = new Function('a', 'b', 'return a + b');</p>
+    <ul>
+        <li>args1 ,args2, …argsN</li>
+            <p>This is names to be used by the function as formal argument names. These parameters must be a string that resembles to a valid JavaScript identifier or a list.</p>
+        <li>functionBody</li>
+            <p>It is a string which contains the JavaScript statements which comprise the function definition.</p>
+            <p>There are properties and methods of Function</p>
+    </ul>
+    <h3>PROPERTIES OF FUNCTIONS</h3>
+    <ul>
+      <li>Function.arguments</li>
+        <p>This is an array which corresponds to the arguments passed to a function. This property of Function is already deprecated.</p>
+      <li>Function.caller</li>
+        <p>This is used to specifies the function that invoked the currently executing a function.</p>
+      <li>Function.length</li>
+        <p>This is used to specify the number of arguments as expected by the function.</p>
+      <li>Function.name</li>
+        <p>This is used to name the function.</p>
+      <li>Function.displayName</li>
+        <p>This is used to display the name of the function.</p>
+    </ul>
+    <h3>METHODS OF FUNCTIONS</h3>
+    <ul>
+      <li>Function.prototype.apply()</li>
+        <p>This calls  the function and sets its this to the provided value, arguments that can be passed as an Array object.</p>
+      <li>Function.prototype.bind()</li>
+        <p>This method creates a new function which, when called, has its this set to the value that is provided, with a given sequence of argument preseding any provided when the new function is called.</p>
+      <li>Function.prototype.call()</li>
+        <p>Calls and executes a function and sets its this to the provided value, arguments can be passed as they are.</p>
+      <li>Function.prototype.isGenerator()</li>
+        <p>Returns true if the function is a generator otherwise returns false.</p>
+      <li>Function.prototype.toSource()</li>
+        <p>Returns a string which represents the source code of the function. Overrides the Object.prototype.toSource method.</p>
+      <li>Function.prototype.toString()</li>
+        <p>Returns a string which represents the source code of the function. Overrides the Object.prototype.toString method.</p>
+    </ul>
     <!-- Add more p tags for succeeding paragraphs -->
     <h3>PROPERTIES OF OBJECTS</h3>
     <ul>
@@ -431,6 +470,14 @@
 
     </div>
     <div id="ref" class="tab-pane fade in">
+        <p class="wb">Mozilla Developer Network. (n.d.). Function - JavaScript | MDN. Retrieved from http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function</p>
+        <p class="wb"></p>
+        <p class="wb"></p>
+        <p class="wb"></p>
+        <p class="wb"></p>
+        <p class="wb"></p>
+        <p class="wb"></p>
+        <p class="wb"></p>
         <p class="wb">nmve et al. var-JavaScript. (April 7, 2017) Retrieved at: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/var</p>
         <p class="wb">linnemann et al. let-JavaScript. (April 7, 2017) Retrieved from: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let</p>
         <p class="wb">Mills, C.D., (2017, March 15). “What is JavaScript, really?”. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics.</p>
