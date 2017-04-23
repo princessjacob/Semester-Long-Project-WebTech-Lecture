@@ -457,21 +457,78 @@
     <p><!-- Parameter here --></p>
     <p><!-- Place param descript here --></p>
     <h3>ERRORS</h3>
-    <p><!-- Place def here --></p>
+    <p>This constructor creates an error object. It can be used as a base object for the user-defined exceptions.</p>
+    <h4>new Error([message[, fileName[, lineNumber]]])</h4>
     <!-- Add more p tags for succeeding paragraphs -->
     <h3>ERROR TYPES</h3>
-    <p><!-- Place def here --></p>
+    <p>There are six other types of error constructor.</p>
     <h4><!-- error header here--></h4>
     <ul>
-        <li><!-- Error type here --></li>
-            <p><!-- Place def here --></p>
+        <li>EvalError</li>
+            <p>This type of Error creates an instance representing an error that occurs regarding the global function eval().</p>
+        <li>InternalError</li>
+            <p>This type of Error creates an instance representing an error that occurs when an internal error in the JavaScript engine is thrown. E.g. "too much recursion".</p>
+        <li>RangeError</li>
+            <p>This type of Error creates an instance representing an error that occurs when a numeric variable or parameter is outside of its valid range.</p>
+        <li>ReferenceError</li>
+            <p>This type of Error creates an instance representing an error that occurs when de-referencing an invalid reference.</p>
+        <li>SyntaxError</li>
+            <p>This type of Error creates an instance representing a syntax error that occurs while parsing code in eval().</p>
+        <li>TypeError</li>
+            <p>This type of Error creates an instance representing an error that occurs when a variable or parameter is not of a valid type.</p>
+        <li>URIError</li>
+            <p>This type of Error creates an instance representing an error that occurs when encodeURI() or decodeURI() are passed invalid parameters.</p>
+    </ul>
+    <h4>Properties</h4>
+    <ul>
+      <li>Error.prototype</li>
+        <p>This property allows the addition of properties to Error instances.</p>
+      <li>Methods</li>
+        <p>This global Error object doesn’t have its own methods.</p>
+        <p>Error instances</p>
+        <p>Properties</p>
+    </ul>
+    <h4>Standard properties</h4>
+    <ul>
+      <li>Error.prototype.constructor</li>
+        <p>This property specifies the function that created an instance's prototype.</p>
+      <li>Error.prototype.message</li>
+        <p>This property displays an error message.</p>
+      <li>Error.prototype.name</li>
+        <p>This property displays an Error name.</p>
+    </ul>
+    <h4>Non-standard</h4>
+      <p>Microsoft</p>
+    <ul>
+      <li>Error.prototype.description</li>
+        <p>This property displays an error description. Similar to message.</p>
+      <li>Error.prototype.number</li>
+        <p>This property displays the error number.</p>
+    </ul>
+    <p>Mozilla</p>
+    <ul>
+      <li>Error.prototype.fileName</li>
+        <p>This property displays the path to file that raised this error.</p>
+      <li>Error.prototype.lineNumber</li>
+        <p>This property displays the line number in file that raised this error.</p>
+      <li>Error.prototype.columnNumber</li>
+        <p>This property displays the column number in line that raised this error.</p>
+      <li>Error.prototype.stack</li>
+        <p>This property displays the stack trace.</p>
+    </ul>
+    <h4>Methods</h4>
+    <ul>
+      <li>Error.prototype.toSource()</li>
+        <p>This method returns a string containing the source of the specified Error object; you can use this value to create a new object. Overrides the Object.prototype.toSource() method.</p>
+      <li>Error.prototype.toString()</li>
+        <p>This method returns a string representing the specified object. Overrides the Object.prototype.toString() method.</p>
     </ul>
     <!-- Use this for the following error headers-->
 
     </div>
     <div id="ref" class="tab-pane fade in">
         <p class="wb">Mozilla Developer Network. (n.d.). Function - JavaScript | MDN. Retrieved from http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function</p>
-        <p class="wb"></p>
+        <p class="wb">Mozilla Developer Network.  (n.d.). Error - JavaScript | MDN. Retrieved from http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/error</p>
         <p class="wb"></p>
         <p class="wb"></p>
         <p class="wb"></p>
