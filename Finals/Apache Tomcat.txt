@@ -1,0 +1,15 @@
+﻿Apache Tomcat
+	- The Apache Tomcat® software is an open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies.
+	- Tomcat originated as a Sun Microsystems project, with the goal of providing an example implementation of Sun's newly created Java Servlet and JSP specifications. Sun developed Tomcat internally through Tomcat 2.x. In 1999, the project was donated to the Apache Software Foundation, where it was developed under the Jakarta project, the Apache group responsible behind the original versions of many widely used top-level projects such as Struts, Ant, and Maven. In 2005, members of Jakarta realized that Tomcat had become widely used enough to merit its own top-level project. Since becoming a separate project, Tomcat has been developed through version 6.x. A beta of the next version of the project, Tomcat 7, was released in July 2010.
+
+Features of Apache Tomcat
+1. Fast and light
+2. Flexible and Scalable
+3. Secure
+
+	
+
+
+REFERENCE:
+
+"Apache Tomcat - Welcome!". Apache Tomcat. The Apache Software Foundation. 2017-04-18. Retrieved 2017-04-26.
