@@ -1,0 +1,116 @@
+JAVASERVER PAGESthe
+JSP stands for JavaServer Pages.
+JavaServer Pages (JSP) is a technology which provides a simplified and fast way to create a web content. The JSP technology has a rapid development of web based applications that are server and platform-independent. 
+It is a server-side programming technology which enables the creation of the dynamic and platform-independent method in building a web-based application. 
+
+In using JSP, the first thing to do is to set up the environment in order to start with JSP.
+In setting up the environment, there are several steps to do it.
+Download the SDK from the Oracle’s Java site – Java SE Download.
+Install and configure the set up.
+After configuring the set up, set the path PATH and JAVA _HOME environment variables in order to refer to the directory that contains java and javac.
+If you are running the windows and after installing the SDK in C:\jdk1.5.0_20, you need to add this lines in the C:\autoexec.bat file.
+set PATH = C:\jdk1.5.0_20\bin;%%PATH%
+set JAVA_HOME = C:\jdk1.5.0_20
+	After setting up the environment, now set up a web server, Tomcat.
+Apache Tomcat is an open source software implementation of the JavaServer Pages and Servlet technologies and can act as a standalone server for testing JSP and Servlets, and can be integrated with the Apache Web Server.
+
+Steps:
+Download the latest version of Apache Tomcat from https://tomcat.apache.org/.
+Once you downloaded the installation, unpack the binary distribution into a convenient location. For example, in C:\apache-tomcat-5.5.29 on windows, or /usr/local/apache-tomcat-5.5.29 on Linux/Unix and create CATALINA_HOME environment variable pointing to these locations.
+After setting up the web server, setuo now the CLASSPATH.
+	If you are running Windows, you need to put the following lines in your C:\autoexec.bat file.
+		set CATALINA = C:\apache-tomcat-5.5.29
+       set CLASSPATH = %CATALINA%\common\lib\jsp-api.jar;%CLASSPATH%
+	NOTE ? Assuming that your development directory is C:\JSPDev (Windows) or /usr/JSPDev (Unix), then you would need to add these directories as well in CLASSPATH.
+
+There are elements of JSP
+1. The Scriplet
+This contains any number of JAVA language statements, variable or method declarations, or expressions that are valid in the page scripting language.
+
+Syntax: 
+	<% code fragment %>
+
+Or 
+	<jsp:scriptlet>
+ 		code fragment
+       </jsp:scriptlet>
+
+	For example:
+	<html>
+       <head>
+       <title>Hello World</title>
+       </head>
+   
+   	<body>
+     		 Hello World!<br/>
+     	 <%
+         		out.println("Your IP address is " + request.getRemoteAddr());
+     	 %>
+   	</body>
+       </html>
+       
+       JSP Declarations
+       	A declaration declares one or more variables or methods that you can use in Java code later in the JSP file. You must declare the variable or method before you use it in the JSP file.
+       
+       Syntax:
+       <%! declaration; [ declaration; ]+ ... %>
+       
+       Or 
+       
+       <jsp:declaration>
+          code fragment
+       </jsp:declaration>
+       
+       For example:
+       <%! int i = 0; %> 
+       <%! int a, b, c; %> 
+       <%! Circle a = new Circle(2.0); %>
+       
+       JSP Expression
+       A JSP expression element contains a scripting language expression that is evaluated, converted to a String, and inserted where the expression appears in the JSP file.
+       
+       Syntax:
+       <%= expression %>
+       
+       Or 
+       
+       <jsp:expression>
+          expression
+       </jsp:expression>
+       
+       For example:
+       <html> 
+          <head><title>A Comment Test</title></head> 
+          
+          <body>
+             <p>Today's date: <%= (new java.util.Date()).toLocaleString()%></p>
+          </body> 
+       </html>
+       
+       JSP Comments
+       JSP comment marks text or statements that the JSP container should ignore. A JSP comment is useful when you want to hide or "comment out", a part of your JSP page.
+       
+       Syntax:
+       <%-- This is JSP comment --%>
+       
+       For example:
+       < html> 
+          <head><title>A Comment Test</title></head> 
+          
+          <body> 
+             <h2>A Test of Comments</h2> 
+             <%-- This comment will not be visible in the page source --%> 
+          </body> 
+       </html>
+       
+       JSP Directives
+       A JSP directive affects the overall structure of the servlet class. It usually has the following form. 
+       
+       Syntax:
+       <%@ directive attribute="value" %>
+       
+       JSP Actions
+       JSP actions use constructs in XML syntax to control the behavior of the servlet engine. You can dynamically insert a file, reuse JavaBeans components, forward the user to another page, or generate HTML for the Java plugin.
+       
+       Syntax:
+       <jsp:action_name attribute="value" />
