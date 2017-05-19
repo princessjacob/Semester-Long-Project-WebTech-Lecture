@@ -1,0 +1,76 @@
+Servlets
+
+	- Java Object based on the Servlet API
+	- Runs in a server application to answer client requests; technically, 	  servlets are not tied to a specific client-server protocol, but they are most 		  commonly used with HTTP and the term „servlet? is often used 	  in the context of an “HTTP Servlet”
+	- Web-tier components in the Java EE architecture.
+	- Runs in, and is managed by, a web-tier container called the „Servlet 	  Container?
+	- Mapped to URLs to which clients send requests
+	- Typically asked with (among other things)
+		o Processing and/or storing data submitted vial HTML forms
+		o Generating dynamic content
+	- javax.servlet
+		o Servlet, GenericServlet
+		o ServletRequest, ServletResponse
+		o ServletConfig, ServletContext
+		o RequestDispatcher
+	- javax.servlet.http
+		o HttpServlet
+		o HttpServletRequest
+		o HttpServletResponse
+		o HttpSession
+		o Cookie
+	- Servlet Processing
+		o Client sends a request to a web server URL that is mapped to a servlet. Web server passes on the request to the servlet container
+		o Servlet container checks if servlet is already loaded
+		o If it is not yet loaded, servlet container loads the servlet class and instantiates the servlet, and calls its init method.
+		o Servlet container invokes the servlet?s service method, passing request and response objects as arguments
+		o Servlet processes the request using the response object to create the response, which is returned by the servlet container to the web server, which 		  in turn sends the response to the client
+		o Subsequent request to the servlet will not require servlet re-instantiation, unless the servlet has been unloaded; before a servlet is unloaded, the 		  servlet container invokes its destroy method.
+	- init(config)
+		o Invoked once on the servlet by the servlet container when the servlet is instantiated; can be used by the servlet for one-time startup initialization
+	- service(request, response)
+		o Invoked each time the servlet is called upon to process a request (typically on a separate thread for each call)
+		o In HttpServlet, the default Service implementation maps the call to a specific doXXX() method (e.g. doGet, doPost) which is typically overridden to affect the servlets functionality
+	- Destroy()
+		o Invoked on the servlet by the servlet container when the servlet is to be unloaded (e.g. when the application is stopped or undeployed); can be used 		  by the servlet for clean-up processing (e.g. resource deallocation)
+	- Servlet Request Processing (HttpServletRequest)
+		o Retrieving user-supplied request parameters
+		o Retrieving request header values
+	- Servlet Response Processing (HttpServletResponse)
+		o Setting response status code
+		o Setting response headers
+		o Obtaining output object for sending the response
+	- Servlet Request Dispatching (RequestDispatcher)
+		o Obtain a RequestDispatcher to a resource (static or dynamic) from the request object
+
+		RequestDispatcher rqstDsp;
+		rqstDsp = request.getRequestDispatcher(res);
+
+		o Include the dispatcher resource (or its output) in the current response; one or more resources can be included (e.g. use for banners, footers, etc.)
+
+		rqstDsp.include(request, response);
+
+		o Forwards the processing of the current request to the dispatcher resource; the servlet processing the current 		  		  		  request must not generate a response ( e.g. use in MVC “controller” servlets)
+
+		rqstDsp.forward(request, response);
+
+	- Session Tracking(HttpSession)
+		o Session tracking support is implemented either cookies or 		  URL-rewriting
+		o Obtaining session object from the current request
+
+		HttpSession session;
+		session = request.getSession(createNew);
+
+		o Obtaining session information (HttpSession)
+	- getCreationTime(), getLastAccessedTime(), getMaxInactiveInternal(), 	  getId(), isNew(), setMaxInactiveInterval(int val)
+		o destroying sessions
+	- invalidate()
+		o URL-rewriting(HttpServletResponse)
+	- encodeURL(String url), encodeRedirectURL(String url)
+
+REFERENCES:
+
+"Servlet (Java(TM) EE 7 Specification APIs)". oracle.com. Retrieved 22 November 2016.
+
+"Servlet Tutorial". www.javatpoint.com. Retrieved 19 May 2017.
+Java Servlets. Jakob Jenkov. http://tutorials.jenkov.com. Retrieved 2014-05-25.
