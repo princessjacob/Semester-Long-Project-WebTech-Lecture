@@ -1,0 +1,36 @@
+SERVER-SIDE SCRIPT BASICS
+
+ > Runs on a server, embedded in the site’s code
+ > Designed to interact with back-end permanent storage, like databases, and process information from the server to access the database—like a direct line from user to database
+ > Facilitates the transfer of data from server to browser, bringing pages to life in the browser, e.g., processing and then delivering a field that a user requests or submits in a form
+ > Runs on-call. When a webpage is “called up,” or when parts of pages are “posted back” to the server with AJAX, server-side scripts process and return data
+ > Powers functions in dynamic web applications, such as user validation, saving and retrieving data, and navigating between other pages
+ > Plays a big role in how a database is built from the ground up and managed afterwards—an example of how roles often overlap in all aspects of development
+ > Build application programming interfaces (APIs), which control what data and software a site shares with other apps
+
+SERVER-SIDE CODE AND DATABASES
+
+	How it works: If a database is a site’s library, server-side scripting processes what the user is looking for via the server, then locates the book, chapter, page, and exact line of data, delivering that information back to the browser. It’s designed to be smooth, fast, and seamless.
+
+	This is all possible through the server-side software and middleware your back-end developer writes, which create a tailored channel from site to database. Information for your site resides on the server until it’s requested, which makes your site both fast and secure.
+
+POPULAR SERVER-SIDE LANGUAGES
+
+ > PHP: The most popular server-side language on the web, PHP is designed to pull and edit information in the database. It’s most commonly bundled with databases written in the SQL language. PHP was designed strictly for the web and remains one of the most widely used languages around. It’s easy to install and deploy, is staying competitive with lots of modern frameworks, and is the foundation for a number of content-management systems. PHP-powered sites: WordPress, Wikipedia, Facebook
+ > Python: With fewer lines of code, the Python programming language is fast, making it ideal for getting things to market quickly. The emphasis is on readability and simplicity, which makes it great for beginners. It’s the oldest of the scripting languages, is powerful, and works well in object-oriented designs. Python-powered sites: YouTube, Google, The Washington Post
+ > Ruby: If you’re expecting complicated logic on the database side of your site, the Ruby programming language is an excellent option. Unlike Python, Ruby is equal parts simplicity and complexity, pairing simple code with more flexibility and extra tools. Ruby bundles the back end with database functionality that PHP and SQL can offer as a pair—it’s great for startups, easy maintenance, and high-traffic demands. It requires developers to use the Ruby on Rails framework, which has vast libraries of code to streamline back-end development. Ruby-powered sites: Hulu, Twitter (originally), Living Social, Basecamp
+ > C#: The language of Microsoft’s .NET Framework—the most popular framework on the web—C# combines productivity and versatility by blending the best aspects of the C and C++ languages. It’s excellent for developing Windows applications, and can be used to build iOS, Android mobile apps with the help of a cross-platform technology like Xamarin.
+ > C++: Great for complex applications also built on the .NET Framework, the C++ programming language is a difficult but high-powered language that works well for data-heavy sites. Speed is central to C++, and it runs well alongside other languages like Java and Python.
+ > Java: A subset of the C language, Java comes with a huge ecosystem of add-on software components. At its core, Java is a variation of C++ with an easier learning curve, plus, it’s platform independent thanks to the Java Virtual Machine. “Compile once, run anywhere” is its motto—and it’s excellent for enterprise-level applications, high-traffic sites, and Android apps. Java sites: Twitter, Verizon, AT&T, Salesforce
+ > Erlang: A general-purpose programming language, Erlang is also a concurrent language, which means several processes can run simultaneously on the language-level without external library support. It’s used in the LYME and LYCE stacks, numerous CMS and databases, GitHub, Facebook chat, and Goldman Sachs, supporting its high-frequency trading requirements.
+
+…AND THEIR SERVER-SIDE FRAMEWORKS
+
+ > Ruby on Rails: This Ruby framework is the overriding way to implement Ruby. Its “gems” include plug-ins and libraries of code that streamline development.
+ > ASP.NET: This Microsoft framework is the most popular enterprise-level framework—it supports multiple programming languages simultaneously for one project. So, the same application can be built with both C# and C++, via CLI (common language interface). It’s most recent iteration, ASP.NET 5, is now open to non-Windows platforms for the first time.
+ > Django: This Python framework was developed to meet the needs of development in a fast-paced environment. Django sites: Pinterest, Nasa, Pitchfork
+ > Node.js: JavaScript is typically a front-end script, but with the Node.js framework, it can be used in server-side technology, from APIs to entire stacks. Its core selling point is how it handles client-server communication—it’s fast, doesn’t bottleneck, and is ideal for real-time apps like chat rooms, data-heavy applications, and any software that requires the streaming of fresh content, like a news feed. Node.js sites: Dow Jones, PayPal, LinkedIn
+ > Express.js & Koa: These JavaScript-powered middleware frameworks work on top of the Node.js development environment and control the flow of information on the back end of a site.
+
+References:
+Wodehouse C. Server-Side Scripting: Back-End Web Development Technology. Retrieved from https://www.upwork.com/hiring/development/server-side-scripting-back-end-web-development-technology/
