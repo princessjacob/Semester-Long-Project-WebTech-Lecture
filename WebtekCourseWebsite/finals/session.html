@@ -38,14 +38,32 @@
   <a href="../index.html" class="btn btn-info" role="button">RETURN HOME</a>
   <h2 class = "titleHeader">SESSION HANDLING</h2>
     <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#definition">Definition</a></li>
+    <li class="active"><a data-toggle="tab" href="#definition">A web session is a sequence of network HTTP request and response transactions associated to the same user. Modern and complex web applications require the retaining of information or status about each user for the duration of multiple requests. Therefore, sessions provide the ability to establish variables – such as access rights and localization settings – which will apply to each and every interaction a user has with the web application for the duration of the session.
+Web applications can create sessions to keep track of anonymous users after the very first user request. An example would be maintaining the user language preference. Additionally, web applications will make use of sessions once the user has authenticated. This ensures the ability to identify the user on any subsequent requests as well as being able to apply security access controls, authorized access to the user private data, and to increase the usability of the application. Therefore, current web applications can provide session capabilities both pre and post authentication.
+Once an authenticated session has been established, the session ID (or token) is temporarily equivalent to the strongest authentication method used by the application, such as username and password, passphrases, one-time passwords (OTP), client-based digital certificates, smartcards, or biometrics (such as fingerprint or eye retina).</a></li>
+    
+  <h2>HTTP Cookies:</h2>
+  <p>An HTTP cookie (web cookie, browser cookie) is a small piece of data that a server sends to the user's web browser, that may store it and send it back together with the next request to the same server. Typically, it's used to know if two requests came from the same browser allowing to keep a user logged-in, for example. It remembers stateful information for the stateless HTTP protocol.</p>
+  <p>Cookies are mainly used for these three purposes:</p>
+<ol>
+	<li>Session management (user logins, shopping carts)</li>
+	<li>Personalization (user preferences)</li>
+	<li>Tracking (analyzing user behavior)</li>
+<p>Cookies have also been used for general client-side storage. While this use could have been considered legitimate at a time when there was no other way to store data on the client side, it is no longer the case nowadays where web browsers are capable of using various storage APIs. Since cookies are sent along with every request, it can be an additional performance burden (especially for mobile web). New APIs to consider for local storage are the Web storage API (localStorage and sessionStorage) and IndexedDB.</p>
+<p>Event Listener:</p>
+<p>An event listener is a procedure or function in a computer program that waits for an event to occur; that event may be a user clicking or moving the mouse, pressing a key on the keyboard, or an internal timer or interrupt. The listener is in effect a loop that is programmed to react to an input or signal.</p>
+<p>Typically, the term event listener is specific to Java and JavaScript. In other languages, a subroutine that performs a similar function is referred to as an event handler.</p>
     <li><a data-toggle="tab" href="#ref">References</a></li>
+<p class="wb">Session Management Cheat Sheet. Retrieved from https://www.owasp.org/index.php/Session_Management_Cheat_Sheet</p>
+<p class="wb">HTTP Cookies. Retrieved from https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</p>
+<p class="wb">Event Listener. Retrieved from https://www.computerhope.com/jargon/e/event-listener.htm</p>
   </ul>
   <div class="tab-content">  <!-- Place definition and HTML versions here -->
         <div id="definition" class="tab-pane fade in active">
         </div>
         <div id="ref" class="tab-pane fade">
             <p class="wb"></p>
+
         </div>
     </div>
 </div>
