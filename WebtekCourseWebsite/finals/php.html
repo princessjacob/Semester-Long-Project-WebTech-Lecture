@@ -10,6 +10,9 @@
 
     <title>WEBTEK | PHP</title>
 
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+
     <!-- Overwrite CSS -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 
@@ -45,10 +48,115 @@
   </ul>
   <div class="tab-content">  <!-- Place definition and HTML versions here -->
         <div id="definition" class="tab-pane fade in active">
+            <p>
+                PHP(Hypertext Preprocessor) is an embedded scripting language in an HTML of a Web page. PHP is commonly used in server side scripting.
+            </p>
+            
+           
+            
+
         </div>
         <div id="ex" class="tab-pane fade">
+            <p>
+                In order to create a PHP script, we must first open a text editor where we can encode our script such as Sublime Text, Notepad and etc. PHP script is enclosed with a start and an end tag.
+            </p>
+            <p>
+                <img src="../img/phpimg/php1.png">
+            </p>
+             <p>
+                After we create our PHP script, we must place it inside our HTML code on where we want to place it, or we can just directly code our php script inside the HTML code.
+            </p>
+            <p>
+                <img src="../img/phpimg/php2.png">
+            </p>
+            <p>
+                All PHP statements must end with a semi-colon (;).
+            </p>
+            <p>
+                In the server-side scripting, in order for our PHP script to run, we must run the wampserver, open its directory, and place the file inside the “www” folder. The file that contains the PHP script must have a .php file extension.
+            </p>
+            <p>
+                PHP also have its comments.
+            </p>
+            <p>
+                <img src="../img/phpimg/php3.png">
+            </p>
+            <p>
+                We can also connect to the database using PHP. 
+            </p>
+            <p>
+                <img src="../img/phpimg/php4.png">
+            </p>
+            <p>Wherein:</p>
+                <ul>
+                    <li>
+                        <p>“localhost” = might be an IP address or localhost itself.</p>
+                    </li>
+                    <li>
+                        <p>“username” = username to access database</p>
+                    </li>
+                    <li>
+                        <p>“password” = password of the database</p>
+                    </li>
+                    <li>
+                        <p>“database name” = name of the database(schema) we are connecting to</p>
+                    </li>
+                </ul>
         </div>
         <div id="sg" class="tab-pane fade">
+            <p>
+                Superglobals are PHP’s predefined variables. It means that they will always be accessible in spite of scope. We can also access the Superglobals from any function, file, class, or without doing anything special.
+            </p>
+            <p>
+                Superglobals variables of PHP:
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        $_GLOBALS – it is used to access global variables anywhere in a PHP script
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        $_SESSION  - this variable retrieves from the session that we open at each page’s beginning.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        $_REQUEST – it is used in collecting data after submitting HTML form.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        $_FILES – this variable is populated with uploaded file’s useful information.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        $_SERVER – this PHP superglobal variable holds the information about script locations, headers and paths
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        $_POST – widely used superglobal variable that is used in collecting data after submitting HTML form and is also used widely to pass variables.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        $_GET – same function with the $_POST variable and can also collect data that was sent in the URL.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        $_ENV – this superglobal variable gets the environment variable’s value.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        $_COOKIE – this superglobal variable handles a cookie in PHP. Cookie is used to identify a user.
+                    </p>
+                </li>
+            </ul>
         </div>
         <div id="ref" class="tab-pane fade">
         </div>
