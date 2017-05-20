@@ -1,0 +1,265 @@
+#prelims {
+    background-color: #8B008B;
+    width: auto;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+#midterms {
+    background-color: #BA55D3;
+    width: auto;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+#finals {
+    background-color: #DDA0DD;
+    color: black;
+    width: auto;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+#about {
+   background-color: black;
+   width: auto;
+   padding-top: 80px;
+   padding-bottom: 70px;
+}
+
+.tab-content h3 {
+    padding-top: 20px;
+}
+
+.tab-content li {
+    font-size: 1.35em;
+}
+
+.titleHeader {
+  padding-top: 50px;
+}
+
+#glos {
+    background-color: #5E0087;
+    color: white;
+}
+.nav-tabs a{
+    font-size: 1.5em;
+    color: white;
+}
+
+.topics {
+    background-color: #8B008B;
+    width: auto;
+}
+
+.topicsMid {
+    background-color: #BA55D3;
+    width: auto;
+}
+
+.topicsFinal {
+    background-color: #DDA0DD;
+    width: auto;
+}
+
+.tab-pane {
+    background-color: ghostwhite;
+    padding: 2em;
+    color: black;
+}
+
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* Slider for Main Page */
+
+#caption {
+  background: #FAFAFA;
+  margin: 0;
+  padding: 2em;
+  text-align: center;
+  color: black;
+}
+
+.gallery {
+  background: #FAFAFA;
+  padding-bottom: 33.3%;
+  height: 500px;
+  width: auto;
+}
+
+/* inherit size from gallery */
+.gallery .flickity-viewport {
+  position: absolute;
+  width: 100%;
+}
+
+.gallery-cell {
+  width: 500px;
+  height: 500px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+.gallery-cell-1 {
+  width: 500px;
+  height: 500px;
+  margin-right: 10px;
+  background-image: url(../img/homeTopics/net.png);
+  background-repeat: no-repeat;
+}
+
+.gallery-cell-2 {
+  width: 500px;
+  height: 500px;
+  margin-right: 10px;
+  background-image: url(../img/homeTopics/www.jpg);
+  background-repeat: no-repeat;
+}
+
+.gallery-cell-3 {
+  width: 500px;
+  height: 500px;
+  margin-right: 10px;
+  background-image: url(../img/homeTopics/webcsa.png);
+  background-repeat: no-repeat;
+}
+
+.gallery-cell-4 {
+  width: 500px;
+  height: 500px;
+  margin-right: 10px;
+  background-image: url(../img/homeTopics/client.jpg);
+  background-repeat: no-repeat;
+}
+
+.gallery-cell-5 {
+  width: 500px;
+  height: 500px;
+  margin-right: 10px;
+  background-image: url(../img/homeTopics/server.png);
+  background-repeat: no-repeat;
+}
+
+.gallery-cell-6 {
+  width: 500px;
+  height: 500px;
+  margin-right: 10px;
+  background-image: url(../img/homeTopics/http.png);
+  background-repeat: no-repeat;
+}
+
+.gallery-cell-7 {
+  width: 500px;
+  height: 500px;
+  margin-right: 10px;
+  background-image: url(../img/homeTopics/html.png);
+  background-repeat: no-repeat;
+}
+
+.gallery-cell-8 {
+  width: 500px;
+  height: 500px;
+  margin-right: 10px;
+  background-image: url(../img/homeTopics/css3.jpg);
+  background-repeat: no-repeat;
+}
+
+.gallery-cell-9 {
+  width: 500px;
+  height: 500px;
+  margin-right: 10px;
+  background-image: url(../img/homeTopics/javascript.jpg);
+  background-repeat: no-repeat;
+}
+
+.gallery-cell-10 {
+  width: 500px;
+  height: 500px;
+  margin-right: 10px;
+  background-image: url(../img/homeTopics/script.jpg);
+  background-repeat: no-repeat;
+}
+
+.gallery-cell-11 {
+  width: 500px;
+  height: 500px;
+  margin-right: 10px;
+  background-image: url(../img/homeTopics/jsp2.jpg);
+  background-repeat: no-repeat;
+}
+
+.gallery-cell-12 {
+  width: 500px;
+  height: 500px;
+  margin-right: 10px;
+  background-image: url(../img/homeTopics/node.png);
+  background-repeat: no-repeat;
+}
+
+.gallery-cell-13 {
+  width: 500px;
+  height: 500px;
+  margin-right: 10px;
+  background-image: url(../img/homeTopics/php_logo.jpg);
+  background-repeat: no-repeat;
+}
+
+.gallery-cell-14 {
+  width: 500px;
+  height: 500px;
+  margin-right: 10px;
+  background-image: url(../img/homeTopics/security.png);
+  background-repeat: no-repeat;
+}
+
+.gallery-cell-15 {
+  width: 500px;
+  height: 500px;
+  margin-right: 10px;
+  background-image: url(../img/homeTopics/session.png);
+  background-repeat: no-repeat;
+}
+
+.gallery-cell a {
+    padding: 10px;
+    margin: 10px;
+}
+
+.candy{
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 1.5em;
+    display: block;
+    font-size: 2em;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.wb {
+    word-break: break-word;
+}
+
+.candy:hover {
+    background: white;
+    color: black;
+    font-size: 2em;
+}
+
+.groupMem img{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+table {
+    width: 100%;
+}

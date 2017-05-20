@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WEBTEK | CSS</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+
+    <!-- Overwrite CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WEBTEK | CSS</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+
+    <!-- Overwrite CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="../css/grayscale.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="topicsMid" data-spy="scroll" data-target=".navbar-fixed-top">
+<div class="container">
+  <a href="../index.html" class="btn btn-info" role="button">RETURN HOME</a>
+  <h2 class = "titleHeader">CSS</h2>
+    <ul class="nav nav-tabs">
+    <!-- These list items is connected to a specific tab through their id. So the logic is href is equal to the id of one of the tabs. -->
+    <li class="active"><a data-toggle="tab" href="#definition">Definition</a></li>
+    <li><a data-toggle="tab" href="#cssVer">Versions</a></li>
+    <li><a data-toggle="tab" href="#decl">Declarations</a></li>
+    <li><a data-toggle="tab" href="#htmlSt">HTML Stylesheets</a></li>
+    <li><a data-toggle="tab" href="#xhtmlSt">XHTML Stylesheets</a></li>
+    <li><a data-toggle="tab" href="#state">Statements</a></li>
+    <li><a href="cssB.html" class="btn btn-info" role="button">NEXT</a></li>
+  </ul>
+  <div class="tab-content">  <!-- Place definition and HTML versions here -->
+    <div id="definition" class="tab-pane fade in active">
+        <p>
+            CSS or Cascading Style Sheets is used to control the design of a web page. It is used in formatting the style or design of the elements/ attributes that has been implemented in the html or it simply controls on how the content of the HTML document will be presented. In other words, CSS instructs the content of a webpage on how should it look. It is the presentation aspects of structural makup documents like HTML.
+        </p>
+
+        <h3>MAIN CONCEPTS</h3>
+        <p>
+            It was developed by Håkon Wium Lie and Bert Bos. CSS works  with different markup languages popularly with HTML, it is also used in other markup languages like XML and XHTML. CSS files can be created on lots of text editors such as Notepad++, Sublime Text and etc. CSS uses the attributes "class", "id" to manipulate the styles.<br>
+            Example of CSS below:
+        </p>
+        <p>
+            body {
+            font-family: Times New Roman;
+            color: red;
+            font-size: 16px;
+            }
+        </p>
+        <p>
+            CSS was made a specification by the W3C and today allows web developers to alter the layout and appearance of their web pages. W3m or the World Wide Web Consortium was the one who standardized CSS, it allows web developers to change the layout  or how their web page looks. <br>
+            Other concepts: CSS is managed by W3C - Recommendations are created when something is old enough <br>
+        </p>
+        <h3>Types of Style Sheets:</h3>
+            <ol>
+                <li>1. Embedded style sheets</li>
+                <p>
+                    These are style sheets that are part of an HTML document, it is more useful when used in single web  pages.
+                </p>
+                <li>2. External style sheets</li>
+                <p>
+                    The content of  external style sheet looks the same with embedded but they are not included in the HTML page, they are placed in a separate file with an extension file of ".css".
+                </p>
+                <li>3. Inline style sheets</li>
+                <p>
+                    This style sheet is the same with embedded because they are placed inside the HTML document. It is easier to edit styles while using inline style because you can easily edit your style within the document.
+                </p>
+            <ol>
+
+        <h4>CSS FRAMEWORKS</h4>
+            <p>
+                CSS Frameworks are used to make work easier betweek cross-device and cross-browser compatibility. It makes sure that our website will look exactly the same on our devices when we try to access it. Examples of CSS Frameworks are Pure, Bootstrap, Base, Skeleton and many more frameworks.
+            </p>
+            <h5>These are some common CSS Frameworks:</h5>
+            <li>a. Pure</li>
+            <p>
+                - is a frameworks that only include stylesheet files. Pure is a smaller framework that the all set of modules weighing in at only 4.3KB for the one file when gzipped or minified. The modules of Pure framework are Grids, Buttons, Base, Menus,Forms, and Tables.
+            </p>
+            <li>b. Bootstrap</li>
+            <p>
+                - this framework is the most popular and most used CSS framework among all the other CSS frameworks. "Sleek" is what Bootstrap call itself.  It was created by Mark Otto and Jacob Thornton.
+            </p>
+            <li>c. Base</li>
+            <p>
+                - this framework also a responsive CSS framework, not only in CSS but also in HTML. It has a feature it which it ensures that the website will work with all kinds of devices whether it is big or small.
+            </p>
+            <li>d. Skeleton</li>
+            <p>
+                - this framework provides minimal design for websites. Its modules are Buttons, Forms, Layouts and Typographies
+            </p>
+    </div>
+
+    <div id="cssVer" class="tab-pane fade">
+        <h3>CSS 1</h3>
+       <p>It has the basic structure that still uses today such as fonts, backgrounds,
+text alignment, spacing, margins. This is the first version of CSS and it was
+introduced in December 17, 1996. It was recommended by the W3C (World Wide Web Consortium).
+CSS 1 is no longer maintained by the W3C</p>
+       <h3>CSS 2</h3>
+       <p>It has more features such as more powerful selectors, bidirectional text,
+and targeting media types. CSS 2 was published in 1998. The specification
+was developed by W3C and the properties that was added allowed CSS to be used
+for page layout. Same with CSS 1, CSS 2 is no longer maintained by the W3C.</p>
+       <h3>CSS 2.1</h3>
+       <p>CSS 2.1 has all the specifications of CSS 1. It was published in 2011 and the
+co-editor of CSS 2.1 specification was Ian Hickson. It has several properties
+and this is the current accepted standard.
+</p>
+       <h3>CSS 3</h3>
+       <p>It is divided into modules (e.g. Selectors, Box Model, Backgrounds and Borders,
+Text Effects, Animations). The earliest drafts of CSS 3 was published in 1999.
+And this is the latest standard.</p>
+   </div>
+
+    <div id="decl" class="tab-pane fade">
+      <h3>DEFINITION</h3>
+      <p>A CSS Declaration is made up of a property name and a value and it is separated by a
+semicolon (;). And it must appear within a declaration block.</p>
+      <h3>1. Properties</h3>
+      <ol>
+        <li>Shorthand Properties</li>
+          <p>- group the definition of common properties acting on the same theme</p>
+          <p>- set the values of several other CSS properties simultaneously</p>
+          <p>- to specify values for related properties in a single declaration</p>
+        <li>Vendor specific extensions (aka vendor prefixes)</li>
+
+          <p>- browser makers</p>
+          <p>- It release and test browser features. Keywords and property names beginning with – (dash) or _ (underscore).</p>
+        </ol>
+      <h3>2. Values</h3>
+      <ol>
+        <li>Keywords</li>
+          <p>- identifier</p>
+          <p>- mustn’t be surrounded by quotation marks ("")</p>
+        <li>Numbers</li>
+          <p>- Numbers can have an initial - (negative) or + (positive) to indicate its sign. It can be an integer and real numbers in decimal notation.</p>
+      </ol>
+      <h3>3. Lengths</h3>
+      <ol>
+        <p>a. Length and Units</p>
+          <p>Length - comprising a numeric value and a unit only</p>
+          <p>Units -  in which length is measured can be either relative or absolute</p>
+            <p>Relative:</p>
+            <li>a. em</li>
+              <p>- current font size</p>
+              <p>- equal to the font size</p>
+            <li>b. ex</li>
+              <p>- x-height of the current font</p>
+              <p>- height of a lowercase x</p>
+            <li>c. px</li>
+              <p>- pixels</p>
+              <p>- relative to the viewing distance</p>
+              <p>- standard pixel is 0.26mm (1/96 inch) square</p>
+              <p>- must not be used for a tty media type</p>
+        </ol>
+            <p>Absolute:</p>
+        <ol>
+            <li>a. mm</li>
+              <p>- millimeters</p>
+              <p>- SI standard</p>
+            <li>b. cm</li>
+              <p>- centimeters</p>
+              <p>- SI standard</p>
+            <li>c. in</li>
+              <p>- inches</p>
+              <p>- 1 inch = 25.4mm</p>
+            <li>d. pt</li>
+              <p>- point</p>
+              <p>- old typographic measurement</p>
+              <p>- used in print</p>
+              <p>- 1 point = 1/72 inch (o.353mm)</p>
+            <li>e. pc</li>
+              <p>- pica</p>
+              <p>- equal to 12 points</p>
+              <p>- 1/6 inch or 4.23mm</p>
+          </ol>
+        <p>b. Percentages (%)</p>
+          <p>- Whitespace characters mustn’t appear between the number and the % (i.e. 50%). Percentage can be an integer or a decimal number.</p>
+        <p>c. URLs and URIs</p>
+          <ol>
+            <li>a. URL</li>
+              <p>- denotes a pointer to a resource</p>
+              <p>- unquoted or quoted by single or double quotes</p>
+            <li>b. URI</li>
+              <p>- argument for URI is a string that may be enclosed in quotes</p>
+          </ol>
+        <p>d. Counters</p>
+          <p>- Adjust the appearance of content based on its placement in the document.</p>
+          <ol>
+            <li>a. counter-reset</li>
+              <p>- creates or resets a counter</p>
+            <li>b. counter-increment</li>
+              <p>- increments a counter value</p>
+            <li>c. content</li>
+              <p>- inserts generated content</p>
+            <li>d. counter() or counters() function</li>
+              <p>- adds the value of a counter to an element</p>
+          </ol>
+        <p>e. Colors</p>
+          <ol>
+            <li>- RGB (red, green, blue)</li>
+              <p>- Hexadecimal</p>
+              <p>- common format</p>
+              <p>- consists of a # character</p>
+              <p>- i.e. (#09f is the same as #0099ff - red=00, green=99, blue=ff)</p>
+          </ol>
+        <p>Decimal Notation:</p>
+          <ol>
+            <li>RGBA (red,green,blue,alpha)</li>
+              <p>- extension of RGB with alpha channel</p>
+              <p>- alpha parameter</p>
+              <p>a. between 0.0 (fully transparent)</p>
+              <p>b. 1.0 (fully opaque)</p>
+            <li>HSL (hue,saturation,lightness)</li>
+              <p>- hue</p>
+              <p>- degree on the color wheel</p>
+              <p>- 0 (360) - red</p>
+              <p>- 120 - green</p>
+              <p>- 250 - blue</p>
+            <li>Opacity</li>
+              <p>- both background color and text will be opaque/transparent</p>
+              <p>- opacity property</p>
+              <p>a. between 0.0 (fully transparent)</p>
+              <p>b. 1.0 (fully opaque)</p>
+          </ol>
+         <p>f. Strings</p>
+           <ol>
+             <p>- enclosed in double or single quotes ("" or '')</p>
+             <p>- escape it with a backslash character (\)</p>
+           </ol>
+
+
+
+          <!-- Add more for the others -->
+    </div>
+
+    <div id="htmlSt" class="tab-pane fade">
+      <!-- GENERAL STRUCTURE -->
+      <h3>1. Style Sheets:</h3>
+      <p>
+        Style sheets represent a noteworthy leap forward in how Web page developers/designers function, by extending their capacity to enhance the presence of their pages. In the logical conditions in which the Web was considered, individuals are more worried with the substance of their archives than the introduction. As individuals from more extensive strolls of life found the Web, the constraints of HTML turned into a wellspring of proceeding with disappointment. These creators were utilized to paper media where they had full control. They figured out how to evade HTML's expressive confinements. While the aims have been great - to enhance the introduction of Web pages - the systems for doing as such have had terrible symptoms. These systems work for a portion of the general population, as a rule, however never for the greater part of the general population, constantly, They include:
+      </p>
+        <li>&gt;Utilizing restrictive HTML expansions</li>
+        <li>&gt;Changing over content into pictures</li>
+        <li>&gt;Utilizing pictures for white space control</li>
+        <li>&gt;Utilization of tables for page format</li>
+        <li>&gt;Composing a program as opposed to utilizing HTML</li>
+        <p>
+          These procedures impressively increment the many-sided quality of Web pages, have constrained adaptability and in addition experiencing interoperability issues, and making hardships for individuals with inabilities.
+        </p>
+        <p>
+          Style sheets bring back the simplicity of control over introduction, and supersede the constrained scope of introduction instruments added to HTML in the course of the most recent couple of years. Templates make it simple to determine the measure of white space between content lines, the sum lines are indented, the hues utilized for the content and the foundations, the text dimension and style, and a large group of different points of interest.
+        </p>
+
+        <h3>HTML 4.0 offers help for the accompanying elements:</h3>
+        <ol>
+          <li>Adaptable arrangement of Style Information</li>
+            <p>
+              Setting style sheets in independent files makes them easier to reuse. In some cases its helpful to incorporate rendering guidelines inside the archive to which they apply, either gathered toward the begin of the record, or in qualities of the components all through the body of the report. To make it less demanding to oversee style on a site premise, this particular portrays how to utilize HTTP headers to set the templates to be connected to a report.
+            </p>
+
+          <li>Autonomy from particular style sheet languages</li>
+            <p>
+              This detail doesn't attach HTML to a specific style sheet languages. This takes into consideration a scope of such dialects to be utilized, for example basic ones for the dominant part of clients and a great deal more perplexing ones for the minority of clients with very particular needs. The cases included beneath all utilization the CSS (Cascading Style Sheets) dialect [CSS1], yet other style sheets languages would be conceivable.
+            </p>
+
+          <li>Cascading Style Sheets</li>
+            <p>
+              This is the capacity gave by some template dialects, for example, CSS to permit style data from a few sources to be mixed together. For example, corporate style rules, styles basic to a gathering of archives, and styles particular to a solitary report. By putting away these independently, templates can be reused, rearranging composing and making more successful utilization of system storing. The course characterizes a requested grouping of templates where controls in later sheets have more noteworthy priority than prior ones. Not all style sheet languages bolster cascading.
+            </p>
+
+          <li>Media Dependencies</li>
+            <p>
+              HTML permits authors to indicate reports in a media-free manner. This permits clients to get to Web pages utilizing a wide assortment of gadgets and media, e.g., graphical showcases for PCs running Windows, Macintosh OS, and X11, set-best boxes for TVs, uniquely adjusted telephones and PDA based convenient gadgets, discourse based programs, and braille-based strategic gadgets.
+            </p>
+            <p>
+              Style sheets, by differentiation, apply to particular media or media bunches. A style sheet expected for screen utilization, might be pertinent when printing, however is of little use for speech-based browsers. This detail permits you to characterize the general classes of media a given template is relevant to. This permits client operators to abstain from recovering inappropriate style sheets. Style sheet languages may incorporate components for depicting media conditions inside a similar style sheet.
+            </p>
+
+          <li>Alternate Styles</li>
+            <p>
+              Authors may wish to offer readers a few option styles for review an archive. For example, a minimized rendition with little text styles, and one with bigger textual styles for expanded readability. This determination permits you to indicate such options, including which one is the default. Clients ought to be given the chance of choosing between these styles or turning off style sheets by and large.
+            </p>
+
+          <li>Performance Concerns</li>
+            <p>
+              A few people have voiced worries over performance issues for style sheets. For example, recovering an outside style sheet may defer the full introduction for the client. A comparative circumstance emerges if the record head incorporates a long arrangement of style principles.
+            </p>
+            <p>
+              The present proposition addresses these issues by permitting authors to incorporate rendering directions inside every HTML component. The rendering data is then constantly accessible when the client operator needs to render every component.
+            </p>
+            <p>
+              By and large, authors will exploit a typical style sheet for a gathering of archives. For this situation, circulating style runs all through the report will really prompt to more awful execution than utilizing a connected template, since for most archives, the style sheet will as of now be available in the nearby reserve. People in general accessibility of good style sheet will energize this impact.
+            </p>
+        </ol>
+
+        <h3>1.2. Inheritance and Cascading:</h3>
+        <p>
+          At the point when the user agent needs to render an archive, it needs to discover values for style properties, e.g. the textual style family, text style, estimate, line stature, content shading et cetera. The correct component relies on upon the Style sheet language, however the accompanying depiction is by and large material:
+        </p>
+        <p>
+          The cascading mechanism is utilized when various style governs all apply straightforwardly to a component. The mechanism permits the user agent to sort the standards by specificity, to figure out which govern to apply. In the event that no govern can be found, the following stride relies on upon whether the style property can be acquired or not. Not all properties can be acquired. For these properties the template dialect gives default qualities to utilize when there are no unequivocal principles for a specific component.
+        </p>
+        <p>
+          On the off chance that the property can be acquired, the client specialist inspects the instantly encasing component to check whether a decide applies to that. This procedure proceeds until an appropriate administer is found. This instrument permits templates to be determined minimally. For example, you can indicate the textual style family for all components inside the BODY by a solitary decide that applies to the BODY component.
+        </p>
+
+        <h3>1.3. Hiding the Content of Style Elements from non-conforming User Agents</h3>
+        <p>
+          Some style sheet languages bolster syntax planned to permit creators to shroud the substance of STYLE components from non-acclimating user agents.
+        </p>
+        <p>
+          This case shows for CSS how to remark out the substance of STYLE components to guarantee that more established non-adjusting client specialists won't render them as content.
+        </p>
+        <p>
+          &lt;STYLE type="text/css"&gt;
+
+          &lt;!- -
+
+          H1 { shading: red }
+
+          P { shading: blue}
+
+          - &gt;
+
+          &lt;/STYLE&gt;
+        </p>
+
+        <h3>1.4. Specifying style through HTTP headers</h3>
+        <p>
+          Some of the time its helpful to arrange a Web server to indicate the template to be connected to a gathering of pages at a website. The HTTP Link header portrayed in [RFC2068] has an indistinguishable impact from a LINK component with similar properties and qualities. Various Link headers compare to numerous LINK components happening in a similar request. For example,
+        </p>
+        <p>
+          Link: &lt;http://www.acme.com/corporate.css&gt;; REL=stylesheet<br>
+          compares to:<br>
+          &lt;LINK rel="stylesheet" href="http://www.acme.com/corporate.css"&gt;
+        </p>
+        <p>
+          You can indicate a few option styles, utilizing various Link headers, and afterward utilize the rel ascribe to decide the default style.
+        </p>
+        <p>
+          In the accompanying case, "reduced" is connected as a matter of course since it excludes the "substitute" catchphrase for the rel property.
+        </p>
+        <p>
+          Link: &lt;compact.css&gt;; rel="stylesheet"; title="compact"
+        </p>
+        <p>
+          Link: &lt;bigprint.css&gt;; rel="alternate template"; title="big print"
+        </p>
+        <p>
+          This ought to likewise work when HTML reports are being by transported by means of email. Some email operators can adjust the requesting of [RFC822] headers. To secure against this influencing the falling request for style sheets determined by Link headers, you can utilize header connection to blend a few examples of a similar header field. The quote imprints are just required when the property estimations incorporate whitespace. Utilize SGML elements to reference characters that are generally not allowed inside HTTP or email headers, or that are probably going to be influenced by travel through doors.
+        </p>
+        <p>
+          Link and META components inferred by HTTP headers are characterized as happening before any express LINK and META components in the archive's HEAD.
+        </p>
+    </div>
+
+    <div id="xhtmlSt" class="tab-pane fade">
+      <!-- GENERAL STRUCTURE -->
+      <h3>2. XHTML Style Sheet Module</h3>
+        <h4>2.1 style element Attributes</h4>
+        <ol>
+          <li>The Common collection</li>
+          <p>
+            A colection of other characteristic accumulations, including: Core, Events, I18N, Bi-directional, Edit, Embedding, Map, and Hypertext
+          </p>
+          <p>
+            disabled = "disabled"
+          </p>
+          <p>
+            Whenever introduced, this boolean quality makes the present component idle (e.g., an "disabled" style component would have its styles expelled from the dynamic style accumulation).
+          </p>
+          <p>
+            media = MediaDesc
+          </p>
+          <p>
+            The estimation of this characteristic is a comma-isolated rundown of media descriptors for which this get to component is expected. At the point when the estimation of this characteristic matches the present handling media, the related get to component is viewed as dynamic and prepared regularly; else it is latent and overlooked. The default an incentive for this property is all.
+          </p>
+          <p>
+            The style component permits a creator to put template governs in the leader of the record. XHTML allows any number of style components in the head area of a report.
+          </p>
+          <p>
+            User Agents that don't bolster stylesheets, or don't bolster the particular style sheet language utilized by a style component, must conceal the substance of the style component. It is a mistake to render the substance as a major aspect of the report's content.
+          </p>
+          <p>
+            The sentence structure of style information relies on upon the style sheet language.
+          </p>
+          <p>
+            Rules for style govern priorities and legacy rely on upon the style sheet language.
+          </p>
+        </ol>
+
+        <p>Example:</p>
+        <p>
+          &lt;head&gt;
+
+          &lt;style type="text/css"&gt;
+
+          h1 {border-width: thin; fringe style: strong; content adjust: center}
+
+          &lt;/style&gt;
+
+          &lt;/head&gt;
+        </p>
+
+        <h5>2.1.1 External style sheets</h5>
+        <p>
+          Authors may isolate stylesheets from XHTML archives. This offers a few advantages:
+        </p>
+        <li>&gt;Authors and site directors may share stylesheets over various archives (and locales).</li>
+        <li>&gt;Authors may change the template without obliging adjustments to the report.</li>
+        <li>&gt;User Agents may stack stylesheets specifically (in view of media descriptors).</li>
+
+        <h5>2.1.2 Preferred and alternate style sheets</h5>
+        <p>
+          XHTML permits authors to relate any number of outer style sheets with a document. The style sheet language characterizes how numerous outside stylesheets communicate (for instance, the CSS "cascade" rules).
+        </p>
+        <p>
+          Authors may determine various fundamentally unrelated style sheet called alternate style sheets. Clients may choose their most loved among these relying upon their inclinations. For example, a creator may determine one template intended for little screens and another for clients with feeble vision (e.g., vast textual styles). User Agents ought to permit clients to choose from alternate style sheets.
+        </p>
+        <p>
+          The author may determine that one of the exchanges is a favored style sheet. User agents ought to apply the author's favored style sheet unless the client has chosen an alternate substitute.
+        </p>
+        <p>
+          Authors may aggregate a few alternate stylesheets (counting the author's favored style sheet) under a solitary style name. At the point when a client chooses a named style, the user agent must apply all style sheets with that name. User Agents must not have any significant bearing substitute Style sheet with an alternate style name. The area on determining external style sheet discloses how to name a gathering of style sheets.
+        </p>
+
+        <h5>2.1.3 Specifying external style sheets</h5>
+        <p>
+          Authors determine external style sheets with the accompanying properties of the connection component:
+        </p>
+        <ol>
+          <li>
+            Set the estimation of href to the area of the style sheet document. The estimation of href is a URI.
+          </li>
+          <li>
+            Set the estimation of the sort credit to demonstrate the language of the connected (style sheet) asset. This permits the user agent to abstain from downloading a style sheet for an unsupported style sheet language.
+          </li>
+          <li>
+            Determine that the style sheet is industrious, favored, or alternate:
+          </li>
+          <li>
+            To make a style sheet diligent, set the rel credit to "style sheet" and don't set the title trait.
+          </li>
+          <li>
+            To make a style sheet favored, set the rel credit to "style sheet" and name the template with the title trait.
+          </li>
+          <li>
+            To determine an other style sheet, set the rel credit to "alternate style sheet" and name the style sheet with the title property.
+          </li>
+          <li>
+            User agents ought to give a way to clients to view and pick from the rundown of interchange styles. The estimation of the title trait is prescribed as the name of every decision.
+          </li>
+        </ol>
+        <ol>
+          <li>In this case, we first determine a constant template situated in the record mystyle.css:</li>
+          <p>
+            &lt;link href="mystyle.css" rel="stylesheet" type="text/css"/&gt;
+          </p>
+          <li>Setting the title characteristic makes this the creator's favored template:</li>
+          <p>
+            &lt;link href="mystyle.css" title="compact" rel="stylesheet" type="text/css"/&gt;
+          </p>
+          <li>Including the catchphrase "interchange" to the rel trait makes it an other template:</li>
+          <p>
+            &lt;link href="mystyle.css" title="Medium" rel="alternate template" type="text/css"/&gt;
+          </p>
+        </ol>
+        <p>
+          In the event that at least two connection components determine a favored style sheet, the first outweighs everything else.
+        </p>
+    </div>
+
+    <div id="state" class="tab-pane fade">
+      <!-- GENERAL STRUCTURE -->
+      <p>The CSS style sheet consist of a list if statements. The CSS Statement is either an AT RULE or a RULE SET.
+The AT RULE is a CSS statement which has a beginning with a at sign “@” and followed by  an identifier then it includes all until it comes to the next semicolon  . It composed of a semicolon in the ending of the first line. It gives the CSS with instructions to perform or on how to behave.
+    The format for AT RULE CSS statement is:
+        @[keyword] (rule);
+    For example:
+        &lt;style tyle="text/css"&gt;
+            @import "mystyle.css";
+        &lt;/style&gt;</p>
+      <h3>@charset</h3>
+      <p>The @charset is a rule used to define the character set that is used by the browser. The @charset that is placed on the HTTP header will override any @charset rule. This must be located and written at the beginning of the CSS.
+    The syntax for the @charset is:
+        @charset “value”;
+    For example:
+        &lt;style tyle=”text/css”&gt;
+            @charset “UTF-8”;
+        &lt;/style&gt;</p>
+      <h3>@import</h3>
+      <p>The @import a rule that is used to insert in the very top of the document and instructs the stylesheet to request and also to include an external CSS file. It is used to import styles from other stylesheet.
+     The syntax for the @charset is:
+        @import “value”;
+    For example:
+        &lt;style tyle=”text/css”&gt;
+            @import “style.css”;
+        &lt;/style&gt;</p>
+      <h3>@namespace</h3>
+      <p>The @namespace is a rule which is very useful in applying CSS to XML HTML in order for the XHTML elements can be used as a selector in the CSS.
+    The syntax for the @namespace is:
+        @namespace “URL”
+    For example:
+        @namespace url(http://www.webtek.org/xhtml);</p>
+      <h3>@document</h3>
+      <p>The @document is a rule which specifies the conditions for the styles that apply to a specific page.
+    The syntax for the @document is:
+        @document “URL”
+    For example:
+        @document  url(http://webtek.com)</p>
+      <h3>@font-face</h3>
+      <p>The @font-face is a rule which allow to custom fonts on a webpage. It accepts statements which creates and serves those fonts. It is used
+    The syntax for the @font-face is:
+        @font-face { values }
+    For example:
+        @font-face {
+            font-family: “Scarborough Light”;
+            src: url(http://www.webtek.com);
+        }</p>
+      <h3>@keyframes</h3>
+      <p>The @keyframes is a rule which is the basis for the keyframe animations on many CSS properties by the means of allowing us to mark the start and the stop mark for what is being animated.
+    The syntax for the @keyframes is:
+        @keyframes { values }
+    For example:
+        @keyframes pulse {
+            0%{
+                background-color: red;
+            }
+            100%{
+                background-color: blue;
+            }
+        }</p>
+      <h3>@media</h3>
+      <p>The @media is a rule which consist of conditional statements for targeting styles to specific screen.
+    The syntax for the @media is:
+        @media { values }
+    For example:
+        @keyframes only screen
+            and (min-device-width: 340px)
+            and (max-device-width: 500px)
+            and (-webkit-min-device-pixel-ratio: 2){
+                .module { width: 100%; }
+            }
+        }</p>
+      <h3>@page</h3>
+      <p>The @page is a rule which defines the styles that are to individual pages in terms of printing the document. This is composed pseudo-elements for styling the :first page the same as the :left and the :right margins of the page.
+    The syntax for the @page is:
+        @page { values }
+    For example:
+        @page :first {
+            margin: 1.5in;
+        }</p>
+      <h3>@supports</h3>
+      <p>The @supports is a rule that tests whether a browser supports a feature, and then applies the styles for those of the elements if the condition occurred.
+    The syntax for the @supports is:
+        @supports { values }
+    For example:
+        @supports (display: flex) {
+            .module { display: flex; }
+        }</p>
+      <h3>The RULE SET includes a selector then followed by a declaration block.</h3>
+      <p> It applies any declarations that is in the declaration block to all of the tags/elements that is matched by the selector. It is composed of closing curly braces. The rule set is simply called the Rule.</p>
+      <p>For example:
+        h1{
+            color: red;
+            font-weight: bold;
+        }</p>
+
+    </div>
+
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; WEBTEK 2017</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../js/grayscale.min.js"></script>
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>

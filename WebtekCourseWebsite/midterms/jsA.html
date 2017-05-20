@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WEBTEK | JAVASCRIPT</title>
+
+    <!-- Overwrite CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="../css/grayscale.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="topicsMid" data-spy="scroll" data-target=".navbar-fixed-top">
+<div class="container">
+  <a href="../index.html" class="btn btn-info" role="button">RETURN HOME</a>
+  <h2 class = "titleHeader">JAVASCRIPT</h2>
+    <ul class="nav nav-tabs">
+    <!-- These list items is connected to a specific tab through their id. So the logic is href is equal to the id of one of the tabs. -->
+    <li class="active"><a data-toggle="tab" href="#definition">Definition</a></li>
+    <li><a data-toggle="tab" href="#es">ECMAScript</a></li>
+    <li><a data-toggle="tab" href="#dom">DOM</a></li>
+    <li><a data-toggle="tab" href="#doc">Document API</a></li>
+    <li><a data-toggle="tab" href="#navi">Navigator API</a></li>
+    <li><a data-toggle="tab" href="#scr">Screen API</a></li>
+    <li><a data-toggle="tab" href="#win">Window API</a></li>
+    <li><a href="jsB.html" class="btn btn-info" role="button">NEXT</a></li>
+  </ul>
+  <div class="tab-content">  
+    <div id="definition" class="tab-pane fade in active">
+      <ul>
+        <li>Developed circa 1995 by Brendan Eich at Netscape Communications as the scripting language for the Netscape Navigator Browser.</li>
+        <li>Formerly called Mocha, then LiveScript, then JavaScript.</li>
+        <li>Standardized by ECMA International as ECMAScript.</li>
+        <li>Latest version: JavaScipt 1.8.1, ECMAScript 5 [ECMA-262 5th Edition].</li>
+        <li>Common version: JavaScript 1.5, Jscript 5.5, ECMAScript v3 [ECMA-262 3rd Edition]</li>
+        <li><b>JAVASCRIPT FRAMEWORKS: </b>script.aculo.us, jQuery, MooTools, Prototype, Dojo Toolkit, etc.</li>
+        <li>JavaScript + DOM/BOM + CSS + (X)HTML = DHTML</li>
+        <li>JavaScript code in (X)HTML pages can be executed "on the fly" as the document is rendered (i.e. code outside of functions executes as the &lt;script&gt; element is encountered); in most cases though, JavaScript code is executed in response to document events (e.g. clicking a page element).</li>
+      </ul>
+      <h3>BASIC LANGUAGE FEATURES</h3>
+        <ul>
+            <li>Paradigm</li>
+                <p>Object-oriented (prototype-based), functional, imperative scripting language</p>
+            <li>Java-/C-like syntax</li>
+                <p>Implicit semicolon insertion for statement termination; Identifiers are alphanumeric, _, and $ characters; Single-line (//) or block (/**/) comments</p>
+            <li>Type system and variable scoping rules:</li>
+                <p>Dynamic (aka loose or weak) typing and global (aka top-level) or local scopes.</p>
+        </ul>
+      <h3>DATA TYPES</h3>
+        <h4>Primitive types</h4>
+            <ul>
+                <li>Numbers (decimal, hexadecimal notation)</li>
+                <li>Booleans (true, false)</li>
+                <li>Strings (Single or Double quote delimited)</li>
+                <li>Undefined and Null</li>
+            </ul>
+        <h3>COMPOSITE(OBJECT) TYPES</h3>
+        <h4>Core Javascript</h4>
+            <ul>
+                <li>Object, Number, Boolean, String, Date, Math, Global, RegExp, Error</li>
+                <li>Arrays (Array)</li>
+                <li>Functions (Function, Arguments)</li>
+            </ul>
+        <h4>DOM Objects</h4>
+            <p>Anchor, Applet, Attr, Comment, DOMException, DOMImplementation, DocumentFragment, Element, Event, Form, Image, Input, Layer, Link, Node, Option, Select, Style, Text, TextArea</p>
+        <h4>Keywords</h4>
+            <p>break, case, catch, continue, default, delete, do, else, finally, for, function, if, in, instanceof, new, return, switch, this, throw, try, 	typeof, var, void, with</p>
+        <h3>RESERVED WORDS</h3>
+            <p>abstract, Boolean, byte, char, class, const, debugger, float</p>
+        <h3>STATEMENTS AND CONTROL STRUCTURE</h3>
+            <ul>
+                <li>var</li>
+                    <p>Used to declare global/local scoped variables</p>
+                <li>if-else</li>
+                    <p>Condition expressions having values of 0, "", null, and undefined evaluate to false</p>
+                <li>switch-case-default-break</li>
+                    <p>allows any expression type to be used as the switch expression; case labels may be of different types; case labels may be expressions; case execution falls-through, unless terminated by a break</p>
+                <li>while, do-while, for, for-in, break, continue</li>
+                    <p>for while and do-while, false condition expressions similar to if-else; for-in used for property enumeration; allows labeled break/continue</p>
+                <li>try-catch-finally, throw</li>
+                    <p>throw and catch can handle any expression type</p>
+                <li>function, return</li>
+                    <p>JavaScript functions are similar to Java methods except for the following differences:</p>
+                    <ul>
+                        <li>No return value type is specified, and return is optional within the function body.</li>
+                        <li>Functions may return a value on one invocation and not return a value (i.e. have an undefined return value) on another invocation.</li>
+                        <li>Functions may return different types of values on different invocations.</li>
+                        <li>Function parameters are dynamically typed.</li>
+                        <li>Functions can be invoked with an arbitrary number of arguments, regardless of the actual parameters specified in the function definition (the Arguments object can be used to access unnamed arguments passed to the function invocation).</li>
+                        <li>Functions are first-class objects.</li>
+                        <li>Functions can be invoked as global functions (i.e. as methods of the Global object) as methods of specific objects, or as object constructors.</li>
+                    </ul>
+                <li>with</li>
+                    <p>Used to access object properties without having to explicitly qualify the property with the object name (serves as shorthand notation for accessing object properties, at the expense of program readability).</p>
+            </ul>
+    </div>
+    <div id="es" class="tab-pane fade in">
+      <h3>What is ECMAScript?</h3>
+      <p> The official name of Javascript. This is a language standardized by ECMA International. This language is also mainly used for the client-side scripting by coders and also used for server side scripting and Node.js services. The file extension that ECMAScript uses is .es.</p>
+      <h3>History of ECMAScript</h3>
+      <h4>April 27, 1960</h4>
+      <p>In Brussels, the European Computer Manufacturers Association or ECMA and a committee was nominated to prepare for the formation of the Association and to draw up by-law and rules.</p>
+      <h4>December 1960</h4>
+      <p>The headquarters is decided to be moved in Geneva to be near headquarters of the International Standard Organization (ISO) and the International Electrotechnical Commission.</p>
+      <h4>May 17, 1961</h4>
+      <p>The constituent assemply happened as well as the association becoming official with the attendees becoming the official members.</p>
+      <h4>1987</h4>
+      <p>ECMA became A-liasion member of JTC-1 when TC97 became part of ISO/IEC JTC 1.</p>
+      <h4>1994</h4>
+      <p>The name of ECMA was changed to Ecma International - European Association for standardizing information and communication systems.</p>
+      <h4>June 2011</h4>
+      <p>Ecma international celebrated Golden Jubilee while organizing the 101st General Assembly.</p>
+      <h4>Since 2013</h4>
+      <p>ECMA international regularly grants Awards of appreciation to standardization experts.</p>
+      <h3>VERSIONS</h3>
+      <p>There are currently 7 editions of ECMAScript -- with an 8th edition coming underway.</p>
+      <h4>ECMAScript 1</h4>
+      <p>Created on 1997 and by Guy J. Steele. This is the first version of ECMAScript.</p>
+      <h4>ECMAScript 2</h4>
+      <p>Created on 1998 and by Mike Cowlishaw. This is the second version of ECMAScript and is only composed of editorial changes to fully align it with with an ISO standard.</p>
+      <h4>ECMAScript 3</h4>
+      <p>Created on 1999 by Mike Cowlishaw. This is the third version of ECMAScript. This version comprised the langauges core functionalities such as regular expressions, better string handling, new control statments, try/catch exceptions, tighter definition of errors and formatting.</p>
+      <h4>
+ECMAScript 4 (Abandoned)</h4>
+      <p>The fourth version due to language complexity underlying on political differences.</p>
+      <h4>ECMAScript 5</h4>
+      <p>Created on 2009 by Pratap Lakshman and Alen Wirfs-Brock. This version introduced the strict mode, which gives more thorough error checking and avoidance of error-prone constructs. It clarifies ambiguities in the 3rd edition of ECMAScript. It also added getters and setters, JSON library and a more complete reflection on objects.</p>
+      <h4>ECMAScript 5.1</h4>
+      <p>Created on 2011 by the same authors as ECMAScript 5. It is fully aligned with the third edition and conformed with an ISO international standard.</p>
+      <h4>ECMAScript 6</h4>
+      <p>Created on 2015 by Allen Wirfs-Brock. This is initially called as ECMAScript 6 or ES6 but have been later renamed as ECMAScript 2015. It is also known as ES Harmony given as it is the first ECMAScript Harmony. This version included classes and modules as well as some new features such as iterators, for/of loops, Python-style generators, and the like. Most features added gave more functionality to ECMAScript.</p>
+      <h4>ECMAScript 7</h4>
+      <p>Created on 2016 by Brian Terlson. This is the seventh version of ECMAScript. It added functionalities such as exponentation operator and Array.prototype.includes.</p>
+      <h3>BROWSER SUPPORT</h3>
+      <ul>
+        <li>ES 3</li>
+          <p>support for all browsers</p>
+        <li>ES 5</li>
+          <p>fully supported on modern browsers</p>
+        <li>ES 6</li>
+          <p>partially supported on modern browsers</p>
+        <li>ES 7</li>
+          <p>poorly supported on modern browsers</p>
+      </ul>
+    </div>
+    <div id="dom" class="tab-pane fade in">
+      <h3>LEVEL 1</h3>
+      <p>It was introduced in 1998 by W3C.
+Provided a complete model for an entire HTML or XML document, it
+includes to change any portion of the document.
+It defines <html> tag as a special element node, called as the document
+element. The most common object types of DOM Level 1 are document, element, attr
+and text. The DOMImplementation is an object class that provides access to Document creation
+methods.</p>
+      <h3>LEVEL 2</h3>
+      <p>The DOM Level 2 specification contains six different specifications: The DOM2 Core, Views, Events, Style, Traversal and Range, and the DOM2 HTML. Most of the DOM Level 2 is supported in Mozilla.</p>
+      <p>The DOM2 Core extends the functionality of the DOM1 Core. It also contains specialized interfaces dedicated to XML. Examples of methods introduced in the DOM2 Core include the famous getElementById, and many namespace-related methods.
+Level of support: Very good. See our bugs in the Core specification.</p>
+      <p>The DOM2 Views allows programs and scripts to dynamically access and update the content of a representation of a document. The introduced interfaces are AbstractView and DocumentView.
+Level of support: Perfect.</p>
+      <p>The DOM2 Events gives a generic event system to programs and scripts. It introduces the concepts of event flow, capture, bubbling, and cancellation. Famous methods here include addEventListener and handleEvent. Several interfaces make your life easier when dealing with events: EventTarget, EventListener, Event, DocumentEvent, MouseEvent, MutationEvent, etc. However, it does not include an interface for the keyboard events, which will be dealt with in later versions of the DOM.
+Level of support: Very good. See our bugs in the Events specification.</p>
+      <p>The DOM2 CSS, or DOM2 Style, allows programs and scripts to dynamically access and update the content of style sheets. It has interfaces for Style Sheets, Cascading Style Sheets, CSSRule, CSSStyleDeclaration, the famous getComputedStyle (supported in Mozilla), the many many CSS2Properties, and all the media rules you can imagine.
+Level of support: Good. See our bugs in the Style specification.</p>
+      <p>The DOM2 Traversal and Range allow programs and scripts to dynamically traverse and identify a range of content in a document. The DOM2 Traversal provides interfaces like NodeIterator and TreeWalker to easily traverse the content of a document. The DOM2 Range allows the creation, insertion, modification, and deletion of a range of content in a Document, DocumentFragment, or Attr. It can be characterized as selecting all of the content between a pair of boundary-points.
+Level of support: Good for Range; for Traversal, the TreeWalker is supported, and NodeIterator support was implemented in Firefox 3.5.</p>
+      <p>The DOM2 HTML allows programs and scripts to dynamically access and update the content and structure of HTML documents. It extends the interfaces defined in the DOM1 HTML, using the DOM2 Core possibilities. It introduces the contentDocument property, a useful way to access the document contained in a frame.</p>
+      <h3>LEVEL 3</h3>
+      <p>distributed in April 2004, included support for XPath and Keyboard even handling, and additional interface for serializing documents as XML.</p>
+      <p>Inside this specification, the keywords must, must not, required, shall, shall not, should, should not, recommended, may, and optional are to be translated as depicted in [RFC2119].</p>
+      <p>This specifiaction is to be comprehended with regards to the DOM Level 3 Core specification [DOM3 Core] and the general contemplations for DOM usage apply. For instance, treatment of namespace URIs is examined in XML Namespaces. A user agent is not required to fit in with the total of another specification so as to fit in with this specification, however it must adjust to the specific parts of some other specifications which are called out in this specification (e.g., an acclimating DOM3 Events user agent must bolster the DOMString information sort as characterized in Web IDL, yet require not bolster each technique or information sort characterized in Web IDL so as to fit in with DOM3 Events).</p>
+      <p>This specification characterizes a few classes of conformance for various user agents, specifications, and content authors:</p>
+      <p>Web browsers and other dynamic or interactive user agents</p>
+      <p>A dynamic or intelligent user agents, alluded to here as a browser (be it a Web browser, AT (Accessibility Technology) application, or other similar program), complies with DOM Level 3 Events in the event that it underpins:</p>
+      <p>the Core module characterized in [DOM3 Core]</p>
+      <p>the Event dispatch and DOM occasion stream instrument</p>
+      <p>every one of the interfaces and occasions with their related strategies, traits, and semantics characterized in this detail except for those set apart as censured (a conforming user agent may actualize the expostulated interfaces, occasions, or APIs for in reverse similarity, however is not required to do as such so as to accommodate)</p>
+      <p>the entire arrangement of key and code values characterized in [DOM3 key Values] and [DOM3 code Values] (subject to stage accessibility), and</p>
+      <p>all other standardizing prerequisites characterized in this determination.</p>
+      <p>A conforming browser must dispatch occasions fitting to the given EventTarget when the conditions characterized for that occasion sort have been met.</p>
+      <p>A browser adjusts particularly to DOM Level 3 Events on the off chance that it actualizes the interfaces and related occasion sorts determined in Event Types.</p>
+      <p>A conforming browser must support scripting, decisive intelligence, or some different methods for recognizing and dispatching occasions in the way depicted by this determination, and must bolster the APIs indicated for that occasion sort.</p>
+      <p>Notwithstanding meeting all other conformance criteria, a conforming browser may actualize elements of this particular set apart as censured, for in reverse similarity with existing substance, however such execution is disheartened.</p>
+      <p>A conforming browser may likewise bolster highlights not found in this particular, but rather which utilize the Event dispatch and DOM occasion stream component, interfaces, occasions, or different elements characterized in DOM Level 3 Events, and may execute extra interfaces and occasion sorts proper to that usage. Such elements can be later institutionalized in future determinations.</p>
+      <p>A browser which does not fit in with every required bit of this particular must not assert conformance to DOM Level 3 Events. Such an execution which conforms to parts of this determination may guarantee conformance to those particular bits.</p>
+      <p>An acclimating browser should likewise be a conforming execution of the IDL sections in this particular, as portrayed in the Web IDL determination [WEBIDL].</p>
+      <p>Authoring tools</p>
+      <p>A content authoring tool fits in with DOM Level 3 Events on the off chance that it produces content which utilizes the occasion sorts and Event dispatch and DOM occasion stream display, predictable in a way as characterized in this determination.</p>
+      <p>A content authoring tool must not assert conformance to DOM Level 3 Events for substance it produces which utilizes components of this determination set apart as censured in this detail.</p>
+      <p>An acclimating content authoring tool should give to the content author a way to utilize all occasion sorts and interfaces proper to all host dialects in the content document being delivered.</p>
+      <p>Content author and content</p>
+      <p>A content author makes adjusting DOM Level 3 Events content if that content utilizes the event types and Event dispatch and DOM occasion stream show, steady in a way as characterized in this specification.</p>
+      <p>A content author ought not utilize components of this detail set apart as deplored, however ought to depend rather upon substitution instruments characterized in this specification and somewhere else.</p>
+      <p>conforming content must utilize the semantics of the interfaces and event types as portrayed in this specification.</p>
+      <p>Specification and host languages</p>
+      <p>A specification or host languages fits in with DOM Level 3 Events on the off chance that it references and uses the Event dispatch and DOM occasion stream system, interfaces, occasions, or different components characterized in [DOM4], and does not develop these elements in contradictory ways.</p>
+      <p>A specification or host language adjusts particularly to DOM Level 3 Events on the off chance that it references and uses the interfaces and related occasion sorts indicated in Event Types. An adjusting particular may characterize extra interfaces and occasion sorts fitting to that specification, or may augment the DOM Level 3 Events interfaces and occasion sorts in a way that does not repudiate or struggle with the meanings of those interfaces and occasion sorts in this specification.</p>
+      <p>Particulars or host language which reference DOM Level 3 Events ought not utilize or suggest components of this specification set apart as censured, however ought to utilize or prescribe the showed trade for that the element (if accessible).</p>
+      <p>Event articles are dispatched to an event target. Toward the start of the dispatch, executions should first decide the event objects's engendering way.</p>
+      <p>The engendering way should be a requested rundown of current event targets through which the event object must pass. For DOM executions, the engendering way should mirror the various leveled tree structure of the archive. The last thing in the rundown must be the event target. The former things in the rundown are alluded to as the objective's predecessors, and the quickly going before thing as the objective's parent. Once decided, the proliferation way should not be changed. For DOM usage, this applies regardless of the possibility that a component in the proliferation way is moved inside the DOM or expelled from the DOM</p>
+      <h3>LEVEL 4</h3>
+      <p>DOM Level 4 was distributed in 2015. It is a depiction of the WHATWG expectation for everyday comforts</p>
+      <p>This specification institutionalizes the DOM. It does as such as takes after:</p>
+      <p>1. By solidifying DOM Level 3 Core [DOM3CORE], Element Traversal [ELEMENTTRAVERSAL], Selectors API Level 2 [SELECTORSAPI], the "DOM Event Architecture" and "Fundamental Event Interfaces" parts of UI Events [UIEVENTS] (particular sort of occasions don't have a place in the DOM Standard), and DOM Level 2 Traversal and Range [DOM2TR], and:</p>
+      <p>Aligning them with the JavaScript biological community where conceivable.</p>
+      <p>Aligning them with existing usage.</p>
+      <p>Simplifying them however much as could reasonably be expected.</p>
+      <p>2. By moving components from the HTML Standard [HTML] that ake more sense to be indicated as a major aspect of the DOM Standard.</p>
+      <p>3. By characterizing a swap for the "Change Events" and "Transformation Name Event Types" parts of UI Events Specification (some time ago DOM Level 3 Events) [UIEVENTS] as the old model was dangerous.</p>
+      <p>4. By characterizing new components that improve basic DOM operations.</p>
+      <p>The keywords "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this record are to be deciphered as depicted in RFC 2119. For lucidness, these words don't show up in every single capitalized letter in this detail. [RFC2119]</p>
+      <p>Requirements expressed in the basic as a component of calculations, (for example, "strip any driving space characters" or "return false and end these means") are to be translated with the significance of the catchphrase ("must", "ought to", "may", and so forth.) utilized as a part of presenting the calculation.</p>
+      <p>Conformance requirements stated as calculations or particular strides might be actualized in any way, inasmuch as the final product is proportional. (Specifically, the calculations characterized in this particular are planned to be anything but difficult to take after, and not proposed to be performant.)</p>
+      <p>User Agents may force execution particular points of confinement on generally unconstrained sources of info, e.g. to forestall refusal of administration assaults, to make preparations for coming up short on memory, or to work around stage particular restrictions.</p>
+      <p>At the point when a technique or an ascribe is said to call another strategy or quality, the User Agents must summon its inner API for that trait or technique so that e.g. the creator can't change the conduct by abrogating traits or strategies with custom properties or capacities in JavaScript.</p>
+      <p>Unless generally expressed, string examinations are done for a case-sensitive way.</p>
+      <p>The term context object implies the object on which the algorithm, quality getter, attribute setter, or method being discussed was called. At the point when the setting article is unambiguous, the term can be precluded.</p>
+      <p>All through the web stage occasions are dispatched to articles to flag an event, for example, organize movement or client connection. These articles actualize the EventTarget interface and can in this way add occasion audience members to watch occasions by calling addEventListener():</p>
+      <p>Occasion audience members can be evacuated by using the removeEventListener() technique, passing similar contentions.</p>
+      <p>Occasions are objects as well and actualize the Event interface (or a determined interface). In the case above ev is the occasion. It is passed as contention to occasion audience's callback (regularly a JavaScript Function as appeared previously). Occasion audience members key off the occasion's sort trait esteem ("stack" in the above illustration). The occasion's objective quality esteem gives back the question which the occasion was dispatched (obj above).</p>
+      <p>Presently while ordinarily occasions are dispatched by the client specialist as the consequence of client connection or the culmination of some undertaking, applications can dispatch occasions themselves, usually known as engineered occasions:</p>
+      <p>Aside from flagging, occasions are once in a while likewise used to give an application a chance to control what occurs next in an operation. For example as a component of shape accommodation an occasion whose sort trait esteem is "submit" is dispatched. On the off chance that this present occasion's preventDefault() strategy is conjured, frame accommodation will be ended. Applications who wish to make utilization of this usefulness through occasions dispatched by the application (engineered occasions) can make utilization of the arrival estimation of the dispatchEvent() strategy:</p>
+      <p>At the point when an occasion is dispatched to a question that takes an interest in a tree (e.g. a component), it can achieve occasion audience members on that object's precursors as well. To start with all object's predecessor occasion audience members whose catch variable is set to genuine are conjured, in tree arrange. Second, question's own particular occasion audience members are called. Lastly, and just if occasion's air pockets characteristic esteem is valid, question's precursor occasion audience members are called once more, yet now in turn around tree arrange.</p>
+      <p>The troubleshoot capacity will be conjured twice. Each time the occasions' objective characteristic esteem will be the traverse component. The first run through currentTarget quality's esteem will be the archive, the second time the body component. eventPhase characteristic's esteem changes from CAPTURING_PHASE to BUBBLING_PHASE. On the off chance that an occasion audience was enrolled for the traverse component, eventPhase quality's esteem would have been AT_TARGET.</p>
+    </div>
+    <div id="doc" class="tab-pane fade in">
+      <h3>Definition</h3>
+      <p>It represents any web page loaded in the browser and servers as an entry point into the web page's content.</p>
+      <h3>Properties</h3>
+      <ul>
+        <li>Document.async</li>
+          <p>This indicates an asynchronous request and often worked with .load.</p>
+        <li>Document.characterSet (Read only)</li>
+          <p>Once requested, it will return the character set of a document.</p>
+        <li>Document.charset (Read only)</li>
+          <p>An alias of .characterSet.</p>
+        <li>Document.compatMode (Read Only)</li>
+          <p>This is used to know whether the browser is rendering the document in strict's or quirk's mode.</p>
+        <li>Document.contentType (Read only)</li>
+          <p>This would return the content type of a document. i.e. (.txt, .html)</p>
+        <li>Document.doctype (Read only)</li>
+        <p>This would specify the document type definition of the viewed current document.</p> <li>Document.documentElement (Read only)</li>
+          <p>This would return a direct child element of the document.</p>
+        <li>Document.documentURI (Read only)</li>
+        <p>This would return the location of the document as a string.</p>
+      <li>Document.domConfig</li>
+          <p>This should return a DOMconfiguration of the document.</p>
+        <li>Document.fullscreen</li>
+          <p>This would return true if the document is in full screen. False, if not.</p>
+        <li>Document.hidden (Read only)</li>
+          <p>This would return true if the document is hidden and false if not.</p>
+        <li>Document.implementation (Read only)</li>
+          <p>This would return the document's implementation associated with the viewed current document.</p>
+        <li>Document.inputEncoding (Read only)</li>
+          <p>Another alias of Document.characterSet</p>
+        <li>Document.lastStyleSheetSet (Read only)</li>
+          <p>This would return the name of the stylesheet that is enabled last.</p>
+        <li>Document.mozSynthetic Document (Read only)</li>
+          <p>This would return to true if the document is synthetic.</p>
+        <li>Document.mozFullScreenElement (Read only)</li>
+          <p>An element that is currently in full screen mode.</p>
+        <li>Document.mozFullScreenEnabled (Read only)</li>
+          <p>This would return true is Element.mozRequestFullScreen that would suceed in the current document.</p>
+        <li>Document.pointerLockElement (Read only)</li>
+          <p>This would return the targeted element for mouse events while the pointer is locked. Or it would return as null if the lock is pending, or if the pointer is unlocked of the target is another document.</p>
+        <li>Document.preferredStyleSheetSet (Read only)</li>
+          <p>This would return the preferredStyleSheet as specified by the author.</p>
+        <li>Document.scrollingElement</li>
+          <p>This would return a reference to an element that scrolls the document.</p>
+        <li>Document.selectedStyleSheetSet</li>
+          <p>This would return what is currently used as a stylesheet.</p>
+        <li>Document.styleSheets</li>
+          <p>This would return a list of style sheet objects on the current document.</p>
+        <li>Document.styleSheetSets</li>
+          <p> This would return a list of stylesheets available for the document.</p>
+        <li>Document.timeline</li>
+          <p>This is an experimental technology and would represent the timeline of the document.</p>
+        <li>Document.visibilityState</li>
+          <p>This would return the visibility stated of the document.</p>
+        <li>Document.xmlEncoding</li>
+          <p>This would return and encoding as specified by an XML declaration.</p>
+        <li>Document.xmlVersion</li>
+          <p> This would return the version of the XML used.</p>
+        <li>ParentNode.children</li>
+          <p>This would return an HTMLCollection that contained all objects of type Element, that are children of the parent node.</p>
+        <li>ParentNode.lastElementChild</li>
+          <p>This would return the last element child of the parent node.</p>
+        <li>ParentNode.childElementCount</li>
+          <p>This would return the count of the children elements.</p>
+      </ul>
+      <h3>Extension for HTML Documents</h3>
+      <ul>
+        <li>Document.activeElement</li>
+          <p>This would returned what element is currently focused on.</p>
+        <li>Document.alinkColor</li>
+          <p>This would return a set colors of active links in a document body.</p>
+        <li>Document.anchors</li>
+          <p>This would return a list of anchors defined in the document.</p>
+        <li>Document.applets</li>
+          <p>This would return an ordered list of all the applets existing in the document.</p>
+        <li>Document.bgColor</li>
+          <p>This would either get or set the background color of the current document.</p>
+        <li>Document.body</li>
+          <p>This would return the body element of the current document.</p>
+        <li>Document.cookie</li>
+          <p>This would return a semi-colon separated list of the cookies in the document or sets a single cookie.</p>
+        <li>Document.defaultView</li>
+          <p>This would return a reference to the window object.</p>
+        <li>Document.designMode</li>
+          <p>This has the ability to get or set editting on a document.</p>
+        <li>Document.dir</li>
+          <p>This has the ability to get or set the directionality of a document.</p>
+        <li>Document.domain</li>
+          <p>This would return the document domain.</p>
+        <li>Document.embeds</li>
+          <p>This would return the embedded elements within a current document.</p>
+        <li>Document.fgColor</li>
+          <p>This would get or set the foreground color, or text color, of the current document.</p>
+        <li>Document.forms</li>
+          <p>This would return a list of the form elements within the document.</p>
+        <li>Document.head</li>
+          <p>This would return the current head of the document.</p>
+        <li>Document.height</li>
+          <p>This would get or set the height of the current document.</p>
+        <li>Document.images</li>
+          <p>This would return a list of images that is within the element.</p>
+        <li>Document.lastModified</li>
+          <p>This would return the dates as to when the document was last modified.</p>
+        <li>Document.linkcolor</li>
+          <p>This would set the colors of the hyperlinks in the document.</p>
+        <li>Document.links</li>
+          <p>This would return the list of all the hyperlinks of the document.</p>
+        <li>Document.location</li>
+          <p>This would return the URI of the current document.</p>
+        <li>Document.plugins</li>
+          <p>This would return a list of available plugins.</p>
+        <li>Document.readyState</li>
+          <p>This would retun the loading status of the document.</p>
+        <li>Document.referrer</li>
+          <p>This would return the URI of the page linked to the document.</p>
+        <li>Document.scripts</li>
+          <p>This would return all the script elements within the document.</p>
+        <li>Document.title</li>
+          <p>This would set or get the title of the document.</p>
+        <li>Document.URL</li>
+          <p>This would return the documents' location as a string.</p>
+        <li>Document.vlinkColor</li>
+          <p>This would get or set the color of visited links.</p>
+        <li>Document.width</li>
+          <p>This would get or set the width of the current document.</p>
+        <li>document.clear()</li>
+          <p>In recent versions, this method does nothing.</p>
+        <li>document.close()</li>
+          <p>This closes the document stream for writing.</p>
+        <li>document.execCommand(String command[, Boolean showUI][, String value]])</li>
+          <p>This executes a formating command.</p>
+        <li>document.getElementsByName(String name)</li>
+          <p>This returns a list of elements with the given name.</p>
+        <li>document.getSelection()</li>
+          <p>This returns a Selection object related to the text selected in the document.</p>
+        <li>document.hasFocus()</li>
+          <p>This returns true if the focus is currently located anywhere inside the specified document.</p>
+        <li>document.open()</li>
+          <p>This opens the document stream for writing.</p>
+        <li>document.queryCommandEnabled(String command)</li>
+          <p>This would return true if the formatting command if it is enabled.</p>
+        <li>document.queryCommandState(String command)</li>
+          <p>This would return true if the formatting command has been executed on the current range.</p>
+        <li>document.queryCommandSupported(String command)</li>
+          <p>This would return true if the formatting command is supported on the current range.</p>
+        <li>document.write(String text)</li>
+          <p>This allows writing of text in the document.</p>
+        <li>document.writeIn(String text)</li>
+          <p>This allows writing a line of text in the document.</p>
+      </ul>
+      <h3>Event Handlers</h3>
+        <ul>
+            <li>Document.onafterscriptexecute</li>
+                <p>This would represent the event handling code for the afterscriptexecute event.</p>
+            <li>Document.onbeforescriptexecute</li>
+                <p>This would represent the event handling code for the beforescriptexecute event.</p>
+            <li>Document.oncopy</li>
+                <p>This would represent the event handling code for the copy event.</p>
+            <li>Document.oncut</li>
+                <p>This would represent the event handling code for the cut event.</p>
+            <li>Document.onfullscreenchange</li>
+                <p>This would represent the code to be called when the fullscreenchange event is raised.</p>
+            <li>Document.onfullscreenerror</li>
+                <p>This would represent the code to be called when the fullscreenerror event is raised.</p>
+            <li>Document.onpaste</li>
+                <p>This would represent the code to be called for the paste event.</p>
+            <li>Document.onpointerlockchange</li>
+                <p>This would represent the code the onpointerlockchange event is called.</p>
+            <li>Document.onpointerlockerror</li>
+                <p>This would represent the code the onpointerlockerror event is called.</p>
+            <li>Document.onselectionchange</li>
+                <p>This would represent the code when onselectionchange event is called.</p>
+            <li>Document.onwheel</li>
+                <p>This would represent the code when onwheel event is called.</p>
+        </ul>
+      <h3>Methods</h3>
+      <ul>
+        <li>Document.adoptNode()</li>
+          <p>This adopts a node from an external document.</p>
+        <li>Document.caretPositionFromPoint()</li>
+          <p>This gets the current position of a CaretPosition at or near teh specified coordinates. This is an experimental technology.</p>
+        <li>Document.caretRangeFromPoint()</li>
+          <p>This gets the range object from the document fragment under specified coordinates.</p>
+        <li>Document.createAttribute()</li>
+          <p>This would create a new Attr object and then return it.</p>
+        <li>Document.createAttributeNS()</li>
+          <p>This creates a new attribute node.</p>
+        <li>Document.createCDATASection()</li>
+          <p>This creates a new CDATAnode and returns it.</p>
+        <li>Document.createComment()</li>
+          <p>This creates a new comment node and returns it.</p>
+        <li>Document.createElementNS()</li>
+          <p>This creates a new element with a given tagname and namespace URI.</p>
+        <li>Document.createEntityReference()</li>
+          <p>This creates a new Entity Reference object and returns it.</p>
+        <li>Document.createEvent()</li>
+          <p>This creates an event object.</p>
+        <li>Document.createNodeIterator()</li>
+          <p>This creates a node iterator object.</p>
+        <li>Document.createProcessingInstruction()</li>
+          <p>This creates a new ProcessingInstruction object.</p>
+        <li>Document.createRange()</li>
+          <p>This creates a range object.</p>
+        <li>Document.createTextNode()</li>
+          <p>This creates a text node.</p>
+        <li>Document.createTouch()</li>
+          <p>This creates a Touch object.</p>
+        <li>Document.createTouchList()</li>
+          <p>This creates a TouchList object.</p>
+        <li>Document.createTreeWalker()</li>
+          <p> This creates a TreeWalker object.</p>
+        <li>Document.elementFromPoint()</li>
+          <p>This returns an array of all elements at the specified coordinates.</p>
+        <li>Document.elementsFromPoint()</li>
+          <p>This returns the topmost element at the specified coordinates.</p>
+        <li>Document.enableStyleSheetsForSet()</li>
+          <p>This enables the stylesheets for the specified stylesheets set.</p>
+        <li>Document.exitPointerLock()</li>
+          <p>This releases the pointer lock.</p>
+        <li>Document.getAnimations()</li>
+          <p>This returns an array of all Animation objects.</p>
+        <li>Document.getElementsByClassName()</li>
+          <p>This returns a list of elements with the given class name.</p>
+        <li>Document.getElementsByTagNameNS()</li>
+          <p>This returns a list of elements with the given tagname and namespace.</p>
+        <li>Document.getElementsByTagName()</li>
+          <p>This returns a list of elements by the given tagname.</p>
+        <li>Document.importNode()</li>
+          <p>This returns a clone of a node from an external document.</p>
+        <li>Document.normalizeDocument()</li>
+          <p>This replaces entities and normalizes text nodes.</p>
+        <li>Document.registerElement()</li>
+          <p>This registers a web component.</p>
+        <li>Document.releaseCapture()</li>
+          <p>This releases the current mouse capture if it's an element in the document.</p>
+        <li>Document.mozSetImageElement()</li>
+          <p>This allows changing of the element being used as the background image for a specified element id.</p>
+        <li>document.getElementById(String id)</li>
+          <p>This returns a an object reference to the identified element.</p>
+        <li>document.querySelector(String selector)</li>
+          <p>This returns the first Element node within the document in the document order that matches the specified selectors.</p>
+        <li>document.querySelectorAll(String selector)</li>
+          <p>This returns a list of all element nodes within the document that match the specified selectors.</p>
+      </ul>
+    </div>
+    <div id="navi" class="tab-pane fade in">
+      <h3>Definition</h3>
+      <p>
+        Navigator is the object that holds or contains browser's information.
+      </p>
+      <h3>Properties</h3>
+      <ul>
+        <li>appCodeName </li>
+          <p>
+            The appCodeName property pertains to a browser's code name, this property is  considered  as deprecated because it was removed from the standards of Web, but other browsers maybe still support this property since it is being processed to be  dropped.
+          </p>
+          <p>Syntax:  x = window.navigator.appCodeName</p>
+          <li>appName</li>
+          <p>
+            This property returns the name of the browser, it is also considered as deprecated.
+          </p>
+          <p>Syntax:  x = window.navigator.appName</p>
+          <li>appVersion</li>
+          <p>
+            This property returns a string value of the information of the version of the browser. This property is also considered as a deprecated.
+          </p>
+          <p>Syntax:  window.navigator</p>
+          <li>appMinorVersion</li>
+          <p>
+            This property returns a string value of the browser's minor version.
+          </p>
+          <p>Syntax: navigator.appMinorVersion</p>
+          <li>cpuClass</li>
+          <p>
+            It returns the user's operating system's CPU class.
+          </p>
+          <p>Syntax: navigator.cpuClass</p>
+          <li>mimeTypes</li>
+          <p>
+            It returns a list of the browser's supported MIME types.
+          </p>
+          <p>Syntax: navigator.mimeTypes</p>
+          <li>opsProfile</li>
+          <p>
+            This property is only visible when the object navigator is placed in an enumerating for loop.
+          </p>
+          <p>Syntax: navigator.opsProfile</p>
+          <li>systemLanguage</li>
+          <p>
+            This property returns the language and country code that is specified.
+          </p>
+          <p>Syntax: navigator.systemLanguage</p>
+          <li>cookieEnabled</li>
+          <p>
+            It determines if the cookies in the browser are enabled or not.
+          </p>
+          <p>Syntax: navigator.cookieEnabled</p>
+          <li>geolocation</li>
+          <p>
+            Returns an object of geolocation that can be used to know the position of the user.
+          </p>
+          <li>language</li>
+          <p>
+            Returns the browser's language.
+          </p>
+          <p>Syntax: navigator.language</p>
+          <li>onLine</li>
+          <p>
+            It determines if the browser is online or not.
+          </p>
+          <p>Syntax: navigator.onLine</p>
+          <li>platform</li>
+          <p>
+            Returns the platform on which the browser is compiled.
+          </p>
+          <p>Syntax: navigator.platform</p>
+          <li>product</li>
+          <p>
+            Returns the browser's engine name.
+          </p>
+          <p>Syntax: navigator.product</p>
+          <li>userAgent</li>
+          <p>
+            Returns the header of the user-agent sent to the server by the browser. It is also considered as deprecated.
+          </p>
+          <p>Syntax: navigator.userAgent</p>
+      </ul>
+      <h3>Methods</h3>
+      <ul>
+        <li>javaEnabled()</li>
+          <p>
+            It specifies if the browser has a Java that is enabled or not.
+          </p>
+          <p>Syntax: navigator.javaEnabled()</p>
+          <li>taintEnabled()</li>
+          <p>
+            It specifies if the browser has a data tainting that is enabled or not.
+          </p>
+          <p>Syntax: navigator.taintEnabled()</p>
+      </ul>
+    </div>
+    <div id="scr" class="tab-pane fade in">
+      <h3>Definition</h3>
+      <p>The object screen holds or contains the visitor's screen information.</p>
+      <h3>Properties</h3>
+      <ul>
+        <li>width</li>
+          <p>
+            - this property returns the screen's total width
+          </p>
+          <p>Syntax: width   =  window.screen.width;</p>
+          <li>pixelDepth</li>
+          <p>
+            - return a bits per pixel of the screen's color resolution
+          </p>
+          <p>Syntax:pixel   =  window.screen.pixelDepth ;</p>
+          <li>height</li>
+          <p>
+            - return the screen's total height.
+          </p>
+          <p>Syntax:height   =  window.screen.height ;</p>
+          <li>colorDepth</li>
+          <p>
+            - it return the color palette for displaying images' bit depth
+          </p>
+          <p>Syntax:color  =  window.screen.colorDepth ;</p>
+          <li>availWidth</li>
+          <p>
+            -it returns the the screen's width except the taskbar of the window
+          </p>
+          <p>Syntax:availwidth   =  window.screen.availWidth ;</p>
+          <li>availHeight</li>
+          <p>
+            - it returns the screen's height except the taskbar of the window
+          </p>
+          <p>Syntax:availheight   =  window.screen.availHeight ;</p>
+      </ul>
+    </div>
+    <div id="win" class="tab-pane fade in">
+      <h3>Definition</h3>
+      <p>It is a global object. The window object is the primary object of a browser
+and represent the browser's window.  </p>
+      <h3>Properties</h3>
+      <ul>
+        <li>window.alert()</li>
+          <p>It is a method that displays an alert box with a message in it.
+The use of this is to make sure that the information comes through the user.</p>
+        <li>window.open()</li>
+          <p>It is a method that opens a new browser. And the .close() is
+a method to close the window.</p>
+        <li>window.setTimeout()</li>
+          <p>It is a method that evaluates an expression after a specified
+number of milliseconds. And the clearTimeout() is a method to stop it from running.</p>
+        <li>window.setInterval()</li>
+          <p>t is a method that evaluates an expression after at specified
+intervals in milliseconds. It also continues calling the function until clearInterval()
+is called.</p>
+        <li>window.encodeURI()</li>
+          <p>It is a function that is used to encode a URI. To decode an encoded
+URI, use the decodeURI().</p>
+        <li>window.innerWidth</li>
+          <p>Get the computed inner width for the first element (include the padding
+but not the border). It is a method that returns the width of the element.</p>
+        <li>window.localStorage</li>
+          <p>It allows you to access a local Storage Object. And it has no expiration time.</p>
+        <li>window.history</li>
+          <p>It is an object that can be written without the window prefix. To load the previous URL
+in the history list, use history.back(). To load the next URL in the history list, use history.forward().</p>
+        <li>window.location</li>
+          <p>It is an object that can be written without the window prefix.
+Here are some examples:</p>
+          <p>a. .href()</p>
+            <p>returns the URL of the current page</p>
+          <p>b. .hostname()</p>
+            <p>returns the name of the internet host of the current page</p>
+          <p>c. .pathname()</p>
+            <p>returns the pathname of the current page</p>
+          <p>d. .protocol()</p>
+            <p>returns the web protocol of the page (http: or https:)</p>
+          <p>e. .asign()</p>
+            <p>it is a method that loads a new document</p>
+      </ul>
+    </div>
+
+  </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; WEBTEK 2017</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../js/grayscale.min.js"></script>
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>

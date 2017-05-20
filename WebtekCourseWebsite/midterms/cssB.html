@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WEBTEK | CSS</title>
+
+    <!-- Overwrite CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="../css/grayscale.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="topicsMid" data-spy="scroll" data-target=".navbar-fixed-top">
+<div class="container">
+  <a href="../index.html" class="btn btn-info" role="button">RETURN HOME</a>
+  <h2 class = "titleHeader">CSS</h2>
+    <ul class="nav nav-tabs">
+    <!-- These list items is connected to a specific tab through their id. So the logic is href is equal to the id of one of the tabs. -->
+    <li><a href="cssA.html" class="btn btn-info" role="button">PREVIOUS</a></li>
+    <li class="active"><a data-toggle="tab" href="#select">Selectors</a></li>
+    <li><a data-toggle="tab" href="#combi">Combinators</a></li>
+    <li><a data-toggle="tab" href="#pseudo">Pseudo-Elements</a></li>
+    <li><a data-toggle="tab" href="#pre">Rule Precedence</a></li>
+    <li><a data-toggle="tab" href="#ref">References</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="select" class="tab-pane fade in active">
+        <h3>DEFINITION</h3>
+        <p>Selectors are used as a condition in a CSS rule to determine which elements in the document tree are matched by the selector an are thus targeted by the formatting. The subjects of the selectors are elements. Selectors can start with a universal(* or empty space) or a simple selector.</p>
+        <h3>SELECTORS SYNTAX</h3>
+        <p>Defines a set of one or more sequence of simple selectors separated by combinators with one pseudo element possibly appended to the last sequence.</p>
+        <p>i.e. dir(type)#abc(id)>(combinator)(child)p(type).xyz(class)[title]+(combinator)span(adjacent).last-of-type(pseudo element):after(pseudoelement)</p>
+        <h3>SEQUENCE</h3>
+        <ul>
+            <li>A chain of simple selectors separated by combinators.</li>
+            <li>This always starts with a type selector or a universal selector.</li>
+            <li>This cannot contain other type selectors or universal selectors.</li>
+        </ul>
+
+        <h3>TYPE SELECTORS</h3>
+        <p>Selectors that match elements by node name.</p>
+        <p>i.e. p (element) { }</p>
+
+        <h3>UNIVERSAL SELECTORS</h3>
+        <p>An asterisk that matches a single element of any type. In CSS3: Asterisks can be used as namespaces combination.</p>
+        <p>i.e. * { }</p>
+
+        <h3>ATTRIBUTE SELECTORS</h3>
+        <p>These attributes targets an element based on a particular attribute. It specifies attribute in brackets.</p>
+        <p>i.e. [class] { color: blue; }</p>
+
+        <h4>SYNTAX</h4>
+        <ul>
+            <li>[attr] - attr attribute element representation</li>
+            <li>[attr=value] - selects specified attributes and values kind of elements</li>
+            <li>[attr~=value] - defines a set from the set of values and separated by a space.</li>
+            <li>[attr|=value] - targets the lang attribute</li>
+            <li>[attr^=value] - beginning of the specified value</li>
+            <li>[attr$=value] - ending of the specified value</li>
+            <li>[attr*=value] - containing a specified value</li>
+        </ul>
+
+        <h3>CLASS SELECTOR</h3>
+        <p>A class selector contains a period and a class name. It also takes the possibility that there are multiple classes affected by it.</p>
+        <p>Classes can be chained with the use of a class selector. As well as a chain can start with a universal or a type selector but cannot be more than one.</p>
+        <p>i.e.   .x {  }</p>
+
+        <h3>ID SELECTOR</h3>
+        <p>The pound sign followed by an ID body. It can also be used as an attribute selector.</p>
+        <p>i.e. #bgio {  }</p>
+
+        <h3>PSEUDO CLASS SELECTORS</h3>
+        <p>An implicit class associated with a target.</p>
+
+        <h3>Types of pseudo class selectors:</h3>
+        <h3>Link pseudo classes</h3>
+        <ul>
+            <li>:link - for links that are not visited.</li>
+            <li>:visited - for links that are visited.</li>
+        </ul>
+
+        <h3>User action pseudo classes</h3>
+        <ul>
+            <li>:hover - hovering over something, usually called a rollover effect.</li>
+            <li>:active - activate a particular element</li>
+            <li>:focus - focus is moved to a particular element. i.e. form elements</li>
+        </ul>
+
+        <h3>Target pseudo classes</h3>
+        <ul>
+            <li>:target - used if the element targeted is using an ID.</li>
+        </ul>
+
+        <h3>Language pseudo classes</h3>
+        <ul>
+            <li>:lang - targets language classes.</li>
+        </ul>
+
+        <h3>UI elements status pseudo classes</h3>
+        <ul>
+            <li>:enabled - represents enabled elements</li>
+            <li>:disabled - represents disabled elements</li>
+            <li>:checked - represents checked elements</li>
+            <li>:indeterminate- represents elements that are indeterminates such as &lt;progress&gt; elements, &lt;input type = ""&gt; and etc.</li>
+        </ul>
+
+        <h3>Structural pseudo classes</h3>
+        <ul>
+            <li>:root - root element</li>
+            <li>:first-child - represents the first child of an element.</li>
+            <li>:last-child - represents the last child of an element.</li>
+            <li>:only-child - represents the only child of an element</li>
+            <li>:nth-child(an+b) - has an an+b-1 siblings before it in the DOM tree.</li>
+            <li>:nth-last-child - counted from the last child; backwards counting on the same basis as nth-child</li>
+            <li>:first-of-type - first sibling of its type</li>
+            <li>:last-of-type - last sibling of its type</li>
+            <li>:only-of-type - no siblings from the given type</li>
+            <li>:nth-of-last-type</li>
+            <li>:empty - no children at all.</li>
+        </ul>
+
+        <p>The children pseudo classes basis is the DOM tree, which is a structure built by the HTML tag structure. The tree is built in every browser which allows it to understand your HTML tag structure even if it isn't tagged properly.</p>
+
+        <h3>Negation pseudo classes</h3>
+        <ul>
+            <li>:not - used for simple selectors only. It can be placed in any of the other elements and would negate a content. If what it should modify is not specified, it will be read as a general selector and would affect the whole HTML document.</li>
+        </ul>
+
+    </div>
+
+    <div id="combi" class="tab-pane fade">
+        <p>A combinator is something that explains the relationship between the selectors.
+A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+There are four different combinators in CSS3:</p>
+        <h3>Adjacent sibling selectors</h3>
+        <p>The '+' combinator selects nodes that immediately follow the former specified element.
+Syntax: A + B
+Example: div + p will match any &lt;p&gt; that immediately follows a &lt;div&gt;.</p>
+        <h3>General sibling selectors</h3>
+        <p>The '~' combinator selects nodes that follow (not necessarily immediately) the former specified element, if both elements shared the same parent.
+Syntax: A ~ B
+Example: p ~ span will match all &lt;span&gt; elements that follow a &lt;p&gt; element inside the same element.</p>
+        <h3>Child selectors</h3>
+        <p>The '>' combinator selects nodes that are direct children of the former specified element.
+Syntax: A > B
+Example: ul > li will match all &lt;li&gt; elements that are inside a &lt;ul&gt; element.</p>
+        <h3>Descendant selectors</h3>
+        <p>he ' ' combinator selects nodes that are children (not necessary direct children) of the former specified element.
+Syntax: A B
+Example: div span will match any &lt;span&gt; element that is inside a &lt;div&gt; element.</p>
+    </div>
+
+    <div id="pseudo" class="tab-pane fade">
+        <!-- GENERAL STRUCTURE -->
+        <p>PSEUDO-ELEMENTS are used to address sub-parts of elements. They allow you to set style on a part of an element's content beyond what is specified in the documents. In other words they allow logical elements to be defined which are not actually in the document element tree. Logical elements allow implied semantic structure to be addressed in CSS selectors.</p>
+        <p>Pseudo-elements may only be applied to external and document-level contexts - not to in-line styles. Pseudo-elements are restricted in where they can appear in a rule. They may only appear at the end of a selector chain (after the subject of the selector). They should come after any class or ID names found in the selector. Only one pseudo-element can be specified per selector. To address multiple pseudo-elements on a single element structure, multiple style selector/declaration statements must be made.</p>
+        <h3>::after</h3>
+        <p>::after pseudo-element matches a virtual last child of the selected element. It is typically used to add cosmetic content to an element by using the content CSS property. This element is inline by default.</p>
+        <h3>::before</h3>
+        <p>::before creates a pseudo-element that is the first child of the element matched. It is often used to add cosmetic content to an element by using the content property. This element is inline by default.</p>
+        <h3>::first-letter</h3>
+        <p>The ::first-letter CSS pseudo-element selects the first letter of the first line of a block, if it is not preceded by any other content (such as images or inline tables) on its line.</p>
+        <h3>::first-line</h3>
+        <p>The ::first-line CSS pseudo-element applies styles only to the first line of an element. The amount of the text on the first line depends of numerous factors, like the width of the element, width of the document, and the font size of the text. As all pseudo-elements, ::first-line does not match any real HTML element.</p>
+        <p>A first line has only meaning in a block-container box, therefore the ::first-line pseudo-element has only an effect on elements with a display value of block, inline-block, table-cell or table-caption. In all other cases, ::first-line has no effect.</p>
+    </div>
+    <div id="pre" class="tab-pane fade">
+        <h3>DEFINITION</h3>
+        <p>CSS rule precedence refers to the CSS declarations that are displayed in the browser with considerations on three levels: by rule and importance, by specifity and by order.</p>
+        <h3>LEVEL 1: By origin and importance</h3>
+        <h4>HIERARCHY</h4>
+        <p><b>Important Declarations: </b>these declarations are usually prioritized first because of the tagline !important. Although, the tagline important should be used sparingly and used only when it's needed. This is due to the fact that adding an important declaration will disrupt the natural flow of your declarations. After all, an important declaration gives weight to elements, which should only be used for those that need it. Using it too much will abuse its usefulness and make it harder for you to maintain your code.</p>
+        <p>The !important annotation is to create a balance the power between author and the user style sheets. In order to balance it, the declaration to be made can be important which means it can increase its weight in the cascade and it is inverted to the order of precedence. Its declaration is important if there is an !important annotation in it.</p>
+        <ul>
+            <li>user agent important declarations</li>
+                <p>declarations from a user agent stylesheet that contains an !important tagline. These declarations when declared important takes precedence because these are the stylesheets used by browser to render html files.</p>
+                <p>i.e. li { margin-left: 10px !important }</p>
+            <li>user important declarations</li>
+                <p>user declarations that contains !important tagline. User important declarations can override author important declarations.</p>
+            <li>author important declarations</li>
+                <p>author declarations that contains the !important tagline. These declarations takes the lowest importance from user important and user agent important but takes precedence before normal declarations.</p>
+                <p>i.e. (To further show the difference between user important declarations and author important declarations)</p>
+                <p>Here is the declarations made in css:</p>
+                <img src="../img/cssImg/code.PNG" alt="Source Code" class="img-responsive">
+                <p>This is the result after opening the html file:</p>
+                <img src="../img/cssImg/result.PNG" alt="Result" class="img-responsive">
+                <p>As you can see, even with both declarations containing an !important tagline, the user important declarations is still given precedence.</p>
+        </ul>
+        <p><b>Normal Declarations: </b>declarations that doesn't contain an !important tagline.</p>
+        <ul>
+            <li>author normal declarations</li>
+                <p>author specified declarations that are written to create a style for the document. These declarations take precedence for it can override the other following declarations below.</p>
+            <li>user normal declarations</li>
+                <p>declarations specified by the user (i.e. A person wanted to make the font style bigger than the normal size. To do that, he can then edit such in the browser options or through some third party software or extension installed in the browser such as ChromeVox for example.) They can overwrite user agent normal declarations if an author normal declaration is not set.</p>
+            <li>user agent normal declarations</li>
+                <p>declarations that served as a default style formatting for web pages.</p>
+                <p>i.e. &lt;li&gt;I&lt;/li&gt; - This item will be styled as a list item once the html file is viewed in a browser.</p>
+        </ul>
+        <h3>LEVEL 2: BY SPECIFICITY</h3>
+        <h4>DEFINITION</h4>
+        <p>Specificity is a mechanism in which it is with the CSS cascade that resolves the conflict resolutions. It states that when there are two or more declarations to the same element that applies to the CSS files and it is set with the same properties, the declaration of the element with the most specific selector will be acknowledged or would take the precedence. </p>
+        <p>Specificity determines, which CSS rule is going to apply in the browsers. Every selector has its place in the specificity hierarchy. When the selectors have an equal number of specificity, the latest one that is declared is the one that counts. The ones with more specific selectors have the highest specificity.  The embedded style sheet has a greater specificity than the other. Always try to use an id to increase the specificity value. The universal selector and the inherited selectors are the one whose specificity is 0. CSS Specificity Calculator is used to calculate specificity.</p>
+        <p>Here are some descriptions of the process by which the Specificity rule precedence of the selectors of two or more declarations is compared to one other.</p>
+        <ol>
+            <li>The declaration from a style attribute has a highest specificity than the ones in a rule with a selector (an inline style). If there is no declaration are inline, then proceed to the second description.</li>
+            <li>In the second description count the ID selectors. The declaration that has the highest number has the highest specificity. If there are the same number of declarations of the ID selectors or rather they had zero ID selectors, then proceed to the third description.</li>
+            <li>After counting the ID selector, in the third description count the class selector, attribute selector and the pseudo-classes. The one that has the highest number of declaration has the highest specificity. If there are two or more that has the same total of number of declarations , or they have the total of zero, proceed to the fourth description.</li>
+            <li>In the fourth description count the element type selectors and the pseudo-elements. The declaration with the highest number has the highest specificity.</li>
+        </ol>
+            <p>If there are two or more selectors have the same specificity, the latter specified takes the highest specificity. This is according to the rules of the CSS cascade.</p>
+            <p>The more specific the greater precedence. In calculating the specificity, there are specificity values assigned to the elements.  For the HTML selector has a specificity of 1. The Class selector has a specificity of 10. The ID selector has a specificity of 100. </p>
+            <p>Examples:</p>
+            <ol>
+                <li>div has a specificity of 1 (1 HTML selector)</li>
+                <li>div p has a specificity of 2 (2 HTML selector)</li>
+                <li>.name has a specificity of 10 (1 class selector)</li>
+                <li>div p.name has a specificity of 12 (2 HTML selector + 1 class selector)</li>
+                <li>#lastname has a specificity of 100 ( 1 ID Selector)</li>
+                <li>body # lastname  .name p has a specificity of 112 ( HTML selector + Id selector + Class selector + HTML selector)</li>
+            </ol>
+            <p>The CSS Specificity is said to be the one of the most difficult concepts in Cascading Style Sheet. There are different weight of the selectors is really the reason why the css-rules don’t apply to some elements in the document. In order to minimize the time in finding the bugs of the CSS code, understand how the browsers interpret the codes. And in understanding it, having a firm understanding on how the specificity rule precedence works.</p>
+        <h3>LEVEL 3: BY ORDER</h3>
+            <p>This are the rules in that stated determines the one that take precedence in some cases like the conflicts and repetitions. This can cascade in the order of the precedence. The more specific the rule is, the higher its precedence. The rule that are on tag has the least specific.</p>
+            <p>The rules of precedence are located in a factor. The locations are Browser Default Rules, Embedded Styles, and Inline style Rules.</p>
+            <p>For example:</p>
+            <img src="../img/cssImg/codeOrder.PNG" alt="By Order sample Code" class="img-responsive">
+            <h4>LOCATION OF RULES</h4>
+            <p>The Cascading Style Sheet Rules are located in many places in which it includes the browser default style sheet, external style sheet, embedded styles and the inline style rules. The one which is closer to the rule is the one that is being styled, the higher its precedence. It starts to the furthest and goes to the closest to the content.</p>
+            <h4>BROWSER STYLESHEET</h4>
+            <p>There is built-in default style sheet in all the browsers. In default style sheet starts the cascading. If there are no styles defined in the file, the browser styles will be used. Defaults are slightly different inn each browser.</p>
+            <h4>EXTERNAL STYLESHEET</h4>
+            <p>This style sheet the browser default style sheet is overridden by the rules in the external style sheet. If there several many external style sheet, the one which is being applied is the one being listed. </p>
+            <p>For example: &lt;link rel="stylesheet" type="text/css" href="webtek.css"&gt;</p>
+            <h4>EMBEDDED STYLESHEETS</h4>
+            <p>In this style sheet, the styles that are embedded in the header of the page are the next in the order of precedence. If there are several rules, naturally those rules are being placed in the external style sheet.</p>
+            <p>For example:</p>
+            <img src="../img/cssImg/embed.PNG" alt="By Order sample Code" class="img-responsive">
+            <h4>INLINE STYLES</h4>
+            <p>Lastly the inline styles. Inline styles are one that are closest in the contents of the file, they take the highest precedence because of this.</p>
+            <p>For example: &lt;h1 style="color:blue;margin-left:30px;"&gt;This is a heading&lt;/h1&gt;</p>
+    </div>
+
+  <div id="ref" class="tab-pane fade">
+      <!-- All references from cssA.html to cssB.html should be placed here -->
+      <h3>REFERENCES</h3>
+        <p class="wb">CSS Selectors(n.d.). Retrieved from https://www.w3schools.com/css/css_attribute_selectors.asp</p>
+        <p class="wb">Doyle, E. et.al.(n.d.). Attribute Selectors. Retrieved from https://developer.mozilla.org/en/docs/Web/CSS/Attribute_selectors</p>
+        <p class="wb">Doyle, E. et.al.(n.d.).Type Selector(n.d.). Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors</p>
+        <p class="wb">Doyle, E. et.al.(n.d.). :indeterminate. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors</p>
+        <p class="wb">Doyle, E. et.al.(n.d.). :last-child. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child</p>
+        <p class="wb">Doyle, E. et.al.(n.d.). :nth-child. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child</p>
+        <p class="wb">Doyle, E. et.al.(n.d.). :first-of-type. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/:first-of-type</p>
+        <p class="wb">Doyle, E. et.al.(n.d.). :only-of-type. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/:only-of-type</p>
+        <p class="wb">Doyle, E. et.al.(n.d.). :empty. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/:empty</p>
+        <p class="wb">CSS Versions. (2015). Retrieved from: http://www.corelangs.com/css/basics/versions.html</p>
+        <p class="wb">Shamberger, H. (2013) CSS versions. Retrieved from: http://cccvc.com/faculty/hshamberger/vc147/week01/css_vs.html</p>
+        <p class="wb">Olsson, T., &amp; O'Brien, P. (n.d). CSS Versions. http://reference.sitepoint.com/css/csshistory</p>
+        <p class="wb">Ian Hickson. (2016, November 23). Retrieved from: https://en.wikipedia.org/wiki/Ian_Hickson</p>
+        <p class="wb">CSS3 Introduction. (n.d.). Retrieved from: https://www.w3schools.com/css/css3_intro.asp</p>
+        <p class="wb">Kirkwood, A. (2005, June 3). Definition: Cascading style sheets (CSS), stylesheet, styles, specifications. Retrieved March 5, 2017, from http://www.motive.co.nz/glossary/stylesheets.php</p>
+        <p class="wb">Posted, &amp; Rouse, M. (2015, October 9). What is cascading style sheet (CSS)? - definition from WhatIs.Com. Retrieved March 5, 2017, from http://searchmicroservices.techtarget.com/definition/cascading-style-sheet-CSS</p>
+        <p class="wb">Cascading Style Sheets. (n.d.). Retrieved from http://www.edb.utexas.edu/minliu/multimedia/PDFfolder/CSSGottlieb.pdf</p>
+        <p class="wb">Cascading Style Sheets (CSS). (n.d.). Retrieved from http://www.inf.ufsc.br/~bosco.sobral/downloads/Livro-Java-Como-Programar-Deitel-Ed6/additional/addnlRefs/CSS/CSS.pdf</p>
+        <p class="wb">Introduction to Cascading Style Sheets. (n.d.). Retrieved from https://www.austincc.edu/hr/profdev/eworkshops/docs/CSS_intro.pdf</p>
+        <p class="wb">What is CSS (Cascading Style Sheet)? (n.d.). Retrieved March 26, 2017, from http://www.computerhope.com/jargon/c/css.htm</p>
+        <p class="wb">History of HTML and CSS. (n.d.). Retrieved March 26, 2017, from http://amyhissom.com/HTML5-CSS3/history.html</p>
+        <p class="wb">Olsson, T. &amp; O'Brien, P. (n.d.). Declarations, Properties, and Values. Retrieved from: http://reference.sitepoint.com/css/declarations</p>
+        <p class="wb">Roberts, A. (2014, September 03). Vendor-specific Properties. Retrieved from: https://www.sitepoint.com/web-foundations/vendor-specific-properties/</p>
+        <p class="wb">Olsson, T. &amp; O'Brien, P. (n.d.). Lengths and Units. Retrieved from: http://reference.sitepoint.com/css/lengthunits</p>
+        <p class="wb">Olsson, T. &amp; O'Brien, P. (n.d.). Percentages. Retrieved from: http://reference.sitepoint.com/css/percentages</p>
+        <p class="wb">Olsson, T. &amp; O'Brien, P. (n.d.). Colors. Retrieved from: http://reference.sitepoint.com/css/colorvalues</p>
+        <p class="wb">CSS3 Colors. (n.d). Retrieved from: https://www.w3schools.com/css/css3_colors.asp</p>
+        <p class="wb">Olsson, T. &amp; O'Brien, P. (n.d.). Numbers. Retrieved from: http://reference.sitepoint.com/css/numbers</p>
+        <p class="wb">Olsson, T. &amp; O'Brien, P. (n.d.). Strings. Retrieved from: http://reference.sitepoint.com/css/strings</p>
+        <p class="wb">Olsson, T. &amp; O'Brien, P. (n.d.). Shorthand Properties. Retrieved from: http://reference.sitepoint.com/css/shorthandproperties</p>
+        <p class="wb">Olsson, T. &amp; O'Brien, P. (n.d.). Keywords. Retrieved from: http://reference.sitepoint.com/css/keywords</p>
+        <p class="wb">&lt;url&gt;. (2016. July 12). Retrieved from: https://developer.mozilla.org/en-US/docs/Web/CSS/url</p>
+        <p class="wb">Olsson, T. &amp; O'Brien, P. (n.d.). URIs. Retrieved from: http://reference.sitepoint.com/css/uris</p>
+        <p class="wb">CSS Counters. (n.d.). Retrieved from: https://www.w3schools.com/css/css_counters.asp</p>
+        <p class="wb">Rule Sets. (n.d.). Retrieved from http://reference.sitepoint.com/css/rulesets</p>
+        <p class="wb">Chen, H.J., et.al. (2016, December 17). Combinators. Retrieved from https://tympanus.net/codrops/css_reference/combinators/</p>
+        <p class="wb">Mills, C.D. (2017, February 5). CSS Combinators and multiple selectors. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors</p>
+        <p class="wb">Carlson, L. (1998-2017). Difference between a pseudo-class and a pseudo-element. Retrieved from http://www.d.umn.edu/~lcarlson/csswork/selectors/pseudo_dif.html</p>
+        <p class="wb">Zea, R. (2016, May 3). An Ultimate Guide to CSS Pseudo-Classes and Pseudo-Elements. Retrieved from https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/</p>
+        <p class="wb">Gardner, J. (2016, October 20). At-rule. Retrieved from: https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule</p>
+        <p class="wb">Graham, G. (2015, May 12). The At-Rules of CSS. Retrieved from: https://css-tricks.com/the-at-rules-of-css/</p>
+        <p class="wb">Olsson, T. &amp; O'Brien. P. (n.d.). At-rules. Retrieved from: http://reference.sitepoint.com/css/atrules </p>
+        <p class="wb">Olsson, T. &amp; O'Brien. P. (n.d.). Rule Sets. Retrieved from: http://reference.sitepoint.com/css/rulesets</p>
+        <p class="wb">HTML Stylesheets (2017 March 15) Retrieved From https://www.w3.org/TR/WD-html40-970917/present/styles.html</p>
+        <p class="wb">XHTML Style Sheet Module (2017 March 15) Retrieved from https://www.w3.org/TR/xhtml2/mod-styleSheet.html</p>
+        <p class="wb">Bos, B. et.al. (2011, June 7). Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification. Retrieved from https://www.w3.org/TR/2011/REC-CSS2-20110607/#minitoc</p>
+        <p class="wb">Lazaris, L. (2010, November 2). !important CSS Declarations: How and When to use them. Retrieved from https://www.smashingmagazine.com/2010/11/the-important-css-declaration-how-and-when-to-use-it/</p>
+        <p class="wb">Zartner, S. et.al. (2015, July 7). Cascade. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade</p>
+        <p class="wb">Meiert, J. (2007, September 22). User Agent Stylesheets: Basics and Samples. Retrieved from https://meiert.com/en/blog/20070922/user-agent-style-sheets/</p>
+        <p class="wb">Specificity (2017). Retrieved from http://htmldog.com/guides/css/intermediate/specificity/</p>
+        <p class="wb">Roberts, A. (2014 August 21). Specificity. Retrieved from https://www.sitepoint.com/web-foundations/specificity/</p>
+        <p class="wb">Friedman, V.(2007 July 27). CSS Specificity: Things You Should Know. Retrieved from https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/</p>
+        <p class="wb">Kurtus, R. (n.d.). Order of Precedence for CSS Rules - Web Design lessons. Retrieved from http://www.school-for-champions.com/web/css_cascade_order.htm</p>
+        <p class="wb">Jenkov, J. (n.d.). CSS Precedence. Retrieved from http://tutorials.jenkov.com/css/precedence.html</p>
+        <p class="wb">Bradley, S. (n.d.). Understanding Style Precedence in CSS: Specificity, Inheritance, and the Cascade . Retrieved from http://vanseodesign.com/css/css-specificity-inheritance-cascaade/</p>
+        </div>
+    </div>
+
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; WEBTEK 2017</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../js/grayscale.min.js"></script>
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>

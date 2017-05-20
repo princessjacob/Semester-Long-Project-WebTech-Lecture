@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WEBTEK | HTTP</title>
+    
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    
+    <!-- Overwrite CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="../css/grayscale.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="topics" data-spy="scroll" data-target=".navbar-fixed-top">
+<div class="container">
+  <a href="../index.html" class="btn btn-info" role="button">RETURN HOME</a>
+  <h2 class = "titleHeader">HTTP (HYPERTEXT TRANSFER PROTOCOL)</h2>
+    <ul class="nav nav-tabs">
+    <li><a href="http.html" class="btn btn-info" role="button">PREVIOUS</a></li>
+    <li class = "active"><a data-toggle="tab" href="#reMessage">Response Message</a></li>
+    <li><a data-toggle="tab" href="#reMethod">Request Methods</a></li>
+    <li><a data-toggle="tab" href="#messageHeader">Message Headers</a></li> 
+    <li><a data-toggle="tab" href="#statcodes">Status Codes</a></li>
+    <li><a data-toggle="tab" href="#ref">References</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="reMessage" class="tab-pane fade in active">
+      <h3>STATUS LINE</h3>
+      <p>A status line contains the protocol version, status code and a reason phrase.</p>
+      <p>PARTS:</p>
+      <ul>
+          <li>HTTP VERSION</li>
+              <p>Shows the version information that the server supports.</p>
+          <li>STATUS CODES</li>
+              <p>A three digit code usually followed by a reason phrase.</p>
+          <li>REASON PHRASE</li>
+              <p>Intended to give a short textual description of the Status-Code.</p>
+      </ul>
+
+      <h3>RESPONSE HEADER FIELDS</h3>
+      <p>It can be a general, response, entity header fields. This header fields are usually used to add additional information about what is sent by the server to the client.</p>
+        
+      <h3>EMPTY LINE</h3>
+      <p>A blank line indicating the end of the header fields, and possibly a message-body.</p>
+        
+      <h3>MESSAGE BODY</h3>
+      <p>A general content for both Request and Response Message. This details the message and for the request message, filling this up is optional.</p>
+        
+      <h3>PAYLOAD</h3>
+      <p>The payload body is obtained from the message-body by decoding any Transfer-Encoding that might have been applied to ensure safe and proper transfer of the message. Usually, used for POST and PUT method and contains the actual html code.</p>
+        
+      <h3>CONTENT-TYPE</h3>
+      <p>Entity header is used to indicate the media type of the resource. i.e. plain/text</p>
+    </div>
+
+    <div id="reMethod" class="tab-pane fade">
+      <p>The HTTP REQUEST METHODS are commonly used to specify a certain action for a given resource. While commonly nouns, they are referred to as HTTP verbs. The most commonly used methods are the POST, GET, PUT, PATCH and DELETE, which corresponds with CRUD(create, read, update and delete).</p>
+
+      <h3>STANDARD METHODS</h3>
+      <ul>
+          <li>GET</li>
+            <p>Requests data from a specified resource. The method itself is not going to affect the resource taken by the data.</p>
+          <li>POST</li>
+            <p>Submits data to be processed to a specified resource. This often causes a change in state or side effects on the server.</p>
+          <li>HEAD</li>
+            <p>Same as GET but returns only HTTP headers and no document body.</p>
+          <li>PUT</li>
+            <p>Uploads a representation of the specified URI. It replaces all current representations of the target resource with the request payload.</p>
+          <li>DELETE</li>
+            <p>Deletes the specified resource and causes a change on the resource as a result.</p>
+          <li>OPTIONS</li>
+            <p>Returns the HTTP methods that the server supports. This is used to describe communication options for the target resource.</p>
+          <li>CONNECT</li>
+            <p>Converts the request connection to a transparent TCP/IP tunnel.</p>
+          <li>PATCH</li>
+            <p>This is used to apply partial modifications to a resource.</p>
+          <li>TRACE</li>
+            <p>Requests a loopback of the request message and then requests the server to echo back to the client the received request message. TRACE is also typically used for testing/diagnostics of the request/response chain.</p>
+      </ul>
+        
+      <h4>SPECIFICATIONS:</h4>
+      <ul>
+          <li>RFC 7231</li>
+          <li>RFC 5789 : PATCH Method</li>
+      </ul>
+
+      <h3>EXTEND METHODS</h3>
+      <p>i.e. WebDav (World Wide Web Distributed Authoring and Versioning)</p>
+
+      <h4>What is WebDAV?</h4>
+      <p>This is an IETF standard for collaborative authoring in the Web. This is commonly used for users located remotely from each other in the Internet that needs a tool for collaborative editing and file management.</p>
+      
+      <h4>WebDav methods</h4>
+        <ul>
+          <li>PROPFIND</li>
+            <p>This is used to retrieve properties, stored as XML, from a web resource. It is also overloaded to allow one to retrieve the collection structure (also known as directory hierarchy) of a remote system.</p>
+          <li>PROPPATCH</li>
+            <p>This is used to change and delete multiple properties on a resource in a single atomic act.</p>
+          <li>MKCOL</li>
+            <p>This is used to create collections (a.k.a. a directory).</p>
+          <li>COPY</li>
+            <p>This is used to copy a resource from one URI to another.</p>
+          <li>MOVE</li>
+            <p>This is used to move a resource from one URI to another.</p>
+          <li>LOCK</li>
+            <p>This is used to put a lock on a resource. WebDAV supports both shared and exclusive locks.</p>
+          <li>UNLOCK</li>
+            <p>This is used to remove a lock from a resource.</p>
+        </ul>
+      <h4>DAV SPECIFICATIONS</h4>
+      <ul>
+          <li>RFC 4918</li>
+          <li>RFC 3253</li>
+          <li>RFC 5323</li>
+          <li>WebDAV Bindings</li>
+          <li>RFC 4437</li>
+          <li>RFC 3648</li>
+          <li>RFC 3744</li>
+          <li>Advanced ATL Extensions to WebDAV</li>
+          <li>RFC 4122</li>
+      </ul>
+
+      <h3>OTHER METHODS</h3>
+      <h4>SAFE METHODS</h4>
+      <p>These methods doesn't affect the resource. The only change to do is the log of the resource. i.e. GET, HEAD, TRACE and OPTIONS.</p>
+      <h4>IDEMPOTENT METHODS</h4>
+      <p>The repeated execution of the methods should result to the same effect. i.e. GET, HEAD, OPTIONS, TRACE, PUT, DELETE.</p>
+      <h4>CACHEABLE METHODS</h4>
+      <p>The response to requests is going to a cacheable.</p>
+    </div>
+
+    <div id="messageHeader" class="tab-pane fade">
+      <p>HTTP Protocol is the communication of takes place in a way of exchanging of requests and response messages between the client and a server. As the client sends a request to the server the server also gives back a response message to the client, in short, the client and the server are passing request and response to each other. </p>
+      <p>HTTP message headers is also called the HTTP header fields. It provides the information about the requests or a response, and sometimes to the object being sent in the message body. Message headers conveys important information or detail about the clients and the server.  The message header does only apply in the message that is to be transmitted. It is normally a one message header per line. Message headers is composed of name of the header field and a field value. There are four categories of header fields: General, Response, Request and Entity Header Fields. The common form of the header field is:</p>
+      <p>Message Header = Field name “:” [ field-value]</p>
+        
+      <h3>GENERAL HEADER FIELDS</h3>
+      <p>General header field is universal because it doesn’t point to one specific kind of message. It is usable by both client and server. It appears in either of the two. General headers are primarily used to communicate information about the message alone as it resists to what is its content. It also gives the general information of the message and controls the message as how it is processed and handled. </p>
+      <h4>CACHE-CONTROL</h4>
+      <p>Cache-control is used to identify the directives that is being obeyed by the caching mechanism in the request or response chain. It is also used by the http client and/or server to specify the parameters for the cache and also used to request kinds of documents from the cache. The directives have the behavior to prevent the cache from being harmfully interfering in the request or in the response. And also, these directives sometimes tend to override the caching algorithms. Cache directives should be passed by a proxy or a gateway application, since all the directives may be applicable in the recipients in the request or in the response chain.  The syntax for the cache-control is</p>
+      <p>Cache-Control : cache-request-directive|cache-response-directive</p>
+        
+      <h4>CONNECTION</h4>
+      <p>Connection is a general-header field in which it allows a sender to specify the options that are being desired for a specific connection and this shouldn’t be communicated by any proxies in any connections. The most commonly used connection is the “close”. Connection options are being signaled in the existence of a connection-token in the header field of Connection.  The Close Connection is an option for the client to signal in which the connection is to be closed when the response is being complete. There is also the Keep-Alive Connection in which it is a persistent connection, which means the connection doesn’t close automatically when the execution is done. The syntax for connection is: </p>
+      <p>Connection : “Connection”</p>
+        
+      <h4>DATE</h4>
+      <p>Date is a general header field which specifies the exact date and time when the message is originated. The  origin servers  includes the Date header field in all the responses except of some cases. The date is always in Greenwich Mean Time (GMT). The most used date format is “Day, Date-Month-Year Hour:Minutes:Seconds GMT”.  The date syntax is :</p>
+      <p>Date : “Day, Date-Month-Year Hour:Minutes:Seconds GMT”</p>
+        
+      <h4>PRAGMA</h4>
+      <p>Pragma is a general header field which is used to include the implementation-specific directives which may apply to any of the recipient in the request or response chain. The common use of the header field is to suppress the caching by the means of including “Pragma : no-cache”, which has the same as the “Cache-Control : no-cache” . Pragma directives should be passed by a proxy or a gateway application, since all the directives may be applicable in the recipients in the request or in the response chain. The syntax for Pragma header is:</p>
+      <p>Pragma : “pragma-directive”</p>
+        
+      <h4>TRAILER</h4>
+      <p>Trailer is a general header field which indicates the given set of the header field is said to be present in the trailer in the message encoded with the chunked transfer coding.  Trailer is said to be a hop-by-hop header. If there is no header field Trailer, it shouldn’t include any of the header fields.  The syntax for Trailer header field is:</p>
+      <p>Trailer : “field-name”</p>
+        
+      <h4>UPGRADE</h4>
+      <p>Upgrade is a general header field which allow a client to identify the additional communication protocols that it supports and like to use when the server found it appropriate to switch between protocols. It is used to provide a simple system for a transition from HTTP/1.1 to any other incompatible protocol. Upgrade header field is also a hop-by-hop header like the Trailer. The syntax for Upgrade header field is:</p>
+      <p>Upgrade : “product”</p>
+        
+      <h4>VIA</h4>
+      <p>Via is a general header field is used by gateways and the proxies which indicates an intermediate protocols and also recipients. It is intended as a tracking messages forwards, also avoiding the request loops  and identifying the capabilities of the protocol of any of the sender in the request chain and also in response chain.  It is also used to provide a simple system for a transition from HTTP/1.1 to any other incompatible protocol. The syntax for Via header field is:</p>
+      <p>Via : “1#( received-protocol received-by [ comment ] )”</p>
+        
+      <h4>WARNING</h4>
+      <p>Warning is a general header fields that is usually used to carry the additional information which is about the status of a message that shouldn’t be reflected in the message. It is typically used to warn about the possible lack of the semantic transparency from the caching operations that is applied to the entity-body of a message. The syntax for Warning header fields is:</p>
+      <p>Warning : “1#warning-value”</p>
+
+      <h3>REQUEST HEADER FIELDS</h3>
+      <p>Request header fields is only applicable in request, only clients use this. It is only used in HTTP request messages. It allows the client to pass additional information to the server about the request being made, and also information about the client alone. It serves as a request modifiers in the message. It also allows the client to have more control on how the request is being processed and also on how the response is being returned by the server to the client.  </p>
+      <h4>ACCEPT</h4>
+      <p>Accept is a type of request header fields which is used for specifying a certain media types which are being acceptable for the response or server side. These Accept headers can also be used to identify if the request is specifically limited in small group of desired media types. Commas is used to separated multiple media types. The syntax for Accept header field is:</p>
+      <p>Accept : type/subtype [q=qvalue]. </p>
+        
+      <h4>ACCEPT-CHARSET</h4>
+      <p>Accept-Charset is a request header field which is used in indicating on what set of character are accepted in the response. The Accept-Character header fields let the clients being capable of understanding the more inclusive or the special-purpose type of character sets in order to signal the capability to the server in which it is capable of presenting the documents in those chosen character sets. It is also the same with the Accept header field which can be listed with multiple character sets that is separated with comma. The syntax for Accept-Charset header field is:</p>
+      <p>Accept-Charset: character_set [q=qvalue]</p>
+        
+      <h4>ACCEPT-ENCODING</h4>
+      <p>Accept-Encoding is a request header field which is the same as to Accept, but in this limits the content-coding which is acceptable by the response. It is used to control if the server or not may sent the content in a compressed form. The syntax for Accept-Encoding header field is:</p>
+      <p>Accept-Encoding: encoding types</p>
+        
+      <h4>ACCEPT-LANGUAGE</h4>
+      <p>Accept-Language is a request header field which is similar to other Accept header field types. It is used to provide what languages that the client supports and/ or what does the server expects to use in its response to the request of the client. It is also applicable when many languages supports the clients request, it is listed and separated by commas. The syntax for Accept-Language header fields is:</p>
+      <p>Accept-Language: language [q=qvalue]</p>
+        
+      <h4>AUTHORIZATION</h4>
+      <p>Authorization is a request header field which consists of the credentials that provides the information of the authentication of the client for the resource that is being requested. The syntax for Authorization header field is:</p>
+      <p>Authorization : credentials</p>
+        
+      <h4>EXPECT</h4>
+      <p>Expect is a request header field is used in indicating the specific set of server behaviors  which is required by the client.  It indicates of what type of action in which the client is expecting the server what to perform. The syntax for Expect header field is:</p>
+      <p>Expect : 1#expectation</p>
+        
+      <h4>FROM</h4>
+      <p>From is a request header field which contains the e-mail address of the user which controls the requesting client. This header field might use in logging purposes and also used to identify the source of the unwanted requests. The syntax for From header field is:</p>
+      <p>From: mailbox</p>
+        
+      <h4>IF-MATCH</h4>
+      <p>If-match is a request header field that makes the methods in conditional by the way of specifying entity tags with the corresponding specific entity which the client wants to access. GET method is used in this kind of header field and after that the server would respond with the entity tag if only if the header matches with the one specified. The syntax for IF-match header field is:</p>
+      <p>If-Match : entity-tag</p>
+        
+      <h4>IF-MODIFIED-SINCE</h4>
+      <p>If-Modified-Since is a request header field which is used in a method to make it in a conditional in the way of telling to the server to return the entity that is requested, if and only if it has been modified since the time placed in the header. The syntax for If-Modified-Since header field is:</p>
+      <p>If-Modified-Since : HTTP-date</p>
+        
+      <h4>IF-NONE-MATCH</h4>
+      <p>If-None-Match header field is a request header field which is used to make the methods in conditional form. The request is performed if and only if the value that is given by the client is matches with the entity tags presented by the ETag. The syntax for If-None-match header field is:</p>
+      <p>If-None-Match : entity tag</p>
+          
+      <h4>IF-RANGE</h4>
+      <p>If-Range header field is a request header field which is used in the conditional GET in order to get only the part of the entity that is missing. It is the combination of the Range header field which allows the client to check both whether the entity is changed and the request sents the portion in one single request. The syntax for If-Range header field is:</p>
+      <p>If-Range : entity-tag | HTTP-date</p>
+          
+      <h4>IF-UNMODIFIED-SINCE</h4>
+      <p>If-unmodified-since is a request header field which is logically opposite of the if-modified-since header field. It is used if and only if the resource has not been modified since the given time in the header. The syntax for If-Unmodified-Since header field is:</p>
+      <p>If-Unmodified-Since : HTTP-date</p>
+          
+      <h4>PROXY-AUTHORIZATION</h4>
+      <p>Proxy-authentication is a request header field which allows the client identifies himself into a proxy that requires some authentication. It is the same with the Authorization header, it gives its credentials to a proxy server for the authentication. The syntax for Proxy-Authentication header field is:</p>
+      <p>Proxy-Authorization : credentials</p>
+          
+      <h4>REFERER</h4>
+      <p>The Referer is a request header field in which it allows the clients to identify the resource of the address in which URL has been requested. It also allows the server in generating list of back-links to resources for interest. The syntax for Referer header field is:</p>
+      <p>Referer: absoluteURI | relativeURI</p>
+          
+      <h4>TE</h4>
+      <p>The TE is a request header field which specifies extension of transfer coding will the response is going to accept and whether it is going to accept trailer fields in chunked transfer coding or not. The syntax for TE header field is :</p>
+      <p>TE: t-codings</p>
+          
+      <h4>USER-AGENT</h4>
+      <p>User-Agent is a request header field which provides the information about the user originating the request. It is generally the Web browser’s name and version number or the other program that is sending the request. It is also used in server access logging statistically and used to tailor on how the server is going to respond to the clients. The syntax for User-Agent header field is:</p>
+      <p>User-Agent : product | comment</p>
+
+      <h3>RESPONSE HEADER FIELDS</h3>
+      <p>Response header fields is only used by the servers. It is the opposite of request header fields, it only appears in response messages which is being sent by the servers. It provides an addition information that expands on the summary of the information that is usually found at the beginning of the server response. This header fields provides the information about the server and information on the access to the resource which is identified by the Request-URI.</p>
+          
+      <h4>ACCEPT-RANGES</h4>
+      <p>Accept-Ranges is a response header field which allows the server to specify the acceptance of range request in a resource. It tells the client whether the server will accept the partial content request by using the Range request header or not. The syntax for Accept-Ranges header field is:</p>
+      <p>Accept-Ranges: range-unit | none</p>
+          
+      <h4>AGE</h4>
+      <p>Age is a response header field which is used to convey the client’s estimates time since the response was generated in the origin server. It gives the client the estimated age of the resource as computed by the device sending of the response. The syntax for Age header field is:</p>
+      <p>Age : delta-seconds</p>
+          
+      <h4>ETAG</h4>
+      <p>ETag is a response header field which is providing the value of the entity tag for the requested variant. It identifies the entity tag that is included in the response. The syntax for ETag header field id:</p>
+      <p>ETag :  entity-tag</p>
+          
+      <h4>LOCATION</h4>
+      <p>Location is a response header field which is used in redirecting the sender to a location other than in the Request-URI for the completion. It is used when server redirects the request to a new location. It is also used to specify the location of the newly created resource. The syntax for Location header field is:</p>
+      <p>Location : absolute URI</p>
+          
+      <h4>PROXY-AUTHENTICATE</h4>
+      <p>Proxy-Authenticate is a response header field which is the version of WWW-Authenticate header, but this time the it is a proxy version. It identifies an authentication method and also other parameters that is needed in the authentication. This is said to be a hop-by-hop header. The syntax for Proxy-Authenticate header field is:</p>
+      <p>Proxy-Authenticate  : challenge</p>
+          
+      <h4>SERVER</h4>
+      <p>Server is a response header field which is containing the information that is all about the software that is used by the origin server in order to handle the requests of the client. It contains multiple product tokens and comment tokens which is used in identifying the server and the sub products. The syntax for Sever header field is:</p>
+      <p>Server : product | comment</p>
+          
+      <h4>VARY</h4>
+      <p>Vary is a response header field which is used in specifying whether the entity has a multiple sources and may vary according to the list of request header. It advises the user about the criteria that is used in order to select the representation. The syntax of Vary header field is:</p>
+      <p>Vary : field-name</p>
+
+      <h3>ENTITY HEADER FIELDS</h3>
+      <p>Entity header fields is the meta-data about the entity-body, but if there is no body, the information about the resource being acknowledged by the request is added. It provides the information of the resource that is carried in the body of the HTTP message, which is called the entity. Whenever there is a message there is also a payload and that pay payload refer to an entity. Entity header fields serves the purpose of passing the information needed in order to process properly and display the entity like the type and the method of encoding. </p>
+          
+      <h4>ALLOW</h4>
+      <p>Allow is an entity header field which list the set of method that is supported by the resource that is identified by the request URI.it can be  given by the server response as a guide to the client. It strictly informs the sender of the methods that is associated with the resource. The syntax for Allow header field is:</p>
+      <p>Allow : Method</p>
+          
+      <h4>CONTENT ENCODING</h4>
+      <p>Content Encoding is an entity header field which is used to modify media-type. It describes optional methods that may be used to encode the entity. It is most often used in transferring of entities that have been compressed. The syntax for the content Encoding is:</p>
+      <p>Content-Encoding : content-coding</p>
+          
+      <h4>CONTENT LANGUAGE</h4>
+      <p>Content Language is an entity header field which describes the language that is used by the audience for the enclosed entity. It is said to be an optional header and  may not be appropriate for all the resources. The syntax for Content Language is:</p>
+      <p>Content-Language : language-tag</p>
+          
+      <h4>CONTENT LENGTH</h4>
+      <p>Content Length is an entity header field which identify the size of the entity-body representing in the decimal number of Octets that are sent into the recipient. It is also used by the recipients to determine the ending of the message. The syntax for content Length header field is:</p>
+      <p>Content-Length : DIGITS</p>
+          
+      <h4>CONTENT LOCATION</h4>
+      <p>Content Location is an entity header field which is used to supply the resource location for the entity that is enclosed in the message, if and only if the entity can access form the location to the requested resource URI. The syntax of Content Length header field is:</p>
+      <p>Content-Location:  absolute URI | relative URI</p>
+          
+      <h4>CONTENT MD5</h4>
+      <p>Content MD5 is an entity header field which is used in giving MD5 digest of entity for the checking of the integrity of the message in the receipt. It can be generated by the origin server or the client in order to function like an integrity checker of the entity body. The syntax of Content MD5 is:</p>
+      <p>Content-MD5  : md5-digest</p>
+          
+      <h4>CONTENT RANGE</h4>
+      <p>Content Range is an entity header field which is sent together with a partial of the entity-body in order to specify where in the full entity-body the partial body to be applied is. It indicates in what part of the file is the message contains and the same as the size of the resource. The syntax of Content-Range is:</p>
+      <p>Content-Range: content-range-spec</p>
+          
+      <h4>CONTENT TYPE</h4>
+      <p>Content-Type is an entity header field which is used to specify the media type of the entity-body that is being sent to the recipient or the media type that have been sent. The syntax of Content-Type header field is:</p>
+      <p>Content-Type : media-type</p>
+          
+      <h4>EXPIRES</h4>
+      <p>Expires is an entity header field which provides the date and the time after the response has been considered stale. The format is the date and time defined by the HTTP-date. The syntax of Expires header field is:</p>
+      <p>Expires : HTTP-date</p>
+    </div>
+      
+    <div id="statcodes" class="tab-pane fade">
+      <h3>INFORMATIONAL (1XX)</h3>
+      <p>This class of status codes simply gives information about the response of the server to a client's request.</p>
+        <h4>100 Continue:</h4>
+         <p>In this case, the client is required to proceed in sending the request body.</p>
+      <h4>101 Switching Protocols:</h4>
+         <p>This means that the server understands the request from the client and will comply through switching the protocol.</p>
+      <h4>102 Processing:</h4> 
+        <p>If the user agent receives this message, it indicates that the server is currently processing the request.</p>
+
+      <h3>SUCCESS (2XX)</h3>
+      <p>This class of status code indicates that the client's request was successfully received, understood, and accepted.</p>
+      <h4>200 OK:</h4> 
+        <p>The request has succeeded.</p>
+      <h4>201 Created:</h4>
+         <p>The request has been fulfilled and resulted in a new resource being created. </p>
+      <h4>202 Accepted:</h4>
+         <p>The request has been accepted for processing, but the processing has not been completed.</p>
+      <h4>203 Non-Authoritative Information:</h4>   
+         <p>The returned metainformation in the entity-header is not the definitive set as available from the origin server, but is gathered from a local or a third-party copy.</p>
+      <h4>204 No Content:</h4> 
+        <p>The server has fulfilled the request but there is no new information to send back.</p>
+      <h4>205 Reset Content:</h4> 
+        <p>The server has fulfilled the request and the user agent SHOULD reset the document view.</p>
+      <h4>206 Partial Content:</h4> 
+       <p>The server has fulfilled the partial GET request for the resource. The request MUST have included a Range header field indicating the desired range, and MAY have included an If-Range header field to make the request conditional.</p>
+        
+      <h3>REDIRECTION (3XX)</h3>
+      <p>This class of status code indicates that further action needs to be taken by the user agent in order to fulfill the request.</p>
+      <h4>300 Multiple Choices:</h4> 
+        <p>The requested resource corresponds to any one of a set of representations, each with its own specific location, and agent- driven negotiation information is being provided so that the user (or user agent) can select a preferred representation and redirect its request to that location.</p>
+      <h4>301 Moved Permanently:</h4> 
+        <p>The requested resource has been assigned a new permanent URI and any future references to this resource SHOULD use one of the returned URIs.</p>
+      <h4>302 Found:</h4> 
+        <p>The requested resource resides temporarily under a different URI.</p>
+      <h4>303 See Other:</h4> 
+        <p>The response to the request can be found under a different URI and SHOULD be retrieved using a GET method on that resource.</p>
+      <h4>304 Not Modified:</h4>
+         <p>If the client has performed a conditional GET request and access is allowed, but the document has not been modified, the server SHOULD respond with this status code.</p>
+      <h4>305 Use Proxy:</h4> 
+        <p>The requested resource MUST be accessed through the proxy given by the Location field.</p>
+      <h4>306 (Unused):</h4> 
+        <p>The 306 status code was used in a previous version of the specification, is no longer used, and the code is reserved.</p>
+      <h4>307 Temporary Redirect:</h4>
+         <p>The requested resource resides temporarily under a different URI.</p>
+
+      <h3>CLIENT ERROR (4XX)</h3>
+      <p>The 4xx class of status code is intended for cases in which the client is the root of the error.</p>
+        <h4>400 Bad Request:</h4>
+            <p>The request could not be understood by the server due to malformed syntax.</p>
+        <h4>401 Unauthorized:</h4> 
+            <p>The request requires user authentication. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource.</p>
+        <h4>402 Payment Required:</h4> 
+            <p>This code is reserved for future use.</p>
+        <h4>403 Forbidden:</h4> 
+            <p>The server understood the request, but is refusing to fulfill it. This status code is commonly used when the server does not wish to reveal exactly why the request has been refused.</p>
+        <h4>404 Not Found:</h4> 
+            <p>The server has not found anything matching the Request-URI.</p>
+        <h4>405 Method Not Allowed:</h4> 
+            <p>The method specified in the Request-Line is not allowed for the resource identified by the Request-URI.</p>
+        <h4>406 Not Acceptable:</h4> 
+            <p>The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to the accept headers sent in the request.</p>
+        <h4>407 Proxy Authentication Required:</h4> 
+            <p>This code is similar to 401 (Unauthorized), but indicates that the client MUST first authenticate itself with the proxy.</p>
+        <h4>408 Request Timeout:</h4> 
+            <p>The client did not produce a request within the time that the server was prepared to wait.</p>
+        <h4>409 Conflict:</h4> 
+            <p>The request could not be completed due to a conflict with the current state of the resource.</p>
+        <h4>410 Gone:</h4> 
+            <p>The requested resource is no longer available at the server and no forwarding address is known.</p>
+        <h4>411 Length Required:</h4> 
+            <p>The server refuses to accept the request without a defined Content-Length. </p>
+        <h4>412 Precondition Failed:</h4> 
+            <p>The precondition given in one or more of the request-header fields evaluated to false when it was tested on the server.</p>
+        <h4>413 Request Entity Too Large:</h4> 
+            <p>The server is refusing to process a request because the request entity is larger than the server is willing or able to process.</p>
+        <h4>414 Request URI Too Long:</h4> 
+            <p>The server is refusing to service the request because the Request-URI is longer than the server is willing to interpret.</p>
+        <h4>415 Unsupported Media Type:</h4> 
+            <p>The server is refusing to service the request because the entity of the request is in a format not supported by the requested resource for the requested method.</p>
+        <h4>416 Request Range Not Satisfiable:</h4> 
+            <p>A server SHOULD return a response with this status code if a request included a Range request-header field.</p>
+        <h4>417 Expectation Failed:</h4> 
+            <p>The expectation given in an Expect request-header field could not be met by this server, or, if the server is a proxy, the server has unambiguous evidence that the request could not be met by the next-hop server.</p>
+        <h4>426 Upgrade Required:</h4> 
+            <p>The client should switch to a different protocol such as TLS/1.0 or WebSockets, specified by the accompanying Upgrade response-header field.</p>
+
+      <h3>SERVER ERROR (5XX)</h3>
+      <p>Response status codes beginning with the digit "5" indicate cases in which the server is aware that it is incapable of performing the request.</p>
+        <h4>500 Internal Server Error:</h4> 
+            <p>The server encountered an unexpected condition which prevented it from fulfilling the request.</p>
+        <h4>501 Not Implemented:</h4> 
+            <p>The server does not support the functionality required to fulfill the request.</p>
+        <h4>502 Bad Gateway:</h4> 
+            <p>The server, while acting as a gateway or proxy, received an invalid response from the upstream server it accessed in attempting to fulfill the request.</p>
+        <h4>503 Service Unavailable:</h4> 
+            <p>The server is currently unable to handle the request due to a temporary overloading or maintenance of the server.</p>
+        <h4>504 Gateway Timeout:</h4> 
+            <p>The server, while acting as a gateway or proxy, did not receive a timely response from the upstream server specified by the URI (e.g. HTTP, FTP, LDAP) or some other auxiliary server (e.g. DNS) it needed to access in    attempting to complete the request.</p>
+        <h4>505 HTTP Version Not Supported:</h4> 
+            <p>The server does not support, or refuses to support, the HTTP protocol version that was used in the request message.</p>
+    </div>
+
+    <div id="ref" class="tab-pane fade">
+      <h3>REFERENCES:</h3>
+      <p class="wb">Hypertext Transfer Protocol (n.d.). Retrieved from https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol</p>
+      <p class="wb">HTTP Tutorial(n.d.). Retrieved from https://www.tutorialspoint.com/http/</p>
+      <p class="wb">Grigorik, I.(2013). Brief History of HTTP. Retrieved from https://hpbn.co/brief-history-of-http/</p>
+      <p class="wb">Cache-Control. (n.d.). Retrieved March 03, 2017, from https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>
+      <p class="wb">Cache-Control HTTP Headers. (n.d.). Retrieved March 03, 2017, from http://condor.depaul.edu/dmumaugh/readings/handouts/SE435/HTTP/node24.html</p>
+      <p class="wb">Content-media-type Field. (n.d.). Retrieved March 18, 2017, from https://msdn.microsoft.com/en-us/library/ms526938(v=exchg.10).aspx</p>
+      <p class="wb">J. Reschke(2010). RFC 5987. Retrieved from https://tools.ietf.org/html/rfc5987</p>
+      <p class="wb">Uniform Resource Identifier. (n.d.). Retrieved from: https://en.wikipedia.org/wiki/Uniform_Resource_Identifier</p>
+	  <p class="wb">Uri.Authority Property (System). (n.d.). Retrieved from: https://msdn.microsoft.com/en-us/library/system.uri.authority(v=vs.110).aspx</p>
+      <p class="wb">HTTP Requests (n.d.). Retrieved from https://www.tutorialspoint.com/http/http_requests.htm</p>
+      <p class="wb">HTTP - Responses (n.d.). Retrieved from https://www.tutorialspoint.com/http/http_responses.htm</p>
+      <p class="wb">Christensson, P. (2006). Payload Definition. Retrieved from https://techterms.com</p>
+      <p class="wb">fscholz, et.al.(2016). Content-Type. Retrieved from https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type</p>
+      <p class="wb">HTTP Methods: GET vs. POST(n.d.). Retrieved from https://www.w3schools.com/Tags/ref_httpmethods.asp</p>
+      <p class="wb">fscholz et.al.(2016). HTTP request methods. Retrieved from https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods</p>
+      <p class="wb">WebDAV(n.d.). Retrieved from https://en.wikipedia.org/wiki/WebDAV</p>
+      <p class="wb">WebDAV Specifications(n.d.). Retrieved from http://www.webdav.org/specs/</p>
+      <p class="wb">Rouse, M. (2005). WebDAV (World Wide Web Distributed Authoring and Versioning). Retrieved from http://searchmicroservices.techtarget.com/definition/WebDAV-World-Wide-Web-Distributed-Authoring-and-Versioning</p>
+      <p class="wb">R. Fielding, et.al. (1997). Request. Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html</p>
+      <p class="wb">R. Fielding, et.al. (1997). HTTP Message. Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html</p>
+      <p class="wb">HTTP Message body(n.d.). Retrieved from https://en.wikipedia.org/wiki/HTTP_message_body/p>
+      <p class="wb">R. Fielding, et.al. (1997). 1xx Informational. Retrieved from https://wasd.vsm.com.au/httpd/-/status1xx.html</p>
+      <p class="wb">R. Fielding, et.al. (1997). 2xx Success. Retrieved from https://wasd.vsm.com.au/httpd/-/status2xx.html</p>
+      <p class="wb">R. Fielding, et.al. (1997). 3xx Redirection. Retrieved from https://wasd.vsm.com.au/httpd/-/status3xx.html</p>
+      <p class="wb">R. Fielding, et.al. (1997). 4xx Client Error. Retrieved from https://wasd.vsm.com.au/httpd/-/status4xx.html</p>
+      <p class="wb">R. Fielding, et.al. (1997). 5xx Server Error. Retrieved from https://wasd.vsm.com.au/httpd/-/status5xx.html</p> 
+    </div>   
+  </div>
+</div>
+ 
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; WEBTEK 2017</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../js/grayscale.min.js"></script>
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>
