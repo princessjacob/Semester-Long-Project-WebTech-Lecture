@@ -1,13 +1,27 @@
-Servlets
+Java Servlet Technology
 
-	- Java Object based on the Servlet API
-	- Runs in a server application to answer client requests; technically, 	  servlets are not tied to a specific client-server protocol, but they are most 		  commonly used with HTTP and the term Ñservlet? is often used 	  in the context of an ìHTTP Servletî
-	- Web-tier components in the Java EE architecture.
-	- Runs in, and is managed by, a web-tier container called the ÑServlet 	  Container?
-	- Mapped to URLs to which clients send requests
-	- Typically asked with (among other things)
-		o Processing and/or storing data submitted vial HTML forms
-		o Generating dynamic content
+	Servlets are the Java platform technology of choice for extending and enhancing Web servers. Servlets provide a component-based, platform-independent method for building Web-based applications, without the performance limitations of CGI programs. And unlike proprietary server extension mechanisms (such as the Netscape Server API or Apache modules), servlets are server- and platform-independent. This leaves you free to select a "best of breed" strategy for your servers, platforms, and tools. 
+
+	Servlets have access to the entire family of Java APIs, including the JDBC API to access enterprise databases. Servlets can also access a library of HTTP-specific calls and receive all the benefits of the mature Java language, including portability, performance, reusability, and crash protection. 
+
+	Today servlets are a popular choice for building interactive Web applications. Third-party servlet containers are available for Apache Web Server, Microsoft IIS, and others. Servlet containers are usually a component of Web and application servers, such as BEA WebLogic Application Server, IBM WebSphere, Sun Java System Web Server, Sun Java System Application Server, and others. 
+
+	You might want to check out the latest information on JavaServer Pages (JSP) technology. JSP technology is an extension of the servlet technology created to support authoring of HTML and XML pages. It makes it easier to combine fixed or static template data with dynamic content. Even if you're comfortable writing servlets, there are several compelling reasons to investigate JSP technology as a complement to your existing work.
+
+	Servlets are programs that run on a Web or Application server and act as a middle layer between a request coming from a Web browser or other HTTP client and databases or applications on the HTTP server.
+
+	A servlet is simply a class which responds to a particular type of network request - most commonly an HTTP request.
+
+	Basically, servlets are usually used to implement web applications - but there are also various frameworks which operate on top of servlets (e.g. Struts) to give a higher-level abstraction than the "here's an HTTP request, write to this HTTP response" level which servlets provide.
+
+	Servlets run in a servlet container which handles the networking side (e.g. parsing an HTTP request, connection handling etc). One of the best-known open source servlet containers is Tomcat.
+
+	The container will take care of things like wrapping the whole thing in a HTTP response object and send it over to the client (say a browser).
+
+	The javax.servlet and javax.servlet.http packages provide interfaces and classes for writing servlets. All servlets must implement the Servlet interface, which defines life-cycle methods. When implementing a generic service, you can use or extend the GenericServlet class provided with the Java Servlet API. The HttpServlet class provides methods, such as doGet and doPost, for handling HTTP-specific services.
+
+
+SERVLET METHODS
 	- javax.servlet
 		o Servlet, GenericServlet
 		o ServletRequest, ServletResponse
@@ -24,15 +38,15 @@ Servlets
 		o Servlet container checks if servlet is already loaded
 		o If it is not yet loaded, servlet container loads the servlet class and instantiates the servlet, and calls its init method.
 		o Servlet container invokes the servlet?s service method, passing request and response objects as arguments
-		o Servlet processes the request using the response object to create the response, which is returned by the servlet container to the web server, which 		  in turn sends the response to the client
-		o Subsequent request to the servlet will not require servlet re-instantiation, unless the servlet has been unloaded; before a servlet is unloaded, the 		  servlet container invokes its destroy method.
+		o Servlet processes the request using the response object to create the response, which is returned by the servlet container to the web server, which in turn sends the response to the client
+		o Subsequent request to the servlet will not require servlet re-instantiation, unless the servlet has been unloaded; before a servlet is unloaded, the servlet container invokes its destroy method.
 	- init(config)
 		o Invoked once on the servlet by the servlet container when the servlet is instantiated; can be used by the servlet for one-time startup initialization
 	- service(request, response)
 		o Invoked each time the servlet is called upon to process a request (typically on a separate thread for each call)
 		o In HttpServlet, the default Service implementation maps the call to a specific doXXX() method (e.g. doGet, doPost) which is typically overridden to affect the servlets functionality
 	- Destroy()
-		o Invoked on the servlet by the servlet container when the servlet is to be unloaded (e.g. when the application is stopped or undeployed); can be used 		  by the servlet for clean-up processing (e.g. resource deallocation)
+		o Invoked on the servlet by the servlet container when the servlet is to be unloaded (e.g. when the application is stopped or undeployed); can be used by the servlet for clean-up processing (e.g. resource deallocation)
 	- Servlet Request Processing (HttpServletRequest)
 		o Retrieving user-supplied request parameters
 		o Retrieving request header values
@@ -50,25 +64,29 @@ Servlets
 
 		rqstDsp.include(request, response);
 
-		o Forwards the processing of the current request to the dispatcher resource; the servlet processing the current 		  		  		  request must not generate a response ( e.g. use in MVC ìcontrollerî servlets)
+		o Forwards the processing of the current request to the dispatcher resource; the servlet processing the current 		  	request must not generate a response ( e.g. use in MVC ‚Äúcontroller‚Äù servlets)
 
 		rqstDsp.forward(request, response);
 
 	- Session Tracking(HttpSession)
-		o Session tracking support is implemented either cookies or 		  URL-rewriting
+		o Session tracking support is implemented either cookies or URL-rewriting
 		o Obtaining session object from the current request
 
 		HttpSession session;
 		session = request.getSession(createNew);
 
 		o Obtaining session information (HttpSession)
-	- getCreationTime(), getLastAccessedTime(), getMaxInactiveInternal(), 	  getId(), isNew(), setMaxInactiveInterval(int val)
+	- getCreationTime(), getLastAccessedTime(), getMaxInactiveInternal(), getId(), isNew(), setMaxInactiveInterval(int val)
 		o destroying sessions
 	- invalidate()
 		o URL-rewriting(HttpServletResponse)
 	- encodeURL(String url), encodeRedirectURL(String url)
+	
+	
 
 REFERENCES:
+Java Servlet Overview. Retrieved from http://www.oracle.com/technetwork/java/overview-137084.html
+Servlets. Retrieved from http://array151.blogspot.in/2016/11/servlets.html
 
 "Servlet (Java(TM) EE 7 Specification APIs)". oracle.com. Retrieved 22 November 2016.
 
