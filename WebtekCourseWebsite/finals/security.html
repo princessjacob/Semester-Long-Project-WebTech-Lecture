@@ -38,11 +38,33 @@
   <a href="../index.html" class="btn btn-info" role="button">RETURN HOME</a>
   <h2 class = "titleHeader">SECURITY</h2>
     <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#sql">SQL Injection</a></li>
-    <li><a data-toggle="tab" href="#csrf">Cross-site Request Forgery</a></li>
-    <li><a data-toggle="tab" href="#xss">Cross-site Scripting</a></li>
+    <li class="active"><a data-toggle="tab" href="#sql">SQL Injection</a> - refers to an injection attack wherein an attacker can execute 
+malicious SQL statements (also commonly referred to as a malicious payload) that can take 
+control a web application's database server</li>
+
+    <li><a data-toggle="tab" href="#csrf">Cross-site Request Forgery</a> - CSRF is an attack that fools a victim into 
+sending a malicious request. It acquires the personality and benefits of the victim 
+to perform an undesired function on the victim's sake. CSRF attacks target 
+functionality that causes a state change on the server, for example changing the victim's 
+email address or password, or buying something. Constraining the victim to recover data 
+doesn't benefit an attacker because the attacker doesn't receive the response, the 
+victim does. As such, CSRF attacks target state-changing requests.</li>
+
+    <li><a data-toggle="tab" href="#xss">Cross-site Scripting</a> - is a sort of PC securit vulnerability normally 
+found in web applications. XSS allows attackers to insert client-side scripts into web 
+pages viewed by other users. A cross-site scripting vulnerability might be utilized by 
+attackers to bypass access controls such as the same-origin policy. Their effect may range 
+from a petty nuisance to a significant security risk, depending on the sensitivity of the 
+data handled by the vulnerable site and the way of any security relief executed by 
+the site's owner.</li>
+
     <li><a data-toggle="tab" href="#ref">References</a></li>
+<p class="wb">(2017, May 16). Cross-site scripting. Retrieved from: https://en.wikipedia.org/wiki/Cross-site_scripting</p>
+<p class="wb">(n.d.). SQL Injection (SQLi). Retrieved from: https://www.acunetix.com/websitesecurity/sql-injection/</p>
+<p class="wb">(2017, March 19). Types of Cross-Site Scripting. Retrieved from: https://www.owasp.org/index.php/Types_of_Cross-Site_Scripting</p>
+<p class="wb">(2017, MArch 22). Cross-Site Request Forgery (CSRF). Retrieved from: https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)</p>
   </ul>
+
   <div class="tab-content">  <!-- Place definition and HTML versions here -->
         <div id="sql" class="tab-pane fade in active">
         </div>
