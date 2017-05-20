@@ -37,19 +37,101 @@
 <div class="container">
   <a href="../index.html" class="btn btn-info" role="button">RETURN HOME</a>
   <h2 class = "titleHeader">JAVA SERVER PAGES</h2>
-    <ul class="nav nav-tabs">
+  <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#definition">Definition</a></li>
-    <li><a data-toggle="tab" href="#cssVer">Versions</a></li>
-    <li><a href="cssB.html" class="btn btn-info" role="button">NEXT</a></li>
+    <li><a data-toggle="tab" href="#setup">JSP Setup</a></li>
+    <li><a data-toggle="tab" href="#el">JSP Elements</a></li>
+    <li><a data-toggle="tab" href="#exp">EL Expressions</a></li>
+    <li><a data-toggle="tab" href="#jstl">JSTL</a></li>
+    <li><a data-toggle="tab" href="#ref">References</a></li>
   </ul>
-  <div class="tab-content">  <!-- Place definition and HTML versions here -->
+  <div class="tab-content"> 
         <div id="definition" class="tab-pane fade in active">
-
+            <p>JSP stands for JavaServer Pages. It is a servlet in disguise and it has access to the entire Java Libraries.</p>
+            <p>JavaServer Pages (JSP) is a technology which provides a simplified and fast way to create a web content. The JSP technology has a rapid development of web based applications that are server and platform-independent. It is a server-side programming technology which enables the creation of the dynamic and platform-independent method in building a web-based application.</p>
         </div>
-
-        <div id="cssVer" class="tab-pane fade">
-
-
+        <div id="setup" class="tab-pane fade">
+            <p>In using JSP, the first thing to do is to set up the environment in order to start with JSP. In setting up the environment, there are several steps to do it.</p>
+            <ul>
+                <li>Download the SDK from the Oracle’s Java site – Java SE Download.</li>
+                <li>Install and configure the set up.</li>
+                <li>After configuring the set up, set the path PATH and JAVA _HOME environment variables in order to refer to the directory that contains java and javac.</li>
+                <li>If you are running the windows and after installing the SDK in C:\jdk1.5.0_20, you need to add this lines in the C:\autoexec.bat file. </li>
+                <p><i>set PATH = C:\jdk1.5.0_20\bin;%%PATH%</i> and <i>set JAVA_HOME = C:\jdk1.5.0_20</i></p>
+                <li>After setting up the environment, now set up a web server, Tomcat.</li>
+            </ul>
+            <h3>Steps in Setting up Apache Tomcat Server</h3>
+            <ul>
+                <li>Download the latest version of Apache Tomcat from https://tomcat.apache.org/.</li>
+                <li>Once you downloaded the installation, unpack the binary distribution into a convenient location. For example, in C:\apache-tomcat-5.5.29 on windows, or /usr/local/apache-tomcat-5.5.29 on Linux/Unix and create CATALINA_HOME environment variable pointing to these locations.</li>
+                <li>After setting up the web server, setup now the CLASSPATH.</li>
+                <li>If you are running Windows, you need to put the following lines in your C:\autoexec.bat file: <i>set CATALINA = C:\apache-tomcat-5.5.29</i> and <i>set CLASSPATH = %CATALINA%\common\lib\jsp-api.jar;%CLASSPATH%</i></li>
+                <p>NOTE: Assuming that your development directory is C:\JSPDev (Windows) or /usr/JSPDev (Unix), then you would need to add these directories as well in CLASSPATH.</p>
+            </ul>
+        </div>
+        <div id="el" class="tab-pane fade">
+            <h3>The Scriptlet</h3>
+            <p>This contains any number of JAVA language statements, variable or method declarations, or expressions that are valid in the page scripting language.</p>
+            <p>Syntax:</p>
+            <img src="../img/jspImg/1.PNG" alt="Scriptlet Syntax" class="img-responsive">
+            <p>For example:</p>
+            <img src="../img/jspImg/2.PNG" alt="Scriptlet Syntax Example" class="img-responsive">
+            <h3>JSP DECLARATIONS</h3>
+            <p>A declaration declares one or more variables or methods that you can use in Java code later in the JSP file. You must declare the variable or method before you use it in the JSP file.</p>
+            <p>Syntax:</p>
+            <img src="../img/jspImg/3.PNG" alt="Declaration Syntax" class="img-responsive">
+            <p>For example:</p>
+            <img src="../img/jspImg/4.PNG" alt="Declaration Sample" class="img-responsive">
+            <h3>JSP EXPRESSION</h3>
+            <p>A JSP expression element contains a scripting language expression that is evaluated, converted to a String, and inserted where the expression appears in the JSP file.</p>
+            <p>Syntax:</p>
+            <img src="../img/jspImg/5.PNG" alt="Expression Syntax" class="img-responsive">
+            <p>For example:</p>
+            <img src="../img/jspImg/6.PNG" alt="Expression Sample" class="img-responsive">
+            <h3>JSP COMMENTS</h3>
+            <p>JSP comment marks text or statements that the JSP container should ignore. A JSP comment is useful when you want to hide or "comment out", a part of your JSP page.</p>
+            <p>Syntax:</p>
+            <img src="../img/jspImg/7.PNG" alt="Comments Syntax" class="img-responsive">
+            <p>For example:</p>
+            <img src="../img/jspImg/8.PNG" alt="Comments Sample" class="img-responsive">
+            <h3>JSP DIRECTIVES</h3>
+            <p>A JSP directive affects the overall structure of the servlet class. It usually has the following form.</p>
+            <p>Syntax:</p>
+            <img src="../img/jspImg/9.PNG" alt="Directives Syntax" class="img-responsive">
+            <h3>JSP ACTIONS</h3>
+            <p>JSP actions use constructs in XML syntax to control the behavior of the servlet engine. You can dynamically insert a file, reuse JavaBeans components, forward the user to another page, or generate HTML for the Java plugin.</p>
+            <p>Syntax:</p>
+            <img src="../img/jspImg/10.PNG" alt="Actions Syntax" class="img-responsive">
+        </div>
+        <div id="exp" class="tab-pane fade">
+            <p>EL Expressions means Expressions Language.</p>
+            <h3>EXAMPLES:</h3>
+            <ul>
+                <li><b>${param.name}</b> - With param as the incoming query paramter and name as the name of the parameter.</li>
+                <li><b>header['']</b>This gets host headers.</li>
+            </ul>
+            <p>The format of EL expressions is starting with a dollar sign($) and followed by opening and closing brackets.</p>
+            <h3>3 Forms of Scriptlet</h3>
+            <ol>
+                <li>Scriptlet scriptlet</li>
+                <p>This is just like any other fragment.</p>
+                <li>Scriptlet expression</li>
+                <p>This kind of scriptlet starts off with an equal sign. This is stil just a simple expression.</p>
+                <li>Scriptlet Declaration</li>
+                <p>This is declared public and often placed outside the service method.</p>
+            </ol>
+        </div>
+        <div id="jstl" class="tab-pane fade">
+            <h3>DEFINITION</h3>
+            <p>JSTL stands for Javascript Tag Library, which allows programmatic constructs without having to program a servlet.</p>
+            <p>This involves the use of namespaces for packages like the following: formatting, programmatically, strings, sql and core. The names can be declared as a variable and will be used as a prefix later on. The imported libraries from JSTL has dynamic capabilities.</p>
+            <h3>JSTL CUSTOM ACTIONS</h3>
+            <p>You can create your own JSTL.</p>
+            <p>Example (common): sql -- This is used to connect to the database. To do so, a driver will be declared as well as a connection string.</p>
+            <p>Example (not common): name your jstl as 'sam':sam</p>
+        </div>
+        <div id="ref" class="tab-pane fade">
+            <p>Notes taken during class.</p>
         </div>
     </div>
 </div>
