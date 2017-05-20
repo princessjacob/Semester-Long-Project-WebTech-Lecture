@@ -1,0 +1,47 @@
+Apache Tomcat
+	- The Apache Tomcat® software is an open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies.
+	- Tomcat originated as a Sun Microsystems project, with the goal of providing an example implementation of Sun's newly created Java Servlet and JSP specifications. Sun developed Tomcat internally through Tomcat 2.x. In 1999, the project was donated to the Apache Software Foundation, where it was developed under the Jakarta project, the Apache group responsible behind the original versions of many widely used top-level projects such as Struts, Ant, and Maven. In 2005, members of Jakarta realized that Tomcat had become widely used enough to merit its own top-level project. Since becoming a separate project, Tomcat has been developed through version 6.x. A beta of the next version of the project, Tomcat 7, was released in July 2010.
+
+Features of Apache Tomcat
+1. Fast and light
+2. Flexible and Scalable
+3. Secure
+
+REFERENCE:
+
+"Apache Tomcat - Welcome!". Apache Tomcat. The Apache Software Foundation. 2017-04-18. Retrieved 2017-04-26.
+
+JavaBean - is a specially constructed Java class written in the Java and coded according to the JavaBeans API specifications.
+
+	1. It should have a default, no-argument constructor.
+	2. It should be Serializable.
+	3. It should provide methods to set and get the values of the properties, known as getter and setter methods.
+
+REFERENCE:
+
+Lesson: Writing JavaBeans Components. oracle.com. Retrieved 1995-2015.
+
+Model-View-Controller (MVC) Design Pattern
+	* The Model-View-Controller (MVC) is an architectural pattern that separates an application into three main logical components: the model, the view, and the 	controller. Each of these components are built to handle specific development aspects of an application. MVC is one of the most frequently used industry-	standard web development framework to create scalable and extensible projects.
+
+	? Model
+		o Represents business objects (logic and state)
+	? View
+		o Presentation of the model in some appropriate way
+	? Controller
+		o Mediates application flow
+REFERENCE:
+	Cocoa Core Competencies: Overview of the MVC pattern. https://developer.apple.com. Retrieved 2015-10-21.
+	
+Request Dispatcher - is an interface, implementation of which defines an object which can dispatch request to any resources(such as HTML, Image, JSP, Servlet) on the server.
+
+The RequestDispatcher interface provides two methods. They are:
+
+1. public void forward(ServletRequest request,ServletResponse response)throws ServletException,java.io.IOException:Forwards a request from a servlet to another resource (servlet, JSP file, or HTML file) on the server.
+
+2. public void include(ServletRequest request,ServletResponse response)throws ServletException,java.io.IOException:Includes the content of a resource (servlet, JSP page, or HTML file) in the response.
+
+REFERENCE:
+
+"What is a request dispatcher and how do i use it?". Deron Eriksson. http://www.avajava.com. Retrieved 2014.
+

@@ -1,0 +1,42 @@
+Security
+Open Web Application Security Project (OWASP)
+
+a.) SQL Injection (SQLi) - refers to an injection attack wherein an attacker can execute 
+malicious SQL statements (also commonly referred to as a malicious payload) that can take 
+control a web application's database server 
+
+b.) Cross-site Request Forgery (CSRF) - CSRF is an attack that fools a victim into 
+sending a malicious request. It acquires the personality and benefits of the victim 
+to perform an undesired function on the victim's sake. CSRF attacks target 
+functionality that causes a state change on the server, for example changing the victim's 
+email address or password, or buying something. Constraining the victim to recover data 
+doesn't benefit an attacker because the attacker doesn't receive the response, the 
+victim does. As such, CSRF attacks target state-changing requests. 
+
+c.) Cross-site Scripting (XSS) -  is a sort of PC securit vulnerability normally 
+found in web applications. XSS allows attackers to insert client-side scripts into web 
+pages viewed by other users. A cross-site scripting vulnerability might be utilized by 
+attackers to bypass access controls such as the same-origin policy. Their effect may range 
+from a petty nuisance to a significant security risk, depending on the sensitivity of the 
+data handled by the vulnerable site and the way of any security relief executed by 
+the site's owner
+.
+
+*Types:
+a.) Server XSS - Server XSS occurs when untrusted user supplied information is incorporated into an
+HTML response created by the server. The source of this information could be from the request, 
+or from a stored location. As such, you can have both Reflected Server XSS and Stored 
+Server XSS. 
+
+b.) Client XSS - Client XSS occurs when untrusted user supplied information is used to update 
+the DOM with an unsecured JavaScript call. A JavaScript call is considered unsecured if it 
+can be implemented to introduce valid JavaScript into the DOM. This source of this data could 
+be from the DOM, or it could have been sent by the server (via an AJAX call, or a page 
+load). The ultimate source of the information could have been from a request, or from a stored 
+location on the client or the server. 
+
+Ref:
+https://en.wikipedia.org/wiki/Cross-site_scripting
+https://www.acunetix.com/websitesecurity/sql-injection/
+https://www.owasp.org/index.php/Types_of_Cross-Site_Scripting
+https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)
