@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>WEBTEK | Server Side Scripting</title>
+    <title>WEBTEK | NODE.js</title>
 
     <!-- Overwrite CSS -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -36,19 +36,62 @@
 <body class="topicsFinal" data-spy="scroll" data-target=".navbar-fixed-top">
 <div class="container">
   <a href="../index.html" class="btn btn-info" role="button">RETURN HOME</a>
-  <h2 class = "titleHeader">Server Side Scripting</h2>
+  <h2 class = "titleHeader">NODE.js</h2>
     <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#definition">Definition</a></li>
-    <li><a data-toggle="tab" href="#cssVer">Versions</a></li>
+    <li><a data-toggle="tab" href="#node">Creating a Web App with Node (Basics)</a></li>
+    <li><a data-toggle="tab" href="#ref">References</a></li>
   </ul>
-  <div class="tab-content">  <!-- Place definition and HTML versions here -->
+  <div class="tab-content">  
         <div id="definition" class="tab-pane fade in active">
-
+            <p>Node.js is the server side Javascript and is composed of the MEAN stack: <b>M</b>ongoDB (document oriented database), <b>E</b>xpress Shares (server side framework), <b>A</b>ngular.js (client side framework) and <b>N</b>ode.js, which is built on the same engine as Chromium.</p>
+            <p>Node.js currently have two versions with v 6.10.3 having a long-term support. This version can be used to create desktop applications. Node.js also comes with npm, an installer for node.</p>
         </div>
-
-        <div id="cssVer" class="tab-pane fade">
-
-
+        <div id="node" class="tab-pane fade">
+            <h3>Install the dependencies needed for the project</h3>
+            <ol>
+                <li>Using the command line, create a new directory on whichever place you prefer and change directory there.</li>
+                <img src="../img/nodeImg/1.png" alt="mkdir" class="img-responsive">
+                <li>Run npm init next. This would contain all the details about the app and would generate a package.json file which all dependencies information will be placed.</li>
+                <img src="../img/nodeImg/2.png" alt="npm init" class="img-responsive">
+                <p>You will be asked to enter details to be placed on package.json, afterwards the contents will be shown to you and you’ll be asked again if the contents is alright with you. You can always go back to edit it again.</p>
+                <img src="../img/nodeImg/3.png" alt="npm init 2" class="img-responsive">
+                <li>Run copy con index.js. This will allow you to create the file index.js which will be the file you’re going to run for the sample.</li>
+            </ol>
+            <h3>Basic Scaffolding of the project</h3>
+            <ol>
+                <li>After running copy con index.js, enter the following:</li>
+                <img src="../img/nodeImg/4.png" alt="copy con index.js" class="img-responsive">
+                <p>The following allows us to create a server that runs on our desired port: 81 (changeable).</p>
+                <li>To run the server key in, node index.js. Then open your favorite browser and key in localhost:&lt;specified port number&gt;. As you can see on the screenshot, it is already connected to the server but since index.js is still not filled up with contents, it won’t be able to fetch anything.</li>
+                <img src="../img/nodeImg/5.png" alt="loading browser" class="img-responsive">
+                <li>Let’s go back to our file index.js and add the following:</li>
+                <img src="../img/nodeImg/7.PNG" alt="function handler" class="img-responsive">
+                <p>Placing the handler allows us to send a request to the server and return Hello World as a response. </p>   
+            </ol>
+            <h3>Additional Dependencies</h3>
+            <ol>
+                <li>Since the actual server doesn’t exactly show a status and you need to stop and start the server every time you make a change, you can install some dependency that can help you show such stats. Given that run: npm install -g nodemon. Nodemon shows you header requests and overall status to allow you to see the resource that is being rendered by visiting the address on your browser.</li>
+                <li>To run your server using nodemon, just key in nodemon. As you can see on the results it will show you the resources it’s getting and starting. It will also automatically detect your changes and would restart the server for you.</li>
+                <img src="../img/nodeImg/6.png" alt="Nodemon" class="img-responsive">
+            </ol>
+            <h3>Database Connection</h3>
+            <ol>
+                <li>In your index.js, add the following on your function handler</li>
+                <img src="../img/nodeImg/8.PNG" alt="Database Query Code" class="img-responsive">
+                <p>This allows you to create a connection to your database. While the next lines will help you in querying from the database.</p>
+                <img src="../img/nodeImg/9.PNG" alt="Database Query Code 2" class="img-responsive">
+            </ol>
+            <h3>Express.js Usage</h3>
+            <p>Express.js is a backend app framework that facilitates the hard parts to implement in Node.js. To install this framework, key in your cmd: npm install express.js –save.</p>
+            <p>This allows you to generate HTML files in a pug format in which you don’t need to place opening and closing tags as long as you placed everything in a hierarchical format. It will then be generated as HTML files with proper taggings.</p>
+            
+            <p><i>To know more about Node.js, please visit references.</i></p>
+        </div>
+        <div id="ref" class="tab-pane fade">
+            <p class="wb">remy(n.d.). nodemon. Retrived from https://www.npmjs.com/package/nodemon</p>
+            <p class="wb">Ornbo, G.(n.d.). Retrieved from https://shapeshed.com/creating-a-basic-site-with-node-and-express/</p>
+            <p class="wb">Hello world example(n.d.). Retrieved from http://expressjs.com/en/starter/hello-world.html</p>
         </div>
     </div>
 </div>
