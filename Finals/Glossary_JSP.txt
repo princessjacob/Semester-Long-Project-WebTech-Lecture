@@ -45,3 +45,15 @@ REFERENCE:
 
 "What is a request dispatcher and how do i use it?". Deron Eriksson. http://www.avajava.com. Retrieved 2014.
 
+JavaBean - is a specially constructed Java class written in the Java and coded according to the JavaBeans API specifications.
+
+	1. It should have a default, no-argument constructor.
+	2. It should be Serializable.
+	3. It should provide methods to set and get the values of the properties, known as getter and setter methods.
+
+REFERENCE:
+
+Lesson: Writing JavaBeans Components. oracle.com. Retrieved 1995-2015.
+
+
+
