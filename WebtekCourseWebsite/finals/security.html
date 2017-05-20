@@ -38,42 +38,46 @@
   <a href="../index.html" class="btn btn-info" role="button">RETURN HOME</a>
   <h2 class = "titleHeader">SECURITY</h2>
     <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#sql">SQL Injection</a> - refers to an injection attack wherein an attacker can execute 
-malicious SQL statements (also commonly referred to as a malicious payload) that can take 
-control a web application's database server</li>
-
-    <li><a data-toggle="tab" href="#csrf">Cross-site Request Forgery</a> - CSRF is an attack that fools a victim into 
-sending a malicious request. It acquires the personality and benefits of the victim 
-to perform an undesired function on the victim's sake. CSRF attacks target 
-functionality that causes a state change on the server, for example changing the victim's 
-email address or password, or buying something. Constraining the victim to recover data 
-doesn't benefit an attacker because the attacker doesn't receive the response, the 
-victim does. As such, CSRF attacks target state-changing requests.</li>
-
-    <li><a data-toggle="tab" href="#xss">Cross-site Scripting</a> - is a sort of PC securit vulnerability normally 
-found in web applications. XSS allows attackers to insert client-side scripts into web 
-pages viewed by other users. A cross-site scripting vulnerability might be utilized by 
-attackers to bypass access controls such as the same-origin policy. Their effect may range 
-from a petty nuisance to a significant security risk, depending on the sensitivity of the 
-data handled by the vulnerable site and the way of any security relief executed by 
-the site's owner.</li>
-
+    <li class="active"><a data-toggle="tab" href="#se">Why Secure?</a></li>
+    <li><a data-toggle="tab" href="#thr">3 Threats(OWASP) -- Explained</a></li>
     <li><a data-toggle="tab" href="#ref">References</a></li>
-<p class="wb">(2017, May 16). Cross-site scripting. Retrieved from: https://en.wikipedia.org/wiki/Cross-site_scripting</p>
-<p class="wb">(n.d.). SQL Injection (SQLi). Retrieved from: https://www.acunetix.com/websitesecurity/sql-injection/</p>
-<p class="wb">(2017, March 19). Types of Cross-Site Scripting. Retrieved from: https://www.owasp.org/index.php/Types_of_Cross-Site_Scripting</p>
-<p class="wb">(2017, MArch 22). Cross-Site Request Forgery (CSRF). Retrieved from: https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)</p>
   </ul>
 
-  <div class="tab-content">  <!-- Place definition and HTML versions here -->
-        <div id="sql" class="tab-pane fade in active">
+  <div class="tab-content">  
+        <div id="se" class="tab-pane fade in active">
+            <h3>WEB APPLICATIONS VS. DESKTOP APPLICATIONS</h3>
+            <p>Latency is not usually a problem nowadays. However, with the rise of Desktop Applications, which comes with productivity tools, emails and web based IDEs, more people is going web. With that in mind, online threats also continues to grow.</p>
+            <h3>OWASP(Open Web Application Security Project)</h3>
+            <p>The Open Web Application Security Project (OWASP) is an online community which creates freely-available articles, methodologies, documentation, tools, and technologies in the field of web application security.</p>
+            <h3>OWASP TOP 10 (2017)</h3>
+            <ol>
+                <li>Injection</li>
+                <li>Broken Authentication and Session Management</li>
+                <li>Cross-Site Scripting (XSS)</li>
+                <li>Broken Access Control (Original category in 2003/2004)</li>
+                <li>Security Misconfiguration</li>
+                <li>Sensitive Data Exposure</li>
+                <li>Insufficient Attack Protection (NEW)</li>
+                <li>Cross-Site Request Forgery (CSRF)</li>
+                <li>Using Components with Known Vulnerabilities</li>
+                <li>Underprotected APIs (NEW)</li>
+            </ol>
         </div>
-        <div id="csrf" class="tab-pane fade">
-        </div>
-        <div id="xss" class="tab-pane fade">
-        </div>
+        <div id="thr" class="tab-pane fade">
+            <h3>SQL INJECTION (1st OWASP: General Injection)</h3>
+            <p>SQL Injection refers to an injection attack wherein an attacker can execute malicious SQL statements (also commonly referred to as a malicious payload) that can take control a web application's database server.</p>
+            <h3>Cross-site Scripting(3rd: OWASP)</h3>
+            <p>Cross-site Scripting is a sort of PC securit vulnerability normally found in web applications. XSS allows attackers to insert client-side scripts into web pages viewed by other users. A cross-site scripting vulnerability might be utilized by attackers to bypass access controls such as the same-origin policy. Their effect may range from a petty nuisance to a significant security risk, depending on the sensitivity of the data handled by the vulnerable site and the way of any security relief executed by the site's owner.</p>
+            <h3>Cross-site Request Forgery(8th: OWASP)</h3>
+            <p>CSRF is an attack that fools a victim into sending a malicious request. It acquires the personality and benefits of the victim to perform an undesired function on the victim's sake. CSRF attacks target functionality that causes a state change on the server, for example changing the victim's email address or password, or buying something. Constraining the victim to recover data doesn't benefit an attacker because the attacker doesn't receive the response, the victim does. As such, CSRF attacks target state-changing requests.</p>
+      </div>
         <div id="ref" class="tab-pane fade">
-            <p class="wb"></p>
+            <p class="wb">Cross-site scripting(2017, May 16). Retrieved from: https://en.wikipedia.org/wiki/Cross-site_scripting</p>
+            <p class="wb">SQL Injection (SQLi)(n.d.). Retrieved from: https://www.acunetix.com/websitesecurity/sql-injection/</p>
+            <p class="wb"> Types of Cross-Site Scripting(2017, March 19). Retrieved from: https://www.owasp.org/index.php/Types_of_Cross-Site_Scripting</p>
+            <p class="wb"> Cross-Site Request Forgery (CSRF)(2017, MArch 22). Retrieved from: https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)</p>
+            <p class="wb">OWASP(2017, February 28). Retrieved from https://en.wikipedia.org/wiki/OWASP</p>
+            <p class="wb">Category:OWASP Top Ten Project(2017, April 18). Retrieved from https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project</p>
         </div>
     </div>
 </div>
